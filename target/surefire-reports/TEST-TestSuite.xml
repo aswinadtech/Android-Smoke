@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="1,390.519" tests="73" errors="0" skipped="0" failures="67">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/target/test-classes:/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/target/classes:/Users/aswinikumar/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/aswinikumar/.m2/repository/org/testng/testng/6.9.4/testng-6.9.4.jar:/Users/aswinikumar/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/Users/aswinikumar/.m2/repository/com/beust/jcommander/1.48/jcommander-1.48.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-server/2.51.0/selenium-server-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar:/Users/aswinikumar/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar:/Users/aswinikumar/.m2/repository/mx4j/mx4j-tools/3.0.1/mx4j-tools-3.0.1.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.2.13.v20150730/jetty-repacked-9.2.13.v20150730.jar:/Users/aswinikumar/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/jetty-rc-repacked/5/jetty-rc-repacked-5.jar:/Users/aswinikumar/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/aswinikumar/.m2/repository/org/yaml/snakeyaml/1.8/snakeyaml-1.8.jar:/Users/aswinikumar/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-java/2.51.0/selenium-java-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.51.0/selenium-chrome-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/2.51.0/selenium-edge-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-htmlunit-driver/2.51.0/selenium-htmlunit-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.18/htmlunit-2.18.jar:/Users/aswinikumar/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/aswinikumar/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpmime/4.5/httpmime-4.5.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.17/htmlunit-core-js-2.17.jar:/Users/aswinikumar/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/Users/aswinikumar/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/nekohtml/nekohtml/1.9.22/nekohtml-1.9.22.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.16/cssparser-0.9.16.jar:/Users/aswinikumar/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.2.12.v20150709/websocket-client-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/jetty-util/9.2.12.v20150709/jetty-util-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/jetty-io/9.2.12.v20150709/jetty-io-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.2.12.v20150709/websocket-common-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.2.12.v20150709/websocket-api-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.51.0/selenium-ie-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar:/Users/aswinikumar/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/2.51.0/selenium-safari-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-support/2.51.0/selenium-support-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/webbitserver/webbit/0.4.14/webbit-0.4.14.jar:/Users/aswinikumar/.m2/repository/io/netty/netty/3.5.2.Final/netty-3.5.2.Final.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-leg-rc/2.51.0/selenium-leg-rc-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/2.51.0/selenium-firefox-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/2.51.0/selenium-remote-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-api/2.51.0/selenium-api-2.51.0.jar:/Users/aswinikumar/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/aswinikumar/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/aswinikumar/.m2/repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar:/Users/aswinikumar/.m2/repository/org/apache/poi/poi/3.9/poi-3.9.jar:/Users/aswinikumar/.m2/repository/io/appium/java-client/4.1.2/java-client-4.1.2.jar:/Users/aswinikumar/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar:/Users/aswinikumar/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/aswinikumar/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar:/Users/aswinikumar/.m2/repository/commons-validator/commons-validator/1.5.1/commons-validator-1.5.1.jar:/Users/aswinikumar/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/aswinikumar/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/aswinikumar/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/Users/aswinikumar/.m2/repository/cglib/cglib-nodep/3.2.4/cglib-nodep-3.2.4.jar:/Users/aswinikumar/.m2/repository/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE.jar:/Users/aswinikumar/.m2/repository/org/springframework/spring-aop/4.3.2.RELEASE/spring-aop-4.3.2.RELEASE.jar:/Users/aswinikumar/.m2/repository/org/springframework/spring-beans/4.3.2.RELEASE/spring-beans-4.3.2.RELEASE.jar:/Users/aswinikumar/.m2/repository/org/springframework/spring-core/4.3.2.RELEASE/spring-core-4.3.2.RELEASE.jar:/Users/aswinikumar/.m2/repository/org/springframework/spring-expression/4.3.2.RELEASE/spring-expression-4.3.2.RELEASE.jar:/Users/aswinikumar/.m2/repository/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-testng-adaptor/1.5.4/allure-testng-adaptor-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-aspects/1.5.4/allure-java-aspects-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-adaptor-api/1.5.4/allure-java-adaptor-api-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-annotations/1.5.4/allure-java-annotations-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-model/1.5.4/allure-model-1.5.4.jar:/Users/aswinikumar/.m2/repository/org/jvnet/jaxb2_commons/jaxb2-basics-runtime/0.9.3/jaxb2-basics-runtime-0.9.3.jar:/Users/aswinikumar/.m2/repository/ru/qatools/commons/properties/2.0.RC5/properties-2.0.RC5.jar:/Users/aswinikumar/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/aswinikumar/.m2/repository/org/apache/tika/tika-core/1.7/tika-core-1.7.jar:/Users/aswinikumar/.m2/repository/org/aspectj/aspectjrt/1.8.3/aspectjrt-1.8.3.jar:/Users/aswinikumar/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="user.country.format" value="IN"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/target/surefire/surefirebooter8020547230270334039.jar /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/target/surefire 2020-12-03T13-52-06_183-jvmRun1 surefire2037729483705267002tmp surefire_01218121973776388233tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="surefire.test.class.path" value="/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/target/test-classes:/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/target/classes:/Users/aswinikumar/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/aswinikumar/.m2/repository/org/testng/testng/6.9.4/testng-6.9.4.jar:/Users/aswinikumar/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/Users/aswinikumar/.m2/repository/com/beust/jcommander/1.48/jcommander-1.48.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-server/2.51.0/selenium-server-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar:/Users/aswinikumar/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar:/Users/aswinikumar/.m2/repository/mx4j/mx4j-tools/3.0.1/mx4j-tools-3.0.1.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.2.13.v20150730/jetty-repacked-9.2.13.v20150730.jar:/Users/aswinikumar/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/jetty-rc-repacked/5/jetty-rc-repacked-5.jar:/Users/aswinikumar/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/aswinikumar/.m2/repository/org/yaml/snakeyaml/1.8/snakeyaml-1.8.jar:/Users/aswinikumar/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-java/2.51.0/selenium-java-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.51.0/selenium-chrome-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/2.51.0/selenium-edge-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-htmlunit-driver/2.51.0/selenium-htmlunit-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.18/htmlunit-2.18.jar:/Users/aswinikumar/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/aswinikumar/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpmime/4.5/httpmime-4.5.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.17/htmlunit-core-js-2.17.jar:/Users/aswinikumar/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/Users/aswinikumar/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/nekohtml/nekohtml/1.9.22/nekohtml-1.9.22.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.16/cssparser-0.9.16.jar:/Users/aswinikumar/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.2.12.v20150709/websocket-client-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/jetty-util/9.2.12.v20150709/jetty-util-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/jetty-io/9.2.12.v20150709/jetty-io-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.2.12.v20150709/websocket-common-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.2.12.v20150709/websocket-api-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.51.0/selenium-ie-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar:/Users/aswinikumar/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/2.51.0/selenium-safari-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-support/2.51.0/selenium-support-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/webbitserver/webbit/0.4.14/webbit-0.4.14.jar:/Users/aswinikumar/.m2/repository/io/netty/netty/3.5.2.Final/netty-3.5.2.Final.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-leg-rc/2.51.0/selenium-leg-rc-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/2.51.0/selenium-firefox-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/2.51.0/selenium-remote-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-api/2.51.0/selenium-api-2.51.0.jar:/Users/aswinikumar/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/aswinikumar/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/aswinikumar/.m2/repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar:/Users/aswinikumar/.m2/repository/org/apache/poi/poi/3.9/poi-3.9.jar:/Users/aswinikumar/.m2/repository/io/appium/java-client/4.1.2/java-client-4.1.2.jar:/Users/aswinikumar/.m2/repository/com/google/code/gson/gson/2.7/gson-2.7.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar:/Users/aswinikumar/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/aswinikumar/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar:/Users/aswinikumar/.m2/repository/commons-validator/commons-validator/1.5.1/commons-validator-1.5.1.jar:/Users/aswinikumar/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/aswinikumar/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/aswinikumar/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/Users/aswinikumar/.m2/repository/cglib/cglib-nodep/3.2.4/cglib-nodep-3.2.4.jar:/Users/aswinikumar/.m2/repository/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE.jar:/Users/aswinikumar/.m2/repository/org/springframework/spring-aop/4.3.2.RELEASE/spring-aop-4.3.2.RELEASE.jar:/Users/aswinikumar/.m2/repository/org/springframework/spring-beans/4.3.2.RELEASE/spring-beans-4.3.2.RELEASE.jar:/Users/aswinikumar/.m2/repository/org/springframework/spring-core/4.3.2.RELEASE/spring-core-4.3.2.RELEASE.jar:/Users/aswinikumar/.m2/repository/org/springframework/spring-expression/4.3.2.RELEASE/spring-expression-4.3.2.RELEASE.jar:/Users/aswinikumar/.m2/repository/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-testng-adaptor/1.5.4/allure-testng-adaptor-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-aspects/1.5.4/allure-java-aspects-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-adaptor-api/1.5.4/allure-java-adaptor-api-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-annotations/1.5.4/allure-java-annotations-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-model/1.5.4/allure-model-1.5.4.jar:/Users/aswinikumar/.m2/repository/org/jvnet/jaxb2_commons/jaxb2-basics-runtime/0.9.3/jaxb2-basics-runtime-0.9.3.jar:/Users/aswinikumar/.m2/repository/ru/qatools/commons/properties/2.0.RC5/properties-2.0.RC5.jar:/Users/aswinikumar/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/aswinikumar/.m2/repository/org/apache/tika/tika-core/1.7/tika-core-1.7.jar:/Users/aswinikumar/.m2/repository/org/aspectj/aspectjrt/1.8.3/aspectjrt-1.8.3.jar:/Users/aswinikumar/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/aswinikumar"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/target/surefire/surefirebooter8020547230270334039.jar:/Users/aswinikumar/.m2/repository/org/aspectj/aspectjweaver/1.8.13/aspectjweaver-1.8.13.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="1.8.0_181-b13"/>
+    <property name="user.name" value="aswinikumar"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.16"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/aswinikumar/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/"/>
+    <property name="java.version" value="1.8.0_181"/>
+    <property name="user.dir" value="/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/aswinikumar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.181-b13"/>
+    <property name="java.ext.dirs" value="/Users/aswinikumar/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="Smoke_Test_CaseVerify_Homescreen_marquee_adCall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="907.731"/>
+  <testcase name="Smoke_Test_amazon_aaxSlot_feed1_adCall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.288">
+    <failure message="slotID f4b66249-b6eb-4155-9d90-1e2b04487c99 is not trigred for aax call db_display/feed/feed_1" type="java.lang.AssertionError">java.lang.AssertionError: slotID f4b66249-b6eb-4155-9d90-1e2b04487c99 is not trigred for aax call db_display/feed/feed_1
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aaxSlot_feed1_adCall(smokeTestCases.java:989)
+</failure>
+    <system-out><![CDATA[================= Verify amazon aax slot  Id for feed1 prerol adcall  testcase Started =========================
+XML File Name is : Charles20201203140951.chlsx
+Verifying amazon "slot": "f4b66249-b6eb-4155-9d90-1e2b04487c99"  for db_display/feed/feed_1
+slotID f4b66249-b6eb-4155-9d90-1e2b04487c99is not trigred for aax call db_display/feed/feed_1
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verifying_homescreenhourly__adCall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.167"/>
+  <testcase name="Smoke_Test_amazon_aaxSlot_feed2_adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.224">
+    <failure message="slotID 752a96eb-3198-4991-b572-17ec04883b6c is not trigred for aax call db_display/feed/feed_2" type="java.lang.AssertionError">java.lang.AssertionError: slotID 752a96eb-3198-4991-b572-17ec04883b6c is not trigred for aax call db_display/feed/feed_2
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aaxSlot_feed2_adcall(smokeTestCases.java:1002)
+</failure>
+    <system-out><![CDATA[================= Verify amazon aax slot  Id for feed2 adcall testcase Started =========================
+XML File Name is : Charles20201203140951.chlsx
+Verifying amazon "slot": "752a96eb-3198-4991-b572-17ec04883b6c"  for display/feed/feed_2
+slotID 752a96eb-3198-4991-b572-17ec04883b6c is not trigred for aax call db_display/feed/feed_2
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_verifying_feed_1adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.13"/>
+  <testcase name="Smoke_Test_amazon_aaxSlot_feed3_adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.119">
+    <failure message="slotID 9384272f-b27f-4686-935f-02e6c5763abd is not trigred for aax call db_display/feed/feed_3" type="java.lang.AssertionError">java.lang.AssertionError: slotID 9384272f-b27f-4686-935f-02e6c5763abd is not trigred for aax call db_display/feed/feed_3
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aaxSlot_feed3_adcall(smokeTestCases.java:1013)
+</failure>
+    <system-out><![CDATA[================= Verify amazon aax slot  Id for feed3 adcall testcase Started =========================
+XML File Name is : Charles20201203140951.chlsx
+Verifying amazon "slotId": "9384272f-b27f-4686-935f-02e6c5763abd"  for display/feed/feed_3
+slotID 9384272f-b27f-4686-935f-02e6c5763abd  is not trigred for aax call db_display/feed/feed_3
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_verifying_feed_2adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.146"/>
+  <testcase name="Smoke_Test_amazon_aaxSlot_feed4_adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.091">
+    <failure message="slotId 90251553-fb54-47a1-bbe2-dce4e1c27758 is not trigred for aax call db_display/feed/feed_4" type="java.lang.AssertionError">java.lang.AssertionError: slotId 90251553-fb54-47a1-bbe2-dce4e1c27758 is not trigred for aax call db_display/feed/feed_4
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aaxSlot_feed4_adcall(smokeTestCases.java:1025)
+</failure>
+    <system-out><![CDATA[================= Verify amazon aax slot  Id for feed4 adcall testcase Started =========================
+XML File Name is : Charles20201203140951.chlsx
+Verifying amazon "slotId": "90251553-fb54-47a1-bbe2-dce4e1c27758"  for display/feed/feed_4
+slotId 90251553-fb54-47a1-bbe2-dce4e1c27758 is not trigred for aax call db_display/feed/feed_4
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_verifying_feed_3adCall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.133">
+    <failure message="iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_3 call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_3 call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_3adCall_FTL(smokeTestCases.java:132)
+</failure>
+    <system-out><![CDATA[================= Verifying feed_3 ad call tescase Started =========================
+XML File Name is : Charles20201203140951.chlsx
+checking for iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_3
+Verifying iu value should't be nl
+iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_3call was not trigred
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_verifying_feed_4adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.086">
+    <failure message="iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_4 call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_4 call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_4adcall_FTL(smokeTestCases.java:140)
+</failure>
+    <system-out><![CDATA[================= Verifying feed_4 ad call tescase Started =========================
+XML File Name is : Charles20201203140951.chlsx
+checking for iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_4
+Verifying iu value should't be nl
+iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_4call was not trigred
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_verifying_feed_5adCall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.11">
+    <failure message="iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_5 call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_5 call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_5adCall_FTL(smokeTestCases.java:149)
+</failure>
+    <system-out><![CDATA[================= Verifying feed_5 ad call tescase Started =========================
+XML File Name is : Charles20201203140951.chlsx
+checking for iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_5
+Verifying iu value should't be nl
+iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_5call was not trigred
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verify_daily_feedcard_adCall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.072"/>
+  <testcase name="Smoke_Test_Case_Verify_Radar_Maps_deatailspage_adCall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.09"/>
+  <testcase name="Smoke_Test_amazon_aax_mapsdetails_adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.169">
+    <failure message="slotId 5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax call db_display/details/maps" type="java.lang.AssertionError">java.lang.AssertionError: slotId 5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax call db_display/details/maps
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_mapsdetails_adcall(smokeTestCases.java:1058)
+</failure>
+    <system-out><![CDATA[================= Verify amazon aax maps detais adcall Started =========================
+XML File Name is : Charles20201203140951.chlsx
+Verifying amazon "slotId": "5db1161b-b504-4640-9496-dfe6284f84ab"  for db_display/details/map
+slotId 5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax call db_display/details/maps
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_CaseVerify_Today_details_page_iu_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.095">
+    <failure message="/7646/app_android_us/db_display/details/today call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: /7646/app_android_us/db_display/details/today call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Today_details_page_iu_FTL(smokeTestCases.java:191)
+</failure>
+    <system-out><![CDATA[================= verifying iu value for Today_details_page_iu started =========================
+XML File Name is : Charles20201203140951.chlsx
+Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday  ad call
+/7646/app_android_us/db_display/details/today call was not trigred
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verify_Air_Quality_contentpage_adCall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.199">
+    <failure message="/7646/app_android_us/db_display/card/aq call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: /7646/app_android_us/db_display/card/aq call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_Air_Quality_contentpage_adCall_FTL(smokeTestCases.java:203)
+</failure>
+    <system-out><![CDATA[================= Verifying iu value for Air Quality content page testcase  started =========================
+XML File Name is : Charles20201203140951.chlsx
+Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Faq ad call
+/7646/app_android_us/db_display/content/aq call  call was not trigred
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_today_deatailcard" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.088">
+    <failure message="slotId 8d4e513d-9ae1-4b32-9468-9be0f434262f  is not trigred for db_display/details/today" type="java.lang.AssertionError">java.lang.AssertionError: slotId 8d4e513d-9ae1-4b32-9468-9be0f434262f  is not trigred for db_display/details/today
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_today_deatailcard(smokeTestCases.java:1092)
+</failure>
+    <system-out><![CDATA[================= Verify amazon aax for today detail adcard Started =========================
+XML File Name is : Charles20201203140951.chlsx
+Verifying amazon "slotId": "8d4e513d-9ae1-4b32-9468-9be0f434262f"  for db_display/details/today
+slotId 8d4e513d-9ae1-4b32-9468-9be0f434262f  is not trigred for db_display/details/today
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Airquality_deatailcard" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.092">
+    <failure message="slotId 9aec4232-00c6-476b-8bbf-e66ecbd57edb is not trigred for aax call db_display/content/aq" type="java.lang.AssertionError">java.lang.AssertionError: slotId 9aec4232-00c6-476b-8bbf-e66ecbd57edb is not trigred for aax call db_display/content/aq
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Airquality_deatailcard(smokeTestCases.java:1104)
+</failure>
+    <system-out><![CDATA[================= Verify amazon aax for Air Quality details page Started =========================
+XML File Name is : Charles20201203140951.chlsx
+Verifying amazon "slotId": "9aec4232-00c6-476b-8bbf-e66ecbd57edb"  for  db_display/content/aq
+slotId 9aec4232-00c6-476b-8bbf-e66ecbd57edb is not trigred for aax call db_display/content/aq
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.165">
+    <failure message="/7646/app_android_us/db_display/content/allergy call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: /7646/app_android_us/db_display/content/allergy call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_FTL(smokeTestCases.java:235)
+</failure>
+    <system-out><![CDATA[================= Verify_health_and_activities_Allergy_contenPage_adcall_iu Started =========================
+XML File Name is : Charles20201203140951.chlsx
+Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy ad call
+/7646/app_android_us/db_display/content/allergy call was not trigred
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verify_outdoor_detailpage_adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.111">
+    <failure message="/7646/app_android_us/db_display/details/season call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: /7646/app_android_us/db_display/details/season call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_outdoor_detailpage_adcall_FTL(smokeTestCases.java:258)
+</failure>
+    <system-out><![CDATA[================= Verifying outdoor detailpage_adcall iu Started =========================
+XML File Name is : Charles20201203140951.chlsx
+Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fseason ad call
+/7646/app_android_us/db_display/details/season call was not trigred
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verify_hourly_detailpage_adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="21.676">
+    <failure message="/7646/app_android_us/db_display/details/hourly call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: /7646/app_android_us/db_display/details/hourly call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly_detailpage_adcall_FTL(smokeTestCases.java:284)
+</failure>
+    <system-out><![CDATA[================= Verifying hourly_detailpage_adcall_iu test case  Started =========================
+Url :http://control.charles/session/clear Responded with status code : 200
+Charles Download path is: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/
+To be saved file: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141015.chlsx
+Create new file that is empty and writable
+Downloading Charles HAR file to: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141015.chlsx
+File download complete
+Har file size (mb): 0.001704
+XML File Name is : Charles20201203141015.chlsx
+Verifyingiu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly ad call
+/7646/app_android_us/db_display/details/hourly call was not trigred
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Hourly_details_adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.019">
+    <failure message="slotID ::  9be28769-4207-4d51-8063-dc8e645383b2 is not trigred for aax call db_display/details/hourly" type="java.lang.AssertionError">java.lang.AssertionError: slotID ::  9be28769-4207-4d51-8063-dc8e645383b2 is not trigred for aax call db_display/details/hourly
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly_details_adcall(smokeTestCases.java:715)
+</failure>
+    <system-out><![CDATA[================= Verify amazon aax Hourly details  adcall test case  Started =========================
+XML File Name is : Charles20201203141015.chlsx
+Verifying amazon "slotId": "9be28769-4207-4d51-8063-dc8e645383b2"  for db_display/details/hourly
+slotID :: 9be28769-4207-4d51-8063-dc8e645383b2 is not trigred for aax call db_display/details/hourly
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verify_hourly1_detailpage_bigad_adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.006">
+    <failure message="/7646/app_android_us/db_display/details/hourly1 call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: /7646/app_android_us/db_display/details/hourly1 call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly1_detailpage_bigad_adcall_FTL(smokeTestCases.java:294)
+</failure>
+    <system-out><![CDATA[================= Verifying hourly1 big ad detailpage_adcall_iu  test case Started =========================
+XML File Name is : Charles20201203141015.chlsx
+Verifyingiu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly1 ad call
+/7646/app_android_us/db_display/details/hourly1 call was not trigred
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Hourly1_bigaddetails_adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.005">
+    <failure message="slotID :: 08f0ccea-cab5-449c-963d-dc57ed9ee87dis not trigred for aax call db_display/details/hourly1" type="java.lang.AssertionError">java.lang.AssertionError: slotID :: 08f0ccea-cab5-449c-963d-dc57ed9ee87dis not trigred for aax call db_display/details/hourly1
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly1_bigaddetails_adcall(smokeTestCases.java:726)
+</failure>
+    <system-out><![CDATA[================= Verify amazon aax Hourly1 details big  adcall  test case Started =========================
+XML File Name is : Charles20201203141015.chlsx
+Verifying amazon "slotId": "08f0ccea-cab5-449c-963d-dc57ed9ee87d"  for db_display/details/hourly1
+slotID :: 08f0ccea-cab5-449c-963d-dc57ed9ee87d is not trigred for aax call db_display/details/hourly1
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verify_hourly2_detailpage_bigad_adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.006">
+    <failure message="/7646/app_android_us/db_display/details/hourly2 call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: /7646/app_android_us/db_display/details/hourly2 call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly2_detailpage_bigad_adcall_FTL(smokeTestCases.java:304)
+</failure>
+    <system-out><![CDATA[================= Verifying hourly2 bigad detailpage_adcall_iu test case Started =========================
+XML File Name is : Charles20201203141015.chlsx
+Verifyingiu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly2 ad call
+/7646/app_android_us/db_display/details/hourly2  call was not trigred
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Hourly2_bigaddetails_adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.005">
+    <failure message="slotID :: 4fbed16a-cc6f-4cb1-94f7-81465acbd47edis not trigred for aax call db_display/details/hourly2" type="java.lang.AssertionError">java.lang.AssertionError: slotID :: 4fbed16a-cc6f-4cb1-94f7-81465acbd47edis not trigred for aax call db_display/details/hourly2
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly2_bigaddetails_adcall(smokeTestCases.java:737)
+</failure>
+    <system-out><![CDATA[================= Verifying  amazon aax Hourly2 details big  adcall  test case Started =========================
+XML File Name is : Charles20201203141015.chlsx
+Verifying amazon "slotId": "4fbed16a-cc6f-4cb1-94f7-81465acbd47e"  for db_display/details/hourly2
+slotID :: 4fbed16a-cc6f-4cb1-94f7-81465acbd47e is not trigred for aax call db_display/details/hourly2
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verify_hourly3__bigad_detailpage_adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.007">
+    <failure message="/7646/app_android_us/db_display/details/hourly3 call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: /7646/app_android_us/db_display/details/hourly3 call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly3__bigad_detailpage_adcall_FTL(smokeTestCases.java:315)
+</failure>
+    <system-out><![CDATA[================= Verifying hourly3 bigad detailpage_adcall_iu test case  Started =========================
+XML File Name is : Charles20201203141015.chlsx
+Verifyingiu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly3 ad call
+/7646/app_android_us/db_display/details/hourly3  call was not trigred
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Hourly3_bigaddetails_adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.005">
+    <failure message="slotID :: 2634dc9-b59f-4b2c-b281-bb3be291b7b6 is not trigred for aax call db_display/details/hourly3" type="java.lang.AssertionError">java.lang.AssertionError: slotID :: 2634dc9-b59f-4b2c-b281-bb3be291b7b6 is not trigred for aax call db_display/details/hourly3
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly3_bigaddetails_adcall(smokeTestCases.java:749)
+</failure>
+    <system-out><![CDATA[================= Verify amazon aax Hourly3 details big  ad call test case  Started =========================
+XML File Name is : Charles20201203141015.chlsx
+Verifying amazon "slotId": "2634dc9-b59f-4b2c-b281-bb3be291b7b6"  for db_display/details/hourly3
+slotID :: 2634dc9-b59f-4b2c-b281-bb3be291b7b6 is not trigred for aax call db_display/details/hourly3
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verifying_newdailydetails_day1adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="23.609">
+    <failure message="daily details ad call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day1adcall_FTL(smokeTestCases.java:333)
+</failure>
+    <system-out><![CDATA[================= Verifying new daily details day1 ad call tescase Started =========================
+Url :http://control.charles/session/clear Responded with status code : 200
+clicking on daily
+checking for any popup presented on screen
+no popup is presented on the screen
+Charles Download path is: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/
+To be saved file: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141039.chlsx
+Create new file that is empty and writable
+Downloading Charles HAR file to: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141039.chlsx
+File download complete
+Har file size (mb): 0.001551
+XML File Name is : Charles20201203141039.chlsx
+Checking iu from charles data
+iu value should not be null
+iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_thu1 was not trigered
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Daily_details_Day1_adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.128">
+    <failure message="slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_thu1" type="java.lang.AssertionError">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_thu1
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Daily_details_Day1_adcall(smokeTestCases.java:767)
+</failure>
+    <system-out><![CDATA[================= Verifying amazon slot id for  daily details day1 adcall test case Started =========================
+XML File Name is : Charles20201203141039.chlsx
+Verifying amazon "slot Id": "6c5a145d-9198-48f4-adfd-08f05557eace"  for db_display/details/10day_thu1
+slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_thu1
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verifying_newdailydetails_day2adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="9.496">
+    <failure message="daily details ad call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day2adcall_FTL(smokeTestCases.java:347)
+</failure>
+    <system-out><![CDATA[================= Verifying new daily details day2 ad call test case Started=========================
+Url :http://control.charles/session/clear Responded with status code : 200
+Clicking  on day2
+Charles Download path is: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/
+To be saved file: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141049.chlsx
+Create new file that is empty and writable
+Downloading Charles HAR file to: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141049.chlsx
+File download complete
+Har file size (mb): 0.001131
+XML File Name is : Charles20201203141049.chlsx
+Checking iu from charles data
+iu value should not be null
+iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_fri1 was not trigered
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Dailydetails_Day2adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.182">
+    <failure message="slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_fri1" type="java.lang.AssertionError">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_fri1
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day2adcall(smokeTestCases.java:778)
+</failure>
+    <system-out><![CDATA[================= Verifying amazon slot id for  daily details day2  adcall test case Started =========================
+XML File Name is : Charles20201203141049.chlsx
+Verifying amazon "slot Id": "6c5a145d-9198-48f4-adfd-08f05557eace"  for db_display/details/10day_fri1
+slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_fri1
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verifying_newdailydetails_day3adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="9.651">
+    <failure message="daily details ad call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day3adcall_FTL(smokeTestCases.java:363)
+</failure>
+    <system-out><![CDATA[================= Verifying new daily details day3 ad call test case Started =========================
+Url :http://control.charles/session/clear Responded with status code : 200
+Clicking  on day3
+Charles Download path is: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/
+To be saved file: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141058.chlsx
+Create new file that is empty and writable
+Downloading Charles HAR file to: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141058.chlsx
+File download complete
+Har file size (mb): 0.001481
+XML File Name is : Charles20201203141058.chlsx
+Checking iu from charles data
+iu value should not be null
+iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_sat1 was not trigered
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Dailydetails_Day3adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.222">
+    <failure message="slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_sat1" type="java.lang.AssertionError">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_sat1
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day3adcall(smokeTestCases.java:790)
+</failure>
+    <system-out><![CDATA[================= Verifying amazon slot id for  daily details day3  adcall test case Started =========================
+XML File Name is : Charles20201203141058.chlsx
+Verifying amazon "slot Id": "6c5a145d-9198-48f4-adfd-08f05557eace"  for db_display/details/10day_sat1
+slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_sat1
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verifying_newdailydetails_day4adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="9.511">
+    <failure message="daily details ad call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day4adcall_FTL(smokeTestCases.java:378)
+</failure>
+    <system-out><![CDATA[================= Verifying new daily details day4 ad call tescase Started =========================
+Url :http://control.charles/session/clear Responded with status code : 200
+Clicking  on day4
+Charles Download path is: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/
+To be saved file: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141108.chlsx
+Create new file that is empty and writable
+Downloading Charles HAR file to: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141108.chlsx
+File download complete
+Har file size (mb): 0.001135
+XML File Name is : Charles20201203141108.chlsx
+Checking iu from charles data
+iu value should not be null
+iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_sun1 was not trigered
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Dailydetails_Day4adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.268">
+    <failure message="slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_sun1" type="java.lang.AssertionError">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_sun1
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day4adcall(smokeTestCases.java:802)
+</failure>
+    <system-out><![CDATA[================= Verifying amazon slot id for  daily details day4  adcall test case Started =========================
+XML File Name is : Charles20201203141108.chlsx
+Verifying amazon "slot Id": "6c5a145d-9198-48f4-adfd-08f05557eace"  for db_display/details/10day_sun1
+slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_sun1
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verifying_newdailydetails_day5adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="9.563">
+    <failure message="daily details ad call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day5adcall_FTL(smokeTestCases.java:392)
+</failure>
+    <system-out><![CDATA[================= Verifying new daily details day5 ad call tescase Started =========================
+Url :http://control.charles/session/clear Responded with status code : 200
+Clicking  on day5
+Charles Download path is: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/
+To be saved file: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141118.chlsx
+Create new file that is empty and writable
+Downloading Charles HAR file to: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141118.chlsx
+File download complete
+Har file size (mb): 0.001126
+XML File Name is : Charles20201203141118.chlsx
+Checking iu from charles data
+iu value should not be null
+iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_mon1 was not trigered
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Dailydetails_Day5adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.2">
+    <failure message="slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_mon1" type="java.lang.AssertionError">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_mon1
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day5adcall(smokeTestCases.java:812)
+</failure>
+    <system-out><![CDATA[================= Verifying amazon slot id for  daily details day5  adcall test case Started =========================
+XML File Name is : Charles20201203141118.chlsx
+Verifying amazon "slot Id": "6c5a145d-9198-48f4-adfd-08f05557eace"  for db_display/details/10day_mon1
+slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_mon1
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verifying_newdailydetails_day6adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="9.486">
+    <failure message="daily details ad call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day6adcall_FTL(smokeTestCases.java:406)
+</failure>
+    <system-out><![CDATA[================= Verifying new daily details day6 ad call tescase Started =========================
+Url :http://control.charles/session/clear Responded with status code : 200
+Clicking  on day6
+Charles Download path is: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/
+To be saved file: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141128.chlsx
+Create new file that is empty and writable
+Downloading Charles HAR file to: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141128.chlsx
+File download complete
+Har file size (mb): 0.001126
+XML File Name is : Charles20201203141128.chlsx
+Checking iu from charles data
+iu value should not be null
+iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_tue1 was not trigered
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Dailydetails_Day6adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.156">
+    <failure message="slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_tue1" type="java.lang.AssertionError">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_tue1
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day6adcall(smokeTestCases.java:825)
+</failure>
+    <system-out><![CDATA[================= Verifying amazon slot id for  daily details day6  adcall test case Started =========================
+XML File Name is : Charles20201203141128.chlsx
+Verifying amazon "slot Id": "6c5a145d-9198-48f4-adfd-08f05557eace"  for db_display/details/10day_tue1
+slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_tue1
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verifying_newdailydetails_day7adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="9.564">
+    <failure message="daily details ad call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day7adcall_FTL(smokeTestCases.java:420)
+</failure>
+    <system-out><![CDATA[================= Verifying new daily details day7 ad call tescase Started =========================
+Url :http://control.charles/session/clear Responded with status code : 200
+Clicking  on day7
+Charles Download path is: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/
+To be saved file: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141137.chlsx
+Create new file that is empty and writable
+Downloading Charles HAR file to: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141137.chlsx
+File download complete
+Har file size (mb): 0.001131
+XML File Name is : Charles20201203141137.chlsx
+Checking iu from charles data
+iu value should not be null
+iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_wed1 was not trigered
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Dailydetails_Day7adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.204">
+    <failure message="slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_wed1" type="java.lang.AssertionError">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_wed1
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day7adcall(smokeTestCases.java:837)
+</failure>
+    <system-out><![CDATA[================= Verifying amazon slot id for  daily details day7  adcall test case Started =========================
+XML File Name is : Charles20201203141137.chlsx
+Verifying amazon "slot Id": "6c5a145d-9198-48f4-adfd-08f05557eace"  for db_display/details/10day_wed1
+slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_wed1
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verifying_newdailydetails_day8adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="12.53">
+    <failure message="daily details ad call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day8adcall_FTL(smokeTestCases.java:434)
+</failure>
+    <system-out><![CDATA[================= Verifying new daily details day8 ad call tescase Started =========================
+Url :http://control.charles/session/clear Responded with status code : 200
+Clicking  on day8
+Charles Download path is: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/
+To be saved file: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141150.chlsx
+Create new file that is empty and writable
+Downloading Charles HAR file to: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141150.chlsx
+File download complete
+Har file size (mb): 0.001472
+XML File Name is : Charles20201203141150.chlsx
+Checking iu from charles data
+iu value should not be null
+iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_thu2 was not trigered
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Dailydetails_Day8adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.162">
+    <failure message="slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_thu2" type="java.lang.AssertionError">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_thu2
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day8adcall(smokeTestCases.java:849)
+</failure>
+    <system-out><![CDATA[================= Verifying amazon slot id for  daily details day8  adcall test case Started =========================
+XML File Name is : Charles20201203141150.chlsx
+Verifying amazon "slot Id": "6c5a145d-9198-48f4-adfd-08f05557eace"  for db_display/details/10day_thu2
+slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_thu2
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verifying_newdailydetails_day9adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="12.612">
+    <failure message="daily details ad call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day9adcall_FTL(smokeTestCases.java:449)
+</failure>
+    <system-out><![CDATA[================= Verifying new daily details day9 ad call tescase Started =========================
+Url :http://control.charles/session/clear Responded with status code : 200
+Clicking  on day9
+Charles Download path is: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/
+To be saved file: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141203.chlsx
+Create new file that is empty and writable
+Downloading Charles HAR file to: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141203.chlsx
+File download complete
+Har file size (mb): 0.001136
+XML File Name is : Charles20201203141203.chlsx
+Checking iu from charles data
+iu value should not be null
+iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_fri2 was not trigered
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Dailydetails_Day9adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.175">
+    <failure message="slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_fri2" type="java.lang.AssertionError">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_fri2
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day9adcall(smokeTestCases.java:863)
+</failure>
+    <system-out><![CDATA[================= Verifying amazon slot id for  daily details day9  adcall test case Started =========================
+XML File Name is : Charles20201203141203.chlsx
+Verifying amazon "slot Id": "6c5a145d-9198-48f4-adfd-08f05557eace"  for db_display/details/10day_fri2
+slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_fri2
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verifying_newdailydetails_day10adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="12.607">
+    <failure message="daily details ad call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day10adcall_FTL(smokeTestCases.java:463)
+</failure>
+    <system-out><![CDATA[================= Verifying new daily details day10 ad call tescase Started =========================
+Url :http://control.charles/session/clear Responded with status code : 200
+Clicking  on day10
+Charles Download path is: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/
+To be saved file: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141216.chlsx
+Create new file that is empty and writable
+Downloading Charles HAR file to: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141216.chlsx
+File download complete
+Har file size (mb): 0.001131
+XML File Name is : Charles20201203141216.chlsx
+Checking iu from charles data
+iu value should not be null
+iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_sat2 was not trigered
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Dailydetails_Day10adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.078">
+    <failure message="slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_sat2" type="java.lang.AssertionError">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_sat2
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day10adcall(smokeTestCases.java:876)
+</failure>
+    <system-out><![CDATA[================= Verifying amazon slot id for  daily details day10  adcall test case Started =========================
+XML File Name is : Charles20201203141216.chlsx
+Verifying amazon "slot Id": "6c5a145d-9198-48f4-adfd-08f05557eace"  for db_display/details/10day_sat2
+slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_sat2
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verifying_newdailydetails_day11adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="12.824">
+    <failure message="daily details ad call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day11adcall_FTL(smokeTestCases.java:478)
+</failure>
+    <system-out><![CDATA[================= Verifying new daily details day11 ad call tescase Started =========================
+Url :http://control.charles/session/clear Responded with status code : 200
+Clicking  on day11
+Charles Download path is: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/
+To be saved file: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141228.chlsx
+Create new file that is empty and writable
+Downloading Charles HAR file to: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141228.chlsx
+File download complete
+Har file size (mb): 0.001126
+XML File Name is : Charles20201203141228.chlsx
+Checking iu from charles data
+iu value should not be null
+iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_sun2 was not trigered
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Dailydetails_Day11adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.643">
+    <failure message="slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_sun2" type="java.lang.AssertionError">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_sun2
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day11adcall(smokeTestCases.java:889)
+</failure>
+    <system-out><![CDATA[================= Verifying amazon slot id for  daily details day11  adcall test case Started =========================
+XML File Name is : Charles20201203141228.chlsx
+Verifying amazon "slot Id": "6c5a145d-9198-48f4-adfd-08f05557eace"  for db_display/details/10day_sun2
+slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_sun2
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verifying_newdailydetails_day12adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="12.556">
+    <failure message="daily details ad call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day12adcall_FTL(smokeTestCases.java:492)
+</failure>
+    <system-out><![CDATA[================= Verifying new daily details day12 ad call tescase Started =========================
+Url :http://control.charles/session/clear Responded with status code : 200
+Clicking  on day12
+Charles Download path is: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/
+To be saved file: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141242.chlsx
+Create new file that is empty and writable
+Downloading Charles HAR file to: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141242.chlsx
+File download complete
+Har file size (mb): 0.001136
+XML File Name is : Charles20201203141242.chlsx
+Checking iu from charles data
+iu value should not be null
+iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_mon2 was not trigered
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Dailydetails_Day12adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.139">
+    <failure message="slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_mon2" type="java.lang.AssertionError">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_mon2
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day12adcall(smokeTestCases.java:900)
+</failure>
+    <system-out><![CDATA[================= Verifying amazon slot id for  daily details day12  adcall test case Started =========================
+XML File Name is : Charles20201203141242.chlsx
+Verifying amazon "slot Id": "6c5a145d-9198-48f4-adfd-08f05557eace"  for db_display/details/10day_mon2
+slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_mon2
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verifying_newdailydetails_day13adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="12.592">
+    <failure message="daily details ad call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day13adcall_FTL(smokeTestCases.java:506)
+</failure>
+    <system-out><![CDATA[================= Verifying new daily details day13 ad call tescase Started =========================
+Url :http://control.charles/session/clear Responded with status code : 200
+Clicking  on day13
+Charles Download path is: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/
+To be saved file: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141254.chlsx
+Create new file that is empty and writable
+Downloading Charles HAR file to: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141254.chlsx
+File download complete
+Har file size (mb): 0.001476
+XML File Name is : Charles20201203141254.chlsx
+Checking iu from charles data
+iu value should not be null
+iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_tue2 was not trigered
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Dailydetails_Day13adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.175">
+    <failure message="slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_tue2" type="java.lang.AssertionError">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_tue2
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day13adcall(smokeTestCases.java:913)
+</failure>
+    <system-out><![CDATA[================= Verifying amazon slot id for  daily details day13  adcall test case Started =========================
+XML File Name is : Charles20201203141254.chlsx
+Verifying amazon "slot Id": "6c5a145d-9198-48f4-adfd-08f05557eace"  for db_display/details/10day_tue2
+slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_tue2
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verifying_newdailydetails_day14adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="12.502">
+    <failure message="daily details ad call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day14adcall_FTL(smokeTestCases.java:521)
+</failure>
+    <system-out><![CDATA[================= Verifying new daily details day14 ad call tescase Started =========================
+Url :http://control.charles/session/clear Responded with status code : 200
+Clicking  on day14
+Charles Download path is: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/
+To be saved file: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141307.chlsx
+Create new file that is empty and writable
+Downloading Charles HAR file to: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141307.chlsx
+File download complete
+Har file size (mb): 0.001126
+XML File Name is : Charles20201203141307.chlsx
+Checking iu from charles data
+iu value should not be null
+iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_wed2 was not trigered
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Dailydetails_Day14adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.093">
+    <failure message="slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_wed2" type="java.lang.AssertionError">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_wed2
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day14adcall(smokeTestCases.java:926)
+</failure>
+    <system-out><![CDATA[================= Verifying amazon slot id for  daily details day14  adcall test case Started =========================
+XML File Name is : Charles20201203141307.chlsx
+Verifying amazon "slot Id": "6c5a145d-9198-48f4-adfd-08f05557eace"  for db_display/details/10day_wed2
+slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_wed2
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verifying_newdailydetails_day15adcall_FTL" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="12.557">
+    <failure message="daily details ad call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day15adcall_FTL(smokeTestCases.java:534)
+</failure>
+    <system-out><![CDATA[================= Verifying new daily details day15 ad call tescase Started =========================
+Url :http://control.charles/session/clear Responded with status code : 200
+Clicking  on day15
+Charles Download path is: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/
+To be saved file: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141320.chlsx
+Create new file that is empty and writable
+Downloading Charles HAR file to: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141320.chlsx
+File download complete
+Har file size (mb): 0.001126
+XML File Name is : Charles20201203141320.chlsx
+Checking iu from charles data
+iu value should not be null
+iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_thu3 was not trigered
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Dailydetails_Day15adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.073">
+    <failure message="slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_thu3" type="java.lang.AssertionError">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_thu3
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day15adcall(smokeTestCases.java:940)
+</failure>
+    <system-out><![CDATA[================= Verifying amazon slot id for  daily details day15  adcall test case Started =========================
+XML File Name is : Charles20201203141320.chlsx
+Verifying amazon "slot Id": "6c5a145d-9198-48f4-adfd-08f05557eace"  for db_display/details/10day_thu3
+slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_thu3
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_CaseVerify_WeatherFXAPI_url_KillLaunch" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="66.451">
+    <failure message="https://triggers.wfxtriggers.com/ url was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: https://triggers.wfxtriggers.com/ url was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_WeatherFXAPI_url_KillLaunch(smokeTestCases.java:555)
+</failure>
+    <system-out><![CDATA[================= Verifying WeatherFX API url started =========================
+Url :http://control.charles/session/clear Responded with status code : 200
+Charles Download path is: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/
+To be saved file: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141427.chlsx
+Create new file that is empty and writable
+Downloading Charles HAR file to: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141427.chlsx
+File download complete
+Har file size (mb): 0.001476
+XML File Name is : Charles20201203141427.chlsx
+Verifying for https://triggers.wfxtriggers.com/ call
+https://triggers.wfxtriggers.com/ url was not trigred
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_CaseVerify_Factualapi_url_KillLaunch" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.064">
+    <failure message="https://location.wfxtriggers.com url was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: https://location.wfxtriggers.com url was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Factualapi_url_KillLaunch(smokeTestCases.java:562)
+</failure>
+    <system-out><![CDATA[================= Verifying WeatherFX API url started =========================
+XML File Name is : Charles20201203141427.chlsx
+Verifying for https://location.wfxtriggers.com url
+https://location.wfxtriggers.com url was not trigred
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_CaseVerify_turbo_url_KillLaunch" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.006">
+    <failure message="https://api.weather.com/ url was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: https://api.weather.com/ url was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_turbo_url_KillLaunch(smokeTestCases.java:571)
+</failure>
+    <system-out><![CDATA[================= Verifying Turbo call  API url started =========================
+XML File Name is : Charles20201203141427.chlsx
+Verifying for  https://api.weather.com url
+https://api.weather.com/ url was not trigred
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test__Verifying_Bcp_apicall_URL_killLaunch" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.007">
+    <failure message="https://bcp.crwdcntrl.net/ url was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: https://bcp.crwdcntrl.net/ url was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_Bcp_apicall_URL_killLaunch(smokeTestCases.java:589)
+</failure>
+    <system-out><![CDATA[=================Verifying  bcp.crwdcntrl call testcase started =========================
+XML File Name is : Charles20201203141427.chlsx
+https://bcp.crwdcntrl.net/ url was not trigred
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Hourly_preroll_adcall_killLaunch" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.004">
+    <failure message="slotID ::  9be28769-4207-4d51-8063-dc8e645383b2 is not trigred for aax call db_display/details/hourly" type="java.lang.AssertionError">java.lang.AssertionError: slotID ::  9be28769-4207-4d51-8063-dc8e645383b2 is not trigred for aax call db_display/details/hourly
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly_preroll_adcall_killLaunch(smokeTestCases.java:606)
+</failure>
+    <system-out><![CDATA[================= Verify amazon aax Hourly details preroll adcall Started =========================
+XML File Name is : Charles20201203141427.chlsx
+Verifying amazon "slotId": "9be28769-4207-4d51-8063-dc8e645383b2"  for db_display/details/hourly
+slotID :: 9be28769-4207-4d51-8063-dc8e645383b2 is not trigred for aax call db_display/details/hourly
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Hourly1_bigaddetails_preroll_adcall_killLaunch" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.005">
+    <failure message="slotID :: 08f0ccea-cab5-449c-963d-dc57ed9ee87dis not trigred for aax call db_display/details/hourly1" type="java.lang.AssertionError">java.lang.AssertionError: slotID :: 08f0ccea-cab5-449c-963d-dc57ed9ee87dis not trigred for aax call db_display/details/hourly1
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly1_bigaddetails_preroll_adcall_killLaunch(smokeTestCases.java:617)
+</failure>
+    <system-out><![CDATA[================= Verify amazon aax Hourly1 details big  adcall  test case Started =========================
+XML File Name is : Charles20201203141427.chlsx
+Verifying amazon "slotId": "08f0ccea-cab5-449c-963d-dc57ed9ee87d"  for db_display/details/hourly1
+slotID :: 08f0ccea-cab5-449c-963d-dc57ed9ee87d is not trigred for aax call db_display/details/hourly1
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Hourly2_bigaddetails_preroll_adcall_killLaunch" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.005">
+    <failure message="slotID :: 4fbed16a-cc6f-4cb1-94f7-81465acbd47edis not trigred for aax call db_display/details/hourly2" type="java.lang.AssertionError">java.lang.AssertionError: slotID :: 4fbed16a-cc6f-4cb1-94f7-81465acbd47edis not trigred for aax call db_display/details/hourly2
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly2_bigaddetails_preroll_adcall_killLaunch(smokeTestCases.java:629)
+</failure>
+    <system-out><![CDATA[================= Verifying  amazon aax Hourly2 details big  adcall  test case Started =========================
+XML File Name is : Charles20201203141427.chlsx
+Verifying amazon "slotId": "4fbed16a-cc6f-4cb1-94f7-81465acbd47e"  for db_display/details/hourly2
+slotID :: 4fbed16a-cc6f-4cb1-94f7-81465acbd47e is not trigred for aax call db_display/details/hourly2
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Hourly3_bigaddetails_preroll_adcall_killLaunch" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.004">
+    <failure message="slotID :: 2634dc9-b59f-4b2c-b281-bb3be291b7b6 is not trigred for aax call db_display/details/hourly3" type="java.lang.AssertionError">java.lang.AssertionError: slotID :: 2634dc9-b59f-4b2c-b281-bb3be291b7b6 is not trigred for aax call db_display/details/hourly3
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly3_bigaddetails_preroll_adcall_killLaunch(smokeTestCases.java:641)
+</failure>
+    <system-out><![CDATA[================= Verify amazon aax Hourly3 details big  ad call test case  Started =========================
+XML File Name is : Charles20201203141427.chlsx
+Verifying amazon "slotId": "2634dc9-b59f-4b2c-b281-bb3be291b7b6"  for db_display/details/hourly3
+slotID :: 2634dc9-b59f-4b2c-b281-bb3be291b7b6 is not trigred for aax call db_display/details/hourly3
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_mapsdetails_preload_adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.004">
+    <failure message="slotId 5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax call db_display/details/maps" type="java.lang.AssertionError">java.lang.AssertionError: slotId 5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax call db_display/details/maps
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_mapsdetails_preload_adcall(smokeTestCases.java:654)
+</failure>
+    <system-out><![CDATA[================= Verify amazon aax Maps card preroll adcall Started =========================
+XML File Name is : Charles20201203141427.chlsx
+Verifying amazon "slotId": "5db1161b-b504-4640-9496-dfe6284f84ab"  for db_display/details/map
+slotId 5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax call db_display/details/maps
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_verify_amazon_Slotid_homescreenhourly_preroll_adcall_killLaunch" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.005">
+    <failure message="slotID 869c843c-7cf8-47ae-b6ed-088057e4bc8a is not trigred for aax call db_display/home_screen/hourly" type="java.lang.AssertionError">java.lang.AssertionError: slotID 869c843c-7cf8-47ae-b6ed-088057e4bc8a is not trigred for aax call db_display/home_screen/hourly
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verify_amazon_Slotid_homescreenhourly_preroll_adcall_killLaunch(smokeTestCases.java:665)
+</failure>
+    <system-out><![CDATA[================= Verifying amazon slotid home screenhourly adcall teetcase Started =========================
+XML File Name is : Charles20201203141427.chlsx
+Verifying amazon "slot": "869c843c-7cf8-47ae-b6ed-088057e4bc8a"  for db_display/home_screen/hourly
+slotID 869c843c-7cf8-47ae-b6ed-088057e4bc8a is not trigred for aax call db_display/home_screen/hourly
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aaxSlot_feed1_preroladcall_killLaunch" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.006">
+    <failure message="slotID f4b66249-b6eb-4155-9d90-1e2b04487c99 is not trigred for aax call db_display/feed/feed_1" type="java.lang.AssertionError">java.lang.AssertionError: slotID f4b66249-b6eb-4155-9d90-1e2b04487c99 is not trigred for aax call db_display/feed/feed_1
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aaxSlot_feed1_preroladcall_killLaunch(smokeTestCases.java:676)
+</failure>
+    <system-out><![CDATA[================= Verify amazon aax slot  Id for feed1 prerol adcall  testcase Started =========================
+XML File Name is : Charles20201203141427.chlsx
+Verifying amazon "slot": "f4b66249-b6eb-4155-9d90-1e2b04487c99"  for db_display/feed/feed_1
+slotID f4b66249-b6eb-4155-9d90-1e2b04487c99is not trigred for aax call db_display/feed/feed_1
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aaxSlot_feed2_preroladcall_KillLaunch" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.005">
+    <failure message="slotID 752a96eb-3198-4991-b572-17ec04883b6c is not trigred for aax call db_display/feed/feed_2" type="java.lang.AssertionError">java.lang.AssertionError: slotID 752a96eb-3198-4991-b572-17ec04883b6c is not trigred for aax call db_display/feed/feed_2
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aaxSlot_feed2_preroladcall_KillLaunch(smokeTestCases.java:689)
+</failure>
+    <system-out><![CDATA[================= Verify amazon aax slot  Id for feed2 prerol adcall testcase Started =========================
+XML File Name is : Charles20201203141427.chlsx
+Verifying amazon "slot": "752a96eb-3198-4991-b572-17ec04883b6c"  for display/feed/feed_2
+slotID 752a96eb-3198-4991-b572-17ec04883b6c is not trigred for aax call db_display/feed/feed_2
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_amazon_aax_Daily_details_preroll_adcall" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.006">
+    <failure message="slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for daily details" type="java.lang.AssertionError">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for daily details
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Daily_details_preroll_adcall(smokeTestCases.java:702)
+</failure>
+    <system-out><![CDATA[================= Verify amazon aax Daily details  preroll adcall Started =========================
+XML File Name is : Charles20201203141427.chlsx
+Verifying amazon "slot Id": "6c5a145d-9198-48f4-adfd-08f05557eace"  for daily details
+slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for for daily details
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verifying_homescreenhourly_pulltoreresh_scenario_killLaunch" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="50.257">
+    <failure message="/7646/app_android_us/db_display/home_screen/hourly call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: /7646/app_android_us/db_display/home_screen/hourly call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_homescreenhourly_pulltoreresh_scenario_killLaunch(smokeTestCases.java:963)
+</failure>
+    <system-out><![CDATA[================= Verifying  home screen hourly  ad  call pull to refrersh scenario started =========================
+Url :http://control.charles/session/clear Responded with status code : 200
+Temp : 86°
+hilo : 
+Pull the screen to REFRESH is done
+Temp : 86°
+hilo : 
+Pull the screen to REFRESH is done
+Charles Download path is: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/
+To be saved file: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141517.chlsx
+Create new file that is empty and writable
+Downloading Charles HAR file to: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles20201203141517.chlsx
+File download complete
+Har file size (mb): 0.001481
+XML File Name is : Charles20201203141517.chlsx
+Verifying for  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly ad call
+/7646/app_android_us/db_display/home_screen/hourly call was not trigred
+]]></system-out>
+  </testcase>
+  <testcase name="Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario" classname="twc.Automation.SmokeTestCases.smokeTestCases" time="0.011">
+    <failure message="/7646/app_android_us/db_display/home_screen/marquee call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: /7646/app_android_us/db_display/home_screen/marquee call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario(smokeTestCases.java:974)
+</failure>
+    <system-out><![CDATA[================= Verifying  home screen marquee call pull to refrersh scenario started =========================
+XML File Name is : Charles20201203141517.chlsx
+checking for iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee ad call
+/7646/app_android_us/db_display/home_screen/marquee call was not trigred
+]]></system-out>
+  </testcase>
+</testsuite>

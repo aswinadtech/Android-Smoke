@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="twc.Automation.SmokeTestCases.smokeTestCases">
+        <methods>
+          <include name="Smoke_Test_amazon_aax_Hourly1_bigaddetails_preroll_adcall_killLaunch"/>
+          <include name="Smoke_Test_amazon_aax_Daily_details_preroll_adcall"/>
+          <include name="Smoke_Test_verify_amazon_Slotid_homescreenhourly_preroll_adcall_killLaunch"/>
+          <include name="Smoke_Test_amazon_aax_Dailydetails_Day11adcall"/>
+          <include name="Smoke_Test_amazon_aax_Hourly3_bigaddetails_adcall"/>
+          <include name="Smoke_Test_amazon_aax_Dailydetails_Day5adcall"/>
+          <include name="Smoke_Test_amazon_aax_Airquality_deatailcard"/>
+          <include name="Smoke_Test_amazon_aaxSlot_feed1_preroladcall_killLaunch"/>
+          <include name="Smoke_Test_amazon_aax_mapsdetails_adcall"/>
+          <include name="Smoke_Test_amazon_aax_today_deatailcard"/>
+          <include name="Smoke_Test_amazon_aaxSlot_feed3_adcall"/>
+          <include name="Smoke_Test_amazon_aaxSlot_feed2_adcall"/>
+          <include name="Smoke_Test_amazon_aaxSlot_feed4_adcall"/>
+          <include name="Smoke_Test_amazon_aax_Dailydetails_Day14adcall"/>
+          <include name="Smoke_Test_amazon_aax_Hourly1_bigaddetails_adcall"/>
+          <include name="Smoke_Test_amazon_aax_Daily_details_Day1_adcall"/>
+          <include name="Smoke_Test_amazon_aax_Dailydetails_Day3adcall"/>
+          <include name="Smoke_Test_amazon_aax_Dailydetails_Day8adcall"/>
+          <include name="Smoke_Test_Verifying_newdailydetails_day7adcall_FTL"/>
+          <include name="Smoke_Test__Verifying_Bcp_apicall_URL_killLaunch"/>
+          <include name="Smoke_Test_Verifying_newdailydetails_day15adcall_FTL"/>
+          <include name="Smoke_Test_amazon_aax_Dailydetails_Day12adcall"/>
+          <include name="Smoke_Test_amazon_aax_Hourly2_bigaddetails_adcall"/>
+          <include name="beforeClass"/>
+          <include name="Smoke_Test_Verify_hourly3__bigad_detailpage_adcall_FTL"/>
+          <include name="Smoke_Test_amazon_aax_Dailydetails_Day6adcall"/>
+          <include name="Smoke_Test_amazon_aax_Dailydetails_Day4adcall"/>
+          <include name="Smoke_Test_amazon_aax_Hourly_details_adcall"/>
+          <include name="Smoke_Test_amazon_aaxSlot_feed1_adCall"/>
+          <include name="Smoke_Test_amazon_aax_Dailydetails_Day15adcall"/>
+          <include name="Smoke_Test_amazon_aax_Dailydetails_Day9adcall"/>
+          <include name="Smoke_Test_amazon_aax_Hourly_preroll_adcall_killLaunch"/>
+          <include name="Smoke_Test_amazon_aaxSlot_feed2_preroladcall_KillLaunch"/>
+          <include name="Smoke_Test_Verifying_newdailydetails_day3adcall_FTL"/>
+          <include name="Smoke_Test_amazon_aax_Hourly3_bigaddetails_preroll_adcall_killLaunch"/>
+          <include name="Smoke_Test_Verifying_homescreenhourly_pulltoreresh_scenario_killLaunch"/>
+          <include name="Smoke_Test_amazon_aax_Dailydetails_Day10adcall"/>
+          <include name="Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario"/>
+          <include name="Smoke_Test_amazon_aax_Dailydetails_Day2adcall"/>
+          <include name="Smoke_Test_amazon_aax_mapsdetails_preload_adcall"/>
+          <include name="Smoke_Test_amazon_aax_Dailydetails_Day13adcall"/>
+          <include name="Smoke_Test_amazon_aax_Hourly2_bigaddetails_preroll_adcall_killLaunch"/>
+          <include name="Smoke_Test_amazon_aax_Dailydetails_Day7adcall"/>
+        </methods>
+      </class> <!-- twc.Automation.SmokeTestCases.smokeTestCases -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

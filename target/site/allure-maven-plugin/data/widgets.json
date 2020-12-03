@@ -1,0 +1,104 @@
+{
+  "hash" : "e7105c43ada45c9f6e0006854ef1a1d95249231d",
+  "plugins" : {
+    "total" : {
+      "statistic" : {
+        "total" : 73,
+        "passed" : 6,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 67,
+        "broken" : 0
+      },
+      "time" : {
+        "start" : 1606983884080,
+        "stop" : 1606985117424,
+        "duration" : 1233344
+      }
+    },
+    "defects" : {
+      "totalCount" : 46,
+      "items" : [ {
+        "count" : 2,
+        "uid" : "1a3f8901bb73fd65",
+        "message" : "AssertionError: slotID f4b66249-b6eb-4155-9d90-1e2b04487c99 is not trigred for aax call db_display/feed/feed_1",
+        "status" : "FAILED"
+      }, {
+        "count" : 2,
+        "uid" : "baf3b1ff1cf3da51",
+        "message" : "AssertionError: slotID 752a96eb-3198-4991-b572-17ec04883b6c is not trigred for aax call db_display/feed/feed_2",
+        "status" : "FAILED"
+      }, {
+        "count" : 2,
+        "uid" : "74b7fb61c991f9ca",
+        "message" : "AssertionError: slotId 5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax call db_display/details/maps",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "55d2b4177754d83f",
+        "message" : "AssertionError: slotID 9384272f-b27f-4686-935f-02e6c5763abd is not trigred for aax call db_display/feed/feed_3",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "7c952838f89bb2d9",
+        "message" : "AssertionError: slotId 90251553-fb54-47a1-bbe2-dce4e1c27758 is not trigred for aax call db_display/feed/feed_4",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "d6aa58b0fdfb3080",
+        "message" : "AssertionError: iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_3 call was not trigred",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "6e054ce7b1f5e395",
+        "message" : "AssertionError: iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_4 call was not trigred",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "a379d6686d23303c",
+        "message" : "AssertionError: iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_5 call was not trigred",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "384d1d114846fea4",
+        "message" : "AssertionError: /7646/app_android_us/db_display/details/today call was not trigred",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "9c0d6cbd2ac197e5",
+        "message" : "AssertionError: /7646/app_android_us/db_display/card/aq call was not trigred",
+        "status" : "FAILED"
+      } ]
+    },
+    "xunit" : {
+      "totalCount" : 1,
+      "items" : [ {
+        "uid" : "a1e237babb51f590",
+        "title" : "Suite : Test",
+        "statistic" : {
+          "total" : 73,
+          "passed" : 6,
+          "pending" : 0,
+          "canceled" : 0,
+          "failed" : 67,
+          "broken" : 0
+        }
+      } ]
+    },
+    "behaviors" : {
+      "totalCount" : 1,
+      "items" : [ {
+        "title" : "Without feature",
+        "statistic" : {
+          "total" : 73,
+          "passed" : 6,
+          "pending" : 0,
+          "canceled" : 0,
+          "failed" : 67,
+          "broken" : 0
+        }
+      } ]
+    },
+    "environment" : [ ]
+  }
+}

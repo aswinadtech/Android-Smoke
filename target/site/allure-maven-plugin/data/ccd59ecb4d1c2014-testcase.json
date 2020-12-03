@@ -1,0 +1,89 @@
+{
+  "uid" : "ccd59ecb4d1c2014",
+  "name" : "Smoke_Test_Verifying_homescreenhourly__adCall_FTL",
+  "title" : "Verifying home screen hourly ad call on FTL",
+  "time" : {
+    "start" : 1606984791991,
+    "stop" : 1606984792158,
+    "duration" : 167
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 2
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "a1e237babb51f590",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Verofying for  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly ad call]",
+    "title" : "Verofying for  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly ad call",
+    "time" : {
+      "start" : 1606984792155,
+      "stop" : 1606984792155,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[7646/app_android_us/db_display/home_screen/hourly call was trigred]",
+    "title" : "7646/app_android_us/db_display/home_screen/hourly call was trigred",
+    "time" : {
+      "start" : 1606984792157,
+      "stop" : 1606984792157,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "thread",
+    "value" : "16211@AswinikumarsMBP.lan.main(1)"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "Smoke_Test_Verifying_homescreenhourly__adCall_FTL"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Automation.SmokeTestCases.smokeTestCases"
+  }, {
+    "name" : "host",
+    "value" : "AswinikumarsMBP.lan"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  } ],
+  "parameters" : [ ]
+}

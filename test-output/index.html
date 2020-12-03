@@ -1,0 +1,3036 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 42 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">73 methods, 42 failed,   31 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verify_hourly3__bigad_detailpage_adcall_FTL">Smoke_Test_Verify_hourly3__bigad_detailpage_adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_homescreenhourly_pulltoreresh_scenario_killLaunch">Smoke_Test_Verifying_homescreenhourly_pulltoreresh_scenario_killLaunch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario">Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_newdailydetails_day15adcall_FTL">Smoke_Test_Verifying_newdailydetails_day15adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_newdailydetails_day3adcall_FTL">Smoke_Test_Verifying_newdailydetails_day3adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_newdailydetails_day7adcall_FTL">Smoke_Test_Verifying_newdailydetails_day7adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test__Verifying_Bcp_apicall_URL_killLaunch">Smoke_Test__Verifying_Bcp_apicall_URL_killLaunch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aaxSlot_feed1_adCall">Smoke_Test_amazon_aaxSlot_feed1_adCall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aaxSlot_feed1_preroladcall_killLaunch">Smoke_Test_amazon_aaxSlot_feed1_preroladcall_killLaunch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aaxSlot_feed2_adcall">Smoke_Test_amazon_aaxSlot_feed2_adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aaxSlot_feed2_preroladcall_KillLaunch">Smoke_Test_amazon_aaxSlot_feed2_preroladcall_KillLaunch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aaxSlot_feed3_adcall">Smoke_Test_amazon_aaxSlot_feed3_adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aaxSlot_feed4_adcall">Smoke_Test_amazon_aaxSlot_feed4_adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Airquality_deatailcard">Smoke_Test_amazon_aax_Airquality_deatailcard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Daily_details_Day1_adcall">Smoke_Test_amazon_aax_Daily_details_Day1_adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Daily_details_preroll_adcall">Smoke_Test_amazon_aax_Daily_details_preroll_adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Dailydetails_Day10adcall">Smoke_Test_amazon_aax_Dailydetails_Day10adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Dailydetails_Day11adcall">Smoke_Test_amazon_aax_Dailydetails_Day11adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Dailydetails_Day12adcall">Smoke_Test_amazon_aax_Dailydetails_Day12adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Dailydetails_Day13adcall">Smoke_Test_amazon_aax_Dailydetails_Day13adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Dailydetails_Day14adcall">Smoke_Test_amazon_aax_Dailydetails_Day14adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Dailydetails_Day15adcall">Smoke_Test_amazon_aax_Dailydetails_Day15adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Dailydetails_Day2adcall">Smoke_Test_amazon_aax_Dailydetails_Day2adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Dailydetails_Day3adcall">Smoke_Test_amazon_aax_Dailydetails_Day3adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Dailydetails_Day4adcall">Smoke_Test_amazon_aax_Dailydetails_Day4adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Dailydetails_Day5adcall">Smoke_Test_amazon_aax_Dailydetails_Day5adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Dailydetails_Day6adcall">Smoke_Test_amazon_aax_Dailydetails_Day6adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Dailydetails_Day7adcall">Smoke_Test_amazon_aax_Dailydetails_Day7adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Dailydetails_Day8adcall">Smoke_Test_amazon_aax_Dailydetails_Day8adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Dailydetails_Day9adcall">Smoke_Test_amazon_aax_Dailydetails_Day9adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Hourly1_bigaddetails_adcall">Smoke_Test_amazon_aax_Hourly1_bigaddetails_adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Hourly1_bigaddetails_preroll_adcall_killLaunch">Smoke_Test_amazon_aax_Hourly1_bigaddetails_preroll_adcall_killLaunch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Hourly2_bigaddetails_adcall">Smoke_Test_amazon_aax_Hourly2_bigaddetails_adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Hourly2_bigaddetails_preroll_adcall_killLaunch">Smoke_Test_amazon_aax_Hourly2_bigaddetails_preroll_adcall_killLaunch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Hourly3_bigaddetails_adcall">Smoke_Test_amazon_aax_Hourly3_bigaddetails_adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Hourly3_bigaddetails_preroll_adcall_killLaunch">Smoke_Test_amazon_aax_Hourly3_bigaddetails_preroll_adcall_killLaunch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Hourly_details_adcall">Smoke_Test_amazon_aax_Hourly_details_adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Hourly_preroll_adcall_killLaunch">Smoke_Test_amazon_aax_Hourly_preroll_adcall_killLaunch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_mapsdetails_adcall">Smoke_Test_amazon_aax_mapsdetails_adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_mapsdetails_preload_adcall">Smoke_Test_amazon_aax_mapsdetails_preload_adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_today_deatailcard">Smoke_Test_amazon_aax_today_deatailcard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_verify_amazon_Slotid_homescreenhourly_preroll_adcall_killLaunch">Smoke_Test_verify_amazon_Slotid_homescreenhourly_preroll_adcall_killLaunch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_CaseVerify_Factualapi_url_KillLaunch">Smoke_Test_CaseVerify_Factualapi_url_KillLaunch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_CaseVerify_Homescreen_marquee_adCall_FTL">Smoke_Test_CaseVerify_Homescreen_marquee_adCall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_CaseVerify_Today_details_page_iu_FTL">Smoke_Test_CaseVerify_Today_details_page_iu_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_CaseVerify_WeatherFXAPI_url_KillLaunch">Smoke_Test_CaseVerify_WeatherFXAPI_url_KillLaunch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_CaseVerify_turbo_url_KillLaunch">Smoke_Test_CaseVerify_turbo_url_KillLaunch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Case_Verify_Radar_Maps_deatailspage_adCall_FTL">Smoke_Test_Case_Verify_Radar_Maps_deatailspage_adCall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verify_Air_Quality_contentpage_adCall_FTL">Smoke_Test_Verify_Air_Quality_contentpage_adCall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verify_daily_feedcard_adCall_FTL">Smoke_Test_Verify_daily_feedcard_adCall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_FTL">Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verify_hourly1_detailpage_bigad_adcall_FTL">Smoke_Test_Verify_hourly1_detailpage_bigad_adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verify_hourly2_detailpage_bigad_adcall_FTL">Smoke_Test_Verify_hourly2_detailpage_bigad_adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verify_hourly_detailpage_adcall_FTL">Smoke_Test_Verify_hourly_detailpage_adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verify_outdoor_detailpage_adcall_FTL">Smoke_Test_Verify_outdoor_detailpage_adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_homescreenhourly__adCall_FTL">Smoke_Test_Verifying_homescreenhourly__adCall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_newdailydetails_day10adcall_FTL">Smoke_Test_Verifying_newdailydetails_day10adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_newdailydetails_day11adcall_FTL">Smoke_Test_Verifying_newdailydetails_day11adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_newdailydetails_day12adcall_FTL">Smoke_Test_Verifying_newdailydetails_day12adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_newdailydetails_day13adcall_FTL">Smoke_Test_Verifying_newdailydetails_day13adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_newdailydetails_day14adcall_FTL">Smoke_Test_Verifying_newdailydetails_day14adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_newdailydetails_day1adcall_FTL">Smoke_Test_Verifying_newdailydetails_day1adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_newdailydetails_day2adcall_FTL">Smoke_Test_Verifying_newdailydetails_day2adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_newdailydetails_day4adcall_FTL">Smoke_Test_Verifying_newdailydetails_day4adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_newdailydetails_day5adcall_FTL">Smoke_Test_Verifying_newdailydetails_day5adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_newdailydetails_day6adcall_FTL">Smoke_Test_Verifying_newdailydetails_day6adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_newdailydetails_day8adcall_FTL">Smoke_Test_Verifying_newdailydetails_day8adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_newdailydetails_day9adcall_FTL">Smoke_Test_Verifying_newdailydetails_day9adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_verifying_feed_1adcall_FTL">Smoke_Test_verifying_feed_1adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_verifying_feed_2adcall_FTL">Smoke_Test_verifying_feed_2adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_verifying_feed_3adCall_FTL">Smoke_Test_verifying_feed_3adCall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_verifying_feed_4adcall_FTL">Smoke_Test_verifying_feed_4adcall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_verifying_feed_5adCall_FTL">Smoke_Test_verifying_feed_5adCall_FTL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">twc.Automation.SmokeTestCases.smokeTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verify_hourly3__bigad_detailpage_adcall_FTL">
+                  </a> <!-- Smoke_Test_Verify_hourly3__bigad_detailpage_adcall_FTL -->
+                  <span class="method-name">Smoke_Test_Verify_hourly3__bigad_detailpage_adcall_FTL</span>
+                  <div class="stack-trace">java.lang.AssertionError: /7646/app_android_us/db_display/details/hourly3 call was not trigred
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.Verify_hourly_detailpage_bigad3_adcall_iu(Functions.java:2818)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly3__bigad_detailpage_adcall_FTL(smokeTestCases.java:315)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_homescreenhourly_pulltoreresh_scenario_killLaunch">
+                  </a> <!-- Smoke_Test_Verifying_homescreenhourly_pulltoreresh_scenario_killLaunch -->
+                  <span class="method-name">Smoke_Test_Verifying_homescreenhourly_pulltoreresh_scenario_killLaunch</span>
+                  <div class="stack-trace">java.lang.AssertionError: /7646/app_android_us/db_display/home_screen/hourly call was not trigred
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.finding_Homescreen_iu_value(Functions.java:2339)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_homescreenhourly_pulltoreresh_scenario_killLaunch(smokeTestCases.java:963)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario">
+                  </a> <!-- Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario -->
+                  <span class="method-name">Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario</span>
+                  <div class="stack-trace">java.lang.AssertionError: /7646/app_android_us/db_display/home_screen/marquee call was not trigred
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.finding_Homescreen_marquee_iu_value(Functions.java:4045)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario(smokeTestCases.java:974)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_newdailydetails_day15adcall_FTL">
+                  </a> <!-- Smoke_Test_Verifying_newdailydetails_day15adcall_FTL -->
+                  <span class="method-name">Smoke_Test_Verifying_newdailydetails_day15adcall_FTL</span>
+                  <div class="stack-trace">java.lang.AssertionError: daily details ad call was not trigred
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.verifyingdailydetailsiu2(Functions.java:5915)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day15adcall_FTL(smokeTestCases.java:534)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_newdailydetails_day3adcall_FTL">
+                  </a> <!-- Smoke_Test_Verifying_newdailydetails_day3adcall_FTL -->
+                  <span class="method-name">Smoke_Test_Verifying_newdailydetails_day3adcall_FTL</span>
+                  <div class="stack-trace">java.lang.AssertionError: daily details ad call was not trigred
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.verifyingdailydetailiu(Functions.java:5783)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day3adcall_FTL(smokeTestCases.java:363)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_newdailydetails_day7adcall_FTL">
+                  </a> <!-- Smoke_Test_Verifying_newdailydetails_day7adcall_FTL -->
+                  <span class="method-name">Smoke_Test_Verifying_newdailydetails_day7adcall_FTL</span>
+                  <div class="stack-trace">java.lang.AssertionError: null is not matched with wed1
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.verifyingdailydetailiu(Functions.java:5804)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day7adcall_FTL(smokeTestCases.java:420)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test__Verifying_Bcp_apicall_URL_killLaunch">
+                  </a> <!-- Smoke_Test__Verifying_Bcp_apicall_URL_killLaunch -->
+                  <span class="method-name">Smoke_Test__Verifying_Bcp_apicall_URL_killLaunch</span>
+                  <div class="stack-trace">java.lang.AssertionError: https://bcp.crwdcntrl.net/ url was not trigred
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.validating_bcp_privacy_Optinmode_scenarion(Functions.java:4310)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_Bcp_apicall_URL_killLaunch(smokeTestCases.java:589)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aaxSlot_feed1_adCall">
+                  </a> <!-- Smoke_Test_amazon_aaxSlot_feed1_adCall -->
+                  <span class="method-name">Smoke_Test_amazon_aaxSlot_feed1_adCall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID f4b66249-b6eb-4155-9d90-1e2b04487c99 is not trigred for aax call db_display/feed/feed_1
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_feed1(Functions.java:6871)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aaxSlot_feed1_adCall(smokeTestCases.java:989)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aaxSlot_feed1_preroladcall_killLaunch">
+                  </a> <!-- Smoke_Test_amazon_aaxSlot_feed1_preroladcall_killLaunch -->
+                  <span class="method-name">Smoke_Test_amazon_aaxSlot_feed1_preroladcall_killLaunch</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID f4b66249-b6eb-4155-9d90-1e2b04487c99 is not trigred for aax call db_display/feed/feed_1
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_feed1(Functions.java:6871)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aaxSlot_feed1_preroladcall_killLaunch(smokeTestCases.java:676)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aaxSlot_feed2_adcall">
+                  </a> <!-- Smoke_Test_amazon_aaxSlot_feed2_adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aaxSlot_feed2_adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 752a96eb-3198-4991-b572-17ec04883b6c is not trigred for aax call db_display/feed/feed_2
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_feed2(Functions.java:6904)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aaxSlot_feed2_adcall(smokeTestCases.java:1002)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aaxSlot_feed2_preroladcall_KillLaunch">
+                  </a> <!-- Smoke_Test_amazon_aaxSlot_feed2_preroladcall_KillLaunch -->
+                  <span class="method-name">Smoke_Test_amazon_aaxSlot_feed2_preroladcall_KillLaunch</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 752a96eb-3198-4991-b572-17ec04883b6c is not trigred for aax call db_display/feed/feed_2
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_feed2(Functions.java:6904)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aaxSlot_feed2_preroladcall_KillLaunch(smokeTestCases.java:689)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aaxSlot_feed3_adcall">
+                  </a> <!-- Smoke_Test_amazon_aaxSlot_feed3_adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aaxSlot_feed3_adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 9384272f-b27f-4686-935f-02e6c5763abd is not trigred for aax call db_display/feed/feed_3
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_feed3(Functions.java:6922)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aaxSlot_feed3_adcall(smokeTestCases.java:1013)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aaxSlot_feed4_adcall">
+                  </a> <!-- Smoke_Test_amazon_aaxSlot_feed4_adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aaxSlot_feed4_adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotId 90251553-fb54-47a1-bbe2-dce4e1c27758 is not trigred for aax call db_display/feed/feed_4
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_feed4(Functions.java:6938)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aaxSlot_feed4_adcall(smokeTestCases.java:1025)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Airquality_deatailcard">
+                  </a> <!-- Smoke_Test_amazon_aax_Airquality_deatailcard -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Airquality_deatailcard</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotId 9aec4232-00c6-476b-8bbf-e66ecbd57edb is not trigred for aax call db_display/content/aq
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_aq(Functions.java:3959)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Airquality_deatailcard(smokeTestCases.java:1104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Daily_details_Day1_adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_Daily_details_Day1_adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Daily_details_Day1_adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_thu1
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Daily(Functions.java:3752)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Daily_details_Day1_adcall(smokeTestCases.java:767)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Daily_details_preroll_adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_Daily_details_preroll_adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Daily_details_preroll_adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for daily details
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Daily1(Functions.java:6888)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Daily_details_preroll_adcall(smokeTestCases.java:702)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Dailydetails_Day10adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_Dailydetails_Day10adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day10adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_sat2
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Daily(Functions.java:3752)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day10adcall(smokeTestCases.java:876)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Dailydetails_Day11adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_Dailydetails_Day11adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day11adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_sun2
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Daily(Functions.java:3752)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day11adcall(smokeTestCases.java:889)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Dailydetails_Day12adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_Dailydetails_Day12adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day12adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_mon2
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Daily(Functions.java:3752)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day12adcall(smokeTestCases.java:900)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Dailydetails_Day13adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_Dailydetails_Day13adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day13adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_tue2
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Daily(Functions.java:3752)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day13adcall(smokeTestCases.java:913)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Dailydetails_Day14adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_Dailydetails_Day14adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day14adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_wed2
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Daily(Functions.java:3752)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day14adcall(smokeTestCases.java:926)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Dailydetails_Day15adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_Dailydetails_Day15adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day15adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_thu3
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Daily(Functions.java:3752)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day15adcall(smokeTestCases.java:940)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Dailydetails_Day2adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_Dailydetails_Day2adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day2adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_fri1
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Daily(Functions.java:3752)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day2adcall(smokeTestCases.java:778)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Dailydetails_Day3adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_Dailydetails_Day3adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day3adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_sat1
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Daily(Functions.java:3752)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day3adcall(smokeTestCases.java:790)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Dailydetails_Day4adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_Dailydetails_Day4adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day4adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_sun1
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Daily(Functions.java:3752)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day4adcall(smokeTestCases.java:802)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Dailydetails_Day5adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_Dailydetails_Day5adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day5adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_mon1
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Daily(Functions.java:3752)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day5adcall(smokeTestCases.java:812)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Dailydetails_Day6adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_Dailydetails_Day6adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day6adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_tue1
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Daily(Functions.java:3752)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day6adcall(smokeTestCases.java:825)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Dailydetails_Day7adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_Dailydetails_Day7adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day7adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_wed1
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Daily(Functions.java:3752)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day7adcall(smokeTestCases.java:837)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Dailydetails_Day8adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_Dailydetails_Day8adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day8adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_thu2
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Daily(Functions.java:3752)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day8adcall(smokeTestCases.java:849)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Dailydetails_Day9adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_Dailydetails_Day9adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day9adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_fri2
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Daily(Functions.java:3752)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day9adcall(smokeTestCases.java:863)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Hourly1_bigaddetails_adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_Hourly1_bigaddetails_adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Hourly1_bigaddetails_adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID :: 08f0ccea-cab5-449c-963d-dc57ed9ee87dis not trigred for aax call db_display/details/hourly1
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Hourly1(Functions.java:3683)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly1_bigaddetails_adcall(smokeTestCases.java:726)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Hourly1_bigaddetails_preroll_adcall_killLaunch">
+                  </a> <!-- Smoke_Test_amazon_aax_Hourly1_bigaddetails_preroll_adcall_killLaunch -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Hourly1_bigaddetails_preroll_adcall_killLaunch</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID :: 08f0ccea-cab5-449c-963d-dc57ed9ee87dis not trigred for aax call db_display/details/hourly1
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Hourly1(Functions.java:3683)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly1_bigaddetails_preroll_adcall_killLaunch(smokeTestCases.java:617)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Hourly2_bigaddetails_adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_Hourly2_bigaddetails_adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Hourly2_bigaddetails_adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID :: 4fbed16a-cc6f-4cb1-94f7-81465acbd47edis not trigred for aax call db_display/details/hourly2
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Hourly2(Functions.java:3701)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly2_bigaddetails_adcall(smokeTestCases.java:737)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Hourly2_bigaddetails_preroll_adcall_killLaunch">
+                  </a> <!-- Smoke_Test_amazon_aax_Hourly2_bigaddetails_preroll_adcall_killLaunch -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Hourly2_bigaddetails_preroll_adcall_killLaunch</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID :: 4fbed16a-cc6f-4cb1-94f7-81465acbd47edis not trigred for aax call db_display/details/hourly2
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Hourly2(Functions.java:3701)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly2_bigaddetails_preroll_adcall_killLaunch(smokeTestCases.java:629)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Hourly3_bigaddetails_adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_Hourly3_bigaddetails_adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Hourly3_bigaddetails_adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID :: 2634dc9-b59f-4b2c-b281-bb3be291b7b6 is not trigred for aax call db_display/details/hourly3
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Hourly3(Functions.java:3720)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly3_bigaddetails_adcall(smokeTestCases.java:749)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Hourly3_bigaddetails_preroll_adcall_killLaunch">
+                  </a> <!-- Smoke_Test_amazon_aax_Hourly3_bigaddetails_preroll_adcall_killLaunch -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Hourly3_bigaddetails_preroll_adcall_killLaunch</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID :: 2634dc9-b59f-4b2c-b281-bb3be291b7b6 is not trigred for aax call db_display/details/hourly3
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Hourly3(Functions.java:3720)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly3_bigaddetails_preroll_adcall_killLaunch(smokeTestCases.java:641)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Hourly_details_adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_Hourly_details_adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Hourly_details_adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID ::  9be28769-4207-4d51-8063-dc8e645383b2 is not trigred for aax call db_display/details/hourly
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Hourly(Functions.java:3665)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly_details_adcall(smokeTestCases.java:715)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Hourly_preroll_adcall_killLaunch">
+                  </a> <!-- Smoke_Test_amazon_aax_Hourly_preroll_adcall_killLaunch -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Hourly_preroll_adcall_killLaunch</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID ::  9be28769-4207-4d51-8063-dc8e645383b2 is not trigred for aax call db_display/details/hourly
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Hourly(Functions.java:3665)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly_preroll_adcall_killLaunch(smokeTestCases.java:606)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_mapsdetails_adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_mapsdetails_adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_mapsdetails_adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotId 5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax call db_display/details/maps
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_map_details(Functions.java:3768)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_mapsdetails_adcall(smokeTestCases.java:1058)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_mapsdetails_preload_adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_mapsdetails_preload_adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_mapsdetails_preload_adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotId 5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax call db_display/details/maps
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_map_details(Functions.java:3768)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_mapsdetails_preload_adcall(smokeTestCases.java:654)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_today_deatailcard">
+                  </a> <!-- Smoke_Test_amazon_aax_today_deatailcard -->
+                  <span class="method-name">Smoke_Test_amazon_aax_today_deatailcard</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotId 8d4e513d-9ae1-4b32-9468-9be0f434262f  is not trigred for db_display/details/today
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_today_details(Functions.java:3802)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_today_deatailcard(smokeTestCases.java:1092)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_verify_amazon_Slotid_homescreenhourly_preroll_adcall_killLaunch">
+                  </a> <!-- Smoke_Test_verify_amazon_Slotid_homescreenhourly_preroll_adcall_killLaunch -->
+                  <span class="method-name">Smoke_Test_verify_amazon_Slotid_homescreenhourly_preroll_adcall_killLaunch</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 869c843c-7cf8-47ae-b6ed-088057e4bc8a is not trigred for aax call db_display/home_screen/hourly
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_homescreen_hourly(Functions.java:3616)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verify_amazon_Slotid_homescreenhourly_preroll_adcall_killLaunch(smokeTestCases.java:665)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">twc.Automation.SmokeTestCases.smokeTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_CaseVerify_Factualapi_url_KillLaunch">
+                  </a> <!-- Smoke_Test_CaseVerify_Factualapi_url_KillLaunch -->
+                  <span class="method-name">Smoke_Test_CaseVerify_Factualapi_url_KillLaunch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_CaseVerify_Homescreen_marquee_adCall_FTL">
+                  </a> <!-- Smoke_Test_CaseVerify_Homescreen_marquee_adCall_FTL -->
+                  <span class="method-name">Smoke_Test_CaseVerify_Homescreen_marquee_adCall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_CaseVerify_Today_details_page_iu_FTL">
+                  </a> <!-- Smoke_Test_CaseVerify_Today_details_page_iu_FTL -->
+                  <span class="method-name">Smoke_Test_CaseVerify_Today_details_page_iu_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_CaseVerify_WeatherFXAPI_url_KillLaunch">
+                  </a> <!-- Smoke_Test_CaseVerify_WeatherFXAPI_url_KillLaunch -->
+                  <span class="method-name">Smoke_Test_CaseVerify_WeatherFXAPI_url_KillLaunch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_CaseVerify_turbo_url_KillLaunch">
+                  </a> <!-- Smoke_Test_CaseVerify_turbo_url_KillLaunch -->
+                  <span class="method-name">Smoke_Test_CaseVerify_turbo_url_KillLaunch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Case_Verify_Radar_Maps_deatailspage_adCall_FTL">
+                  </a> <!-- Smoke_Test_Case_Verify_Radar_Maps_deatailspage_adCall_FTL -->
+                  <span class="method-name">Smoke_Test_Case_Verify_Radar_Maps_deatailspage_adCall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verify_Air_Quality_contentpage_adCall_FTL">
+                  </a> <!-- Smoke_Test_Verify_Air_Quality_contentpage_adCall_FTL -->
+                  <span class="method-name">Smoke_Test_Verify_Air_Quality_contentpage_adCall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verify_daily_feedcard_adCall_FTL">
+                  </a> <!-- Smoke_Test_Verify_daily_feedcard_adCall_FTL -->
+                  <span class="method-name">Smoke_Test_Verify_daily_feedcard_adCall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_FTL">
+                  </a> <!-- Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_FTL -->
+                  <span class="method-name">Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verify_hourly1_detailpage_bigad_adcall_FTL">
+                  </a> <!-- Smoke_Test_Verify_hourly1_detailpage_bigad_adcall_FTL -->
+                  <span class="method-name">Smoke_Test_Verify_hourly1_detailpage_bigad_adcall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verify_hourly2_detailpage_bigad_adcall_FTL">
+                  </a> <!-- Smoke_Test_Verify_hourly2_detailpage_bigad_adcall_FTL -->
+                  <span class="method-name">Smoke_Test_Verify_hourly2_detailpage_bigad_adcall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verify_hourly_detailpage_adcall_FTL">
+                  </a> <!-- Smoke_Test_Verify_hourly_detailpage_adcall_FTL -->
+                  <span class="method-name">Smoke_Test_Verify_hourly_detailpage_adcall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verify_outdoor_detailpage_adcall_FTL">
+                  </a> <!-- Smoke_Test_Verify_outdoor_detailpage_adcall_FTL -->
+                  <span class="method-name">Smoke_Test_Verify_outdoor_detailpage_adcall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_homescreenhourly__adCall_FTL">
+                  </a> <!-- Smoke_Test_Verifying_homescreenhourly__adCall_FTL -->
+                  <span class="method-name">Smoke_Test_Verifying_homescreenhourly__adCall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_newdailydetails_day10adcall_FTL">
+                  </a> <!-- Smoke_Test_Verifying_newdailydetails_day10adcall_FTL -->
+                  <span class="method-name">Smoke_Test_Verifying_newdailydetails_day10adcall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_newdailydetails_day11adcall_FTL">
+                  </a> <!-- Smoke_Test_Verifying_newdailydetails_day11adcall_FTL -->
+                  <span class="method-name">Smoke_Test_Verifying_newdailydetails_day11adcall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_newdailydetails_day12adcall_FTL">
+                  </a> <!-- Smoke_Test_Verifying_newdailydetails_day12adcall_FTL -->
+                  <span class="method-name">Smoke_Test_Verifying_newdailydetails_day12adcall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_newdailydetails_day13adcall_FTL">
+                  </a> <!-- Smoke_Test_Verifying_newdailydetails_day13adcall_FTL -->
+                  <span class="method-name">Smoke_Test_Verifying_newdailydetails_day13adcall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_newdailydetails_day14adcall_FTL">
+                  </a> <!-- Smoke_Test_Verifying_newdailydetails_day14adcall_FTL -->
+                  <span class="method-name">Smoke_Test_Verifying_newdailydetails_day14adcall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_newdailydetails_day1adcall_FTL">
+                  </a> <!-- Smoke_Test_Verifying_newdailydetails_day1adcall_FTL -->
+                  <span class="method-name">Smoke_Test_Verifying_newdailydetails_day1adcall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_newdailydetails_day2adcall_FTL">
+                  </a> <!-- Smoke_Test_Verifying_newdailydetails_day2adcall_FTL -->
+                  <span class="method-name">Smoke_Test_Verifying_newdailydetails_day2adcall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_newdailydetails_day4adcall_FTL">
+                  </a> <!-- Smoke_Test_Verifying_newdailydetails_day4adcall_FTL -->
+                  <span class="method-name">Smoke_Test_Verifying_newdailydetails_day4adcall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_newdailydetails_day5adcall_FTL">
+                  </a> <!-- Smoke_Test_Verifying_newdailydetails_day5adcall_FTL -->
+                  <span class="method-name">Smoke_Test_Verifying_newdailydetails_day5adcall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_newdailydetails_day6adcall_FTL">
+                  </a> <!-- Smoke_Test_Verifying_newdailydetails_day6adcall_FTL -->
+                  <span class="method-name">Smoke_Test_Verifying_newdailydetails_day6adcall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_newdailydetails_day8adcall_FTL">
+                  </a> <!-- Smoke_Test_Verifying_newdailydetails_day8adcall_FTL -->
+                  <span class="method-name">Smoke_Test_Verifying_newdailydetails_day8adcall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_newdailydetails_day9adcall_FTL">
+                  </a> <!-- Smoke_Test_Verifying_newdailydetails_day9adcall_FTL -->
+                  <span class="method-name">Smoke_Test_Verifying_newdailydetails_day9adcall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_verifying_feed_1adcall_FTL">
+                  </a> <!-- Smoke_Test_verifying_feed_1adcall_FTL -->
+                  <span class="method-name">Smoke_Test_verifying_feed_1adcall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_verifying_feed_2adcall_FTL">
+                  </a> <!-- Smoke_Test_verifying_feed_2adcall_FTL -->
+                  <span class="method-name">Smoke_Test_verifying_feed_2adcall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_verifying_feed_3adCall_FTL">
+                  </a> <!-- Smoke_Test_verifying_feed_3adCall_FTL -->
+                  <span class="method-name">Smoke_Test_verifying_feed_3adCall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_verifying_feed_4adcall_FTL">
+                  </a> <!-- Smoke_Test_verifying_feed_4adcall_FTL -->
+                  <span class="method-name">Smoke_Test_verifying_feed_4adcall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_verifying_feed_5adCall_FTL">
+                  </a> <!-- Smoke_Test_verifying_feed_5adCall_FTL -->
+                  <span class="method-name">Smoke_Test_verifying_feed_5adCall_FTL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/private/var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/testng-eclipse--1197749556/testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;twc.Automation.SmokeTestCases.smokeTestCases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(73);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Smoke_Test_CaseVerify_Homescreen_marquee_adCall_FTL')
+data.setCell(0, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(0, 3, 782307);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Smoke_Test_CaseVerify_WeatherFXAPI_url_KillLaunch')
+data.setCell(1, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(1, 3, 65979);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Smoke_Test_Verifying_homescreenhourly_pulltoreresh_scenario_killLaunch')
+data.setCell(2, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(2, 3, 50473);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Smoke_Test_Verify_hourly_detailpage_adcall_FTL')
+data.setCell(3, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(3, 3, 27337);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Smoke_Test_Verifying_newdailydetails_day1adcall_FTL')
+data.setCell(4, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(4, 3, 24419);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Smoke_Test_Verifying_newdailydetails_day15adcall_FTL')
+data.setCell(5, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(5, 3, 12964);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Smoke_Test_Verifying_newdailydetails_day14adcall_FTL')
+data.setCell(6, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(6, 3, 12820);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Smoke_Test_Verifying_newdailydetails_day8adcall_FTL')
+data.setCell(7, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(7, 3, 12784);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Smoke_Test_Verifying_newdailydetails_day13adcall_FTL')
+data.setCell(8, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(8, 3, 12721);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'Smoke_Test_Verifying_newdailydetails_day10adcall_FTL')
+data.setCell(9, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(9, 3, 12706);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'Smoke_Test_Verifying_newdailydetails_day11adcall_FTL')
+data.setCell(10, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(10, 3, 12684);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'Smoke_Test_Verifying_newdailydetails_day9adcall_FTL')
+data.setCell(11, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(11, 3, 12682);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'Smoke_Test_Verifying_newdailydetails_day12adcall_FTL')
+data.setCell(12, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(12, 3, 12605);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'Smoke_Test_Verifying_newdailydetails_day4adcall_FTL')
+data.setCell(13, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(13, 3, 10077);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'Smoke_Test_Verifying_newdailydetails_day2adcall_FTL')
+data.setCell(14, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(14, 3, 9901);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'Smoke_Test_Verifying_newdailydetails_day7adcall_FTL')
+data.setCell(15, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(15, 3, 9841);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'Smoke_Test_Verifying_newdailydetails_day3adcall_FTL')
+data.setCell(16, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(16, 3, 9709);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'Smoke_Test_Verifying_newdailydetails_day6adcall_FTL')
+data.setCell(17, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(17, 3, 9600);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'Smoke_Test_Verifying_newdailydetails_day5adcall_FTL')
+data.setCell(18, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(18, 3, 9320);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'Smoke_Test_amazon_aax_Dailydetails_Day12adcall')
+data.setCell(19, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(19, 3, 595);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'Smoke_Test_amazon_aaxSlot_feed1_adCall')
+data.setCell(20, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(20, 3, 434);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'Smoke_Test_Verifying_homescreenhourly__adCall_FTL')
+data.setCell(21, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(21, 3, 384);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'Smoke_Test_verifying_feed_1adcall_FTL')
+data.setCell(22, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(22, 3, 318);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_FTL')
+data.setCell(23, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(23, 3, 281);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'Smoke_Test_amazon_aaxSlot_feed2_adcall')
+data.setCell(24, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(24, 3, 272);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'Smoke_Test_amazon_aax_today_deatailcard')
+data.setCell(25, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(25, 3, 242);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'Smoke_Test_amazon_aax_Dailydetails_Day14adcall')
+data.setCell(26, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(26, 3, 236);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'Smoke_Test_amazon_aax_Dailydetails_Day11adcall')
+data.setCell(27, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(27, 3, 235);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'Smoke_Test_verifying_feed_2adcall_FTL')
+data.setCell(28, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(28, 3, 228);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'Smoke_Test_amazon_aax_Dailydetails_Day3adcall')
+data.setCell(29, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(29, 3, 217);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'Smoke_Test_verifying_feed_3adCall_FTL')
+data.setCell(30, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(30, 3, 216);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'Smoke_Test_amazon_aax_Dailydetails_Day5adcall')
+data.setCell(31, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(31, 3, 211);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'Smoke_Test_Case_Verify_Radar_Maps_deatailspage_adCall_FTL')
+data.setCell(32, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(32, 3, 206);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'Smoke_Test_amazon_aax_Airquality_deatailcard')
+data.setCell(33, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(33, 3, 193);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'Smoke_Test_amazon_aaxSlot_feed3_adcall')
+data.setCell(34, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(34, 3, 189);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'Smoke_Test_amazon_aaxSlot_feed4_adcall')
+data.setCell(35, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(35, 3, 188);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'Smoke_Test_CaseVerify_Today_details_page_iu_FTL')
+data.setCell(36, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(36, 3, 187);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'Smoke_Test_amazon_aax_mapsdetails_adcall')
+data.setCell(37, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(37, 3, 186);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'Smoke_Test_amazon_aax_Daily_details_Day1_adcall')
+data.setCell(38, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(38, 3, 179);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'Smoke_Test_Verify_outdoor_detailpage_adcall_FTL')
+data.setCell(39, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(39, 3, 169);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'Smoke_Test_amazon_aax_Dailydetails_Day6adcall')
+data.setCell(40, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(40, 3, 168);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'Smoke_Test_verifying_feed_5adCall_FTL')
+data.setCell(41, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(41, 3, 164);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'Smoke_Test_Verify_daily_feedcard_adCall_FTL')
+data.setCell(42, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(42, 3, 158);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'Smoke_Test_verifying_feed_4adcall_FTL')
+data.setCell(43, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(43, 3, 152);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'Smoke_Test_Verify_Air_Quality_contentpage_adCall_FTL')
+data.setCell(44, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(44, 3, 151);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'Smoke_Test_amazon_aax_Dailydetails_Day8adcall')
+data.setCell(45, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(45, 3, 148);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'Smoke_Test_amazon_aax_Dailydetails_Day4adcall')
+data.setCell(46, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(46, 3, 137);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'Smoke_Test_CaseVerify_Factualapi_url_KillLaunch')
+data.setCell(47, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(47, 3, 134);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'Smoke_Test_amazon_aax_Dailydetails_Day7adcall')
+data.setCell(48, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(48, 3, 133);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'Smoke_Test_amazon_aax_Dailydetails_Day10adcall')
+data.setCell(49, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(49, 3, 133);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'Smoke_Test_amazon_aax_Dailydetails_Day15adcall')
+data.setCell(50, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(50, 3, 116);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'Smoke_Test_amazon_aax_Dailydetails_Day13adcall')
+data.setCell(51, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(51, 3, 112);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'Smoke_Test_amazon_aax_Dailydetails_Day2adcall')
+data.setCell(52, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(52, 3, 108);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'Smoke_Test_CaseVerify_turbo_url_KillLaunch')
+data.setCell(53, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(53, 3, 92);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'Smoke_Test_amazon_aax_Dailydetails_Day9adcall')
+data.setCell(54, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(54, 3, 85);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'Smoke_Test_amazon_aaxSlot_feed1_preroladcall_killLaunch')
+data.setCell(55, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(55, 3, 69);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'Smoke_Test__Verifying_Bcp_apicall_URL_killLaunch')
+data.setCell(56, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(56, 3, 65);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'Smoke_Test_verify_amazon_Slotid_homescreenhourly_preroll_adcall_killLaunch')
+data.setCell(57, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(57, 3, 63);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'Smoke_Test_amazon_aax_Daily_details_preroll_adcall')
+data.setCell(58, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(58, 3, 61);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'Smoke_Test_amazon_aax_Hourly1_bigaddetails_preroll_adcall_killLaunch')
+data.setCell(59, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(59, 3, 61);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'Smoke_Test_amazon_aax_mapsdetails_preload_adcall')
+data.setCell(60, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(60, 3, 60);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'Smoke_Test_amazon_aaxSlot_feed2_preroladcall_KillLaunch')
+data.setCell(61, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(61, 3, 59);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'Smoke_Test_amazon_aax_Hourly_preroll_adcall_killLaunch')
+data.setCell(62, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(62, 3, 59);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'Smoke_Test_amazon_aax_Hourly3_bigaddetails_preroll_adcall_killLaunch')
+data.setCell(63, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(63, 3, 58);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'Smoke_Test_amazon_aax_Hourly2_bigaddetails_preroll_adcall_killLaunch')
+data.setCell(64, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(64, 3, 55);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'Smoke_Test_amazon_aax_Hourly_details_adcall')
+data.setCell(65, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(65, 3, 18);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'Smoke_Test_Verify_hourly2_detailpage_bigad_adcall_FTL')
+data.setCell(66, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(66, 3, 15);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'Smoke_Test_Verify_hourly1_detailpage_bigad_adcall_FTL')
+data.setCell(67, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(67, 3, 14);
+data.setCell(68, 0, 68)
+data.setCell(68, 1, 'Smoke_Test_Verify_hourly3__bigad_detailpage_adcall_FTL')
+data.setCell(68, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(68, 3, 14);
+data.setCell(69, 0, 69)
+data.setCell(69, 1, 'Smoke_Test_amazon_aax_Hourly3_bigaddetails_adcall')
+data.setCell(69, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(69, 3, 13);
+data.setCell(70, 0, 70)
+data.setCell(70, 1, 'Smoke_Test_amazon_aax_Hourly2_bigaddetails_adcall')
+data.setCell(70, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(70, 3, 13);
+data.setCell(71, 0, 71)
+data.setCell(71, 1, 'Smoke_Test_amazon_aax_Hourly1_bigaddetails_adcall')
+data.setCell(71, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(71, 3, 12);
+data.setCell(72, 0, 72)
+data.setCell(72, 1, 'Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario')
+data.setCell(72, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(72, 3, 10);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 18 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">twc.Automation.SmokeTestCases.smokeTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_CaseVerify_Homescreen_marquee_adCall_FTL</span>
+                <span class="method-start">155866 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aaxSlot_feed1_adCall</span>
+                <span class="method-start">938327 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Verifying_homescreenhourly__adCall_FTL</span>
+                <span class="method-start">938778 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aaxSlot_feed2_adcall</span>
+                <span class="method-start">939165 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_verifying_feed_1adcall_FTL</span>
+                <span class="method-start">939443 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aaxSlot_feed3_adcall</span>
+                <span class="method-start">939763 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_verifying_feed_2adcall_FTL</span>
+                <span class="method-start">939957 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aaxSlot_feed4_adcall</span>
+                <span class="method-start">940188 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_verifying_feed_3adCall_FTL</span>
+                <span class="method-start">940382 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_verifying_feed_4adcall_FTL</span>
+                <span class="method-start">940601 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_verifying_feed_5adCall_FTL</span>
+                <span class="method-start">940755 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Verify_daily_feedcard_adCall_FTL</span>
+                <span class="method-start">940921 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Case_Verify_Radar_Maps_deatailspage_adCall_FTL</span>
+                <span class="method-start">941084 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_mapsdetails_adcall</span>
+                <span class="method-start">941293 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_CaseVerify_Today_details_page_iu_FTL</span>
+                <span class="method-start">941483 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Verify_Air_Quality_contentpage_adCall_FTL</span>
+                <span class="method-start">941671 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_today_deatailcard</span>
+                <span class="method-start">941825 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Airquality_deatailcard</span>
+                <span class="method-start">942071 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_FTL</span>
+                <span class="method-start">942269 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Verify_outdoor_detailpage_adcall_FTL</span>
+                <span class="method-start">942552 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Verify_hourly_detailpage_adcall_FTL</span>
+                <span class="method-start">942722 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Hourly_details_adcall</span>
+                <span class="method-start">970060 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Verify_hourly1_detailpage_bigad_adcall_FTL</span>
+                <span class="method-start">970081 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Hourly1_bigaddetails_adcall</span>
+                <span class="method-start">970096 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Verify_hourly2_detailpage_bigad_adcall_FTL</span>
+                <span class="method-start">970111 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Hourly2_bigaddetails_adcall</span>
+                <span class="method-start">970128 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verify_hourly3__bigad_detailpage_adcall_FTL</span>
+                <span class="method-start">970144 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Hourly3_bigaddetails_adcall</span>
+                <span class="method-start">970161 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Verifying_newdailydetails_day1adcall_FTL</span>
+                <span class="method-start">970177 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Daily_details_Day1_adcall</span>
+                <span class="method-start">994597 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Verifying_newdailydetails_day2adcall_FTL</span>
+                <span class="method-start">994780 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day2adcall</span>
+                <span class="method-start">1004683 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_newdailydetails_day3adcall_FTL</span>
+                <span class="method-start">1004794 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day3adcall</span>
+                <span class="method-start">1014512 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Verifying_newdailydetails_day4adcall_FTL</span>
+                <span class="method-start">1014732 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day4adcall</span>
+                <span class="method-start">1024811 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Verifying_newdailydetails_day5adcall_FTL</span>
+                <span class="method-start">1024950 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day5adcall</span>
+                <span class="method-start">1034271 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Verifying_newdailydetails_day6adcall_FTL</span>
+                <span class="method-start">1034485 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day6adcall</span>
+                <span class="method-start">1044086 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_newdailydetails_day7adcall_FTL</span>
+                <span class="method-start">1044258 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day7adcall</span>
+                <span class="method-start">1054107 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Verifying_newdailydetails_day8adcall_FTL</span>
+                <span class="method-start">1054242 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day8adcall</span>
+                <span class="method-start">1067028 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Verifying_newdailydetails_day9adcall_FTL</span>
+                <span class="method-start">1067179 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day9adcall</span>
+                <span class="method-start">1079863 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Verifying_newdailydetails_day10adcall_FTL</span>
+                <span class="method-start">1079951 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day10adcall</span>
+                <span class="method-start">1092659 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Verifying_newdailydetails_day11adcall_FTL</span>
+                <span class="method-start">1092796 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day11adcall</span>
+                <span class="method-start">1105481 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Verifying_newdailydetails_day12adcall_FTL</span>
+                <span class="method-start">1105718 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day12adcall</span>
+                <span class="method-start">1118324 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Verifying_newdailydetails_day13adcall_FTL</span>
+                <span class="method-start">1118921 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day13adcall</span>
+                <span class="method-start">1131643 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Verifying_newdailydetails_day14adcall_FTL</span>
+                <span class="method-start">1131757 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day14adcall</span>
+                <span class="method-start">1144578 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_newdailydetails_day15adcall_FTL</span>
+                <span class="method-start">1144816 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Dailydetails_Day15adcall</span>
+                <span class="method-start">1157796 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_CaseVerify_WeatherFXAPI_url_KillLaunch</span>
+                <span class="method-start">1157914 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_CaseVerify_Factualapi_url_KillLaunch</span>
+                <span class="method-start">1223894 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_CaseVerify_turbo_url_KillLaunch</span>
+                <span class="method-start">1224029 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test__Verifying_Bcp_apicall_URL_killLaunch</span>
+                <span class="method-start">1224122 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Hourly_preroll_adcall_killLaunch</span>
+                <span class="method-start">1224190 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Hourly1_bigaddetails_preroll_adcall_killLaunch</span>
+                <span class="method-start">1224251 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Hourly2_bigaddetails_preroll_adcall_killLaunch</span>
+                <span class="method-start">1224314 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Hourly3_bigaddetails_preroll_adcall_killLaunch</span>
+                <span class="method-start">1224371 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_mapsdetails_preload_adcall</span>
+                <span class="method-start">1224431 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_verify_amazon_Slotid_homescreenhourly_preroll_adcall_killLaunch</span>
+                <span class="method-start">1224493 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aaxSlot_feed1_preroladcall_killLaunch</span>
+                <span class="method-start">1224560 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aaxSlot_feed2_preroladcall_KillLaunch</span>
+                <span class="method-start">1224632 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Daily_details_preroll_adcall</span>
+                <span class="method-start">1224694 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_homescreenhourly_pulltoreresh_scenario_killLaunch</span>
+                <span class="method-start">1224757 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario</span>
+                <span class="method-start">1275245 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

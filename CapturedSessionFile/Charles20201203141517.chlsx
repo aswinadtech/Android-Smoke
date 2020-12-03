@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE charles-session SYSTEM "https://www.charlesproxy.com/dtd/charles-session-1_2.dtd">
+
+<charles-session>
+<transaction status="RECEIVED_REQUEST_BODY" method="GET" protocolVersion="HTTP/1.1" protocol="http" host="control.charles" actualPort="80" path="/session/export-xml" remoteAddress="localhost/0:0:0:0:0:0:0:1" clientAddress="/127.0.0.1" clientPort="61101" startTime="2020-12-03T14:15:17.401+05:30" startTimeMillis="1606985117401" requestBeginTime="2020-12-03T14:15:17.403+05:30" requestBeginTimeMillis="1606985117403" duration="1" connectDuration="0" requestDuration="1" overallSpeed="173000" requestSpeed="173000" totalSize="173">
+<request headers="173" body="0">
+<headers>
+<first-line><![CDATA[GET /session/export-xml HTTP/1.1]]></first-line>
+<header>
+<name>User-Agent</name>
+<value>Java/1.8.0_181</value></header>
+<header>
+<name>Host</name>
+<value>control.charles</value></header>
+<header>
+<name>Accept</name>
+<value>text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</value></header>
+<header>
+<name>Connection</name>
+<value>keep-alive</value></header></headers></request>
+<response status="200" headers="130" body="0" mime-type="text/xml">
+<headers>
+<first-line><![CDATA[HTTP/1.1 200 OK]]></first-line>
+<header>
+<name>Content-Type</name>
+<value>text/xml</value></header>
+<header>
+<name>Content-Disposition</name>
+<value>attachment; filename=charles202012031415.chlsx</value></header>
+<header>
+<name>Connection</name>
+<value>close</value></header></headers></response></transaction></charles-session>

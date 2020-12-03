@@ -1,0 +1,449 @@
+{
+  "uid" : "6b13dd3101684d5",
+  "name" : "Smoke_Test_CaseVerify_Homescreen_marquee_adCall_FTL",
+  "title" : "Verifying Home screen marquee ad call on FTL",
+  "time" : {
+    "start" : 1606983884080,
+    "stop" : 1606984791699,
+    "duration" : 907619
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 26
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "a1e237babb51f590",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Starting Charles headless: false using port: 8333]",
+    "title" : "Starting Charles headless: false using port: 8333",
+    "time" : {
+      "start" : 1606983728043,
+      "stop" : 1606983728044,
+      "duration" : 1
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Url :http://control.charles Responded with status code : 200]",
+    "title" : "Url :http://control.charles Responded with status code : 200",
+    "time" : {
+      "start" : 1606983728070,
+      "stop" : 1606983728070,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Url :http://control.charles/quit Responded with status code : 200]",
+    "title" : "Url :http://control.charles/quit Responded with status code : 200",
+    "time" : {
+      "start" : 1606983728079,
+      "stop" : 1606983728079,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[input command /Applications/Charles.app/Contents/MacOS/Charles -config charles_common.config.port8333]",
+    "title" : "input command /Applications/Charles.app/Contents/MacOS/Charles -config charles_common.config.port8333",
+    "time" : {
+      "start" : 1606983728084,
+      "stop" : 1606983728084,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Url :http://control.charles Responded with status code : 200]",
+    "title" : "Url :http://control.charles Responded with status code : 200",
+    "time" : {
+      "start" : 1606983758109,
+      "stop" : 1606983758109,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Url :http://control.charles/tools/rewrite/disable Responded with status code : 200]",
+    "title" : "Url :http://control.charles/tools/rewrite/disable Responded with status code : 200",
+    "time" : {
+      "start" : 1606983758119,
+      "stop" : 1606983758119,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Url :http://control.charles/recording/stop Responded with status code : 200]",
+    "title" : "Url :http://control.charles/recording/stop Responded with status code : 200",
+    "time" : {
+      "start" : 1606983758137,
+      "stop" : 1606983758137,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Url :http://control.charles/tools/map-local/disable Responded with status code : 200]",
+    "title" : "Url :http://control.charles/tools/map-local/disable Responded with status code : 200",
+    "time" : {
+      "start" : 1606983758142,
+      "stop" : 1606983758142,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Url :http://control.charles/recording/start Responded with status code : 200]",
+    "title" : "Url :http://control.charles/recording/start Responded with status code : 200",
+    "time" : {
+      "start" : 1606983758166,
+      "stop" : 1606983758166,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Url :http://control.charles/session/clear Responded with status code : 200]",
+    "title" : "Url :http://control.charles/session/clear Responded with status code : 200",
+    "time" : {
+      "start" : 1606983758173,
+      "stop" : 1606983758173,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Clicking on View More]",
+    "title" : "Clicking on View More",
+    "time" : {
+      "start" : 1606983881121,
+      "stop" : 1606983881121,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Clicking on About this App]",
+    "title" : "Clicking on About this App",
+    "time" : {
+      "start" : 1606983881570,
+      "stop" : 1606983881570,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[going to all detail and content pages]",
+    "title" : "going to all detail and content pages",
+    "time" : {
+      "start" : 1606983884081,
+      "stop" : 1606983884081,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[maps element clicked]",
+    "title" : "maps element clicked",
+    "time" : {
+      "start" : 1606984016933,
+      "stop" : 1606984016933,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[today details element clicked]",
+    "title" : "today details element clicked",
+    "time" : {
+      "start" : 1606984311419,
+      "stop" : 1606984311419,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Air Quality element clicked]",
+    "title" : "Air Quality element clicked",
+    "time" : {
+      "start" : 1606984397816,
+      "stop" : 1606984397816,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Allergy  element clicked]",
+    "title" : "Allergy  element clicked",
+    "time" : {
+      "start" : 1606984521546,
+      "stop" : 1606984521546,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[outdoor details  element clicked]",
+    "title" : "outdoor details  element clicked",
+    "time" : {
+      "start" : 1606984650292,
+      "stop" : 1606984650292,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Charles Download path is: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessio...]",
+    "title" : "Charles Download path is: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/",
+    "time" : {
+      "start" : 1606984791257,
+      "stop" : 1606984791257,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[To be saved file: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Ch...]",
+    "title" : "To be saved file: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles202...",
+    "time" : {
+      "start" : 1606984791258,
+      "stop" : 1606984791258,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Create new file that is empty and writable]",
+    "title" : "Create new file that is empty and writable",
+    "time" : {
+      "start" : 1606984791258,
+      "stop" : 1606984791258,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Downloading Charles HAR file to: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/Capture...]",
+    "title" : "Downloading Charles HAR file to: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSession...",
+    "time" : {
+      "start" : 1606984791259,
+      "stop" : 1606984791259,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[File download complete]",
+    "title" : "File download complete",
+    "time" : {
+      "start" : 1606984791573,
+      "stop" : 1606984791573,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Har file size (mb): 15.533628]",
+    "title" : "Har file size (mb): 15.533628",
+    "time" : {
+      "start" : 1606984791574,
+      "stop" : 1606984791574,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[checking for iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee ad call]",
+    "title" : "checking for iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee ad call",
+    "time" : {
+      "start" : 1606984791695,
+      "stop" : 1606984791695,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[/7646/app_android_us/db_display/home_screen/marquee call was trigred]",
+    "title" : "/7646/app_android_us/db_display/home_screen/marquee call was trigred",
+    "time" : {
+      "start" : 1606984791697,
+      "stop" : 1606984791697,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "thread",
+    "value" : "16211@AswinikumarsMBP.lan.main(1)"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Automation.SmokeTestCases.smokeTestCases"
+  }, {
+    "name" : "testMethod",
+    "value" : "Smoke_Test_CaseVerify_Homescreen_marquee_adCall_FTL"
+  }, {
+    "name" : "host",
+    "value" : "AswinikumarsMBP.lan"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  } ],
+  "parameters" : [ ]
+}

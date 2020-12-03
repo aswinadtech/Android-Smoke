@@ -1,0 +1,89 @@
+{
+  "uid" : "41d82867e10024d3",
+  "name" : "Smoke_Test_Case_Verify_Radar_Maps_deatailspage_adCall_FTL",
+  "title" : "Verifying radar&maps details page ad call On FTL",
+  "time" : {
+    "start" : 1606984793273,
+    "stop" : 1606984793361,
+    "duration" : 88
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 2
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "a1e237babb51f590",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Verifying  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps ad call]",
+    "title" : "Verifying  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps ad call",
+    "time" : {
+      "start" : 1606984793349,
+      "stop" : 1606984793349,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[/7646/app_android_us/db_display/details/maps call was trigred]",
+    "title" : "/7646/app_android_us/db_display/details/maps call was trigred",
+    "time" : {
+      "start" : 1606984793356,
+      "stop" : 1606984793356,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "thread",
+    "value" : "16211@AswinikumarsMBP.lan.main(1)"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "Smoke_Test_Case_Verify_Radar_Maps_deatailspage_adCall_FTL"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Automation.SmokeTestCases.smokeTestCases"
+  }, {
+    "name" : "host",
+    "value" : "AswinikumarsMBP.lan"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  } ],
+  "parameters" : [ ]
+}

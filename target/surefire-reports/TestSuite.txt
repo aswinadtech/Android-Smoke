@@ -1,0 +1,272 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 73, Failures: 67, Errors: 0, Skipped: 0, Time elapsed: 1,390.519 s <<< FAILURE! - in TestSuite
+Smoke_Test_amazon_aaxSlot_feed1_adCall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.288 s  <<< FAILURE!
+java.lang.AssertionError: slotID f4b66249-b6eb-4155-9d90-1e2b04487c99 is not trigred for aax call db_display/feed/feed_1
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aaxSlot_feed1_adCall(smokeTestCases.java:989)
+
+Smoke_Test_amazon_aaxSlot_feed2_adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.224 s  <<< FAILURE!
+java.lang.AssertionError: slotID 752a96eb-3198-4991-b572-17ec04883b6c is not trigred for aax call db_display/feed/feed_2
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aaxSlot_feed2_adcall(smokeTestCases.java:1002)
+
+Smoke_Test_amazon_aaxSlot_feed3_adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.119 s  <<< FAILURE!
+java.lang.AssertionError: slotID 9384272f-b27f-4686-935f-02e6c5763abd is not trigred for aax call db_display/feed/feed_3
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aaxSlot_feed3_adcall(smokeTestCases.java:1013)
+
+Smoke_Test_amazon_aaxSlot_feed4_adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.091 s  <<< FAILURE!
+java.lang.AssertionError: slotId 90251553-fb54-47a1-bbe2-dce4e1c27758 is not trigred for aax call db_display/feed/feed_4
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aaxSlot_feed4_adcall(smokeTestCases.java:1025)
+
+Smoke_Test_verifying_feed_3adCall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.133 s  <<< FAILURE!
+java.lang.AssertionError: iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_3 call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_3adCall_FTL(smokeTestCases.java:132)
+
+Smoke_Test_verifying_feed_4adcall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.086 s  <<< FAILURE!
+java.lang.AssertionError: iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_4 call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_4adcall_FTL(smokeTestCases.java:140)
+
+Smoke_Test_verifying_feed_5adCall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.11 s  <<< FAILURE!
+java.lang.AssertionError: iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_5 call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_feed_5adCall_FTL(smokeTestCases.java:149)
+
+Smoke_Test_amazon_aax_mapsdetails_adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.169 s  <<< FAILURE!
+java.lang.AssertionError: slotId 5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax call db_display/details/maps
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_mapsdetails_adcall(smokeTestCases.java:1058)
+
+Smoke_Test_CaseVerify_Today_details_page_iu_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.095 s  <<< FAILURE!
+java.lang.AssertionError: /7646/app_android_us/db_display/details/today call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Today_details_page_iu_FTL(smokeTestCases.java:191)
+
+Smoke_Test_Verify_Air_Quality_contentpage_adCall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.199 s  <<< FAILURE!
+java.lang.AssertionError: /7646/app_android_us/db_display/card/aq call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_Air_Quality_contentpage_adCall_FTL(smokeTestCases.java:203)
+
+Smoke_Test_amazon_aax_today_deatailcard(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.088 s  <<< FAILURE!
+java.lang.AssertionError: slotId 8d4e513d-9ae1-4b32-9468-9be0f434262f  is not trigred for db_display/details/today
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_today_deatailcard(smokeTestCases.java:1092)
+
+Smoke_Test_amazon_aax_Airquality_deatailcard(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.092 s  <<< FAILURE!
+java.lang.AssertionError: slotId 9aec4232-00c6-476b-8bbf-e66ecbd57edb is not trigred for aax call db_display/content/aq
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Airquality_deatailcard(smokeTestCases.java:1104)
+
+Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.165 s  <<< FAILURE!
+java.lang.AssertionError: /7646/app_android_us/db_display/content/allergy call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_FTL(smokeTestCases.java:235)
+
+Smoke_Test_Verify_outdoor_detailpage_adcall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.111 s  <<< FAILURE!
+java.lang.AssertionError: /7646/app_android_us/db_display/details/season call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_outdoor_detailpage_adcall_FTL(smokeTestCases.java:258)
+
+Smoke_Test_Verify_hourly_detailpage_adcall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 21.676 s  <<< FAILURE!
+java.lang.AssertionError: /7646/app_android_us/db_display/details/hourly call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly_detailpage_adcall_FTL(smokeTestCases.java:284)
+
+Smoke_Test_amazon_aax_Hourly_details_adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.019 s  <<< FAILURE!
+java.lang.AssertionError: slotID ::  9be28769-4207-4d51-8063-dc8e645383b2 is not trigred for aax call db_display/details/hourly
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly_details_adcall(smokeTestCases.java:715)
+
+Smoke_Test_Verify_hourly1_detailpage_bigad_adcall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.AssertionError: /7646/app_android_us/db_display/details/hourly1 call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly1_detailpage_bigad_adcall_FTL(smokeTestCases.java:294)
+
+Smoke_Test_amazon_aax_Hourly1_bigaddetails_adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError: slotID :: 08f0ccea-cab5-449c-963d-dc57ed9ee87dis not trigred for aax call db_display/details/hourly1
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly1_bigaddetails_adcall(smokeTestCases.java:726)
+
+Smoke_Test_Verify_hourly2_detailpage_bigad_adcall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.AssertionError: /7646/app_android_us/db_display/details/hourly2 call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly2_detailpage_bigad_adcall_FTL(smokeTestCases.java:304)
+
+Smoke_Test_amazon_aax_Hourly2_bigaddetails_adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError: slotID :: 4fbed16a-cc6f-4cb1-94f7-81465acbd47edis not trigred for aax call db_display/details/hourly2
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly2_bigaddetails_adcall(smokeTestCases.java:737)
+
+Smoke_Test_Verify_hourly3__bigad_detailpage_adcall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.AssertionError: /7646/app_android_us/db_display/details/hourly3 call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly3__bigad_detailpage_adcall_FTL(smokeTestCases.java:315)
+
+Smoke_Test_amazon_aax_Hourly3_bigaddetails_adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError: slotID :: 2634dc9-b59f-4b2c-b281-bb3be291b7b6 is not trigred for aax call db_display/details/hourly3
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly3_bigaddetails_adcall(smokeTestCases.java:749)
+
+Smoke_Test_Verifying_newdailydetails_day1adcall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 23.609 s  <<< FAILURE!
+java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day1adcall_FTL(smokeTestCases.java:333)
+
+Smoke_Test_amazon_aax_Daily_details_Day1_adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.128 s  <<< FAILURE!
+java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_thu1
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Daily_details_Day1_adcall(smokeTestCases.java:767)
+
+Smoke_Test_Verifying_newdailydetails_day2adcall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 9.496 s  <<< FAILURE!
+java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day2adcall_FTL(smokeTestCases.java:347)
+
+Smoke_Test_amazon_aax_Dailydetails_Day2adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.182 s  <<< FAILURE!
+java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_fri1
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day2adcall(smokeTestCases.java:778)
+
+Smoke_Test_Verifying_newdailydetails_day3adcall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 9.651 s  <<< FAILURE!
+java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day3adcall_FTL(smokeTestCases.java:363)
+
+Smoke_Test_amazon_aax_Dailydetails_Day3adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.222 s  <<< FAILURE!
+java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_sat1
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day3adcall(smokeTestCases.java:790)
+
+Smoke_Test_Verifying_newdailydetails_day4adcall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 9.511 s  <<< FAILURE!
+java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day4adcall_FTL(smokeTestCases.java:378)
+
+Smoke_Test_amazon_aax_Dailydetails_Day4adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.268 s  <<< FAILURE!
+java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_sun1
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day4adcall(smokeTestCases.java:802)
+
+Smoke_Test_Verifying_newdailydetails_day5adcall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 9.563 s  <<< FAILURE!
+java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day5adcall_FTL(smokeTestCases.java:392)
+
+Smoke_Test_amazon_aax_Dailydetails_Day5adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.2 s  <<< FAILURE!
+java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_mon1
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day5adcall(smokeTestCases.java:812)
+
+Smoke_Test_Verifying_newdailydetails_day6adcall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 9.486 s  <<< FAILURE!
+java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day6adcall_FTL(smokeTestCases.java:406)
+
+Smoke_Test_amazon_aax_Dailydetails_Day6adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.156 s  <<< FAILURE!
+java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_tue1
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day6adcall(smokeTestCases.java:825)
+
+Smoke_Test_Verifying_newdailydetails_day7adcall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 9.564 s  <<< FAILURE!
+java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day7adcall_FTL(smokeTestCases.java:420)
+
+Smoke_Test_amazon_aax_Dailydetails_Day7adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.204 s  <<< FAILURE!
+java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_wed1
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day7adcall(smokeTestCases.java:837)
+
+Smoke_Test_Verifying_newdailydetails_day8adcall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 12.53 s  <<< FAILURE!
+java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day8adcall_FTL(smokeTestCases.java:434)
+
+Smoke_Test_amazon_aax_Dailydetails_Day8adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.162 s  <<< FAILURE!
+java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_thu2
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day8adcall(smokeTestCases.java:849)
+
+Smoke_Test_Verifying_newdailydetails_day9adcall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 12.612 s  <<< FAILURE!
+java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day9adcall_FTL(smokeTestCases.java:449)
+
+Smoke_Test_amazon_aax_Dailydetails_Day9adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.175 s  <<< FAILURE!
+java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_fri2
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day9adcall(smokeTestCases.java:863)
+
+Smoke_Test_Verifying_newdailydetails_day10adcall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 12.607 s  <<< FAILURE!
+java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day10adcall_FTL(smokeTestCases.java:463)
+
+Smoke_Test_amazon_aax_Dailydetails_Day10adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.078 s  <<< FAILURE!
+java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_sat2
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day10adcall(smokeTestCases.java:876)
+
+Smoke_Test_Verifying_newdailydetails_day11adcall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 12.824 s  <<< FAILURE!
+java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day11adcall_FTL(smokeTestCases.java:478)
+
+Smoke_Test_amazon_aax_Dailydetails_Day11adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.643 s  <<< FAILURE!
+java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_sun2
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day11adcall(smokeTestCases.java:889)
+
+Smoke_Test_Verifying_newdailydetails_day12adcall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 12.556 s  <<< FAILURE!
+java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day12adcall_FTL(smokeTestCases.java:492)
+
+Smoke_Test_amazon_aax_Dailydetails_Day12adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.139 s  <<< FAILURE!
+java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_mon2
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day12adcall(smokeTestCases.java:900)
+
+Smoke_Test_Verifying_newdailydetails_day13adcall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 12.592 s  <<< FAILURE!
+java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day13adcall_FTL(smokeTestCases.java:506)
+
+Smoke_Test_amazon_aax_Dailydetails_Day13adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.175 s  <<< FAILURE!
+java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_tue2
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day13adcall(smokeTestCases.java:913)
+
+Smoke_Test_Verifying_newdailydetails_day14adcall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 12.502 s  <<< FAILURE!
+java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day14adcall_FTL(smokeTestCases.java:521)
+
+Smoke_Test_amazon_aax_Dailydetails_Day14adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.093 s  <<< FAILURE!
+java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_wed2
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day14adcall(smokeTestCases.java:926)
+
+Smoke_Test_Verifying_newdailydetails_day15adcall_FTL(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 12.557 s  <<< FAILURE!
+java.lang.AssertionError: daily details ad call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day15adcall_FTL(smokeTestCases.java:534)
+
+Smoke_Test_amazon_aax_Dailydetails_Day15adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.073 s  <<< FAILURE!
+java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_thu3
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Dailydetails_Day15adcall(smokeTestCases.java:940)
+
+Smoke_Test_CaseVerify_WeatherFXAPI_url_KillLaunch(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 66.451 s  <<< FAILURE!
+java.lang.AssertionError: https://triggers.wfxtriggers.com/ url was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_WeatherFXAPI_url_KillLaunch(smokeTestCases.java:555)
+
+Smoke_Test_CaseVerify_Factualapi_url_KillLaunch(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.064 s  <<< FAILURE!
+java.lang.AssertionError: https://location.wfxtriggers.com url was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Factualapi_url_KillLaunch(smokeTestCases.java:562)
+
+Smoke_Test_CaseVerify_turbo_url_KillLaunch(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.AssertionError: https://api.weather.com/ url was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_turbo_url_KillLaunch(smokeTestCases.java:571)
+
+Smoke_Test__Verifying_Bcp_apicall_URL_killLaunch(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.AssertionError: https://bcp.crwdcntrl.net/ url was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_Bcp_apicall_URL_killLaunch(smokeTestCases.java:589)
+
+Smoke_Test_amazon_aax_Hourly_preroll_adcall_killLaunch(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.AssertionError: slotID ::  9be28769-4207-4d51-8063-dc8e645383b2 is not trigred for aax call db_display/details/hourly
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly_preroll_adcall_killLaunch(smokeTestCases.java:606)
+
+Smoke_Test_amazon_aax_Hourly1_bigaddetails_preroll_adcall_killLaunch(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError: slotID :: 08f0ccea-cab5-449c-963d-dc57ed9ee87dis not trigred for aax call db_display/details/hourly1
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly1_bigaddetails_preroll_adcall_killLaunch(smokeTestCases.java:617)
+
+Smoke_Test_amazon_aax_Hourly2_bigaddetails_preroll_adcall_killLaunch(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError: slotID :: 4fbed16a-cc6f-4cb1-94f7-81465acbd47edis not trigred for aax call db_display/details/hourly2
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly2_bigaddetails_preroll_adcall_killLaunch(smokeTestCases.java:629)
+
+Smoke_Test_amazon_aax_Hourly3_bigaddetails_preroll_adcall_killLaunch(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.AssertionError: slotID :: 2634dc9-b59f-4b2c-b281-bb3be291b7b6 is not trigred for aax call db_display/details/hourly3
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly3_bigaddetails_preroll_adcall_killLaunch(smokeTestCases.java:641)
+
+Smoke_Test_amazon_aax_mapsdetails_preload_adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.AssertionError: slotId 5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax call db_display/details/maps
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_mapsdetails_preload_adcall(smokeTestCases.java:654)
+
+Smoke_Test_verify_amazon_Slotid_homescreenhourly_preroll_adcall_killLaunch(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError: slotID 869c843c-7cf8-47ae-b6ed-088057e4bc8a is not trigred for aax call db_display/home_screen/hourly
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verify_amazon_Slotid_homescreenhourly_preroll_adcall_killLaunch(smokeTestCases.java:665)
+
+Smoke_Test_amazon_aaxSlot_feed1_preroladcall_killLaunch(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.AssertionError: slotID f4b66249-b6eb-4155-9d90-1e2b04487c99 is not trigred for aax call db_display/feed/feed_1
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aaxSlot_feed1_preroladcall_killLaunch(smokeTestCases.java:676)
+
+Smoke_Test_amazon_aaxSlot_feed2_preroladcall_KillLaunch(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError: slotID 752a96eb-3198-4991-b572-17ec04883b6c is not trigred for aax call db_display/feed/feed_2
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aaxSlot_feed2_preroladcall_KillLaunch(smokeTestCases.java:689)
+
+Smoke_Test_amazon_aax_Daily_details_preroll_adcall(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.AssertionError: slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for daily details
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Daily_details_preroll_adcall(smokeTestCases.java:702)
+
+Smoke_Test_Verifying_homescreenhourly_pulltoreresh_scenario_killLaunch(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 50.257 s  <<< FAILURE!
+java.lang.AssertionError: /7646/app_android_us/db_display/home_screen/hourly call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_homescreenhourly_pulltoreresh_scenario_killLaunch(smokeTestCases.java:963)
+
+Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario(twc.Automation.SmokeTestCases.smokeTestCases)  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.AssertionError: /7646/app_android_us/db_display/home_screen/marquee call was not trigred
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario(smokeTestCases.java:974)
+

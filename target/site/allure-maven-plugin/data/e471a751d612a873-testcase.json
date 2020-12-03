@@ -1,0 +1,119 @@
+{
+  "uid" : "e471a751d612a873",
+  "name" : "Smoke_Test_verifying_feed_2adcall_FTL",
+  "title" : "Verifying feed_2 ad call on FTL",
+  "time" : {
+    "start" : 1606984792633,
+    "stop" : 1606984792779,
+    "duration" : 146
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 4
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "a1e237babb51f590",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[checking for iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_2]",
+    "title" : "checking for iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_2",
+    "time" : {
+      "start" : 1606984792771,
+      "stop" : 1606984792771,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifying iu value should't be nl]",
+    "title" : "Verifying iu value should't be nl",
+    "time" : {
+      "start" : 1606984792771,
+      "stop" : 1606984792772,
+      "duration" : 1
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_2 call was trigred]",
+    "title" : "iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_2 call was trigred",
+    "time" : {
+      "start" : 1606984792776,
+      "stop" : 1606984792776,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Size of the iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_2 is sz=300x250]",
+    "title" : "Size of the iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_2 is sz=300x250",
+    "time" : {
+      "start" : 1606984792779,
+      "stop" : 1606984792779,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "thread",
+    "value" : "16211@AswinikumarsMBP.lan.main(1)"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Automation.SmokeTestCases.smokeTestCases"
+  }, {
+    "name" : "testMethod",
+    "value" : "Smoke_Test_verifying_feed_2adcall_FTL"
+  }, {
+    "name" : "host",
+    "value" : "AswinikumarsMBP.lan"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  } ],
+  "parameters" : [ ]
+}

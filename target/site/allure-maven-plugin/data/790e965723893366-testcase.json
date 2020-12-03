@@ -1,0 +1,89 @@
+{
+  "uid" : "790e965723893366",
+  "name" : "Smoke_Test_Verify_daily_feedcard_adCall_FTL",
+  "title" : "Verifying daily feed card  ad call On FTL",
+  "time" : {
+    "start" : 1606984793201,
+    "stop" : 1606984793272,
+    "duration" : 71
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 2
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "a1e237babb51f590",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fdaily ad call]",
+    "title" : "Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fdaily ad call",
+    "time" : {
+      "start" : 1606984793267,
+      "stop" : 1606984793267,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[7646/app_android_us/db_display/card/daily call was trigred]",
+    "title" : "7646/app_android_us/db_display/card/daily call was trigred",
+    "time" : {
+      "start" : 1606984793270,
+      "stop" : 1606984793270,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "thread",
+    "value" : "16211@AswinikumarsMBP.lan.main(1)"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Automation.SmokeTestCases.smokeTestCases"
+  }, {
+    "name" : "host",
+    "value" : "AswinikumarsMBP.lan"
+  }, {
+    "name" : "testMethod",
+    "value" : "Smoke_Test_Verify_daily_feedcard_adCall_FTL"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  } ],
+  "parameters" : [ ]
+}

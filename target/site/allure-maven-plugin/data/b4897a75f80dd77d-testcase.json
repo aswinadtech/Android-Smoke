@@ -1,0 +1,227 @@
+{
+  "uid" : "b4897a75f80dd77d",
+  "name" : "Smoke_Test_Verifying_newdailydetails_day14adcall_FTL",
+  "title" : "Verifying new daily details day14 ad call on FTL",
+  "time" : {
+    "start" : 1606984975357,
+    "stop" : 1606984987859,
+    "duration" : 12502
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 11
+  },
+  "failure" : {
+    "message" : "AssertionError: daily details ad call was not trigred",
+    "stackTrace" : "java.lang.AssertionError: daily details ad call was not trigred\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat twc.Automation.General.Functions.verifyingdailydetailsiu1(Functions.java:5849)\n\tat twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_newdailydetails_day14adcall_FTL(smokeTestCases.java:521)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:659)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:771)\n\tat org.testng.TestRunner.run(TestRunner.java:621)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:357)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:259)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1124)\n\tat org.testng.TestNG.run(TestNG.java:1032)\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\n"
+  },
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "FAILED",
+  "suite" : {
+    "uid" : "a1e237babb51f590",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Url :http://control.charles/session/clear Responded with status code : 200]",
+    "title" : "Url :http://control.charles/session/clear Responded with status code : 200",
+    "time" : {
+      "start" : 1606984975361,
+      "stop" : 1606984975361,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Clicking on day14]",
+    "title" : "Clicking on day14",
+    "time" : {
+      "start" : 1606984975362,
+      "stop" : 1606984975362,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Charles Download path is: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessio...]",
+    "title" : "Charles Download path is: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/",
+    "time" : {
+      "start" : 1606984987778,
+      "stop" : 1606984987778,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[To be saved file: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Ch...]",
+    "title" : "To be saved file: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile/Charles202...",
+    "time" : {
+      "start" : 1606984987778,
+      "stop" : 1606984987778,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Create new file that is empty and writable]",
+    "title" : "Create new file that is empty and writable",
+    "time" : {
+      "start" : 1606984987778,
+      "stop" : 1606984987778,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Downloading Charles HAR file to: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/Capture...]",
+    "title" : "Downloading Charles HAR file to: /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSession...",
+    "time" : {
+      "start" : 1606984987779,
+      "stop" : 1606984987779,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[File download complete]",
+    "title" : "File download complete",
+    "time" : {
+      "start" : 1606984987783,
+      "stop" : 1606984987783,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Har file size (mb): 0.001126]",
+    "title" : "Har file size (mb): 0.001126",
+    "time" : {
+      "start" : 1606984987783,
+      "stop" : 1606984987783,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Checking iu from charles data]",
+    "title" : "Checking iu from charles data",
+    "time" : {
+      "start" : 1606984987858,
+      "stop" : 1606984987858,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[iu value should not be null]",
+    "title" : "iu value should not be null",
+    "time" : {
+      "start" : 1606984987859,
+      "stop" : 1606984987859,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_wed2 was not trigered]",
+    "title" : "iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_wed2 was not trigered",
+    "time" : {
+      "start" : 1606984987859,
+      "stop" : 1606984987859,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "thread",
+    "value" : "16211@AswinikumarsMBP.lan.main(1)"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Automation.SmokeTestCases.smokeTestCases"
+  }, {
+    "name" : "host",
+    "value" : "AswinikumarsMBP.lan"
+  }, {
+    "name" : "testMethod",
+    "value" : "Smoke_Test_Verifying_newdailydetails_day14adcall_FTL"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  } ],
+  "parameters" : [ ]
+}
