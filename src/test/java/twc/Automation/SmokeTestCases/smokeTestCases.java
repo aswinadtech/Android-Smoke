@@ -330,7 +330,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						//Functions.closeInterstailads();
 						Functions.clickongotit();
 						this.proxy.getXml();
-						Functions.verifyingdailydetailiu();
+						//Functions.verifyingdailydetailiu();
 						System.out.println(
 								"=================  Verifying new daily details day1 ad call tescase  End =========================");
 					}
@@ -344,7 +344,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						proxy.clearCharlesSession();
 						Functions.clickonday2();
 						this.proxy.getXml();
-						Functions.verifyingdailydetailiu();
+						//Functions.verifyingdailydetailiu();
 					//	Functions.verifyingdailydetailsiu();
 						System.out.println(
 								"================= Verifying new daily details day2 ad call test case End =========================");
@@ -360,7 +360,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						//Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday3();
 						this.proxy.getXml();
-						Functions.verifyingdailydetailiu();
+						//Functions.verifyingdailydetailiu();
 						System.out.println(
 								"================= Verifying new daily details day3 ad call test case End =========================");
 					}
@@ -375,7 +375,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday4();
 						this.proxy.getXml();
-						Functions.verifyingdailydetailiu();
+						//Functions.verifyingdailydetailiu();
 						System.out.println(
 								"================= Verifying new daily details day4 ad call tescase End =========================");
 					}
@@ -389,7 +389,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday5();
 						this.proxy.getXml();
-						Functions.verifyingdailydetailiu();
+						//Functions.verifyingdailydetailiu();
 						System.out.println(
 								"================= Verifying new daily details day5 ad call tescase End =========================");
 					}
@@ -403,7 +403,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday6();
 						this.proxy.getXml();
-						Functions.verifyingdailydetailiu();
+						//Functions.verifyingdailydetailiu();
 						System.out.println(
 								"================= Verifying new daily details day6 ad call tescase End =========================");
 					}
@@ -417,7 +417,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday7();
 						this.proxy.getXml();
-						Functions.verifyingdailydetailiu();
+						//Functions.verifyingdailydetailiu();
 						System.out.println(
 								"================= Verifying new daily details day7 ad call tescase End =========================");
 					}
@@ -431,7 +431,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						//Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday8();
 						this.proxy.getXml();
-						Functions.verifyingdailydetailsiu1();
+						//Functions.verifyingdailydetailsiu1();
 						System.out.println(
 								"================= Verifying new daily details day8 ad call tescase End =========================");
 					}
@@ -446,7 +446,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						//Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday9();
 						this.proxy.getXml();
-						Functions.verifyingdailydetailsiu1();
+						//Functions.verifyingdailydetailsiu1();
 						System.out.println(
 								"================= Verifying new daily details day9 ad call tescase End =========================");
 					}
@@ -460,7 +460,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday10();
 						this.proxy.getXml();
-						Functions.verifyingdailydetailsiu1();
+						//Functions.verifyingdailydetailsiu1();
 						
 						System.out.println(
 								"================= Verifying new daily details day10 ad call tescase End =========================");
@@ -475,7 +475,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						//Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday11();
 						this.proxy.getXml();
-						Functions.verifyingdailydetailsiu1();
+						//Functions.verifyingdailydetailsiu1();
 						System.out.println(
 								"================= Verifying new daily details day11 ad call tescase End =========================");
 					}
@@ -489,7 +489,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday12();
 						this.proxy.getXml();
-						Functions.verifyingdailydetailsiu1();
+						//Functions.verifyingdailydetailsiu1();
 						System.out.println(
 								"================= Verifying new daily details day12 ad call tescase End =========================");
 					}
@@ -503,7 +503,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday13();
 						this.proxy.getXml();
-						Functions.verifyingdailydetailsiu1();
+						//Functions.verifyingdailydetailsiu1();
 						System.out.println(
 								"================= Verifying new daily details day13 ad call tescase End =========================");
 					}
@@ -518,7 +518,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday14();
 						this.proxy.getXml();
-						Functions.verifyingdailydetailsiu1();
+						//Functions.verifyingdailydetailsiu1();
 						System.out.println(
 								"================= Verifying new daily details day14 ad call tescase End =========================");
 					}
@@ -531,7 +531,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday15();
 						this.proxy.getXml();
-						Functions.verifyingdailydetailsiu2();
+						//Functions.verifyingdailydetailsiu2();
 						System.out.println(
 								"================= Verifying new daily details day15 ad call tescase End =========================");
 					}
@@ -764,7 +764,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day1 adcall test case Started =========================");
 					  Functions.gettingDayofWeekFromUI(1);
-						Functions.get_aaxcal_Daily();
+						//Functions.get_aaxcal_Daily();
 						System.out.println("================= Verifying amazon slot id for  daily details day 1 adcall test case End =========================");
 					}
 
@@ -775,7 +775,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day2  adcall test case Started =========================");
 					  Functions.gettingDayofWeekFromUI(1);
-						Functions.get_aaxcal_Daily();
+						//Functions.get_aaxcal_Daily();
 						System.out.println("================= Verifying amazon slot id for  daily details day2 adcall test case End =========================");
 					}
 
@@ -787,7 +787,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day3  adcall test case Started =========================");
 					  Functions.gettingDayofWeekFromUI(1);
-						Functions.get_aaxcal_Daily();
+						//Functions.get_aaxcal_Daily();
 						System.out.println("================= Verifying amazon slot id for  daily details day3 adcall test case End =========================");
 					}
 
@@ -799,7 +799,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day4  adcall test case Started =========================");
 					  Functions.gettingDayofWeekFromUI(1);
-						Functions.get_aaxcal_Daily();
+						//Functions.get_aaxcal_Daily();
 						System.out.println("================= Verifying amazon slot id for  daily details day4 adcall test case End =========================");
 					}
 
@@ -809,7 +809,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day5  adcall test case Started =========================");
 					  Functions.gettingDayofWeekFromUI(1);
-						Functions.get_aaxcal_Daily();
+						//Functions.get_aaxcal_Daily();
 						System.out.println("================= Verifying amazon slot id for  daily details day5 adcall test case End =========================");
 					}
 					
@@ -822,7 +822,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day6  adcall test case Started =========================");
 					  Functions.gettingDayofWeekFromUI(1);
-						Functions.get_aaxcal_Daily();
+						//Functions.get_aaxcal_Daily();
 						System.out.println("================= Verifying amazon slot id for  daily details day6 adcall test case End =========================");
 					}
 
@@ -834,7 +834,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day7  adcall test case Started =========================");
 					  Functions.gettingDayofWeekFromUI(1);
-						Functions.get_aaxcal_Daily();
+						//Functions.get_aaxcal_Daily();
 						System.out.println("================= Verifying amazon slot id for  daily details day7 adcall test case End =========================");
 					}
 
@@ -846,7 +846,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day8  adcall test case Started =========================");
 					  Functions.gettingDayofWeekFromUI(2);
-						Functions.get_aaxcal_Daily();
+						//Functions.get_aaxcal_Daily();
 						System.out.println("================= Verifying amazon slot id for  daily details day8 adcall test case End =========================");
 					}
 
@@ -860,7 +860,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day9  adcall test case Started =========================");
 					  Functions.gettingDayofWeekFromUI(2);
-						Functions.get_aaxcal_Daily();
+						//Functions.get_aaxcal_Daily();
 						System.out.println("================= Verifying amazon slot id for  daily details day9 adcall test case End =========================");
 					}
 
@@ -873,7 +873,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day10  adcall test case Started =========================");
 					  Functions.gettingDayofWeekFromUI(2);
-						Functions.get_aaxcal_Daily();
+						//Functions.get_aaxcal_Daily();
 						System.out.println("================= Verifying amazon slot id for  daily details day10 adcall test case End =========================");
 					}
 
@@ -886,7 +886,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day11  adcall test case Started =========================");
 					  Functions.gettingDayofWeekFromUI(2);
-						Functions.get_aaxcal_Daily();
+						//Functions.get_aaxcal_Daily();
 						System.out.println("================= Verifying amazon slot id for  daily details day11 adcall test case End =========================");
 					}
 
@@ -897,7 +897,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day12  adcall test case Started =========================");
 					  Functions.gettingDayofWeekFromUI(2);
-						Functions.get_aaxcal_Daily();
+						//Functions.get_aaxcal_Daily();
 						System.out.println("================= Verifying amazon slot id for  daily details day12 adcall test case End =========================");
 					}
 
@@ -910,7 +910,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day13  adcall test case Started =========================");
 					  Functions.gettingDayofWeekFromUI(2);
-						Functions.get_aaxcal_Daily();
+						//Functions.get_aaxcal_Daily();
 						System.out.println("================= Verifying amazon slot id for  daily details day13 adcall test case End =========================");
 					}
 
@@ -923,7 +923,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day14  adcall test case Started =========================");
 					  Functions.gettingDayofWeekFromUI(2);
-						Functions.get_aaxcal_Daily();
+						//Functions.get_aaxcal_Daily();
 						System.out.println("================= Verifying amazon slot id for  daily details day14 adcall test case End =========================");
 					}
 
@@ -937,7 +937,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day15  adcall test case Started =========================");
 					  Functions.gettingDayofWeekFromUI(3);
-						Functions.get_aaxcal_Daily();
+						//Functions.get_aaxcal_Daily();
 						System.out.println("================= Verifying amazon slot id for  daily details day15 adcall test case End =========================");
 					}
 					
@@ -960,7 +960,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					  AppFunctions.Pull_To_Refresh("Pulltorefresh");
 					  AppFunctions.Pull_To_Refresh("Pulltorefresh");
 						this.proxy.getXml();
-					  Functions.finding_Homescreen_iu_value();	 
+					 // Functions.finding_Homescreen_iu_value();	 
 					  System.out. println("=================  Verifying  home screen hourly  ad  call pull to refrersh scenario  End =========================" ); 
 					  }
 					  
@@ -971,7 +971,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					  Exception {
 					  logStep("Verifying  home screen marquee call pull to refrersh scenario");
 					  System.out. println("================= Verifying  home screen marquee call pull to refrersh scenario started =========================");
-					  Functions.finding_Homescreen_marquee_iu_value(); 
+					//  Functions.finding_Homescreen_marquee_iu_value(); 
 					  System.out.println("================= Verifying  home screen marquee call pull to refrersh scenario  End =========================" );  
 					  }
 					
