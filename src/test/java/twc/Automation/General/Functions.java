@@ -388,6 +388,30 @@ public class Functions extends Drivers{
 		}
 		return expected_results;
 	}
+	
+	
+	public static Map<String, String> health_and_activities_Allergy_spotlight_adcall_iu() throws Exception{
+
+	Map<String , String> wfxtriggers_values = new HashMap<String, String>();
+	String wxtgValues="";
+
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+	System.out.println("Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl ad call");
+	logStep("Verifyingiu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl ad call");
+	if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl")) {
+	System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl call was trigred");
+	logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl call was trigred");
+}
+if(!sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl")) {
+System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl call was not trigred");
+logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl call was not  trigred");
+Assert.fail("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl call was not trigred");
+}
+return wfxtriggers_values;
+}
 
 	public static void clean_App_Launch(String excel_sheet_name) throws Exception{
 
@@ -455,34 +479,6 @@ public class Functions extends Drivers{
 	
 	
 	
-public static void verifyingsize_allergyspotlightadcall() throws Exception {
-	//Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[1]/android.widget.LinearLayout").click();
-	String expected_data = null;
-	DeviceStatus device_status = new DeviceStatus();
-	int Cap = device_status.Device_Status();
-	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
-	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
-	//String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
-//	logStep("Verifying  SOD custum param for  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar ad call");
-	System.out.println("Checking size for allergy spotlight ad call");
-	logStep("Checking size for allergy spotlight ad call");
-		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl")){
-			
-			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl"));
-	//		String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("&amp"));
-			 expected_data = Read_API_Call_Data.toString().substring(Read_API_Call_Data.indexOf("iu"),Read_API_Call_Data.indexOf("&correlator"));
-			 String val[]=expected_data.split("&");
-				if(val[0].contains("180x36")) {
-				System.out.println("Size of the  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl  is matched with   " + val[1]);
-				logStep(" Size of the  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl  is matched with " + val[1]);
-				}	
-			else {
-					System.out.println("Size of the  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl  is not  matched with   " + val[1]);
-					logStep(" Size of the  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl  is not  matched with " + val[1]);
-		}
-	
-		}
-}
 
 
 public static void verifyingsize_allergyspotlightadcall() throws Exception {
