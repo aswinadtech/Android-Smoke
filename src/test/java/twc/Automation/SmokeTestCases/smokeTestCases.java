@@ -120,7 +120,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	@Title("Verifying feed_2 ad call on FTL")
 	public void Smoke_Test_verifying_feed_2adcall_FTL() throws Exception {
 		System.out.println("================= Verifying feed_2 ad call tescase Started =========================");
-		//Functions.verifying_feedcalls(2);
+		Functions.verifying_feedcalls(2);
 		System.out.println("================= Verifying feed_2 ad call tescase End =========================");
 	}
 
@@ -129,7 +129,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	@Title("Verifying feed_3 ad cal on FTL")
 	public void Smoke_Test_verifying_feed_3adCall_FTL() throws Exception {
 		System.out.println("================= Verifying feed_3 ad call tescase Started =========================");
-		//Functions.verifying_feedcalls(3);
+		Functions.verifying_feedcalls(3);
 		System.out.println("================= Verifying feed_3 ad call tescase End =========================");
 	}
 
@@ -137,7 +137,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	@Title("Verifying feed_4 ad call on FTL")
 	public void Smoke_Test_verifying_feed_4adcall_FTL() throws Exception {
 		System.out.println("================= Verifying feed_4 ad call tescase Started =========================");
-		//Functions.verifying_feedcalls(4);
+		Functions.verifying_feedcalls(4);
 		System.out.println("================= Verifying feed_4 ad call tescase End =========================");
 	}
 
@@ -146,7 +146,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	@Title("Verifying feed_5 ad call on FTL")
 	public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		System.out.println("================= Verifying feed_5 ad call tescase Started =========================");
-		//Functions.verifying_feedcalls(5);
+		Functions.verifying_feedcalls(5);
 		System.out.println("================= Verifying feed_5 ad call tescase End =========================");
 	}
 
@@ -588,13 +588,13 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						Functions.validating_WeatherFXAPI();
 						System.out.println("================= Verifying WeatherFX API url End =========================");
 					}
-					@Test(priority = 302, enabled = true)
+					/*@Test(priority = 302, enabled = true)
 					@Title("Verifying Location/Factual  api call url on KillLaunch")
 					public void Smoke_Test_CaseVerify_Factualapi_url_KillLaunch() throws Exception {
 						System.out.println("================= Verifying WeatherFX API url started =========================");
 						Functions.validating_Fatual();
 						System.out.println("================= Verifying WeatherFX API url End =========================");
-					}
+					}*/
 
 					
 					@Test(priority = 304, enabled = true)
