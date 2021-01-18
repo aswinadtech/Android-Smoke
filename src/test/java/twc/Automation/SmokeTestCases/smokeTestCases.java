@@ -238,6 +238,39 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 			}
 			
 		
+			@Test(priority = 31, enabled = true)
+			@Title("Verifying  Allergy spotlight ad call on FTL")
+			public void Smoke_Test_Verify_health_and_activities_Allergy_spotlight_adcall_FTL() throws Exception {
+				System.out.println(
+						"================= Verify_health_and_activities_Allergy_spotlight_adcall_iu Started =========================");
+				Functions.health_and_activities_Allergy_spotlight_adcall_iu();
+				System.out.println(
+						"================= Verify_health_and_activities_Allergy_spotlight_adcall_iu End =========================");
+			}
+			
+			
+			@Test(priority = 32, enabled = true)
+			@Title("Verifying  Allergy spotlight ad call size")
+			public void Smoke_Test_Verify_health_and_activities_Allergy_spotlight_adcall_size() throws Exception {
+				System.out.println(
+						"================= Verify_health_and_activities_Allergy_spotlight_adcall_size Started =========================");
+				Functions.verifyingsize_allergyspotlightadcall();
+				System.out.println(
+						"================= Verify_health_and_activities_Allergy_spotlight_adcall_size End =========================");
+			}
+			
+			
+			
+
+			@Test(priority = 33, enabled = true)
+			@Title("Verifying pos custum param for Allergy spotlight ad call")
+			public void Smoke_Test_Verify_health_and_activities_Allergy_spotlight_pos_custumparam() throws Exception {
+				System.out.println(
+						"================= Verify_health_and_activities_Allergy_spotlight_adcall_pos custumparam Started =========================");
+				Functions.validate_pos_Cust_param_Allergy_spotloght();
+				System.out.println(
+						"================= Verify_health_and_activities_Allergy_spotlight_adcall_pos custumparamEnd =========================");
+			}
 			
 			
 				/*@Test(priority = 32, enabled = false)
