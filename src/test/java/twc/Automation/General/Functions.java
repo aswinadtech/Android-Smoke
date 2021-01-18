@@ -6652,7 +6652,7 @@ public static void verifying_feedcalls(int i) throws Exception {
 			System.out.println("checking for "  +feed+i);
 			logStep("Verifying iu value should't be nl");
 			System.out.println("Verifying iu value should't be nl");
-	if(i!=1) {
+	/*if(i!=1) {
 		if(sb.contains(feed+i) &&  !(feed+i).isEmpty() && !(feed+i).contains("nl") ) {			
 		System.out.println(feed+i +" call was trigred");
 		logStep(feed+i +" call was trigred");
@@ -6672,7 +6672,7 @@ public static void verifying_feedcalls(int i) throws Exception {
 			logStep(feed+i +" call was not trigred");
 		     Assert.fail(feed+i + " call was not trigred");
 			}
-		}
+		}*/
 	
 	 if(i==1) {
 		if(sb.contains(feed+i) &&  !(feed+i).isEmpty()) {			
@@ -6691,11 +6691,11 @@ public static void verifying_feedcalls(int i) throws Exception {
 		}
 		
 	 
-		else {
+		/*else {
 			System.out.println(feed+i +"call was not trigred");
 			logStep(feed+i +" call was not trigred");
 		     Assert.fail(feed+i + " call was not trigred");
-		}
+		}*/
 	 }
 	
 	
