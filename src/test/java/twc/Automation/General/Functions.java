@@ -451,6 +451,103 @@ public class Functions extends Drivers{
 
 	}
 
+	
+	
+	
+	
+public static void verifyingsize_allergyspotlightadcall() throws Exception {
+	//Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[1]/android.widget.LinearLayout").click();
+	String expected_data = null;
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+	//String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
+//	logStep("Verifying  SOD custum param for  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar ad call");
+	System.out.println("Checking size for allergy spotlight ad call");
+	logStep("Checking size for allergy spotlight ad call");
+		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl")){
+			
+			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl"));
+	//		String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("&amp"));
+			 expected_data = Read_API_Call_Data.toString().substring(Read_API_Call_Data.indexOf("iu"),Read_API_Call_Data.indexOf("&correlator"));
+			 String val[]=expected_data.split("&");
+				if(val[0].contains("180x36")) {
+				System.out.println("Size of the  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl  is matched with   " + val[1]);
+				logStep(" Size of the  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl  is matched with " + val[1]);
+				}	
+			else {
+					System.out.println("Size of the  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl  is not  matched with   " + val[1]);
+					logStep(" Size of the  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl  is not  matched with " + val[1]);
+		}
+	
+		}
+}
+
+
+public static void verifyingsize_allergyspotlightadcall() throws Exception {
+	//Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[1]/android.widget.LinearLayout").click();
+	String expected_data = null;
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+	//String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
+//	logStep("Verifying  SOD custum param for  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar ad call");
+	System.out.println("Checking size for allergy spotlight ad call");
+	logStep("Checking size for allergy spotlight ad call");
+		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl")){
+			
+			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl"));
+	//		String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("&amp"));
+			 expected_data = Read_API_Call_Data.toString().substring(Read_API_Call_Data.indexOf("iu"),Read_API_Call_Data.indexOf("&correlator"));
+			 String val[]=expected_data.split("&");
+				if(val[0].contains("180x36")) {
+				System.out.println("Size of the  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl  is matched with   " + val[1]);
+				logStep(" Size of the  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl  is matched with " + val[1]);
+				}	
+			else {
+					System.out.println("Size of the  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl  is not  matched with   " + val[1]);
+					logStep(" Size of the  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl  is not  matched with " + val[1]);
+		}
+	
+		}
+}
+
+
+
+public static void validate_pos_Cust_param_Allergy_spotloght() throws Exception {
+	
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl")){
+			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl"));
+			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("cust_params="));
+			String expected_data = required_info.toString().substring(required_info.indexOf("pos%3D"),required_info.indexOf("%26ref%3D"));
+			
+			//6sod%3Dno%
+			String expectedValues = expected_data.toString();
+			String pos=expectedValues.replaceAll("%3D", "=");
+			
+			if(pos.contains("app_sl")) {
+				System.out.println("pos cust param value  is " +pos);
+				logStep("pos cust param value  is " +pos);
+			}
+			else {
+				System.out.println("pos cust param value is not matchged with"     + pos);
+				logStep("pos cust param value is not matchged with"     + pos);
+				Assert.fail("pos cust param value is not matchged withh"     + pos);
+			}
+			//System.out.println(expectedValues);
+			
+		}
+}
+	
+	
+	
+	
 	public static void bb_call_validation(String excel_sheet_name) throws Exception{
 
 		DeviceStatus device_status = new DeviceStatus();
