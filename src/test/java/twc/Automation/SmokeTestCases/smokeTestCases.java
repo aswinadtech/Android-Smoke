@@ -711,6 +711,15 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 									"================= Verify amazon aax slot Id for feed1 prerol adcall testcase End =========================");
 
 						}
+	@Test(priority = 322, enabled = true)
+					@Title("Verifying amazon Slot Id  video ad call preload")
+					public void Smoke_Test_amazon_aax_preload_video_adcall() throws Exception {
+						System.out.println("================= Verify amazon aax video adcall Started =========================");
+						logStep(" Verifying preload amazon aax for  video details");
+						Functions.get_aaxcal_video_details();
+						System.out.println("================= Verify amazon aax video  adcall End =========================");
+					}
+				 
 					
 					@Test(priority = 324, enabled = true)
 					@Title("Verifying amazon Slot Id for feed2 prerol ad call on killLaunch")
