@@ -206,7 +206,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 			}
 			
 		    
-		/*	@Test(priority = 26, enabled = true)
+			@Test(priority = 26, enabled = true)
 			@Title("Verifying Running content page ad call  FTL")
 			public void Smoke_Test_Verify_health_and_activities_Running_contenPage_adcall_FTL() throws Exception {
 				System.out.println(
@@ -225,7 +225,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 				Functions.health_and_activities_Boat_beach_detailpage_adcall_iu();
 				System.out.println(
 						"================= Verify_health_and_activities_Bot&beach_contenPage_adcall_iu End =========================");
-			}*/
+			}
 			
 			@Test(priority = 30, enabled = true)
 			@Title("Verifying  Allergy content page ad call on FTL")
@@ -273,7 +273,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 			}
 			
 			
-				/*@Test(priority = 32, enabled = false)
+			@Test(priority = 32, enabled = false)
 			@Title("Verifying Cold&Flu content page ad call on FTL")
 			public void Smoke_Test_Verify_health_and_activities_coldFlu_contenPaget_adcall_FTL() throws Exception {
 				System.out.println(
@@ -281,7 +281,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 				Functions.health_and_activities_Cold_Flu_detailpage_adcall_iu();
 				System.out.println(
 						"================= Verify_health_and_activities_coldFlu_contenPage_adcall_iu End =========================");
-			}*/
+			}
 			
 				@Test(priority = 34, enabled = true)
 				@Title("Verifying  outdoor conditions  detailed page ad call on FTL")
