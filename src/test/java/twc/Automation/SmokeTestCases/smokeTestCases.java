@@ -95,7 +95,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	 Thread.sleep(10000);
 		AppiumFunctions.SwipeUp_Counter_feedcards(35);
 		this.proxy.getXml();
-		CharlesFunctions.archive_folder("Charles");
+		//CharlesFunctions.archive_folder("Charles");
 		Functions.finding_Homescreen_marquee_iu_value();
 		System.out.println(
 				"================= verifying iu value for home screen marquee test case End =========================");
@@ -401,6 +401,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					public void Smoke_Test_Verifying_newdailydetails_day3adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day3 ad call test case Started =========================");
+						
 						CharlesFunctions.archive_folder("Charles");
 						proxy.clearCharlesSession();
 						//Functions.finding_newDailyBidadcall_day2();
