@@ -294,45 +294,40 @@ public class CharlesFunctions extends Drivers{
 		}*/
 	
 	
-	// Archives Charles session xml files
-	public static void archive_folder(String folderType) throws Exception {
-		DeviceStatus device_status = new DeviceStatus();
-		int Cap = device_status.Device_Status();
+		// Archives Charles session xml files
+		public static void archive_folder(String folderType) throws Exception {
+			DeviceStatus device_status = new DeviceStatus();
+			int Cap = device_status.Device_Status();
 
-		String[][] paths = read_excel_data.exceldataread("Paths");
-		String downloadPath = null;
-		String archivedSessions = System.getProperty("user.dir") + "/ArchivedSessions";
-		
-	
+			String[][] paths = read_excel_data.exceldataread("Paths");
+			String downloadPath = null;
+			String archivedSessions = System.getProperty("user.dir") + "/ArchivedSessions";
 
 			if (folderType.equals("Charles")) {
 				downloadPath = paths[4][Cap];
 			}
 			
-		
-	
-		File index = new File(downloadPath);
 
-		for (final File fileEntry : index.listFiles()) {
-			if (fileEntry.isDirectory()) {
+			// String Screenshots = readExcelValues.data[16][Cap];
 
-				// listFilesForFolder(fileEntry);
-				// listFilesForFolder(fileEntry);
-				// archive_folder(fileEntry.toString());
-				FileUtils.moveDirectoryToDirectory(fileEntry, new File(archivedSessions), true);
-					System.out.println("file archived");
-		                    	logStep("file archived");
+			File index = new File(downloadPath);
 
-			} else {
-				if (fileEntry.toString().contains("chlsx")) {
+			for (final File fileEntry : index.listFiles()) {
+				if (fileEntry.isDirectory()) {
 
-					FileUtils.moveFileToDirectory(fileEntry, new File(archivedSessions), true);
-					System.out.println("file archived");
-		                    	logStep("file archived");
+					// listFilesForFolder(fileEntry);
+					// listFilesForFolder(fileEntry);
+					// archive_folder(fileEntry.toString());
+					FileUtils.moveDirectoryToDirectory(fileEntry, new File(archivedSessions), true);
+
+				} else {
+					if (fileEntry.toString().contains("chlsx")) {
+
+						FileUtils.moveFileToDirectory(fileEntry, new File(archivedSessions), true);
+					}
 				}
 			}
 		}
-	}
 	
 
 	public static void StopExportSessionXMLFile() throws Exception{
