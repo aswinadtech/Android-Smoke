@@ -225,7 +225,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 			}
 			
 			
-	 @Test(priority = 28, enabled = false)
+	 @Test(priority = 28, enabled = true)
 			@Title("Verifying Boat&Beach content page ad call on FTL")
 			public void Smoke_Test_Verify_health_and_activities_Bot_Beach_contenPage_adcall_FTL() throws Exception {
 				System.out.println(
@@ -281,7 +281,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 			}
 			
 			
-			@Test(priority = 32, enabled = false)
+			@Test(priority = 32, enabled = true)
 			@Title("Verifying Cold&Flu content page ad call on FTL")
 			public void Smoke_Test_Verify_health_and_activities_coldFlu_contenPaget_adcall_FTL() throws Exception {
 				System.out.println(
