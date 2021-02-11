@@ -95,6 +95,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	 Thread.sleep(10000);
 		AppiumFunctions.SwipeUp_Counter_feedcards(35);
 		this.proxy.getXml();
+		CharlesFunctions.archive_folder("Charles");
 		Functions.finding_Homescreen_marquee_iu_value();
 		System.out.println(
 				"================= verifying iu value for home screen marquee test case End =========================");
@@ -311,6 +312,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 				@Title("Verifying  hourly detailpage al call on FTL")
 				public void Smoke_Test_Verify_hourly_detailpage_adcall_FTL() throws Exception {
 					System.out.println("================= Verifying hourly_detailpage_adcall_iu test case  Started =========================");
+					CharlesFunctions.archive_folder("Charles");
 					proxy.clearCharlesSession();
 					Thread.sleep(5000);
 				   AppFunctions.click_hourly_element();
@@ -366,6 +368,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					public void Smoke_Test_Verifying_newdailydetails_day1adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day1 ad call tescase Started =========================");
+						CharlesFunctions.archive_folder("Charles");
 						proxy.clearCharlesSession();
 						Functions.clickdailydetails();
 						//Functions.closeInterstailads();
@@ -382,6 +385,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					public void Smoke_Test_Verifying_newdailydetails_day2adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day2 ad call test case Started=========================");
+						CharlesFunctions.archive_folder("Charles");
 						proxy.clearCharlesSession();
 						Functions.clickonday2();
 						this.proxy.getXml();
@@ -397,6 +401,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					public void Smoke_Test_Verifying_newdailydetails_day3adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day3 ad call test case Started =========================");
+						CharlesFunctions.archive_folder("Charles");
 						proxy.clearCharlesSession();
 						//Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday3();
@@ -412,6 +417,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					public void Smoke_Test_Verifying_newdailydetails_day4adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day4 ad call tescase Started =========================");
+						CharlesFunctions.archive_folder("Charles");
 						proxy.clearCharlesSession();
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday4();
@@ -426,7 +432,8 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					public void Smoke_Test_Verifying_newdailydetails_day5adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day5 ad call tescase Started =========================");
-						proxy.clearCharlesSession();//
+						CharlesFunctions.archive_folder("Charles");
+						proxy.clearCharlesSession();
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday5();
 						this.proxy.getXml();
@@ -440,6 +447,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					public void Smoke_Test_Verifying_newdailydetails_day6adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day6 ad call tescase Started =========================");
+						CharlesFunctions.archive_folder("Charles");
 						proxy.clearCharlesSession();
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday6();
@@ -454,6 +462,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					public void Smoke_Test_Verifying_newdailydetails_day7adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day7 ad call tescase Started =========================");
+						CharlesFunctions.archive_folder("Charles");
 						proxy.clearCharlesSession();
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday7();
@@ -468,6 +477,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					public void Smoke_Test_Verifying_newdailydetails_day8adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day8 ad call tescase Started =========================");
+						CharlesFunctions.archive_folder("Charles");
 						proxy.clearCharlesSession();
 						//Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday8();
@@ -483,6 +493,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					public void Smoke_Test_Verifying_newdailydetails_day9adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day9 ad call tescase Started =========================");
+						CharlesFunctions.archive_folder("Charles");
 						proxy.clearCharlesSession();
 						//Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday9();
@@ -497,6 +508,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					public void Smoke_Test_Verifying_newdailydetails_day10adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day10 ad call tescase Started =========================");
+						CharlesFunctions.archive_folder("Charles");
 						proxy.clearCharlesSession();
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday10();
@@ -512,6 +524,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					public void Smoke_Test_Verifying_newdailydetails_day11adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day11 ad call tescase Started =========================");
+						CharlesFunctions.archive_folder("Charles");
 						proxy.clearCharlesSession();
 						//Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday11();
@@ -526,6 +539,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					public void Smoke_Test_Verifying_newdailydetails_day12adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day12 ad call tescase Started =========================");
+						CharlesFunctions.archive_folder("Charles");
 						proxy.clearCharlesSession();
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday12();
@@ -540,6 +554,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					public void Smoke_Test_Verifying_newdailydetails_day13adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day13 ad call tescase Started =========================");
+						CharlesFunctions.archive_folder("Charles");
 						proxy.clearCharlesSession();
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday13();
@@ -555,6 +570,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					public void Smoke_Test_Verifying_newdailydetails_day14adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day14 ad call tescase Started =========================");
+						CharlesFunctions.archive_folder("Charles");
 						proxy.clearCharlesSession();
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday14();
@@ -568,6 +584,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					public void Smoke_Test_Verifying_newdailydetails_day15adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day15 ad call tescase Started =========================");
+						CharlesFunctions.archive_folder("Charles");
 						proxy.clearCharlesSession();
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday15();
@@ -586,6 +603,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					@Title("Verifying wfxtg trigger api call url on KillLaunch")
 					public void Smoke_Test_CaseVerify_WeatherFXAPI_url_KillLaunch() throws Exception {
 						System.out.println("================= Verifying WeatherFX API url started =========================");
+						CharlesFunctions.archive_folder("Charles");
 						proxy.clearCharlesSession();
 				    	AppFunctions.Kill_Launch_App();
 				       AppiumFunctions.ClickonIUnderstand();
@@ -1006,7 +1024,8 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					  System.out.
 					  println("================= Verifying  home screen hourly  ad  call pull to refrersh scenario started =========================" ); 
 					 AppFunctions.Kill_Launch_App();
-						proxy.clearCharlesSession();
+						CharlesFunctions.archive_folder("Charles");
+						  proxy.clearCharlesSession();
 					  AppFunctions.Pull_To_Refresh("Pulltorefresh");
 					  AppFunctions.Pull_To_Refresh("Pulltorefresh");
 						this.proxy.getXml();
@@ -1022,6 +1041,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					  logStep("Verifying  home screen marquee call pull to refrersh scenario");
 					  System.out. println("================= Verifying  home screen marquee call pull to refrersh scenario started =========================");
 					//  Functions.finding_Homescreen_marquee_iu_value(); 
+						  CharlesFunctions.archive_folder("Charles");
 					  System.out.println("================= Verifying  home screen marquee call pull to refrersh scenario  End =========================" );  
 					  }
 					
