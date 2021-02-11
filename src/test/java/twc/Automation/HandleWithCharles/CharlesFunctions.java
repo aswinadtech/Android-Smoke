@@ -259,7 +259,7 @@ public class CharlesFunctions extends Drivers{
 	}
 	
 	// Archives Charles session xml files
-		public static void archive_folder(String folderType) throws Exception {
+		/*public static void archive_folder(String folderType) throws Exception {
 			DeviceStatus device_status = new DeviceStatus();
 			int Cap = device_status.Device_Status();
 
@@ -291,7 +291,49 @@ public class CharlesFunctions extends Drivers{
 					}
 				}
 			}
+		}*/
+	
+	
+	// Archives Charles session xml files
+	public static void archive_folder(String folderType) throws Exception {
+		DeviceStatus device_status = new DeviceStatus();
+		int Cap = device_status.Device_Status();
+
+		String[][] paths = read_excel_data.exceldataread("Paths");
+		String downloadPath = null;
+		String archivedSessions = System.getProperty("user.dir") + "/ArchivedSessions";
+		
+	
+
+			if (folderType.equals("Charles")) {
+				downloadPath = paths[4][Cap];
+			}
+			
+		
+	
+		File index = new File(downloadPath);
+
+		for (final File fileEntry : index.listFiles()) {
+			if (fileEntry.isDirectory()) {
+
+				// listFilesForFolder(fileEntry);
+				// listFilesForFolder(fileEntry);
+				// archive_folder(fileEntry.toString());
+				FileUtils.moveDirectoryToDirectory(fileEntry, new File(archivedSessions), true);
+					System.out.println("file archived");
+		                    	logStep("file archived");
+
+			} else {
+				if (fileEntry.toString().contains("chlsx")) {
+
+					FileUtils.moveFileToDirectory(fileEntry, new File(archivedSessions), true);
+					System.out.println("file archived");
+		                    	logStep("file archived");
+				}
+			}
 		}
+	}
+	
 
 	public static void StopExportSessionXMLFile() throws Exception{
 
