@@ -1190,7 +1190,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 
 
-							/*@Test(priority = 31, enabled = false)
+							@Test(priority = 31, enabled = false)
 							@Title("Verifying amazon slot Id  for Boat&Beach Bigbanner ad")
 							public void Smoke_Test_Verify_amazon_SlotId_Boat_Beach_Bigbanner_ad() throws Exception {
 								System.out.println(
@@ -1198,11 +1198,11 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 								Functions.get_aaxcal_Boat_Beach_Bigbanner();
 								System.out.println(
 										"================= verifying amazon SlotId for Boat&Beach BigBanner adcall End =========================");
-							}*/
+							}
 
 
 
-						/*	@Test(priority = 33, enabled = true)
+							@Test(priority = 33, enabled = true)
 							@Title("Verifying amazon slot Id for Allergy Bigbanner ad")
 							public void Smoke_Test_Verify_amazon_SlotId_Allergy_Bigbanner_ad() throws Exception {
 								System.out.println(
@@ -1210,7 +1210,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 								Functions.get_aaxcal_Allergy_Bigbanner();
 								System.out.println(
 										"================= verifying amazon SlotId for Allergy BigBanner adcall  End =========================");
-							}*/
+							}
 
 
 
