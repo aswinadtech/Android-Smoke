@@ -498,13 +498,13 @@ public static void verifyingsize_allergyspotlightadcall() throws Exception {
 	//		String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("&amp"));
 			 expected_data = Read_API_Call_Data.toString().substring(Read_API_Call_Data.indexOf("iu"),Read_API_Call_Data.indexOf("&correlator"));
 			 String val[]=expected_data.split("&");
-				if(val[0].contains("180x36")) {
+				if(val[1].contains("180x36")) {
 				System.out.println("Size of the  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl  is matched with   " + val[1]);
 				logStep(" Size of the  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl  is matched with " + val[1]);
 				}	
 			else {
-					System.out.println("Size of the  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl  is not  matched with   " + val[1]);
-					logStep(" Size of the  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl  is not  matched with " + val[1]);
+					System.out.println("Size of the  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl  is   matched with   " + val[1]);
+					logStep(" Size of the  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl  is  matched with " + val[1]);
 		}
 	
 		}
