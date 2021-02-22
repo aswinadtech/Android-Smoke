@@ -1029,8 +1029,9 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						  proxy.clearCharlesSession();
 					  AppFunctions.Pull_To_Refresh("Pulltorefresh");
 					  AppFunctions.Pull_To_Refresh("Pulltorefresh");
+						 Thread.sleep(20000);
 						this.proxy.getXml();
-					 // Functions.finding_Homescreen_iu_value();	 
+					  Functions.finding_Homescreen_iu_value();	 
 					  System.out. println("=================  Verifying  home screen hourly  ad  call pull to refrersh scenario  End =========================" ); 
 					  }
 					  
@@ -1041,7 +1042,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					  Exception {
 					  logStep("Verifying  home screen marquee call pull to refrersh scenario");
 					  System.out. println("================= Verifying  home screen marquee call pull to refrersh scenario started =========================");
-					//  Functions.finding_Homescreen_marquee_iu_value(); 
+					  Functions.finding_Homescreen_marquee_iu_value(); 
 						  CharlesFunctions.archive_folder("Charles");
 					  System.out.println("================= Verifying  home screen marquee call pull to refrersh scenario  End =========================" );  
 					  }
