@@ -93,7 +93,8 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		System.out.println("going to all detail and content pages");
 		logStep("going to all detail and content pages");
 	 Thread.sleep(10000);
-		AppiumFunctions.SwipeUp_Counter_feedcards(35);
+		//AppiumFunctions.SwipeUp_Counter_feedcards(35);
+		AppiumFunctions.SwipeUp_Counter_feedcards(10);
 		this.proxy.getXml();
 		//CharlesFunctions.archive_folder("Charles");
 		Functions.finding_Homescreen_marquee_iu_value();
