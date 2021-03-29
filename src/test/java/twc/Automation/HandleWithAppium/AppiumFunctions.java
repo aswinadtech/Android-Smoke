@@ -868,7 +868,7 @@ ModuleName=Ad.findElementById("com.weather.Weather:id/header_title").getAttribut
 catch(Exception e) {
 ModuleName=Ad.findElementById("com.weather.Weather:id/header_title").getText();
 }
-System.out.println(ModuleName.toString() +" feed card is presented on the screen");
+//System.out.println(ModuleName.toString() +" feed card is presented on the screen");
 
 /*if(ModuleName.toString().contains("Top Stories") ||ModuleName.toString().contains("Low Stories") || ModuleName.toString().contains("Videos")) {
 	if(videoCount==0) {
