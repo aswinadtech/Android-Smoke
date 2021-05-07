@@ -5750,7 +5750,7 @@ public static void clickdailydetails()  throws Exception{
 	try {
 	System.out.println("clicking on daily");
 	logStep("clicking on daily");
-	Ad.findElementByAccessibilityId("Daily").click();
+	Ad.findElementByAccessibilityId("Daily Tab").click();
 	Thread.sleep(3000);
 	}
 	catch(Exception e) {
