@@ -2133,12 +2133,12 @@ public static void verify_adpresent_onvideo_page(String excel_sheet_name) throws
     public static void click_hourly_element() throws Exception
 	{
 	try {
-		new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementByAccessibilityId("Hourly")));
-		Ad.findElementByAccessibilityId("Hourly").click();
+		new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementByAccessibilityId("Hourly Tab")));
+		Ad.findElementByAccessibilityId("Hourly Tab").click();
 	}
 	catch(Exception e) {
-		new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementByAccessibilityId("Hourly")));
-		Ad.findElementByAccessibilityId("Hourly").click();
+		new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementByAccessibilityId("Hourly Tab")));
+		Ad.findElementByAccessibilityId("Hourly Tab").click();
 	}
 	}
 	public static void click_daily_element() throws Exception
