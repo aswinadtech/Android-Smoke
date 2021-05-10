@@ -4350,13 +4350,13 @@ public static Map<String, String> validating_Fatualcall_privacy_Optoutmode_scena
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
 logStep("Verifying https://location.wfxtriggers.com api url");
-	if(sb.contains("location.wfxtriggers.com")) {
+	if(sb.contains("https://location.wfxtriggers.com")) {
 		logStep("https://location.wfxtriggers.com url was  trigred");
 		System.out.println("https://location.wfxtriggers.com url was  trigred");
 		Assert.fail("https://location.wfxtriggers.com url was  trigred");
 		}
 
-if(!sb.contains("location.wfxtriggers.com")) {
+if(!sb.contains("https://location.wfxtriggers.com")) {
 	logStep("https://location.wfxtriggers.com url was not trigred");
 System.out.println("https://location.wfxtriggers.com url was not trigred");
 
