@@ -624,6 +624,13 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out.println("================= Verifying WeatherFX API url End =========================");
 					}*/
 
+		                         @Test(priority =302,enabled = true)  
+					 @Title("Verifying Factual location.wfxtriggers.com api call supressing")  
+					public void Verifying_Factual_locationwfxtriggerscom_apiCall_supressing() throws Exception {	  
+					 System.out. println("=================Verifying Factual location.wfxtriggers.com api call supressing =========================" ); 
+					 Functions.validating_Fatualcall_privacy_Optoutmode_scenarion();
+					  System.out. println("================= Verifying Factual location.wfxtriggers.com api call supressing  =========================" );
+					  }
 					
 					@Test(priority = 304, enabled = true)
 					@Title("Verifying turbo call api url on KillLaunch")
