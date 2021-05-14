@@ -374,6 +374,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						Functions.clickdailydetails();
 						//Functions.closeInterstailads();
 						Functions.clickongotit();
+						Thread.sleep(10000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailiu();
 						System.out.println(
@@ -390,6 +391,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						proxy.clearCharlesSession();
 						Functions.clickonday2();
 						this.proxy.getXml();
+						Thread.sleep(15000);
 						Functions.verifyingdailydetailiu();
 					//	Functions.verifyingdailydetailsiu();
 						System.out.println(
@@ -407,6 +409,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						proxy.clearCharlesSession();
 						//Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday3();
+						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailiu();
 						System.out.println(
@@ -423,6 +426,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						proxy.clearCharlesSession();
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday4();
+						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailiu();
 						System.out.println(
@@ -438,6 +442,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						proxy.clearCharlesSession();
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday5();
+						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailiu();
 						System.out.println(
@@ -453,6 +458,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						proxy.clearCharlesSession();
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday6();
+						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailiu();
 						System.out.println(
@@ -468,6 +474,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						proxy.clearCharlesSession();
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday7();
+						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailiu();
 						System.out.println(
@@ -483,6 +490,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						proxy.clearCharlesSession();
 						//Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday8();
+						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailsiu1();
 						System.out.println(
@@ -499,6 +507,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						proxy.clearCharlesSession();
 						//Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday9();
+						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailsiu1();
 						System.out.println(
@@ -514,7 +523,8 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						proxy.clearCharlesSession();
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday10();
-						this.proxy.getXml();
+						Thread.sleep(15000);
+						this.proxy.getXml();	
 						Functions.verifyingdailydetailsiu1();
 						
 						System.out.println(
@@ -530,6 +540,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						proxy.clearCharlesSession();
 						//Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday11();
+						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailsiu1();
 						System.out.println(
@@ -545,6 +556,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						proxy.clearCharlesSession();
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday12();
+						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailsiu1();
 						System.out.println(
@@ -560,6 +572,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						proxy.clearCharlesSession();
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday13();
+						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailsiu1();
 						System.out.println(
@@ -576,6 +589,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						proxy.clearCharlesSession();
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday14();
+						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailsiu1();
 						System.out.println(
@@ -590,6 +604,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						proxy.clearCharlesSession();
 					//	Functions.finding_newDailyBidadcall_day2();
 						Functions.clickonday15();
+						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailsiu2();
 						System.out.println(
