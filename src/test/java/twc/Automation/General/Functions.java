@@ -5450,6 +5450,24 @@ public static Map<String, String> Verify_SH_feedcard_adcall_iu() throws Exceptio
 	return wfxtriggers_values;
 	}
 
+	
+	public static  void Verify_MoreNews_adcall_iu() throws Exception{
+
+	
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
+	System.out.println("Verifying iu=%2F7646%2Fapp_android_us%2Fweather");
+	logStep("Verifying iu=%2F7646%2Fapp_android_us%2Fweather");
+	if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fweather")) {
+	System.out.println("iu=%2F7646%2Fapp_android_us%2Fweather  call was trigred");
+	logStep("iu=%2F7646%2Fapp_android_us%2Fweather call was trigred");
+}
+if(!sb.contains("iu=%2F7646%2Fapp_android_us%2Fweather")) {
+System.out.println("iu=%2F7646%2Fapp_android_us%2Fweather call was not trigred");
+logStep("iu=%2F7646%2Fapp_android_us%2Fweather call was not trigred");
+Assert.fail("iu=%2F7646%2Fapp_android_us%2Fweather call was not trigred");
+}
+}
 
 public static Map<String, String> Verify_SH_detailpage_adcall_iu() throws Exception{
 
