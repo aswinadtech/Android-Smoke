@@ -301,6 +301,18 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					Functions.Verify_SH_detailpage_adcall_iu();
 					System.out.println("================= Verifying outdoor detailpage adcall iu End =========================");
 				}
+	
+	
+	
+	                         @Test(priority = 35, enabled = true)
+				@Title("Verifying  MoreNews ad call on FTL")
+				public void Smoke_Test_Verify_MoreNews_adcall_FTL() throws Exception {
+					System.out
+							.println("================= Verifying  MoreNews adcall iu Started =========================");
+					Functions.Verify_MoreNews_adcall_iu();
+				
+					System.out.println("================= Verifying MoreNews adcall iu End =========================");
+				}
 			
 				
 				
