@@ -2940,17 +2940,17 @@ return wfxtriggers_values;
 public static void get_aaxcal_covid19() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
-	System.out.println("Verifying amazon \"slot\": \"4fbed16a-cc6f-4cb1-94f7-81465acbd47e\"  for covid19 details card");
-	logStep("Verifying amazon \"slot\": \"4fbed16a-cc6f-4cb1-94f7-81465acbd47e\"  for covid19 details card");
+	System.out.println("Verifying amazon \"slot\": \"420f2237-fa60-454f-85a4-40707c8718e6\"  for covid19 details card");
+	logStep("Verifying amazon \"slot\": \"420f2237-fa60-454f-85a4-40707c8718e6\"  for covid19 details card");
 	//System.out.println("Slot Name is  : "+slotID);
-	if(sb.contains("4fbed16a-cc6f-4cb1-94f7-81465acbd47e")) {
-	System.out.println("4fbed16a-cc6f-4cb1-94f7-81465acbd47e is trigred for aax  call db_display/details/covid");
-	logStep("4fbed16a-cc6f-4cb1-94f7-81465acbd47e is trigred for aax  call db_display/details/covid");
+	if(sb.contains("420f2237-fa60-454f-85a4-40707c8718e6")) {
+	System.out.println("420f2237-fa60-454f-85a4-40707c8718e6  is trigred for aax  call db_display/details/covid");
+	logStep("420f2237-fa60-454f-85a4-40707c8718e6 is trigred for aax  call db_display/details/covid");
 	}
-	if(!sb.contains("4fbed16a-cc6f-4cb1-94f7-81465acbd47e")) {
-		System.out.println("slotID 4fbed16a-cc6f-4cb1-94f7-81465acbd47e is not trigred for aax call db_display/details/covid");
-		logStep("4fbed16a-cc6f-4cb1-94f7-81465acbd47e is  not trigred for aax  call db_display/details/covid");
-		Assert.fail("slotID 4fbed16a-cc6f-4cb1-94f7-81465acbd47eis not trigred for aax call db_display/details/covid");
+	if(!sb.contains("420f2237-fa60-454f-85a4-40707c8718e6")) {
+		System.out.println("slotID 420f2237-fa60-454f-85a4-40707c8718e6 is not trigred for aax call db_display/details/covid");
+		logStep("420f2237-fa60-454f-85a4-40707c8718e6 is  not trigred for aax  call db_display/details/covid");
+		Assert.fail("slotID 420f2237-fa60-454f-85a4-40707c8718e6 is not trigred for aax call db_display/details/covid");
 		}
 }
 
