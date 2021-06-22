@@ -79,7 +79,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		proxy.startRecording();
 		proxy.clearCharlesSession();
 		AppiumFunctions.LaunchAppWithFullReset();
-		Thread.sleep(20000);
+		Thread.sleep(60000);
 		AppFunctions.gettingApkVersion() ;
 	}
 
