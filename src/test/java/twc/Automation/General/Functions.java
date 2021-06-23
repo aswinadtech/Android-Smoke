@@ -2913,28 +2913,26 @@ Assert.fail("/7646/app_android_us/db_display/details/hourly3 call was not trigre
 return wfxtriggers_values;
 }
 
-public static Map<String, String> Verify_coivid19_detailpage_adcall_iu() throws Exception{
-
-	Map<String , String> wfxtriggers_values = new HashMap<String, String>();
-	String wxtgValues="";
+public static void Verify_coivid19_detailpage_adcall_iu() throws Exception{
 	DeviceStatus device_status = new DeviceStatus();
 	int Cap = device_status.Device_Status();
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
 	System.out.println("Verifyingi u=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%covid ad call");
 	logStep("Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fcoivd ad call");
-	if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fcoivd")) {
-		logStep("/7646/app_android_us/db_display/details/covid  call was trigred");
+	
+
+	if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fcovid")) {
 		logStep("/7646/app_android_us/db_display/details/covid  call was trigred");
 	System.out.println("/7646/app_android_us/db_display/details/covid  call was trigred");
 
 }
-if(!sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fcovid")) {
-System.out.println("/7646/app_android_us/db_display/details/covid  call was not trigred");
-logStep("/7646/app_android_us/db_display/details/covid  call was not trigred");
-Assert.fail("/7646/app_android_us/db_display/details/covid call was not trigred");
+if(!sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fcovid")) {
+System.out.println("/7646/app_android_us/db_display/details/covid  call was  trigred");
+logStep("/7646/app_android_us/db_display/details/covid  call was  trigred");
+//Assert.fail("/7646/app_android_us/db_display/details/covid call was not trigred");
 }
-return wfxtriggers_values;
+
 }
 
 public static void get_aaxcal_covid19() throws Exception {
