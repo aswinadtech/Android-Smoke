@@ -1092,7 +1092,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						@Title("Verifying amazon Slot Id for COVID-19  card  using ANDFLAG-6704 UserGroup")
 						public void Smoke_Test_amazon_aax_Covid19_card_using_ANDFLAG6704UG() throws Exception {
 							System.out
-									.println("================= Verifying amazon slot id for  daily details day15  adcall test case Started =========================");
+									.println("================= Verifying amazon Slot Id for COVID-19  card  using ANDFLAG-6704 UserGroup test case Started =========================");
 							 AppFunctions.Kill_Launch_App();
 								proxy.clearCharlesSession();
 							  Thread.sleep(60000);
@@ -1100,18 +1100,18 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 							  Thread.sleep(60000);
 								this.proxy.getXml();
 							Functions.get_aaxcal_covid19();
-							System.out.println("================= Verifying amazon slot id for  daily details day15 adcall test case End =========================");
+							System.out.println("================= Verifying amazon Slot Id for COVID-19  card  using ANDFLAG-6704 UserGroup test case End =========================");
 						}
 						
 						@Test(priority = 402, enabled = true)
 						@Title("Verifying iu value Covid details details Page ad call  using ANDFLAG-6704 UserGroup")
 						public void Smoke_Test_CaseVerify_Ccoivid_details_page_adcall_using_ANDFLAG6704UG() throws Exception {
 							System.out.println(
-									"================= verifying iu value for Today_details_page_iu started =========================");
+									"================= Verifying iu value Covid details details Page ad call  using ANDFLAG-6704 started =========================");
 							Functions.Verify_coivid19_detailpage_adcall_iu();
 							 CharlesFunctions.archive_folder("Charles");
 							System.out.println(
-									"================= verifying iu value for Today_details_page_iu End =========================");
+									"=================Verifying iu value Covid details details Page ad call  using ANDFLAG-6704  End =========================");
 						}
 
 						@Test(priority = 3, enabled = true)
