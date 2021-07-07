@@ -808,6 +808,50 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 								"================= Verify amazon aax Daily details preroll adcall End =========================");
 					}
 	
+	
+	@Test(priority = 327, enabled = true)
+					@Title("Verifying amazon Slot Id for hourly interstitial ad call")
+					public void Smoke_Test_amazon_aax_Hourly_interstitial_adcall() throws Exception {
+						System.out.println(
+								"================= Verify amazon aax Hourly interstitial  adcall test case  Started =========================");
+						Functions.get_aaxcal_Hourly();
+						System.out.println("================= Verify amazon aax Hourly interstitial  test case  End =========================");
+					}
+					
+					
+					@Test(priority = 328, enabled = true)
+					@Title("Verifying amazon Slot Id for daily interstitial ad call")
+					public void Smoke_Test_amazon_aax_daily_interstitial_adcall() throws Exception {
+						System.out.println(
+								"================= Verify amazon aax daily interstitial  adcall test case  Started =========================");
+						Functions.get_aaxcal_Hourly();
+						System.out.println("================= Verify amazon aax daily interstitial  test case  End =========================");
+					}
+					
+					
+					@Test(priority = 329, enabled = true)
+					@Title("Verifying amazon Slot Id for maps interstitial ad call")
+					public void Smoke_Test_amazon_aax_maps_interstitial_adcall() throws Exception {
+						System.out.println(
+								"================= Verify amazon aax maps interstitial  adcall test case  Started =========================");
+						Functions.get_aaxcal_Hourly();
+						System.out.println("================= Verify amazon aax maps interstitial  test case  End =========================");
+					}
+					
+					
+					
+
+					@Test(priority = 330, enabled = true)
+					@Title("Verifying amazon Slot Id for vidoes interstitial ad call")
+					public void Smoke_Test_amazon_aax_Videos_interstitial_adcall() throws Exception {
+						System.out.println(
+								"================= Verify amazon aax Videos interstitial  adcall test case  Started =========================");
+						Functions.get_aaxcal_Hourly();
+						System.out.println("================= Verify amazon aax Videos interstitial  test case  End =========================");
+					}
+	
+	
+	
  /* =======================================Hourly details amazon aax slot id's test case Started======================================================================================*/
 				
 					
