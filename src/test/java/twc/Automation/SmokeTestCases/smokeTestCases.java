@@ -814,7 +814,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					public void Smoke_Test_amazon_aax_Hourly_interstitial_adcall() throws Exception {
 						System.out.println(
 								"================= Verify amazon aax Hourly interstitial  adcall test case  Started =========================");
-						Functions.get_aaxcal_Hourly();
+						Functions.get_aaxcal_Hourly_Interstitial();
 						System.out.println("================= Verify amazon aax Hourly interstitial  test case  End =========================");
 					}
 					
@@ -824,7 +824,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					public void Smoke_Test_amazon_aax_daily_interstitial_adcall() throws Exception {
 						System.out.println(
 								"================= Verify amazon aax daily interstitial  adcall test case  Started =========================");
-						Functions.get_aaxcal_Hourly();
+						Functions.get_aaxcal_Daily_Interstitial();
 						System.out.println("================= Verify amazon aax daily interstitial  test case  End =========================");
 					}
 					
@@ -834,7 +834,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					public void Smoke_Test_amazon_aax_maps_interstitial_adcall() throws Exception {
 						System.out.println(
 								"================= Verify amazon aax maps interstitial  adcall test case  Started =========================");
-						Functions.get_aaxcal_Hourly();
+						Functions.get_aaxcal_maps_Interstitial();
 						System.out.println("================= Verify amazon aax maps interstitial  test case  End =========================");
 					}
 					
@@ -846,9 +846,13 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					public void Smoke_Test_amazon_aax_Videos_interstitial_adcall() throws Exception {
 						System.out.println(
 								"================= Verify amazon aax Videos interstitial  adcall test case  Started =========================");
-						Functions.get_aaxcal_Hourly();
+						Functions. get_aaxcal_Videos_Interstitial();
 						System.out.println("================= Verify amazon aax Videos interstitial  test case  End =========================");
 					}
+					
+					
+					
+					
 	
 	
 	
