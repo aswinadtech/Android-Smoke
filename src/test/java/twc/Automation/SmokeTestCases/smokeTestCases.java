@@ -25,7 +25,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
+import io.qameta.allure.Description;
 import io.qameta.allure.Description;
 import twc.Automation.Driver.Drivers;
 import twc.Automation.General.DeviceStatus;
@@ -43,7 +43,6 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import ru.yandex.qatools.allure.annotations.Title;
 import twc.Automation.Driver.Drivers;
 import twc.Automation.General.loginModule;
 import twc.Automation.HandleMapLocal.MapLocalFunctions;
