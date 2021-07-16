@@ -26,8 +26,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import ru.yandex.qatools.allure.annotations.Description;
-import ru.yandex.qatools.allure.annotations.Title;
+import io.qameta.allure.Description;
 import twc.Automation.Driver.Drivers;
 import twc.Automation.General.DeviceStatus;
 import twc.Automation.General.loginModule;
@@ -86,7 +85,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	/* =======================================all feed ad calls test cases started======================================================================================*/
 	
 	@Test(priority = 2, enabled = true)
-	@Title("Verifying Home screen marquee ad call on FTL")
+	@Description("Verifying Home screen marquee ad call on FTL")
 	public void Smoke_Test_CaseVerify_Homescreen_marquee_adCall_FTL() throws Exception {
 		System.out.println(
 				"================= verifying iu value for home screen marquee test case started =========================");	
@@ -103,7 +102,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	}
 	
 	  @Test(priority = 4, enabled = true)  
-	  @Title("Verifying home screen hourly ad call on FTL") 
+	  @Description("Verifying home screen hourly ad call on FTL") 
 	  public void Smoke_Test_Verifying_homescreenhourly__adCall_FTL() throws  Exception {  
 	  System.out.println("================= Verifying  home screen hourly ad call test case started ========================="); 	  
 	   Functions.finding_Homescreen_iu_value();	 
@@ -111,7 +110,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	    }
 
 	@Test(priority = 6, enabled = true)
-	@Title("Verifying feed_1 ad call on FTL")
+	@Description("Verifying feed_1 ad call on FTL")
 	public void Smoke_Test_verifying_feed_1adcall_FTL() throws Exception {
 		System.out.println("================= Verifying feed_1 ad call tescase Started =========================");
 		Functions.verifying_feedcalls(1);
@@ -119,7 +118,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	}
 
 	@Test(priority = 8, enabled = true)
-	@Title("Verifying feed_2 ad call on FTL")
+	@Description("Verifying feed_2 ad call on FTL")
 	public void Smoke_Test_verifying_feed_2adcall_FTL() throws Exception {
 		System.out.println("================= Verifying feed_2 ad call tescase Started =========================");
 		//Functions.verifying_feedcalls(2);
@@ -130,7 +129,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 
 	@Test(priority = 10, enabled = true)
-	@Title("Verifying feed_3 ad cal on FTL")
+	@Description("Verifying feed_3 ad cal on FTL")
 	public void Smoke_Test_verifying_feed_3adCall_FTL() throws Exception {
 		System.out.println("================= Verifying feed_3 ad call tescase Started =========================");
 		//Functions.verifying_feedcalls(3);
@@ -140,7 +139,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	}
 
 	@Test(priority = 12, enabled = true)
-	@Title("Verifying feed_4 ad call on FTL")
+	@Description("Verifying feed_4 ad call on FTL")
 	public void Smoke_Test_verifying_feed_4adcall_FTL() throws Exception {
 		System.out.println("================= Verifying feed_4 ad call tescase Started =========================");
 		//Functions.verifying_feedcalls(4);
@@ -151,7 +150,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 
 		@Test(priority = 14, enabled = true)
-	@Title("Verifying feed_5 ad call on FTL")
+	@Description("Verifying feed_5 ad call on FTL")
 	public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		System.out.println("================= Verifying feed_5 ad call tescase Started =========================");
 		//Functions.verifying_feedcalls(5);
@@ -162,7 +161,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 
 		/* @Test(priority=16,enabled = true) 
-		  @Title("Verifying daily feed card  ad call On FTL") 
+		  @Description("Verifying daily feed card  ad call On FTL") 
 		  public void Smoke_Test_Verify_daily_feedcard_adCall_FTL() throws Exception { 
 			System.out. println("================= Verifyig daily adcall_iu Started =========================" );
 			Functions. Verify_dailycard_iu(); 
@@ -174,7 +173,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		 /* =======================================all details page ad calls test cases started======================================================================================*/
 		 
 		 	@Test(priority = 18, enabled = true)
-			@Title("Verifying radar&maps details page ad call On FTL")
+			@Description("Verifying radar&maps details page ad call On FTL")
 			public void Smoke_Test_Case_Verify_Radar_Maps_deatailspage_adCall_FTL() throws Exception {
 				System.out.println(
 						"================= verifying iu value for Radar&Maps deatail card started =========================");
@@ -185,7 +184,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		 
 		 	
 			/*@Test(priority = 20, enabled = true)
-			@Title("Verifying Video ad call on FTL")
+			@Description("Verifying Video ad call on FTL")
 			public void Smoke_Test_Case_Verify_Video_adCall_FTL() throws Exception {
 				System.out.println("================= Verifying Video ad call testcase started =========================");
 				Functions.finding_VideoCard_iu_value();
@@ -194,7 +193,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		 
 		 
 			@Test(priority = 22, enabled = true)
-			@Title("Verifying iu value Today details Page on FTL")
+			@Description("Verifying iu value Today details Page on FTL")
 			public void Smoke_Test_CaseVerify_Today_details_page_iu_FTL() throws Exception {
 				System.out.println(
 						"================= verifying iu value for Today_details_page_iu started =========================");
@@ -206,7 +205,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 			
 			
 			@Test(priority = 24, enabled = true)
-			@Title("Verifying  Air Quality content page ad call on FTL")
+			@Description("Verifying  Air Quality content page ad call on FTL")
 			public void Smoke_Test_Verify_Air_Quality_contentpage_adCall_FTL() throws Exception {
 				System.out.println(
 						"================= Verifying iu value for Air Quality content page testcase  started =========================");
@@ -217,7 +216,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 			
 		    
 			@Test(priority = 26, enabled = true)
-			@Title("Verifying Running content page ad call  FTL")
+			@Description("Verifying Running content page ad call  FTL")
 			public void Smoke_Test_Verify_health_and_activities_Running_contenPage_adcall_FTL() throws Exception {
 				System.out.println(
 						"================= Verify_health_and_activities_Running_contenPage_adcall_iu Started =========================");
@@ -228,7 +227,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 			
 			
 	 @Test(priority = 28, enabled = true)
-			@Title("Verifying Boat&Beach content page ad call on FTL")
+			@Description("Verifying Boat&Beach content page ad call on FTL")
 			public void Smoke_Test_Verify_health_and_activities_Bot_Beach_contenPage_adcall_FTL() throws Exception {
 				System.out.println(
 						"================= Verify_health_and_activities_Bot&beach_contenPage_adcall_iu Started =========================");
@@ -238,7 +237,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 			}
 			
 			@Test(priority = 30, enabled = true)
-			@Title("Verifying  Allergy content page ad call on FTL")
+			@Description("Verifying  Allergy content page ad call on FTL")
 			public void Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_FTL() throws Exception {
 				System.out.println(
 						"================= Verify_health_and_activities_Allergy_contenPage_adcall_iu Started =========================");
@@ -249,7 +248,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 			
 		
 			@Test(priority = 31, enabled = true)
-			@Title("Verifying  Allergy spotlight ad call on FTL")
+			@Description("Verifying  Allergy spotlight ad call on FTL")
 			public void Smoke_Test_Verify_health_and_activities_Allergy_spotlight_adcall_FTL() throws Exception {
 				System.out.println(
 						"================= Verify_health_and_activities_Allergy_spotlight_adcall_iu Started =========================");
@@ -260,7 +259,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 			
 			
 			@Test(priority = 32, enabled = true)
-			@Title("Verifying  Allergy spotlight ad call size")
+			@Description("Verifying  Allergy spotlight ad call size")
 			public void Smoke_Test_Verify_health_and_activities_Allergy_spotlight_adcall_size() throws Exception {
 				System.out.println(
 						"================= Verify_health_and_activities_Allergy_spotlight_adcall_size Started =========================");
@@ -273,7 +272,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 			
 
 			@Test(priority = 33, enabled = true)
-			@Title("Verifying pos custum param for Allergy spotlight ad call")
+			@Description("Verifying pos custum param for Allergy spotlight ad call")
 			public void Smoke_Test_Verify_health_and_activities_Allergy_spotlight_pos_custumparam() throws Exception {
 				System.out.println(
 						"================= Verify_health_and_activities_Allergy_spotlight_adcall_pos custumparam Started =========================");
@@ -284,7 +283,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 			
 			
 			@Test(priority = 32, enabled = true)
-			@Title("Verifying Cold&Flu content page ad call on FTL")
+			@Description("Verifying Cold&Flu content page ad call on FTL")
 			public void Smoke_Test_Verify_health_and_activities_coldFlu_contenPaget_adcall_FTL() throws Exception {
 				System.out.println(
 						"================= Verify_health_and_activities_coldFlu_contenPage_adcall_iu Started =========================");
@@ -294,7 +293,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 			}
 			
 				@Test(priority = 34, enabled = true)
-				@Title("Verifying  outdoor conditions  detailed page ad call on FTL")
+				@Description("Verifying  outdoor conditions  detailed page ad call on FTL")
 				public void Smoke_Test_Verify_outdoor_detailpage_adcall_FTL() throws Exception {
 					System.out
 							.println("================= Verifying outdoor detailpage_adcall iu Started =========================");
@@ -305,7 +304,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	
 	
 	                         @Test(priority = 35, enabled = true)
-				@Title("Verifying  MoreNews ad call on FTL")
+				@Description("Verifying  MoreNews ad call on FTL")
 				public void Smoke_Test_Verify_MoreNews_adcall_FTL() throws Exception {
 					System.out
 							.println("================= Verifying  MoreNews adcall iu Started =========================");
@@ -322,7 +321,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 				/* =======================================hourly details ad calls test cases started======================================================================================*/
 				
 				@Test(priority = 40, enabled = true)
-				@Title("Verifying  hourly detailpage al call on FTL")
+				@Description("Verifying  hourly detailpage al call on FTL")
 				public void Smoke_Test_Verify_hourly_detailpage_adcall_FTL() throws Exception {
 					System.out.println("================= Verifying hourly_detailpage_adcall_iu test case  Started =========================");
 					CharlesFunctions.archive_folder("Charles");
@@ -343,7 +342,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 				}
 							
 				@Test(priority = 42, enabled = true)
-				@Title("Verifying  hourly1  detailpage bigad ad call on FTL")
+				@Description("Verifying  hourly1  detailpage bigad ad call on FTL")
 				public void Smoke_Test_Verify_hourly1_detailpage_bigad_adcall_FTL() throws Exception {
 					System.out.println(
 							"================= Verifying hourly1 big ad detailpage_adcall_iu  test case Started =========================");
@@ -353,7 +352,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 				}
 
 				@Test(priority = 44, enabled = true)
-				@Title("Verifying  hourly2  detailpage bigad ad call on FTL")
+				@Description("Verifying  hourly2  detailpage bigad ad call on FTL")
 				public void Smoke_Test_Verify_hourly2_detailpage_bigad_adcall_FTL() throws Exception {
 					System.out.println(
 							"================= Verifying hourly2 bigad detailpage_adcall_iu test case Started =========================");
@@ -363,7 +362,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 				}
 				
 				@Test(priority = 46, enabled = true)
-				@Title("Verifying  hourly3  detailpage bigad ad call on FTL")
+				@Description("Verifying  hourly3  detailpage bigad ad call on FTL")
 				public void Smoke_Test_Verify_hourly3__bigad_detailpage_adcall_FTL() throws Exception {
 					System.out.println(
 							"================= Verifying hourly3 bigad detailpage_adcall_iu test case  Started =========================");
@@ -377,7 +376,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 				/* =======================================daily details ad calls test cases started======================================================================================*/
 				
 				 @Test(priority = 50, enabled = true)
-					@Title("Verifying new daily details day1 ad call on FTL")
+					@Description("Verifying new daily details day1 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day1adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day1 ad call tescase Started =========================");
@@ -395,7 +394,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 				   
 					@Test(priority = 52, enabled = true)
-					@Title("Verifying new daily details day2 ad call on FTL")
+					@Description("Verifying new daily details day2 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day2adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day2 ad call test case Started=========================");
@@ -412,7 +411,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					
 				   
 					@Test(priority = 54, enabled = true)
-					@Title("Verifying new daily details day3 ad call on FTL")
+					@Description("Verifying new daily details day3 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day3adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day3 ad call test case Started =========================");
@@ -430,7 +429,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					
 					
 					@Test(priority = 56, enabled = true)
-					@Title("Verifying new daily details day4 ad call on FTL")
+					@Description("Verifying new daily details day4 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day4adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day4 ad call tescase Started =========================");
@@ -446,7 +445,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					}
 
 					@Test(priority = 58, enabled = true)
-					@Title("Verifying new daily details day5 ad call on FTL")
+					@Description("Verifying new daily details day5 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day5adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day5 ad call tescase Started =========================");
@@ -462,7 +461,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					}
 
 					@Test(priority = 60, enabled = true)
-					@Title("Verifying new daily details day6 ad call on FTL")
+					@Description("Verifying new daily details day6 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day6adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day6 ad call tescase Started =========================");
@@ -478,7 +477,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					}
 					
 					@Test(priority = 62, enabled = true)
-					@Title("Verifying new daily details day7 ad call on FTL")
+					@Description("Verifying new daily details day7 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day7adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day7 ad call tescase Started =========================");
@@ -494,7 +493,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					}
 					
 					@Test(priority = 64, enabled = true)
-					@Title("Verifying new daily details day8 ad call on FTL")
+					@Description("Verifying new daily details day8 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day8adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day8 ad call tescase Started =========================");
@@ -511,7 +510,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					
 					
 					@Test(priority = 66, enabled = true)
-					@Title("Verifying new daily details day9 ad call on FTL")
+					@Description("Verifying new daily details day9 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day9adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day9 ad call tescase Started =========================");
@@ -527,7 +526,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					}
 					
 					@Test(priority = 68, enabled = true)
-					@Title("Verifying new daily details day10 ad call on FTL")
+					@Description("Verifying new daily details day10 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day10adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day10 ad call tescase Started =========================");
@@ -544,7 +543,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					}
 					
 					@Test(priority = 70, enabled = true)
-					@Title("Verifying new daily details day11 ad call on FTL")
+					@Description("Verifying new daily details day11 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day11adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day11 ad call tescase Started =========================");
@@ -560,7 +559,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					}
 					
 					@Test(priority = 72, enabled = true)
-					@Title("Verifying new daily details day12 ad call on FTL")
+					@Description("Verifying new daily details day12 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day12adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day12 ad call tescase Started =========================");
@@ -576,7 +575,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					}
 					
 					@Test(priority = 74, enabled = true)
-					@Title("Verifying new daily details day13 ad call on FTL")
+					@Description("Verifying new daily details day13 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day13adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day13 ad call tescase Started =========================");
@@ -593,7 +592,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					
 					@Test(priority = 76, enabled = true)
 
-					@Title("Verifying new daily details day14 ad call on FTL")
+					@Description("Verifying new daily details day14 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day14adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day14 ad call tescase Started =========================");
@@ -608,7 +607,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 								"================= Verifying new daily details day14 ad call tescase End =========================");
 					}
 					@Test(priority = 78, enabled = true)
-					@Title("Verifying new daily details day15 ad call on FTL")
+					@Description("Verifying new daily details day15 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day15adcall_FTL() throws Exception {
 						System.out.println(
 								"================= Verifying new daily details day15 ad call tescase Started =========================");
@@ -629,7 +628,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					/* =======================================api  calls test cases started======================================================================================*/
 					// Verifying Api and feed card and amazon aax prerol calls verification
 					@Test(priority = 300, enabled = true)
-					@Title("Verifying wfxtg trigger api call url on KillLaunch")
+					@Description("Verifying wfxtg trigger api call url on KillLaunch")
 					public void Smoke_Test_CaseVerify_WeatherFXAPI_url_KillLaunch() throws Exception {
 						System.out.println("================= Verifying WeatherFX API url started =========================");
 						CharlesFunctions.archive_folder("Charles");
@@ -644,7 +643,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out.println("================= Verifying WeatherFX API url End =========================");
 					}
 					/*@Test(priority = 302, enabled = true)
-					@Title("Verifying Location/Factual  api call url on KillLaunch")
+					@Description("Verifying Location/Factual  api call url on KillLaunch")
 					public void Smoke_Test_CaseVerify_Factualapi_url_KillLaunch() throws Exception {
 						System.out.println("================= Verifying WeatherFX API url started =========================");
 						Functions.validating_Fatual();
@@ -652,7 +651,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					}*/
 
 		                         @Test(priority =302,enabled = true)  
-					 @Title("Verifying Factual location.wfxtriggers.com api call supressing")  
+					 @Description("Verifying Factual location.wfxtriggers.com api call supressing")  
 					public void Verifying_Factual_locationwfxtriggerscom_apiCall_supressing() throws Exception {	  
 					 System.out. println("=================Verifying Factual location.wfxtriggers.com api call supressing =========================" ); 
 					 Functions.validating_Fatualcall_privacy_Optoutmode_scenarion();
@@ -660,7 +659,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					  }
 					
 					@Test(priority = 304, enabled = true)
-					@Title("Verifying turbo call api url on KillLaunch")
+					@Description("Verifying turbo call api url on KillLaunch")
 					public void Smoke_Test_CaseVerify_turbo_url_KillLaunch() throws Exception {
 						System.out.println("================= Verifying Turbo call  API url started =========================");
 						Functions.validating_turbocallAPI();
@@ -668,7 +667,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					}
 
 					/*@Test(priority = 306, enabled = true)
-					@Title("Verifying Lotame adcrw api call url on KillLaunch")
+					@Description("Verifying Lotame adcrw api call url on KillLaunch")
 					public void Smoke_Test_CaseVerify_adcrwdcntrlnet_url_KillLaunch() throws Exception {
 						System.out.println("================= Verifying Lotame ad.crwdcntrl.net url started =========================");
 						Functions.validating_adcrw();
@@ -677,7 +676,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					
 					
 					  @Test(priority = 308, enabled = true)	  
-					  @Title("Verifying bcp.crwdcntrl call on killLaunch" )
+					  @Description("Verifying bcp.crwdcntrl call on killLaunch" )
 					  public void Smoke_Test__Verifying_Bcp_apicall_URL_killLaunch() throws  Exception { 
 					  logStep("Verifying bcp.crwdcntrl call" ); 
 					  System.out.println("=================Verifying  bcp.crwdcntrl call testcase started =========================");	  
@@ -692,7 +691,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						/* =======================================amazon preroll   ad calls test cases started======================================================================================*/
 					  
 					@Test(priority = 310, enabled = true)
-					@Title("Verifying amazon Slot Id for hourly details preroll ad call on killLaunch")
+					@Description("Verifying amazon Slot Id for hourly details preroll ad call on killLaunch")
 					public void Smoke_Test_amazon_aax_Hourly_preroll_adcall_killLaunch() throws Exception {
 						System.out.println(
 								"================= Verify amazon aax Hourly details preroll adcall Started =========================");
@@ -705,7 +704,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					}
 					
 					  @Test(priority =312, enabled = true)
-						@Title("Verifying amazon Slot Id for hourly1 big ad details preroll call on killLaunch")
+						@Description("Verifying amazon Slot Id for hourly1 big ad details preroll call on killLaunch")
 						public void Smoke_Test_amazon_aax_Hourly1_bigaddetails_preroll_adcall_killLaunch() throws Exception {
 							System.out.println(
 									"================= Verify amazon aax Hourly1 details big  adcall  test case Started =========================");
@@ -717,7 +716,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 
 						@Test(priority = 314, enabled = true)
-						@Title("Verifying amazon Slot Id for hourly2 big ad details preroll call on killLaunch")
+						@Description("Verifying amazon Slot Id for hourly2 big ad details preroll call on killLaunch")
 						public void Smoke_Test_amazon_aax_Hourly2_bigaddetails_preroll_adcall_killLaunch() throws Exception {
 							System.out.println(
 									"================= Verifying  amazon aax Hourly2 details big  adcall  test case Started =========================");
@@ -729,7 +728,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 
 						@Test(priority = 316, enabled = true)
-						@Title("Verifying amazon Slot Id for hourly3 big ad details preroll call on killLaunch")
+						@Description("Verifying amazon Slot Id for hourly3 big ad details preroll call on killLaunch")
 						public void Smoke_Test_amazon_aax_Hourly3_bigaddetails_preroll_adcall_killLaunch() throws Exception {
 							System.out.println(
 									"================= Verify amazon aax Hourly3 details big  ad call test case  Started =========================");
@@ -740,7 +739,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 					
 					@Test(priority = 318, enabled = true)
-					@Title("Verifying amazon Slot Id for maps details preroll ad call on killLaunch")
+					@Description("Verifying amazon Slot Id for maps details preroll ad call on killLaunch")
 					public void Smoke_Test_amazon_aax_mapsdetails_preload_adcall() throws Exception {
 						System.out.println(
 								"================= Verify amazon aax Maps card preroll adcall Started =========================");
@@ -754,7 +753,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 					
 					 @Test(priority=320,enabled = true)  
-					  @Title("Verifying amazon slot id for home screen hourly preroll ad call on killaunch") 
+					  @Description("Verifying amazon slot id for home screen hourly preroll ad call on killaunch") 
 					  public void Smoke_Test_verify_amazon_Slotid_homescreenhourly_preroll_adcall_killLaunch() throws Exception { 
 					  System.out.println("================= Verifying amazon slotid home screenhourly adcall teetcase Started ========================="); 
 					  Functions.get_aaxcal_homescreen_hourly(); 
@@ -763,7 +762,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					 
 					 
 						@Test(priority = 322, enabled = true)
-						@Title("Verifying amazon Slot Id for feed1 prerol ad call on killLaunch")
+						@Description("Verifying amazon Slot Id for feed1 prerol ad call on killLaunch")
 						public void Smoke_Test_amazon_aaxSlot_feed1_preroladcall_killLaunch() throws Exception {
 							System.out.println(
 									"================= Verify amazon aax slot  Id for feed1 prerol adcall  testcase Started =========================");
@@ -774,7 +773,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 						}
 	@Test(priority = 322, enabled = true)
-					@Title("Verifying amazon Slot Id  video ad call preload")
+					@Description("Verifying amazon Slot Id  video ad call preload")
 					public void Smoke_Test_amazon_aax_preload_video_adcall() throws Exception {
 						System.out.println("================= Verify amazon aax video adcall Started =========================");
 						logStep(" Verifying preload amazon aax for  video details");
@@ -784,7 +783,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 				 
 					
 					@Test(priority = 324, enabled = true)
-					@Title("Verifying amazon Slot Id for feed2 prerol ad call on killLaunch")
+					@Description("Verifying amazon Slot Id for feed2 prerol ad call on killLaunch")
 					public void Smoke_Test_amazon_aaxSlot_feed2_preroladcall_KillLaunch() throws Exception {
 						System.out.println(
 								"================= Verify amazon aax slot  Id for feed2 prerol adcall testcase Started =========================");
@@ -798,7 +797,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 					
 					@Test(priority = 326, enabled = true)
-					@Title("Verifying amazon Slot Id for daily details preroll ad call")
+					@Description("Verifying amazon Slot Id for daily details preroll ad call")
 					public void Smoke_Test_amazon_aax_Daily_details_preroll_adcall() throws Exception {
 						System.out.println(
 								"================= Verify amazon aax Daily details  preroll adcall Started =========================");
@@ -810,7 +809,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	
 	
 	@Test(priority = 327, enabled = true)
-					@Title("Verifying amazon Slot Id for hourly interstitial ad call")
+					@Description("Verifying amazon Slot Id for hourly interstitial ad call")
 					public void Smoke_Test_amazon_aax_Hourly_interstitial_adcall() throws Exception {
 						System.out.println(
 								"================= Verify amazon aax Hourly interstitial  adcall test case  Started =========================");
@@ -820,7 +819,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					
 					
 					@Test(priority = 328, enabled = true)
-					@Title("Verifying amazon Slot Id for daily interstitial ad call")
+					@Description("Verifying amazon Slot Id for daily interstitial ad call")
 					public void Smoke_Test_amazon_aax_daily_interstitial_adcall() throws Exception {
 						System.out.println(
 								"================= Verify amazon aax daily interstitial  adcall test case  Started =========================");
@@ -830,7 +829,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					
 					
 					@Test(priority = 329, enabled = true)
-					@Title("Verifying amazon Slot Id for maps interstitial ad call")
+					@Description("Verifying amazon Slot Id for maps interstitial ad call")
 					public void Smoke_Test_amazon_aax_maps_interstitial_adcall() throws Exception {
 						System.out.println(
 								"================= Verify amazon aax maps interstitial  adcall test case  Started =========================");
@@ -842,7 +841,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					
 
 					@Test(priority = 330, enabled = true)
-					@Title("Verifying amazon Slot Id for vidoes interstitial ad call")
+					@Description("Verifying amazon Slot Id for vidoes interstitial ad call")
 					public void Smoke_Test_amazon_aax_Videos_interstitial_adcall() throws Exception {
 						System.out.println(
 								"================= Verify amazon aax Videos interstitial  adcall test case  Started =========================");
@@ -860,7 +859,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 				
 					
 					@Test(priority = 41, enabled = true)
-					@Title("Verifying amazon Slot Id for hourly details ad call")
+					@Description("Verifying amazon Slot Id for hourly details ad call")
 					public void Smoke_Test_amazon_aax_Hourly_details_adcall() throws Exception {
 						System.out.println(
 								"================= Verify amazon aax Hourly details  adcall test case  Started =========================");
@@ -871,7 +870,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 					
 					@Test(priority =43, enabled = true)
-					@Title("Verifying amazon Slot Id for hourly1 big ad detailspage")
+					@Description("Verifying amazon Slot Id for hourly1 big ad detailspage")
 					public void Smoke_Test_amazon_aax_Hourly1_bigaddetails_adcall() throws Exception {
 						System.out.println(
 								"================= Verify amazon aax Hourly1 details big  adcall  test case Started =========================");
@@ -882,7 +881,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 					
 					@Test(priority = 45, enabled = true)
-					@Title("Verifying amazon Slot Id for hourly2 big ad detailspage")
+					@Description("Verifying amazon Slot Id for hourly2 big ad detailspage")
 					public void Smoke_Test_amazon_aax_Hourly2_bigaddetails_adcall() throws Exception {
 						System.out.println(
 								"================= Verifying  amazon aax Hourly2 details big  adcall  test case Started =========================");
@@ -894,7 +893,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 
 					@Test(priority = 47, enabled = true)
-					@Title("Verifying amazon Slot Id for hourly3 big ad detailspagel")
+					@Description("Verifying amazon Slot Id for hourly3 big ad detailspagel")
 					public void Smoke_Test_amazon_aax_Hourly3_bigaddetails_adcall() throws Exception {
 						System.out.println(
 								"================= Verify amazon aax Hourly3 details big  ad call test case  Started =========================");
@@ -911,7 +910,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					 /* =======================================Daily details amazon aax slot id's test case Started======================================================================================*/
 					
 					@Test(priority = 51, enabled = true)
-					@Title("Verifying amazon Slot Id for daily details day1 ad calll")
+					@Description("Verifying amazon Slot Id for daily details day1 ad calll")
 					public void Smoke_Test_amazon_aax_Daily_details_Day1_adcall() throws Exception {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day1 adcall test case Started =========================");
@@ -922,7 +921,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 
 					@Test(priority = 53, enabled = true)
-					@Title("Verifying amazon Slot Id for daily details day2 ad calll")
+					@Description("Verifying amazon Slot Id for daily details day2 ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day2adcall() throws Exception {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day2  adcall test case Started =========================");
@@ -934,7 +933,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 					
 					@Test(priority = 55, enabled = true)
-					@Title("Verifying amazon Slot Id for daily details day3 ad calll")
+					@Description("Verifying amazon Slot Id for daily details day3 ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day3adcall() throws Exception {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day3  adcall test case Started =========================");
@@ -946,7 +945,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 					
 					@Test(priority = 57, enabled = true)
-					@Title("Verifying amazon Slot Id for daily details day4 ad calll")
+					@Description("Verifying amazon Slot Id for daily details day4 ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day4adcall() throws Exception {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day4  adcall test case Started =========================");
@@ -956,7 +955,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					}
 
 					@Test(priority = 59, enabled = true)
-					@Title("Verifying amazon Slot Id for daily details day5 ad calll")
+					@Description("Verifying amazon Slot Id for daily details day5 ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day5adcall() throws Exception {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day5  adcall test case Started =========================");
@@ -969,7 +968,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 					
 				   @Test(priority = 61, enabled = true)
-					@Title("Verifying amazon Slot Id for daily details day6 ad calll")
+					@Description("Verifying amazon Slot Id for daily details day6 ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day6adcall() throws Exception {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day6  adcall test case Started =========================");
@@ -981,7 +980,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					
 					
 				  @Test(priority = 63, enabled = true)
-					@Title("Verifying amazon Slot Id for daily details day7 ad calll")
+					@Description("Verifying amazon Slot Id for daily details day7 ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day7  adcall test case Started =========================");
@@ -993,7 +992,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 					
 					@Test(priority = 65, enabled = true)
-					@Title("Verifying amazon Slot Id for daily details day8 ad calll")
+					@Description("Verifying amazon Slot Id for daily details day8 ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day8adcall() throws Exception {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day8  adcall test case Started =========================");
@@ -1007,7 +1006,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					
 					
 					 @Test(priority = 67, enabled = true)
-					@Title("Verifying amazon Slot Id for daily details day9 ad calll")
+					@Description("Verifying amazon Slot Id for daily details day9 ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day9adcall() throws Exception {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day9  adcall test case Started =========================");
@@ -1020,7 +1019,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					
 					
 					@Test(priority = 69, enabled = true)
-					@Title("Verifying amazon Slot Id for daily details day10  ad calll")
+					@Description("Verifying amazon Slot Id for daily details day10  ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day10adcall() throws Exception {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day10  adcall test case Started =========================");
@@ -1033,7 +1032,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					
 					
 					@Test(priority = 71, enabled = true)
-					@Title("Verifying amazon Slot Id for daily details day11  ad calll")
+					@Description("Verifying amazon Slot Id for daily details day11  ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day11adcall() throws Exception {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day11  adcall test case Started =========================");
@@ -1044,7 +1043,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 					
 					@Test(priority = 73, enabled = true)
-					@Title("Verifying amazon Slot Id for daily details day12  ad calll")
+					@Description("Verifying amazon Slot Id for daily details day12  ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day12adcall() throws Exception {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day12  adcall test case Started =========================");
@@ -1057,7 +1056,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					
 					
 					@Test(priority = 75, enabled = true)
-					@Title("Verifying amazon Slot Id for daily details day13  ad calll")
+					@Description("Verifying amazon Slot Id for daily details day13  ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day13adcall() throws Exception {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day13  adcall test case Started =========================");
@@ -1070,7 +1069,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					
 					
 					@Test(priority = 77, enabled = true)
-					@Title("Verifying amazon Slot Id for daily details day14  ad calll")
+					@Description("Verifying amazon Slot Id for daily details day14  ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day14adcall() throws Exception {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day14  adcall test case Started =========================");
@@ -1084,7 +1083,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 					
 					@Test(priority = 79, enabled = true)
-					@Title("Verifying amazon Slot Id for daily details day15  ad call")
+					@Description("Verifying amazon Slot Id for daily details day15  ad call")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day15adcall() throws Exception {
 						System.out
 								.println("================= Verifying amazon slot id for  daily details day15  adcall test case Started =========================");
@@ -1102,7 +1101,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 					 /* =======================================pull to refresh test case Started======================================================================================*/
 					 @Test(priority = 350, enabled = true)		  
-					  @Title("Verifying  home screen hourly  ad call pull to refrersh scenario on killLaunch") 
+					  @Description("Verifying  home screen hourly  ad call pull to refrersh scenario on killLaunch") 
 					  public  void Smoke_Test_Verifying_homescreenhourly_pulltoreresh_scenario_killLaunch() throws  Exception {	 
 					  logStep("Verifying home screen hourly  ad call pull to refrersh scenario");
 					  System.out.
@@ -1120,7 +1119,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					  
 					  @Test(priority = 352, enabled = true)
 					  
-					  @Title("Verifying  home screen marquee call pull to refrersh scenario") public
+					  @Description("Verifying  home screen marquee call pull to refrersh scenario") public
 					  void Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario() throws
 					  Exception {
 					  logStep("Verifying  home screen marquee call pull to refrersh scenario");
@@ -1137,7 +1136,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	
 						
 						@Test(priority = 400, enabled = true)
-						@Title("Verifying amazon Slot Id for COVID-19  card  using ANDFLAG-6704 UserGroup")
+						@Description("Verifying amazon Slot Id for COVID-19  card  using ANDFLAG-6704 UserGroup")
 						public void Smoke_Test_amazon_aax_Covid19_card_using_ANDFLAG6704UG() throws Exception {
 							System.out
 									.println("================= Verifying amazon Slot Id for COVID-19  card  using ANDFLAG-6704 UserGroup test case Started =========================");
@@ -1152,7 +1151,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						}
 						
 						@Test(priority = 402, enabled = true)
-						@Title("Verifying iu value Covid details details Page ad call  using ANDFLAG-6704 UserGroup")
+						@Description("Verifying iu value Covid details details Page ad call  using ANDFLAG-6704 UserGroup")
 						public void Smoke_Test_CaseVerify_Ccoivid_details_page_adcall_using_ANDFLAG6704UG() throws Exception {
 							System.out.println(
 									"================= Verifying iu value Covid details details Page ad call  using ANDFLAG-6704 started =========================");
@@ -1163,7 +1162,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						}
 
 						@Test(priority = 3, enabled = true)
-						@Title("Verifying amazon Slot Id for feed1 prerol ad call")
+						@Description("Verifying amazon Slot Id for feed1 prerol ad call")
 						public void Smoke_Test_amazon_aaxSlot_feed1_adCall() throws Exception {
 							System.out.println(
 									"================= Verify amazon aax slot  Id for feed1 prerol adcall  testcase Started =========================");
@@ -1176,7 +1175,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						
 						
 					 @Test(priority = 5, enabled = true)
-						@Title("Verifying amazon  Slot Id for feed2 ad call")
+						@Description("Verifying amazon  Slot Id for feed2 ad call")
 						public void Smoke_Test_amazon_aaxSlot_feed2_adcall() throws Exception {
 							System.out.println(
 									"================= Verify amazon aax slot  Id for feed2 adcall testcase Started =========================");
@@ -1187,7 +1186,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						}
 
 						@Test(priority = 7, enabled = true)
-						@Title("Verifying amazon  Slot Id for feed3 ad call")
+						@Description("Verifying amazon  Slot Id for feed3 ad call")
 						public void Smoke_Test_amazon_aaxSlot_feed3_adcall() throws Exception {
 							System.out.println(
 									"================= Verify amazon aax slot  Id for feed3 adcall testcase Started =========================");
@@ -1199,7 +1198,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 
 					    @Test(priority = 9, enabled = true)
-						@Title("Verifying amazon  Slot Id for feed4 ad call")
+						@Description("Verifying amazon  Slot Id for feed4 ad call")
 						public void Smoke_Test_amazon_aaxSlot_feed4_adcall() throws Exception {
 							System.out.println(
 									"================= Verify amazon aax slot  Id for feed4 adcall testcase Started =========================");
@@ -1213,7 +1212,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 						  
 						/* @Test(priority = 11, enabled = true)
-						@Title("Verifying amazon  Slot Id for feed5 ad call")
+						@Description("Verifying amazon  Slot Id for feed5 ad call")
 						public void Smoke_Test_amazon_aaxSlot_feed5_adcall() throws Exception {
 							System.out.println(
 									"================= Verify amazon aax slot  Id for feed5 adcall testcase Started =========================");
@@ -1233,7 +1232,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						 
 
 							 @Test(priority = 19, enabled = true)
-							@Title("Verifying amazon Slot Id for maps details preroll ad cal")
+							@Description("Verifying amazon Slot Id for maps details preroll ad cal")
 							public void Smoke_Test_amazon_aax_mapsdetails_adcall() throws Exception {
 								System.out.println("================= Verify amazon aax maps detais adcall Started =========================");
 								logStep(" Verifying preload amazon aax for  map details");
@@ -1244,7 +1243,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 
 							/*@Test(priority = 21, enabled = true)
-							@Title("Verifying amazon Slot Id  video ad call")
+							@Description("Verifying amazon Slot Id  video ad call")
 							public void Smoke_Test_amazon_aax_video_adcall() throws Exception {
 								System.out.println("================= Verify amazon aax video adcall Started =========================");
 								logStep(" Verifying preload amazon aax for  video details");
@@ -1255,7 +1254,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						 
 						 
 							/*@Test(priority = 23, enabled = false)
-							@Title("Verifying amazon axx slot for new article")
+							@Description("Verifying amazon axx slot for new article")
 							public void Smoke_Test_Verify_amazon_aax_News_adcall() throws Exception {
 								System.out.println(
 										"================= verifying amazon aax slot for news article started =========================");
@@ -1267,7 +1266,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 
 							@Test(priority =25, enabled = true)
-							@Title("Verifying amazon aax for today details card")
+							@Description("Verifying amazon aax for today details card")
 							public void Smoke_Test_amazon_aax_today_deatailcard() throws Exception {
 								System.out.println(
 										"================= Verify amazon aax for today detail adcard Started =========================");
@@ -1279,7 +1278,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 							
 							
 							@Test(priority = 27, enabled = true)
-							@Title("Verifying amazon aax for AQ details page")
+							@Description("Verifying amazon aax for AQ details page")
 							public void Smoke_Test_amazon_aax_Airquality_deatailcard() throws Exception {
 								System.out.println(
 										"================= Verify amazon aax for Air Quality details page Started =========================");
@@ -1290,7 +1289,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 
 							/*@Test(priority = 29, enabled = true)
-							@Title("Verifying amazon slot Id for Running Bigbanner ad")
+							@Description("Verifying amazon slot Id for Running Bigbanner ad")
 							public void Smoke_Test_Verify_amazon_SlotId_Running_Bigbanner_ad() throws Exception {
 								System.out.println(
 										"================= verifying amazon SlotId for Running BigBanner adcall started =========================");
@@ -1302,7 +1301,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 
 							@Test(priority = 31, enabled = false)
-							@Title("Verifying amazon slot Id  for Boat&Beach Bigbanner ad")
+							@Description("Verifying amazon slot Id  for Boat&Beach Bigbanner ad")
 							public void Smoke_Test_Verify_amazon_SlotId_Boat_Beach_Bigbanner_ad() throws Exception {
 								System.out.println(
 										"================= verifying amazon aax SlotId for Boat&Beach BigBanner adcall started =========================");
@@ -1314,7 +1313,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 
 							@Test(priority = 33, enabled = true)
-							@Title("Verifying amazon slot Id for Allergy Bigbanner ad")
+							@Description("Verifying amazon slot Id for Allergy Bigbanner ad")
 							public void Smoke_Test_Verify_amazon_SlotId_Allergy_Bigbanner_ad() throws Exception {
 								System.out.println(
 										"================= verifying amazon SlotId for Allergy BigBanner adcall started =========================");
@@ -1326,7 +1325,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 
 							/*@Test(priority = 35, enabled = true)
-							@Title("Verifying amazon slot Id for Cold&Flu Bigbanner ad")
+							@Description("Verifying amazon slot Id for Cold&Flu Bigbanner ad")
 							public void Smoke_Test_Verify_amazon_SlotId_coldFlu_Bigbanner_ad() throws Exception {
 								System.out.println(
 										"================= verifying amazon SlotId for cold&Flu BigBanner adcall started =========================");
@@ -1339,7 +1338,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 							
 							
 							/*@Test(priority = 37, enabled = true)
-							@Title("Verifying amazon slot Id for Outdoor details page")
+							@Description("Verifying amazon slot Id for Outdoor details page")
 							public void Smoke_Test_Verify_amazon_SlotId_outdoor_details() throws Exception {
 								System.out.println(
 										"================= verifying amazon SlotId for oudoor details adcall started =========================");
