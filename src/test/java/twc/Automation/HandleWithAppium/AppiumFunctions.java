@@ -530,7 +530,7 @@ public class AppiumFunctions extends Drivers{
     		
     	}
     	
-public static void lickOnMaps()  throws Exception{
+public static void clickOnMaps()  throws Exception{
 	try {
 	System.out.println("clicking on maps");
 	logStep("clicking on maps");
