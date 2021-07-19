@@ -2266,6 +2266,76 @@ if(ModuleName.toString().contains("PlanaHead")) {
 	
 }
 
+	
+	public static void enter_requiredLocation(String location) throws Exception {
+	new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementByAccessibilityId("Search")));	
+Ad.findElementByAccessibilityId("Search").click();
+new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.visibilityOfElementLocated(By.id("com.weather.Weather:id/search_text")));	
+Ad.findElementById("com.weather.Weather:id/search_text").sendKeys(location);
+new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/title")));	
+List<WebElement> allLocations=Ad.findElementsById("com.weather.Weather:id/title");
+Thread.sleep(6000);
+
+//allLocations.get(0).getText();
+//System.out.println(allLocations.size());
+
+for(int i=0;i<=allLocations.size();i++) {
+
+
+	if(location.contains("New York City")) {
+		//System.out.println(loc.getText());
+		if(allLocations.get(i).getText().contains("New York City")) {
+			Thread.sleep(6000);
+			allLocations.get(i).click();
+		Thread.sleep(6000);
+		attachScreen();
+		break;
+		}
+	}
+	
+
+	if(location.contains("07095")) {
+		//System.out.println(loc.getText());
+		if(allLocations.get(i).getText().contains("Woodbridge Township")) {
+			Thread.sleep(6000);
+			allLocations.get(i).click();
+			Thread.sleep(6000);
+		break;
+		}
+	}
+	if(location.contains("73645")) {
+		//System.out.println(loc.getText());
+		if(allLocations.get(i).getText().contains("Erick")) {
+			Thread.sleep(6000);
+			allLocations.get(i).click();
+			Thread.sleep(6000);
+		break;
+		}
+	}
+	
+	if(location.contains("30124")) {
+		//System.out.println(loc.getText());
+		if(allLocations.get(i).getText().contains("Cave Spring")) {
+
+			allLocations.get(i).click();
+		Thread.sleep(3000);
+		break;
+		}
+	}
+
+	
+	if(location.contains("08824")) {
+		//System.out.println(loc.getText());
+		if(allLocations.get(i).getText().contains("South Brunswick")) {
+
+			allLocations.get(i).click();
+		Thread.sleep(3000);
+		break;
+		}
+	}
+		
+}
+}
 }
                           
 
