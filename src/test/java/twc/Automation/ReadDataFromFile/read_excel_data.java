@@ -9,7 +9,7 @@ import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
 import twc.Automation.Driver.Drivers;;
-
+	public static int rowCount;
 public class read_excel_data extends Drivers{
 	
 public static String[][] exceldataread(String Type) throws Exception {
