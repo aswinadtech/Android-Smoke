@@ -69,7 +69,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 	
 	
-	/*@BeforeClass(alwaysRun = true)
+	@BeforeClass(alwaysRun = true)
 	public void beforeClass() throws Exception {	
 		this.configFile = this.charlesGeneralConfigFile(CONFIG_FILE_PATH);
 		proxy = new CharlesProxy("localhost", 8333, CONFIG_FILE_PATH);
@@ -84,7 +84,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		AppFunctions.gettingApkVersion() ;
 		Thread.sleep(5000);
 		attachScreen();
-	}*/
+	}
 
 	
 	
@@ -93,7 +93,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	 * Enable Preconditions for WeatherFX API Parameters validation
 	 */
 
-	/*@Test(priority = 301, enabled = true)
+	@Test(priority = 301, enabled = true)
 	@Description("Verify Enable Preconditions For WeatherFX API Parameters")
 	public void Verify_enable_preConditions_for_WeatherFx_API_Parameters() throws Exception {
 		System.out.println("==============================================");
@@ -125,7 +125,7 @@ AppiumFunctions.enter_requiredLocation("30124");
 		CharlesFunctions.createXMLFileForCharlesSessionFile();
 		// Utils.get_v3_wx_forecast_daily_15day_data();
 
-	}*/
+	}
 
 
 	/*
@@ -137,7 +137,7 @@ AppiumFunctions.enter_requiredLocation("30124");
 		System.out.println("==============================================");
 		System.out.println("****** Validating wfxtg custom parameter of Hourly details call");
 		logStep("Validating wfxtg custom parameter of Hourly details call ");
-		CharlesFunctions.createXMLFileForCharlesSessionFile();
+		//CharlesFunctions.createXMLFileForCharlesSessionFile();
 		Utils.validate_custom_param_val_of_gampad_with_zip("Hourly", "wfxtg", "30124");
 
 	}
@@ -321,6 +321,7 @@ AppiumFunctions.enter_requiredLocation("30124");
 		System.out.println("****** Validating nzcs custom parameter of Map details call");
 		logStep("Validating nzcs custom parameter of Map details call ");
 		Utils.validate_custom_param_val_of_gampad_with_zip( "Map", "nzcs", "30124");
+			CharlesFunctions.archive_folder("Charles");
 
 	}
 
