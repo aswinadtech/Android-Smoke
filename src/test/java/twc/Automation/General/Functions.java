@@ -46,7 +46,8 @@ public class Functions extends Drivers{
 	public static SoftAssert softAssert = new SoftAssert();
     /** Maximum wait time for dynamic waits */
     public static final int maxTimeout = 60;
-	static CharSequence[][] exceldata = null;
+	//static CharSequence[][] exceldata = null;
+	    static String[][] exceldata = null;
     
 	//Verify Animated Branded Background ad presented //naresh
 	public static void Verify_Animated_BB() throws Exception{
