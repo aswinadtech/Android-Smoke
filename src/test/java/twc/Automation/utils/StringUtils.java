@@ -87,4 +87,12 @@ public class StringUtils {
 		}
 		return new ArrayList<String>();
 	}
+	public static String jSONArrayToString(JSONArray jsa) {
+		String s = "";
+		for (int i = 0; i<jsa.size(); i++) {
+			 s = s.concat(jsa.get(i).toString())+",";
+		}
+		s=s.substring(0, s.length()-1);
+		return s;
+	}
 }
