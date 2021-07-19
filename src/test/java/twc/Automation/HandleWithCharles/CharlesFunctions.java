@@ -21,7 +21,7 @@ import twc.Automation.ReadDataFromFile.read_excel_data;
 import twc.Automation.ReadDataFromFile.write_excel_data;
 
 public class CharlesFunctions extends Drivers{
-	
+		public static File outfile = null;
 	public static void startSessionBrowserData2() throws Exception{
 
 		DeviceStatus device_status = new DeviceStatus();
