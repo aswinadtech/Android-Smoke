@@ -530,9 +530,17 @@ public class AppiumFunctions extends Drivers{
     		
     	}
     	
-public static void clickOnMaps() throws Exception{
-	Ad.findElementById("com.weather.Weather:id/ok_button").click();	
-	Thread.sleep(3000);	
+public static void lickOnMaps()  throws Exception{
+	try {
+	System.out.println("clicking on maps");
+	logStep("clicking on maps");
+	Ad.findElementByAccessibilityId("Radar Tab").click();
+	Thread.sleep(3000);
+	}
+	catch(Exception e) {
+		System.out.println("maps element not found");
+		logStep("maps element not found");
+	}
 }
 public static void clickOnRadarMaps() throws Exception{
 	try {
