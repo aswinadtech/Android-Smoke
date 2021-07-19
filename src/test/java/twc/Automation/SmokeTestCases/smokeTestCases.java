@@ -68,6 +68,22 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	private CharlesProxy proxy;
 
 	
+		
+	@BeforeClass(alwaysRun = true)
+	public void beforeClass() throws Exception {	
+		this.configFile = this.charlesGeneralConfigFile(CONFIG_FILE_PATH);
+		proxy = new CharlesProxy("localhost", 8333, CONFIG_FILE_PATH);
+		proxy.startCharlesProxyWithUI();
+		proxy.disableRewriting();
+	    proxy.stopRecording();
+		proxy.disableMapLocal();
+		proxy.startRecording();
+		proxy.clearCharlesSession();
+		AppiumFunctions.LaunchAppWithFullReset();
+		Thread.sleep(60000);
+		AppFunctions.gettingApkVersion() ;
+	}
+	
 	/* =======================================all feed ad calls test cases started======================================================================================*/
 	
 	@Test(priority = 2, enabled = true)
