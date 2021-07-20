@@ -6,8 +6,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
-import ru.yandex.qatools.allure.annotations.Attachment;
-import ru.yandex.qatools.allure.annotations.Step;
+import io.qameta.allure.Attachment;
+import io.qameta.allure.Step;
 
 public class Drivers extends read_Property_File_Info {
 	@SuppressWarnings("rawtypes")

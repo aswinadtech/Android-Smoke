@@ -46,7 +46,8 @@ public class Functions extends Drivers{
 	public static SoftAssert softAssert = new SoftAssert();
     /** Maximum wait time for dynamic waits */
     public static final int maxTimeout = 60;
-	static CharSequence[][] exceldata = null;
+	//static CharSequence[][] exceldata = null;
+	    static String[][] exceldata = null;
     
 	//Verify Animated Branded Background ad presented //naresh
 	public static void Verify_Animated_BB() throws Exception{
@@ -388,6 +389,30 @@ public class Functions extends Drivers{
 		}
 		return expected_results;
 	}
+	
+	
+	public static Map<String, String> health_and_activities_Allergy_spotlight_adcall_iu() throws Exception{
+
+	Map<String , String> wfxtriggers_values = new HashMap<String, String>();
+	String wxtgValues="";
+
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+	System.out.println("Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl ad call");
+	logStep("Verifyingiu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl ad call");
+	if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl")) {
+	System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl call was trigred");
+	logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl call was trigred");
+}
+if(!sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl")) {
+System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl call was not trigred");
+logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl call was not  trigred");
+Assert.fail("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl call was not trigred");
+}
+return wfxtriggers_values;
+}
 
 	public static void clean_App_Launch(String excel_sheet_name) throws Exception{
 
@@ -451,6 +476,75 @@ public class Functions extends Drivers{
 
 	}
 
+	
+	
+	
+	
+
+
+public static void verifyingsize_allergyspotlightadcall() throws Exception {
+	//Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[1]/android.widget.LinearLayout").click();
+	String expected_data = null;
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+	//String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
+//	logStep("Verifying  SOD custum param for  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar ad call");
+	System.out.println("Checking size for allergy spotlight ad call");
+	logStep("Checking size for allergy spotlight ad call");
+		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl")){
+			
+			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl"));
+	//		String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("&amp"));
+			 expected_data = Read_API_Call_Data.toString().substring(Read_API_Call_Data.indexOf("iu"),Read_API_Call_Data.indexOf("&correlator"));
+			 String val[]=expected_data.split("&");
+				if(val[1].contains("180x36")) {
+				System.out.println("Size of the  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl  is matched with   " + val[1]);
+				logStep(" Size of the  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl  is matched with " + val[1]);
+				}	
+			else {
+					System.out.println("Size of the  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl  is   matched with   " + val[1]);
+					logStep(" Size of the  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl  is  matched with " + val[1]);
+		}
+	
+		}
+}
+
+
+
+public static void validate_pos_Cust_param_Allergy_spotloght() throws Exception {
+	
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl")){
+			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fallergy%2Ftips_sl"));
+			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("cust_params="));
+			String expected_data = required_info.toString().substring(required_info.indexOf("pos%3D"),required_info.indexOf("%26ref%3D"));
+			
+			//6sod%3Dno%
+			String expectedValues = expected_data.toString();
+			String pos=expectedValues.replaceAll("%3D", "=");
+			
+			if(pos.contains("app_sl")) {
+				System.out.println("pos cust param value  is " +pos);
+				logStep("pos cust param value  is " +pos);
+			}
+			else {
+				System.out.println("pos cust param value is not matchged with"     + pos);
+				logStep("pos cust param value is not matchged with"     + pos);
+				Assert.fail("pos cust param value is not matchged withh"     + pos);
+			}
+			//System.out.println(expectedValues);
+			
+		}
+}
+	
+	
+	
+	
 	public static void bb_call_validation(String excel_sheet_name) throws Exception{
 
 		DeviceStatus device_status = new DeviceStatus();
@@ -2820,44 +2914,42 @@ Assert.fail("/7646/app_android_us/db_display/details/hourly3 call was not trigre
 return wfxtriggers_values;
 }
 
-public static Map<String, String> Verify_coivid19_detailpage_adcall_iu() throws Exception{
-
-	Map<String , String> wfxtriggers_values = new HashMap<String, String>();
-	String wxtgValues="";
+public static void Verify_coivid19_detailpage_adcall_iu() throws Exception{
 	DeviceStatus device_status = new DeviceStatus();
 	int Cap = device_status.Device_Status();
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
 	System.out.println("Verifyingi u=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%covid ad call");
 	logStep("Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fcoivd ad call");
-	if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fcoivd")) {
-		logStep("/7646/app_android_us/db_display/details/covid  call was trigred");
+	
+
+	if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fcovid")) {
 		logStep("/7646/app_android_us/db_display/details/covid  call was trigred");
 	System.out.println("/7646/app_android_us/db_display/details/covid  call was trigred");
 
 }
-if(!sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fcovid")) {
-System.out.println("/7646/app_android_us/db_display/details/covid  call was not trigred");
-logStep("/7646/app_android_us/db_display/details/covid  call was not trigred");
-Assert.fail("/7646/app_android_us/db_display/details/covid call was not trigred");
+if(!sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fcovid")) {
+System.out.println("/7646/app_android_us/db_display/details/covid  call was  trigred");
+logStep("/7646/app_android_us/db_display/details/covid  call was  trigred");
+//Assert.fail("/7646/app_android_us/db_display/details/covid call was not trigred");
 }
-return wfxtriggers_values;
+
 }
 
 public static void get_aaxcal_covid19() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
-	System.out.println("Verifying amazon \"slot\": \"4fbed16a-cc6f-4cb1-94f7-81465acbd47e\"  for covid19 details card");
-	logStep("Verifying amazon \"slot\": \"4fbed16a-cc6f-4cb1-94f7-81465acbd47e\"  for covid19 details card");
+	System.out.println("Verifying amazon \"slot\": \"420f2237-fa60-454f-85a4-40707c8718e6\"  for covid19 details card");
+	logStep("Verifying amazon \"slot\": \"420f2237-fa60-454f-85a4-40707c8718e6\"  for covid19 details card");
 	//System.out.println("Slot Name is  : "+slotID);
-	if(sb.contains("4fbed16a-cc6f-4cb1-94f7-81465acbd47e")) {
-	System.out.println("4fbed16a-cc6f-4cb1-94f7-81465acbd47e is trigred for aax  call db_display/details/covid");
-	logStep("4fbed16a-cc6f-4cb1-94f7-81465acbd47e is trigred for aax  call db_display/details/covid");
+	if(sb.contains("420f2237-fa60-454f-85a4-40707c8718e6")) {
+	System.out.println("420f2237-fa60-454f-85a4-40707c8718e6  is trigred for aax  call db_display/details/covid");
+	logStep("420f2237-fa60-454f-85a4-40707c8718e6 is trigred for aax  call db_display/details/covid");
 	}
-	if(!sb.contains("4fbed16a-cc6f-4cb1-94f7-81465acbd47e")) {
-		System.out.println("slotID 4fbed16a-cc6f-4cb1-94f7-81465acbd47e is not trigred for aax call db_display/details/covid");
-		logStep("4fbed16a-cc6f-4cb1-94f7-81465acbd47e is  not trigred for aax  call db_display/details/covid");
-		Assert.fail("slotID 4fbed16a-cc6f-4cb1-94f7-81465acbd47eis not trigred for aax call db_display/details/covid");
+	if(!sb.contains("420f2237-fa60-454f-85a4-40707c8718e6")) {
+		System.out.println("slotID 420f2237-fa60-454f-85a4-40707c8718e6 is not trigred for aax call db_display/details/covid");
+		logStep("420f2237-fa60-454f-85a4-40707c8718e6 is  not trigred for aax  call db_display/details/covid");
+		Assert.fail("slotID 420f2237-fa60-454f-85a4-40707c8718e6 is not trigred for aax call db_display/details/covid");
 		}
 }
 
@@ -3649,6 +3741,86 @@ public static void get_aaxcal_radar() throws Exception {
 		
 		}
 }
+	
+	
+	public static void get_aaxcal_Hourly_Interstitial() throws Exception {
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+	System.out.println("Verifying amazon \"slotId\": \"2adb145c-0f90-44e9-852a-fa757c870db1\"  for db_display/interstitial/hourly");
+	logStep("Verifying amazon \"slotId\": \"2adb145c-0f90-44e9-852a-fa757c870db1\"   for db_display/interstitial/hourly");
+	//System.out.println("Slot Name is  : "+slotID);
+	if(sb.contains("2adb145c-0f90-44e9-852a-fa757c870db1")) {
+	System.out.println("2adb145c-0f90-44e9-852a-fa757c870db1 is trigred for aax  call db_display/interstitial/hourly");
+	logStep("2adb145c-0f90-44e9-852a-fa757c870db1 is trigred for aax  call db_display/interstitial/hourly");
+	}
+	if(!sb.contains("2adb145c-0f90-44e9-852a-fa757c870db1")) {
+		System.out.println("slotID :: 2adb145c-0f90-44e9-852a-fa757c870db1 is not trigred for aax call db_display/interstitial/hourly");
+		logStep("slotID ::  2adb145c-0f90-44e9-852a-fa757c870db1 is not trigred for aax call db_display/interstitial/hourly");
+		Assert.fail("slotID ::  2adb145c-0f90-44e9-852a-fa757c870db1 is not trigred for aax call db_display/interstitial/hourly");
+		
+		}
+}
+
+
+
+public static void get_aaxcal_Daily_Interstitial() throws Exception {
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+	System.out.println("Verifying amazon \"slotId\": \"652177e9-d888-45de-a3c8-4270316faf87\"  for db_display/interstitial/daily");
+	logStep("Verifying amazon \"slotId\": \"652177e9-d888-45de-a3c8-4270316faf87\"   for db_display/interstitial/daily");
+	//System.out.println("Slot Name is  : "+slotID);
+	if(sb.contains("652177e9-d888-45de-a3c8-4270316faf87")) {
+	System.out.println("652177e9-d888-45de-a3c8-4270316faf87 is trigred for aax  call db_display/interstitial/daily");
+	logStep("652177e9-d888-45de-a3c8-4270316faf87 is trigred for aax  call db_display/interstitial/daily");
+	}
+	if(!sb.contains("652177e9-d888-45de-a3c8-4270316faf87")) {
+		System.out.println("slotID :: 652177e9-d888-45de-a3c8-4270316faf87 is not trigred for aax call db_display/interstitial/daily");
+		logStep("slotID ::  652177e9-d888-45de-a3c8-4270316faf87 is not trigred for aax call db_display/interstitial/daily");
+		Assert.fail("slotID ::  652177e9-d888-45de-a3c8-4270316faf87 is not trigred for aax call db_display/interstitial/daily");
+		
+		}
+}
+
+
+public static void get_aaxcal_maps_Interstitial() throws Exception {
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+	System.out.println("Verifying amazon \"slotId\": \"14c21e29-45dd-43e3-b1f4-60376e220445\"  for db_display/interstitial/maps");
+	logStep("Verifying amazon \"slotId\": \"14c21e29-45dd-43e3-b1f4-60376e220445\"   for db_display/interstitial/maps");
+	//System.out.println("Slot Name is  : "+slotID);
+	if(sb.contains("14c21e29-45dd-43e3-b1f4-60376e220445")) {
+	System.out.println("14c21e29-45dd-43e3-b1f4-60376e220445 is trigred for aax  call db_display/interstitial/maps");
+	logStep("14c21e29-45dd-43e3-b1f4-60376e220445 is trigred for aax  call db_display/interstitial/maps");
+	}
+	if(!sb.contains("14c21e29-45dd-43e3-b1f4-60376e220445")) {
+		System.out.println("slotID :: 14c21e29-45dd-43e3-b1f4-60376e220445 is not trigred for aax call db_display/interstitial/maps");
+		logStep("slotID ::  14c21e29-45dd-43e3-b1f4-60376e220445 is not trigred for aax call db_display/interstitial/maps");
+		Assert.fail("slotID :: 14c21e29-45dd-43e3-b1f4-60376e220445 is not trigred for aax call db_display/interstitial/maps");
+		
+		}
+}
+
+
+
+public static void get_aaxcal_Videos_Interstitial() throws Exception {
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+	System.out.println("Verifying amazon \"slotId\": \"ed8162e5-450a-415f-86c4-76a9fd40208c\"  for db_display/interstitial/maps");
+	logStep("Verifying amazon \"slotId\": \"ed8162e5-450a-415f-86c4-76a9fd40208c\"   for db_display/interstitial/maps");
+	//System.out.println("Slot Name is  : "+slotID);
+	if(sb.contains("ed8162e5-450a-415f-86c4-76a9fd40208c")) {
+	System.out.println("ed8162e5-450a-415f-86c4-76a9fd40208c is trigred for aax  call db_display/interstitial/maps");
+	logStep("ed8162e5-450a-415f-86c4-76a9fd40208c is trigred for aax  call db_display/interstitial/maps");
+	}
+	if(!sb.contains("ed8162e5-450a-415f-86c4-76a9fd40208c")) {
+		System.out.println("slotID :: ed8162e5-450a-415f-86c4-76a9fd40208c is not trigred for aax call db_display/interstitial/maps");
+		logStep("slotID ::  ed8162e5-450a-415f-86c4-76a9fd40208c is not trigred for aax call db_display/interstitial/maps");
+		Assert.fail("slotID :: ed8162e5-450a-415f-86c4-76a9fd40208c is not trigred for aax call db_display/interstitial/maps");
+		
+		}
+}
+
+	
 public static void get_aaxcal_Hourly() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
@@ -4257,13 +4429,13 @@ public static Map<String, String> validating_Fatualcall_privacy_Optoutmode_scena
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
 logStep("Verifying https://location.wfxtriggers.com api url");
-	if(sb.contains("location.wfxtriggers.com")) {
+	if(sb.contains("https://location.wfxtriggers.com")) {
 		logStep("https://location.wfxtriggers.com url was  trigred");
 		System.out.println("https://location.wfxtriggers.com url was  trigred");
 		Assert.fail("https://location.wfxtriggers.com url was  trigred");
 		}
 
-if(!sb.contains("location.wfxtriggers.com")) {
+if(!sb.contains("https://location.wfxtriggers.com")) {
 	logStep("https://location.wfxtriggers.com url was not trigred");
 System.out.println("https://location.wfxtriggers.com url was not trigred");
 
@@ -5357,6 +5529,24 @@ public static Map<String, String> Verify_SH_feedcard_adcall_iu() throws Exceptio
 	return wfxtriggers_values;
 	}
 
+	
+	public static  void Verify_MoreNews_adcall_iu() throws Exception{
+
+	
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
+	System.out.println("Verifying iu=%2F7646%2Fapp_android_us%2Fweather");
+	logStep("Verifying iu=%2F7646%2Fapp_android_us%2Fweather");
+	if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fweather")) {
+	System.out.println("iu=%2F7646%2Fapp_android_us%2Fweather  call was trigred");
+	logStep("iu=%2F7646%2Fapp_android_us%2Fweather call was trigred");
+}
+if(!sb.contains("iu=%2F7646%2Fapp_android_us%2Fweather")) {
+System.out.println("iu=%2F7646%2Fapp_android_us%2Fweather call was not trigred");
+logStep("iu=%2F7646%2Fapp_android_us%2Fweather call was not trigred");
+Assert.fail("iu=%2F7646%2Fapp_android_us%2Fweather call was not trigred");
+}
+}
 
 public static Map<String, String> Verify_SH_detailpage_adcall_iu() throws Exception{
 
@@ -5657,7 +5847,7 @@ public static void clickdailydetails()  throws Exception{
 	try {
 	System.out.println("clicking on daily");
 	logStep("clicking on daily");
-	Ad.findElementByAccessibilityId("Daily").click();
+	Ad.findElementByAccessibilityId("Daily Tab").click();
 	Thread.sleep(3000);
 	}
 	catch(Exception e) {
@@ -6555,7 +6745,7 @@ public static void verifying_feedcalls(int i) throws Exception {
 			System.out.println("checking for "  +feed+i);
 			logStep("Verifying iu value should't be nl");
 			System.out.println("Verifying iu value should't be nl");
-	if(i!=1) {
+	/*if(i!=1) {
 		if(sb.contains(feed+i) &&  !(feed+i).isEmpty() && !(feed+i).contains("nl") ) {			
 		System.out.println(feed+i +" call was trigred");
 		logStep(feed+i +" call was trigred");
@@ -6575,7 +6765,7 @@ public static void verifying_feedcalls(int i) throws Exception {
 			logStep(feed+i +" call was not trigred");
 		     Assert.fail(feed+i + " call was not trigred");
 			}
-		}
+		}*/
 	
 	 if(i==1) {
 		if(sb.contains(feed+i) &&  !(feed+i).isEmpty()) {			
@@ -6594,11 +6784,11 @@ public static void verifying_feedcalls(int i) throws Exception {
 		}
 		
 	 
-		else {
+		/*else {
 			System.out.println(feed+i +"call was not trigred");
 			logStep(feed+i +" call was not trigred");
 		     Assert.fail(feed+i + " call was not trigred");
-		}
+		}*/
 	 }
 	
 	

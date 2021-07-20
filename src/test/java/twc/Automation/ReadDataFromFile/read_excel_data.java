@@ -11,13 +11,11 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import twc.Automation.Driver.Drivers;;
 
 public class read_excel_data extends Drivers{
-	
+	public static int rowCount;
 public static String[][] exceldataread(String Type) throws Exception {
-		
 		Drivers.property();
 		
 		File f_validation= new File(properties.getProperty("excel_file_path"));
-		
 		FileInputStream fis_validation = new FileInputStream(f_validation);
 		HSSFWorkbook wb_validation = new HSSFWorkbook(fis_validation);
 		HSSFSheet ws = wb_validation.getSheet(Type);
@@ -25,6 +23,7 @@ public static String[][] exceldataread(String Type) throws Exception {
 		int rownum = ws.getLastRowNum() + 1;
 		int colnum = ws.getRow(0).getLastCellNum();
 		String data[][] = new String[rownum][colnum];
+
 //
 		String value=null;
 		int i,j = 0;
@@ -42,7 +41,7 @@ public static String[][] exceldataread(String Type) throws Exception {
 		return data;
 		}
 
-	public static String[][] exceldataread_Custom_Parameters(String ExcelName,  String Type) throws Exception {
+public static String[][] exceldataread_Custom_Parameters(String ExcelName,  String Type) throws Exception {
 	
 	Drivers.property();
 	String TestSheetName = null;
@@ -52,6 +51,8 @@ public static String[][] exceldataread(String Type) throws Exception {
 		TestSheetName = "ExcelFilePath_CustParam";
 	}else if(ExcelName.equals("Cust_Param_Result")){
 		TestSheetName = "ExcelFilePath_CustParam_Result";
+	}else if(ExcelName.equals("aaxCals")){
+		TestSheetName = "ExcelFilePath_AdUnits";
 	}
 	
 	File f_validation= new File(properties.getProperty(TestSheetName));
@@ -63,7 +64,7 @@ public static String[][] exceldataread(String Type) throws Exception {
 	int rownum = ws.getLastRowNum() + 1;
 	int colnum = ws.getRow(0).getLastCellNum();
 	String data[][] = new String[rownum][colnum];
-
+	rowCount = ws.getLastRowNum();
 		for (int i = 0; i < rownum; i++) {
 		    HSSFRow row = ws.getRow(i);
 
@@ -71,11 +72,12 @@ public static String[][] exceldataread(String Type) throws Exception {
 			HSSFCell cell = row.getCell(j);
 			String value = cell.toString();//Cell_To_String.celltostring(cell);
 			data[i][j] = value;
-			//System.out.println("Values are :" + value + " : data[" + i + "][" + j + "]");
+		//	System.out.println("Values are :" + value + " : data[" + i + "][" + j + "]");
 		    }
 		}
 	return data;
 	}
+	
 	
 	public static void Clear_Exceldata() throws Exception{
 		
