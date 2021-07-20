@@ -80,7 +80,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		System.out.println("==============================================");
 		System.out.println("****** Validating wfxtg custom parameter of Hourly details call");
 		logStep("Validating wfxtg custom parameter of Hourly details call ");
-		//CharlesFunctions.createXMLFileForCharlesSessionFile();
+		CharlesFunctions.createXMLFileForCharlesSessionFile();
 		Utils.validate_custom_param_val_of_gampad_with_zip("Hourly", "wfxtg", "30124");
 
 	}
