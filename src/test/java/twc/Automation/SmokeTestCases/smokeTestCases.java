@@ -1362,6 +1362,9 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		System.out.println("==============================================");
 		System.out.println("****** Verify Enable Preconditions for WeatherFX API Parameters test started");
 		logStep("Verify Enable Preconditions for WeatherFX API Parameters test started");
+		hread.sleep(30000);
+		Ad.resetApp();
+            Thread.sleep(30000);
 		proxy.clearCharlesSession();
 AppiumFunctions.Kill_launch();
 AppiumFunctions.enter_requiredLocation("30124");
