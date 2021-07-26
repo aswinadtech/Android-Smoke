@@ -1592,9 +1592,40 @@ AppiumFunctions.enter_requiredLocation("30124");
 			
 
 	}
+	
+	
+		@Test(priority = 30, enabled = true)
+	@Description("Validating 'adsdk' parameter of Amazon aax call")
+	public void Validate_Amazon_SDK_adsdk_parameter() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating Amazon SDK version i.e. 'adsdk' parameter of Amazon aax call");
+		logStep("****** Validating Amazon SDK version i.e. 'adsdk' parameter of Amazon aax call");
+		//Utils.validate_Amazon_aax_call_parameter("Amazon", "adsdk", properties.getProperty("AmazonSDKVersion"));
+
+	}
+
+	@Test(priority = 32, enabled = true)
+	@Description("Validating Google Mobile Ads SDK version of gampad call ")
+	public void Validate_GMA_SDK_version() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating Google Mobile Ads SDK Version i.e. 'js' parameter of gampad call");
+		logStep("Validating Google Mobile Ads SDK Version i.e. 'js' parameter of gampad call");
+
+	//Utils.validate_Noncustom_param_val_of_gampad( "Marquee", "js", properties.getProperty("GMASDKVersion"));
+
+	
 
 
 	
+	@Test(priority = 168, enabled = true)
+	@Description("Validating 'sdkVersion' parameter of Criteo SDK config app call ")
+	public void Validate_Criteo_SDK_config_app_Call_sdkVersion_parameter() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating 'sdkVersion' parameter of Criteo SDK config app call");
+		logStep("****** Validating 'sdkVersion' parameter of Criteo SDK config app call");
+		//Utils.validate_Criteo_SDK_config_app_call_parameter("Criteo", "sdkVersion", "3.10.1");
+
+	}
 
 	
 	
