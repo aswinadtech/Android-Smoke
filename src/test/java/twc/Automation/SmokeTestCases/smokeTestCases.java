@@ -1594,7 +1594,7 @@ AppiumFunctions.enter_requiredLocation("30124");
 	}
 	
 	
-		@Test(priority = 30, enabled = true)
+		@Test(priority = 4000, enabled = true)
 	@Description("Validating 'adsdk' parameter of Amazon aax call")
 	public void Validate_Amazon_SDK_adsdk_parameter() throws Exception {
 		System.out.println("==============================================");
@@ -1604,7 +1604,7 @@ AppiumFunctions.enter_requiredLocation("30124");
 
 	}
 
-	@Test(priority = 32, enabled = true)
+	@Test(priority = 4001, enabled = true)
 	@Description("Validating Google Mobile Ads SDK version of gampad call ")
 	public void Validate_GMA_SDK_version() throws Exception {
 		System.out.println("==============================================");
@@ -1617,7 +1617,7 @@ AppiumFunctions.enter_requiredLocation("30124");
 
 
 	
-	@Test(priority = 168, enabled = true)
+	@Test(priority = 4002, enabled = true)
 	@Description("Validating 'sdkVersion' parameter of Criteo SDK config app call ")
 	public void Validate_Criteo_SDK_config_app_Call_sdkVersion_parameter() throws Exception {
 		System.out.println("==============================================");
