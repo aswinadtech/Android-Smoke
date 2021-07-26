@@ -1614,7 +1614,7 @@ AppiumFunctions.enter_requiredLocation("30124");
 	//Utils.validate_Noncustom_param_val_of_gampad( "Marquee", "js", properties.getProperty("GMASDKVersion"));
 
 	
-
+	}
 
 	
 	@Test(priority = 4002, enabled = true)
