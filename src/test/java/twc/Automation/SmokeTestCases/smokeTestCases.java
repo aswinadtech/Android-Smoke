@@ -1628,6 +1628,95 @@ AppiumFunctions.enter_requiredLocation("30124");
 	}
 
 	
+		
+	/*
+	 * This method validates wfxtg custom parameter of Map details call
+	 */
+	@Test(priority = 304, enabled = true)
+	@Description("Validating 'wfxtg' custom parameter of home screen hourly call")
+	public void Validate_Homescreencall_wfxtg_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating wfxtg custom parameter of home screen hourly call");
+		logStep("Validating wfxtg custom parameter of home screen hourly call ");
+		//Utils.validate_custom_param_val_of_gampad_with_zip("Map", "wfxtg", "30124");
+
+	}
+
+
+
+	/*
+	 * This method validates zcs custom parameter of Hourly details call
+	 */
+	@Test(priority = 5000, enabled = true)
+	@Description("Validating 'zcs' custom parameter of home screen hourly call")
+	public void Validate_Homescreencall_zcs_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating zcs custom parameter of Homescreencall");
+		logStep("Validating zcs custom parameter of Homescreencall");
+		//Utils.validate_custom_param_val_of_gampad_with_zip( "Hourly", "zcs", "30124");
+
+	}
+
+	/*
+	 * This method validates hzcs custom parameter of Hourly details call
+	 */
+	@Test(priority = 5001, enabled = true)
+	@Description("Validating 'hzcs' custom parameter of home screen hourly call")
+	public void Validate_Homescreencall_hzcs_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating hzcs custom parameter of home screen hourly call");
+		logStep("Validating hzcs custom parameter of home screen hourly call"");
+	//	Utils.validate_custom_param_val_of_gampad_with_zip("Hourly", "hzcs", "30124");
+
+	}
+
+
+
+
+
+	
+
+
+
+	
+	@Test(priority = 5002, enabled = true)
+	@Description("Validating 'wfxtg' custom parameter of video details call ")
+	public void Validate_videodetails_wfxtg_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating wfxtg custom parameter of Video details call");
+		logStep("Validating wfxtg custom parameter of Video details call");
+		//Utils.validate_custom_param_val_of_gampad_with_zip("Map", "wfxtg", "30124");
+
+	}
+
+
+
+	/*
+	 * This method validates zcs custom parameter of Hourly details call
+	 */
+	@Test(priority = 5003, enabled = true)
+	@Description("Validating 'zcs' custom parameter of Video details call")
+	public void Validate_videodetails_zcs_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating zcs custom parameter of Video details call");
+		logStep("Validating zcs custom parameter of Video details call");
+		//Utils.validate_custom_param_val_of_gampad_with_zip( "Hourly", "zcs", "30124");
+
+	}
+
+	/*
+	 * This method validates hzcs custom parameter of Hourly details call
+	 */
+	@Test(priority = 5004, enabled = true)
+	@Description("Validating 'hzcs' custom parameter of Video details call")
+	public void Validate_videodetailscall_hzcs_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating hzcs custom parameter of Video details call");
+		logStep("Validating hzcs custom parameter of Video details call");
+	//	Utils.validate_custom_param_val_of_gampad_with_zip("Hourly", "hzcs", "30124");
+
+	}
+	
 	
 	
 	
