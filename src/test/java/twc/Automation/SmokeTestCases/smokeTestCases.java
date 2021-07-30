@@ -1665,7 +1665,7 @@ AppiumFunctions.enter_requiredLocation("30124");
 	public void Validate_Homescreencall_hzcs_Custom_param() throws Exception {
 		System.out.println("==============================================");
 		System.out.println("****** Validating hzcs custom parameter of home screen hourly call");
-		logStep("Validating hzcs custom parameter of home screen hourly call"");
+		logStep("Validating hzcs custom parameter of home screen hourly call");
 	//	Utils.validate_custom_param_val_of_gampad_with_zip("Hourly", "hzcs", "30124");
 
 	}
