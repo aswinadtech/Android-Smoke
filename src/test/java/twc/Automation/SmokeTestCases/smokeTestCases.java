@@ -1436,44 +1436,10 @@ AppiumFunctions.enter_requiredLocation("30124");
 
 	}
 
-	/*
-	 * This method validates cxtg custom parameter of Hourly details call
-	 */
-	@Test(priority = 3005, enabled = true)
-	@Description("Validating 'cxtg' custom parameter of Hourly details call ")
-	public void Validate_HourlyDetails_cxtg_Custom_param() throws Exception {
-		System.out.println("==============================================");
-		System.out.println("****** Validating cxtg custom parameter of Hourly details call");
-		logStep("Validating cxtg custom parameter of Hourly details call ");
-		Utils.validate_custom_param_val_of_gampad_with_zip("Hourly", "cxtg", "30124");
+	
 
-	}
+	
 
-	/*
-	 * This method validates cxtg custom parameter of Daily details call
-	 */
-	@Test(priority = 3006, enabled = true)
-	@Description("Validating 'cxtg' custom parameter of Daily details call ")
-	public void Validate_DailyDetails_cxtg_Custom_param() throws Exception {
-		System.out.println("==============================================");
-		System.out.println("****** Validating cxtg custom parameter of Daily details call");
-		logStep("Validating cxtg custom parameter of Daily details call ");
-		Utils.validate_custom_param_val_of_gampad_with_zip("Daily(10day)", "cxtg", "30124");
-
-	}
-
-	/*
-	 * This method validates cxtg custom parameter of Map details call
-	 */
-	@Test(priority = 3007, enabled = true)
-	@Description("Validating 'cxtg' custom parameter of Map details call ")
-	public void Validate_MapDetails_cxtg_Custom_param() throws Exception {
-		System.out.println("==============================================");
-		System.out.println("****** Validating cxtg custom parameter of Map details call");
-		logStep("Validating cxtg custom parameter of Map details call ");
-		Utils.validate_custom_param_val_of_gampad_with_zip("Map", "cxtg", "30124");
-
-	}
 
 	/*
 	 * This method validates zcs custom parameter of Hourly details call
@@ -1663,39 +1629,7 @@ AppiumFunctions.enter_requiredLocation("30124");
 	}
 
 	
-		@Test(priority = 4000, enabled = true)
-	@Description("Validating 'adsdk' parameter of Amazon aax call")
-	public void Validate_Amazon_SDK_adsdk_parameter() throws Exception {
-		System.out.println("==============================================");
-		System.out.println("****** Validating Amazon SDK version i.e. 'adsdk' parameter of Amazon aax call");
-		logStep("****** Validating Amazon SDK version i.e. 'adsdk' parameter of Amazon aax call");
-		Utils.validate_Amazon_aax_call_parameter("Amazon", "adsdk", properties.getProperty("AmazonSDKVersion"));
-
-	}
-
-	@Test(priority = 4001, enabled = true)
-	@Description("Validating Google Mobile Ads SDK version of gampad call ")
-	public void Validate_GMA_SDK_version() throws Exception {
-		System.out.println("==============================================");
-		System.out.println("****** Validating Google Mobile Ads SDK Version i.e. 'js' parameter of gampad call");
-		logStep("Validating Google Mobile Ads SDK Version i.e. 'js' parameter of gampad call");
-
-	Utils.validate_Noncustom_param_val_of_gampad( "Marquee", "js", properties.getProperty("GMASDKVersion"));
-
 	
-	}
-
-	
-	@Test(priority = 4002, enabled = true)
-	@Description("Validating 'sdkVersion' parameter of Criteo SDK config app call ")
-	public void Validate_Criteo_SDK_config_app_Call_sdkVersion_parameter() throws Exception {
-		System.out.println("==============================================");
-		System.out.println("****** Validating 'sdkVersion' parameter of Criteo SDK config app call");
-		logStep("****** Validating 'sdkVersion' parameter of Criteo SDK config app call");
-		Utils.validate_Criteo_SDK_config_app_call_parameter("Criteo", "sdkVersion", "3.10.1");
-
-	}
-
 	
 	
 
