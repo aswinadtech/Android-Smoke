@@ -6360,5 +6360,193 @@ public static String return_iu_value_from_query_parameter_of_Feedcall(String que
 		}
 
 	}
+	public static void validate_Amazon_aax_call_parameter(String sheetName,
+			String cust_param, String expected) throws Exception {
+		String[][] data = read_excel_data.exceldataread(sheetName);
+		DeviceStatus device_status = new DeviceStatus();
+		int Cap = device_status.Device_Status();
+		String host = data[2][1];
+		String path =data[3][1];
+
+		boolean flag = verifyAPICalWithHostandPath(host, path);
+		if (flag) {
+			System.out.println(host + path + " call is present in Charles session");
+			logStep(host + path + " call is present in Charles session");
+
+			String actual = get_param_value_from_APIRequest(host, path, cust_param);
+
+			if (actual.equalsIgnoreCase(expected)) {
+				System.out.println("Custom Parameter :" + cust_param + " value: " + actual
+						+ " is matched with the expected value " + expected);
+				logStep("Custom Parameter :" + cust_param + " value: " + actual + " is matched with the expected value "
+						+ expected);
+			} else {
+				System.out.println("Custom Parameter :" + cust_param + " value: " + actual
+						+ " is not matched with the expected value " + expected);
+				logStep("Custom Parameter :" + cust_param + " value: " + actual
+						+ " is not matched with the expected value " + expected);
+				Assert.fail("Custom Parameter :" + cust_param + " value: " + actual
+						+ " is not matched with the expected value " + expected);
+			}
+
+		} else {
+			System.out.println(host + path + " call is not present in Charles session, hence Custom Parameter: "
+					+ cust_param + " validation skipped");
+			logStep(host + path + " call is not present in Charles session, hence Custom Parameter: " + cust_param
+					+ " validation skipped");
+
+			Assert.fail(host + path + " call is not present in Charles session, hence Custom Parameter: " + cust_param
+					+ " validation skipped");
+
+		}
+
+	}
+
+
+public static void validate_Noncustom_param_val_of_gampad(String sheetName, String cust_param,
+		String expected) throws Exception {
+	
+	String[][] data = read_excel_data.exceldataread(sheetName);
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	boolean adCallFound = false;
+
+	// Read the content form file
+	File fXmlFile = new File(CharlesFunctions.outfile.getName());
+
+	DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+	dbFactory.setValidating(false);
+	dbFactory.setNamespaceAware(true);
+	dbFactory.setFeature("http://xml.org/sax/features/namespaces", false);
+	// dbFactory.setNamespaceAware(true);
+	dbFactory.setFeature("http://xml.org/sax/features/validation", false);
+	dbFactory.setFeature("http://apache.org/xml/features/nonvalidating/load-dtd-grammar", false);
+	dbFactory.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
+
+	DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+
+	Document doc = dBuilder.parse(fXmlFile);
+	// Getting the transaction element by passing xpath expression
+	NodeList nodeList = doc.getElementsByTagName("transaction");
+	String xpathExpression = "charles-session/transaction/@query";
+	List<String> getQueryList = evaluateXPath(doc, xpathExpression);
+
+	// Getting custom_params amzn_b values
+	List<String> customParamsList = new ArrayList<String>();
+
+	String iuId = null;
+	// "iu=%2F7646%2Fapp_iphone_us%2Fdb_display%2Fhome_screen%2Ftoday";
+	if (sheetName.equalsIgnoreCase("PreRollVideo")) {
+		iuId = videoIUValue;
+		System.out.println(iuId);
+	} 
+	else {
+		iuId = data[11][1];
+	}
+	String tempCustmParam = null;
+	for (String qry : getQueryList) {
+		if (qry.contains(iuId)) {
+			adCallFound = true;
+			tempCustmParam = getNonCustomParamBy_iu_value(qry, cust_param);
+			//if (!"".equals(tempCustmParam))
+			// customParamsList.add(getCustomParamsBy_iu_value(qry));
+			break;
+		}
+
+	}
+
+	if (!adCallFound) {
+		System.out.println("Ad Call :" + iuId + " not found in charles session, hence Custom Parameter: "
+				+ cust_param + " validation skipped");
+		logStep("Ad Call :" + iuId + " not found in charles session, hence Custom Parameter: " + cust_param
+				+ " validation skipped");
+		Assert.fail("Ad Call :" + iuId + " not found in charles session, hence Custom Parameter: " + cust_param
+				+ " validation skipped");
+	} else if (adCallFound && !tempCustmParam.isEmpty()) {
+		System.out.println(cust_param + " value of from gampad call  of : " + iuId + " is " + tempCustmParam);
+		if (expected.equalsIgnoreCase("NotNull")) {
+			if (!tempCustmParam.equalsIgnoreCase("nl")) {
+				System.out.println("Custom Parameter :" + cust_param + " value: " + tempCustmParam
+						+ " is matched with the expected value " + expected);
+				logStep("Custom Parameter :" + cust_param + " value: " + tempCustmParam
+						+ " is matched with the expected value " + expected);
+			} else {
+				System.out.println("Custom Parameter :" + cust_param + " value: " + tempCustmParam
+						+ " is not matched with the expected value " + expected);
+				logStep("Custom Parameter :" + cust_param + " value: " + tempCustmParam
+						+ " is not matched with the expected value " + expected);
+				Assert.fail("Custom Parameter :" + cust_param + " value: " + tempCustmParam
+						+ " is not matched with the expected value " + expected);
+			}
+		} else {
+			if (tempCustmParam.equalsIgnoreCase(expected)) {
+				System.out.println("Custom Parameter :" + cust_param + " value: " + tempCustmParam
+						+ " is matched with the expected value " + expected);
+				logStep("Custom Parameter :" + cust_param + " value: " + tempCustmParam
+						+ " is matched with the expected value " + expected);
+			} else {
+				System.out.println("Custom Parameter :" + cust_param + " value: " + tempCustmParam
+						+ " is not matched with the expected value " + expected);
+				logStep("Custom Parameter :" + cust_param + " value: " + tempCustmParam
+						+ " is not matched with the expected value " + expected);
+				Assert.fail("Custom Parameter :" + cust_param + " value: " + tempCustmParam
+						+ " is not matched with the expected value " + expected);
+			}
+		}
+
+	} else if (tempCustmParam == null || tempCustmParam.isEmpty()) {
+		System.out.println("Custom parameter :" + cust_param
+				+ " not found/no value in ad call, hence Custom Parameter: " + cust_param + " validation skipped");
+		logStep("Custom parameter :" + cust_param + " not found/no value in ad call, hence Custom Parameter: "
+				+ cust_param + " validation skipped");
+		Assert.fail("Custom parameter :" + cust_param + " not found/no value in ad call, hence Custom Parameter: "
+				+ cust_param + " validation skipped");
+	}
+
+}
+public static void validate_Criteo_SDK_config_app_call_parameter(String sheetName,
+		String cust_param, String expected) throws Exception {
+String[][] data = read_excel_data.exceldataread("Criteo");
+	
+	//readExcelValues.excelValues( sheetName);
+	String host = data[2][1];
+	String path = data[4][1];
+	/*readExcelValues.excelValues(excelName, sheetName);
+	String host = readExcelValues.data[2][Cap];
+	String path = readExcelValues.data[4][Cap];*/
+
+	boolean flag = verifyAPICalWithHostandPath(host, path);
+	if (flag) {
+		System.out.println(host + path + " call is present in Charles session");
+		logStep(host + path + " call is present in Charles session");
+
+		String actual = get_param_value_from_APIRequest(host, path, cust_param);
+
+		if (actual.equalsIgnoreCase(expected)) {
+			System.out.println("Custom Parameter :" + cust_param + " value: " + actual
+					+ " is matched with the expected value " + expected);
+			logStep("Custom Parameter :" + cust_param + " value: " + actual + " is matched with the expected value "
+					+ expected);
+		} else {
+			System.out.println("Custom Parameter :" + cust_param + " value: " + actual
+					+ " is not matched with the expected value " + expected);
+			logStep("Custom Parameter :" + cust_param + " value: " + actual
+					+ " is not matched with the expected value " + expected);
+			Assert.fail("Custom Parameter :" + cust_param + " value: " + actual
+					+ " is not matched with the expected value " + expected);
+		}
+
+	} else {
+		System.out.println(host + path + " call is not present in Charles session, hence Custom Parameter: "
+				+ cust_param + " validation skipped");
+		logStep(host + path + " call is not present in Charles session, hence Custom Parameter: " + cust_param
+				+ " validation skipped");
+
+		Assert.fail(host + path + " call is not present in Charles session, hence Custom Parameter: " + cust_param
+				+ " validation skipped");
+
+	}
+
+}
 
 }
