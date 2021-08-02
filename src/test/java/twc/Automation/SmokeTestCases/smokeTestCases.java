@@ -1416,7 +1416,7 @@ AppiumFunctions.enter_requiredLocation("30124");
 		Thread.sleep(2000);
 		// navigate to Radar tab
 		AppiumFunctions.clickOnMaps();
-		Thread.sleep(2000);
+		Thread.sleep(80000);
 		CharlesFunctions.archive_folder("Charles");
 		Thread.sleep(5000);
 		proxy.getXml();
