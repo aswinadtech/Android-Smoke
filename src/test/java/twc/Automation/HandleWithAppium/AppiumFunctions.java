@@ -1231,16 +1231,17 @@ public static void clickOnVideoElementt() throws Exception{
 	System.out.println("clicking video element");
 	logStep("clicking video element");
 	try {
-	Ad.findElementById("com.weather.Weather:id/ok_button").click();	
+		Ad.findElementByAccessibilityId("Fred Tab").click();
+	//Ad.findElementById("com.weather.Weather:id/ok_button").click();	
 	Thread.sleep(10000);
 	}
 	catch(Exception e) {
 		try {
-		Ad.findElementById("Id com.weather.Weather:id/video_player_thumbnail_extra").click();	
+			Ad.findElementByAccessibilityId("Fred Tab").click();
 		Thread.sleep(10000);
 		}
 		catch(Exception e1) {
-			Ad.findElementById("com.weather.Weather:id/video_backdrop").click();
+
 		}
 		
 	}
