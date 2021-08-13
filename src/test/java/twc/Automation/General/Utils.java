@@ -52,6 +52,7 @@ import twc.Automation.HandleWithCharles.CharlesFunctions;
 import twc.Automation.HandleWithCharles.CharlesProxy;
 import twc.Automation.ReadDataFromFile.read_excel_data;
 import twc.Automation.utils.StringUtils;
+import twc.Regression.General.DeviceStatus;
 
 public class Utils extends Functions {
 
@@ -82,7 +83,7 @@ public class Utils extends Functions {
 	public static boolean unlimitedInterstitial = false;
 	public static String Exception = null;
 	public static int feedAdCount = 0;
-	public static String videoIUValue = null;
+	public static String videoIUValue = "iu=%2F7646%2Fapp_android_us%2Fvideo";
 	public static String iuId = null;
 	public enum CardNames {
 		video, today, news, aq, maps, daily
@@ -2542,8 +2543,8 @@ public class Utils extends Functions {
 		}
 
 		public static boolean verifyAPICalWithHostandPath(String host, String path) throws Exception {
-			// String[][] data = read_excel_data.exceldataread(sheetName);
-			File fXmlFile = new File(outfile.getName());
+			// readExcelValues.excelValues(excelName, sheetName);
+			File fXmlFile = new File(CharlesFunctions.outfile.getName());
 
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			dbFactory.setValidating(false);
@@ -2557,12 +2558,12 @@ public class Utils extends Functions {
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 
 			Document doc = dBuilder.parse(fXmlFile);
-	// Getting the transaction element by passing xpath expression
+		// Getting the transaction element by passing xpath expression
 			NodeList nodeList = doc.getElementsByTagName("transaction");
 			String xpathExpression = "charles-session/transaction/@host";
 			List<String> getQueryList = evaluateXPath(doc, xpathExpression);
 
-	// Getting custom_params amzn_b values
+		// Getting custom_params amzn_b values
 			List<String> customParamsList = new ArrayList<String>();
 
 			// String iuId = null;
@@ -2636,19 +2637,20 @@ public class Utils extends Functions {
 																					// + content);
 																				}
 																			}
-																			//this condition especially for android since its file has path value under first-line element
-																			if (eElement1.getNodeName().equals("first-line")) {
-																				String content = eElement1.getTextContent();
-																				// System.out.println("request body
-																				// "+content);
-
-																				if (content.contains(path)) {
-																					pflag = true;
+																			//if(hflag && !pflag) {
+																				if (eElement1.getNodeName().equals("first-line")) {
+																					String content = eElement1.getTextContent();
 																					// System.out.println("request body
-																					// found "
-																					// + content);
+																					// "+content);
+
+																					if (content.contains(path)) {
+																						pflag = true;
+																						// System.out.println("request body
+																						// found "
+																						// + content);
+																					}
 																				}
-																			}
+																			//}
 																		}
 																	}
 																}
@@ -2671,7 +2673,7 @@ public class Utils extends Functions {
 									 * (Element) innernode2; if (eElement.getNodeName().equals("body")) { String
 									 * content = eElement.getTextContent(); //
 									 * System.out.println("response body "+content); if
-									 * (content.contains(data[13][1])) { resflag = true; break
+									 * (content.contains(readExcelValues.data[13][Cap])) { resflag = true; break
 									 * outerloop;
 									 * 
 									 * } } } } } } }
@@ -2713,7 +2715,6 @@ public class Utils extends Functions {
 			 */
 
 		}
-
 	public static void waitForMinute() {
 		long start = System.nanoTime();
 		// ...
@@ -2900,7 +2901,7 @@ public class Utils extends Functions {
 		// String[][] data = read_excel_data.exceldataread(sheetName);
 
 		// Read the content form file
-		File fXmlFile = new File(outfile.getName());
+		File fXmlFile = new File(CharlesFunctions.outfile.getName());
 		listOf_b_Params.clear();
 
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -2987,7 +2988,9 @@ public class Utils extends Functions {
 																		// "+content);
 
 																		for (int paramtype = 1; paramtype <= custParamCount; paramtype++) {
+																			System.out.println(paramtype);
 																			if (cust_param.equals(exceldata[paramtype][0]) && content.contains(exceldata[paramtype][3])) {
+																				System.out.println(exceldata[paramtype][0]);
 																				flag = true;
 																				break;
 																			}
@@ -3768,7 +3771,7 @@ public class Utils extends Functions {
 	 * @param cust_param
 	 * @throws Exception
 	 */
-	public static void validate_custom_param_val_of_gampad(String excelName, String sheetName, String cust_param)
+	public static void validate_custom_param_val_of_gampad(String sheetName, String cust_param,String expected)
 			throws Exception {
 		/*
 		 * Calendar calendar = Calendar.getInstance(); Date d = new Date();
@@ -3781,7 +3784,7 @@ public class Utils extends Functions {
 		boolean adCallFound = false;
 
 		// Read the content form file
-		File fXmlFile = new File(outfile.getName());
+		File fXmlFile = new File(CharlesFunctions.outfile.getName());
 
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		dbFactory.setValidating(false);
@@ -3799,7 +3802,7 @@ public class Utils extends Functions {
 		NodeList nodeList = doc.getElementsByTagName("transaction");
 		String xpathExpression = "charles-session/transaction/@query";
 		List<String> getQueryList = evaluateXPath(doc, xpathExpression);
-		String expected = null;
+	 expected = null;
 		if (cust_param.equalsIgnoreCase("dt")) {
 		//	expected = dailyDetailsDateOfDay;
 		} else if (cust_param.equalsIgnoreCase("mnth")) {
@@ -3914,7 +3917,7 @@ public class Utils extends Functions {
 		boolean adCallFound = false;
 
 		// Read the content form file
-		File fXmlFile = new File(outfile.getName());
+		File fXmlFile = new File(CharlesFunctions.outfile.getName());
 
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		dbFactory.setValidating(false);
@@ -3941,7 +3944,7 @@ public class Utils extends Functions {
 		if (sheetName.equalsIgnoreCase("PreRollVideo")) {
 			iuId = videoIUValue;
 		} else {
-			iuId = data[18][1];
+			iuId = data[11][2];
 		}
 		String tempCustmParam = null;
 		for (String qry : getQueryList) {
@@ -4158,7 +4161,7 @@ public class Utils extends Functions {
 		boolean adCallFound = false;
 
 		// Read the content form file
-		File fXmlFile = new File(outfile.getName());
+		File fXmlFile = new File(CharlesFunctions.outfile.getName());
 
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		dbFactory.setValidating(false);
@@ -4185,7 +4188,8 @@ public class Utils extends Functions {
 		if (sheetName.equalsIgnoreCase("PreRollVideo")) {
 			iuId = videoIUValue;
 		} else {
-			iuId = data[18][1];
+			//iuId = data[11][2];
+			iuId = "iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly";
 		}
 		String tempCustmParam = null;
 		for (String qry : getQueryList) {
@@ -4587,8 +4591,8 @@ public static String return_iu_value_from_query_parameter_of_Feedcall(String que
 	}
 
 	public static String get_param_value_from_APIRequest(String host, String path, String cust_param) throws Exception {
-		// String[][] data = read_excel_data.exceldataread(sheetName);
-		File fXmlFile = new File(outfile.getName());
+		// readExcelValues.excelValues(excelName, sheetName);
+		File fXmlFile = new File(CharlesFunctions.outfile.getName());
 
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		dbFactory.setValidating(false);
@@ -4610,10 +4614,11 @@ public static String return_iu_value_from_query_parameter_of_Feedcall(String que
 		// Getting custom_params amzn_b values
 		List<String> customParamsList = new ArrayList<String>();
 
-		// String iuId = null;
+		String iuId = null;
 
 		boolean iuExists = false;
 		for (String qry : getQueryList) {
+			System.out.println(qry);
 			if (qry.contains(host)) {
 				iuExists = true;
 				break;
@@ -4682,19 +4687,21 @@ public static String return_iu_value_from_query_parameter_of_Feedcall(String que
 																				// + content);
 																			}
 																		}
-																		//this condition especially for android since its file has path value under first-line element
-																		if (eElement1.getNodeName().equals("first-line")) {
-																			String content = eElement1.getTextContent();
-																			// System.out.println("request body
-																			// "+content);
-
-																			if (content.contains(path)) {
-																				pflag = true;
+																		
+																		//if(hflag && !pflag) {
+																			if (eElement1.getNodeName().equals("first-line")) {
+																				String content = eElement1.getTextContent();
 																				// System.out.println("request body
-																				// found "
-																				// + content);
+																				// "+content);
+
+																				if (content.contains(path)) {
+																					pflag = true;
+																					// System.out.println("request body
+																					// found "
+																					// + content);
+																				}
 																			}
-																		}
+																	//	}
 																	}
 																}
 															}
@@ -4743,6 +4750,7 @@ public static String return_iu_value_from_query_parameter_of_Feedcall(String que
 		return ApiParamValue;
 
 	}
+
 
 	public static void validate_Criteo_SDK_config_app_call_parameter(String excelName, String sheetName,
 			String cust_param, String expected) throws Exception {
@@ -6360,6 +6368,7 @@ public static String return_iu_value_from_query_parameter_of_Feedcall(String que
 		}
 
 	}
+
 	public static void validate_Amazon_aax_call_parameter(String sheetName,
 			String cust_param, String expected) throws Exception {
 		String[][] data = read_excel_data.exceldataread(sheetName);
@@ -6548,5 +6557,4 @@ String[][] data = read_excel_data.exceldataread("Criteo");
 	}
 
 }
-
 }
