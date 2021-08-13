@@ -83,7 +83,8 @@ public class Utils extends Functions {
 	public static boolean unlimitedInterstitial = false;
 	public static String Exception = null;
 	public static int feedAdCount = 0;
-	public static String videoIUValue = "iu=%2F7646%2Fapp_android_us%2Fvideo";
+	//public static String videoIUValue = "iu=%2F7646%2Fapp_android_us%2Fvideo";
+		public static String videoIUValue = "iu=%2F7646%2Fapp_android_us%2Fweather%2Fsevere%2Ftropical";
 	public static String iuId = null;
 	public enum CardNames {
 		video, today, news, aq, maps, daily
