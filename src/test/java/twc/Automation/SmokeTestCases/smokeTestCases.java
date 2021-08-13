@@ -867,7 +867,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		System.out.println("****** Validating Google Mobile Ads SDK Version i.e. 'js' parameter of gampad call");
 		logStep("Validating Google Mobile Ads SDK Version i.e. 'js' parameter of gampad call");
 
-	//Utils.validate_Noncustom_param_val_of_gampad( "Marquee", "js", properties.getProperty("GMASDKVersion"));
+Utils.validate_Noncustom_param_val_of_gampad( "Marquee", "js", properties.getProperty("GMASDKVersion"));
 
 	
 	}
@@ -879,7 +879,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		System.out.println("==============================================");
 		System.out.println("****** Validating 'sdkVersion' parameter of Criteo SDK config app call");
 		logStep("****** Validating 'sdkVersion' parameter of Criteo SDK config app call");
-		//Utils.validate_Criteo_SDK_config_app_call_parameter("Criteo", "sdkVersion", "3.10.1");
+		Utils.validate_Criteo_SDK_config_app_call_parameter("Criteo", "sdkVersion", "4.4.0");
 
 	}
 
@@ -1193,6 +1193,125 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 							System.out.println(
 									"=================Verifying iu value Covid details details Page ad call  using ANDFLAG-6704  End =========================");
 						}
+	
+	
+	
+	
+	/*
+	 * This method validates cmsid custom parameter of video call
+	 */
+	@Test(priority = 600, enabled = true)
+	@Description("Validating 'cmsid' custom parameter of Video call ")
+	public void Validate_PreRollVideo_cmsid_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating cmsid custom parameter of Video call");
+		logStep("Validating cmsid custom parameter of Video call ");
+		/*proxy.clearCharlesSession();
+		Ad.resetApp();
+		Thread.sleep(60000);
+		AppiumFunctions.clickOnVideoElementt();
+		Thread.sleep(100000);
+		this.proxy.getXml();*/
+		CharlesFunctions.createXMLFileForCharlesSessionFile();
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "PreRollVideo", "cmsid", "NotNull");
+
+	}
+
+	/*
+	 * This method validates ttid custom parameter of video call
+	 */
+	@Test(priority = 602, enabled = true)
+	@Description("Validating 'ttid' custom parameter of Video call ")
+	public void Validate_PreRollVideo_ttid_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating ttid custom parameter of Video call");
+		logStep("Validating ttid custom parameter of Video call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "PreRollVideo", "ttid", "NotNull");
+
+	}
+
+	/*
+	 * This method validates vid custom parameter of video call
+	 */
+	@Test(priority = 604, enabled = true)
+	@Description("Validating 'vid' custom parameter of Video call ")
+	public void Validate_PreRollVideo_lnid_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating lnid custom parameter of Video call");
+		logStep("Validating lnid custom parameter of Video call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "PreRollVideo", "lnid",  "NotNull");
+
+	}
+	
+	/*
+	 * This method validates vid custom parameter of video call
+	 */
+	@Test(priority = 606, enabled = true)
+	@Description("Validating 'vid' custom parameter of Video call ")
+	public void Validate_PreRollVideo_vid_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating vid custom parameter of Video call");
+		logStep("Validating vid custom parameter of Video call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "PreRollVideo", "vid",  "NotNull");
+
+	}
+
+	
+	/*
+	 * This method validates vid custom parameter of video call
+	 */
+	@Test(priority = 608, enabled = true)
+	@Description("Validating 'plist' custom parameter of Video call ")
+	public void Validate_PreRollVideo_plist_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating plist custom parameter of Video call");
+		logStep("Validating plist custom parameter of Video call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "PreRollVideo", "plist", "NotNull");
+
+	}
+
+	/*
+	 * This method validates descritpion url of video call
+	 */
+	@Test(priority = 610, enabled = true)
+	@Description("Validating 'description url' of Video call ")
+	public void Validate_PreRollVideo_description_url_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating description url of Video call");
+		logStep("Validating description url of Video call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "PreRollVideo", "description_url", "NotNull");
+
+	}
+	
+	
+	/*
+	 * This method validates descritpion url of video call
+	 */
+	@Test(priority = 612, enabled = true)
+	@Description("Validating 'content url' of Video call ")
+	public void Validate_PreRollVideo_content_url_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating content url of Video call");
+		logStep("Validating content url of Video call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "PreRollVideo", "content_url", "NotNull");
+
+	}
+	
+
+	/*
+	 * This method validates Google Interactive Media Ads SDK version i.e. IMA SDK
+	 */
+	@Test(priority = 614, enabled = true)
+	@Description("Validating Google Interactive Media Ads SDK version of Preroll video call ")
+	public void Validate_IMA_SDK_version() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating Google Interactive Media Ads SDK version i.e. 'js' parameter of Preroll video call");
+		logStep("Validating Google Interactive Media Ads SDK version i.e. 'js' parameter of Preroll video call");
+
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "PreRollVideo", "js", properties.getProperty("IMASDKVersion"));
+
+	}
+	
 
 						@Test(priority = 3, enabled = true)
 						@Description("Verifying amazon Slot Id for feed1 prerol ad call")
