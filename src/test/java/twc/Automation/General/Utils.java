@@ -52,7 +52,7 @@ import twc.Automation.HandleWithCharles.CharlesFunctions;
 import twc.Automation.HandleWithCharles.CharlesProxy;
 import twc.Automation.ReadDataFromFile.read_excel_data;
 import twc.Automation.utils.StringUtils;
-import twc.Regression.General.DeviceStatus;
+import twc.Automation.General.DeviceStatus;
 
 public class Utils extends Functions {
 
