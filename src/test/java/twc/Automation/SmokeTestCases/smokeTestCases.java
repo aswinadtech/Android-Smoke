@@ -1311,6 +1311,560 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 	}
 	
+	
+	
+	/*
+	 * This method validates plat custom parameter of Marquee call
+	 */
+	@Test(priority = 700, enabled = true)
+	@Description("Validating 'plat' custom parameter of Marquee call ")
+	public void Validate_Marquee_plat_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating plat custom parameter of Marquee call");
+		logStep("Validating plat custom parameter of Marquee call ");
+		Thread.sleep(30000);
+		Ad.resetApp();
+            Thread.sleep(60000);
+            proxy.clearCharlesSession();
+            AppiumFunctions.Kill_launch();
+            Thread.sleep(60000);
+            AppiumFunctions.SwipeUp_Counter(10);
+            Thread.sleep(30000);
+            this.proxy.getXml();	
+		CharlesFunctions.createXMLFileForCharlesSessionFile();
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Marquee", "plat", "wx_droid_phone");
+
+	}
+
+	/*
+	 * This method validates plat custom parameter of Feed1 call
+	 */
+	@Test(priority = 702, enabled = true)
+	@Description("Validating 'plat' custom parameter of Feed1 call ")
+	public void Validate_Feed1_plat_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating plat custom parameter of Feed1 call");
+		logStep("Validating plat custom parameter of Feed1 call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Feed1", "plat", "wx_droid_phone");
+
+	}
+
+	/*
+	 * This method validates plat custom parameter of Hourly details call
+	 */
+	@Test(priority = 704, enabled = true)
+	@Description("Validating 'plat' custom parameter of Hourly details call ")
+	public void Validate_HourlyDetails_plat_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating plat custom parameter of Hourly details call");
+		logStep("Validating plat custom parameter of Hourly details call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Hourly", "plat", "wx_droid_phone");
+
+	}
+	
+	
+	
+	/*
+	 * This method validates pos custom parameter of Marquee call
+	 */
+	@Test(priority = 706, enabled = true)
+	@Description("Validating 'pos' custom parameter of Marquee call ")
+	public void Validate_Marquee_pos_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating pos custom parameter of Marquee call");
+		logStep("Validating pos custom parameter of Marquee call ");
+		CharlesFunctions.createXMLFileForCharlesSessionFile();
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Marquee", "pos", "top300");
+
+	}
+
+	/*
+	 * This method validates pos custom parameter of Feed1 call
+	 */
+	@Test(priority = 708, enabled = true)
+	@Description("Validating 'pos' custom parameter of Feed1 call ")
+	public void Validate_Feed1_pos_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating pos custom parameter of Feed1 call");
+		logStep("Validating pos custom parameter of Feed1 call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Feed1", "pos", "top300");
+
+	}
+
+	/*
+	 * This method validates pos custom parameter of Hourly details call
+	 */
+	@Test(priority = 710, enabled = true)
+	@Description("Validating 'pos' custom parameter of Hourly details call ")
+	public void Validate_HourlyDetails_pos_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating pos custom parameter of Hourly details call");
+		logStep("Validating pos custom parameter of Hourly details call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Hourly", "pos", "top300");
+
+	}
+	
+	
+	
+	/*
+	 * This method validates tile custom parameter of Marquee call
+	 */
+	@Test(priority = 706, enabled = true)
+	@Description("Validating 'tile' custom parameter of Marquee call ")
+	public void Validate_Marquee_tile_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating tile custom parameter of Marquee call");
+		logStep("Validating tile custom parameter of Marquee call ");
+		CharlesFunctions.createXMLFileForCharlesSessionFile();
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Marquee", "tile", "1");
+
+	}
+
+	/*
+	 * This method validates tile custom parameter of Feed1 call
+	 */
+	@Test(priority = 708, enabled = true)
+	@Description("Validating 'tile' custom parameter of Feed1 call ")
+	public void Validate_Feed1_tile_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating tile custom parameter of Feed1 call");
+		logStep("Validating tile custom parameter of Feed1 call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Feed1", "tile", "1");
+
+	}
+
+	/*
+	 * This method validates tile custom parameter of Hourly details call
+	 */
+	@Test(priority = 710, enabled = true)
+	@Description("Validating 'tile' custom parameter of Hourly details call ")
+	public void Validate_HourlyDetails_tile_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating tile custom parameter of Hourly details call");
+		logStep("Validating tile custom parameter of Hourly details call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Hourly", "tile", "1");
+
+	}
+
+	
+	
+	
+	/*
+	 * This method validates sod custom parameter of HomeScreen Today Call
+	 */
+	@Test(priority = 712, enabled = true)
+	@Description("Validating 'sod' custom parameter of marquee hour Call")
+	public void validate_HomeScreen_marquee_sod_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating sod custom parameter of HomeScreen marqueeay call");
+		logStep("Validating sod custom parameter of HomeScreen marquee call");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Marquee", "sod", "yes");
+	}
+
+	/*
+	 * This method validates sod custom parameter of Feed1 call
+	 */
+	@Test(priority = 714, enabled = true)
+	@Description("Validating 'sod' custom parameter of Feed1 call ")
+	public void Validate_Feed1_sod_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating sod custom parameter of Feed1 call");
+		logStep("Validating sod custom parameter of Feed1 call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Feed1", "sod", "yes");
+
+	}
+
+	/*
+	 * This method validates sod custom parameter of Hourly details call
+	 */
+	@Test(priority = 716, enabled = true)
+	@Description("Validating 'sod' custom parameter of Hourly details call ")
+	public void Validate_HourlyDetails_sod_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating sod custom parameter of Hourly Details call");
+		logStep("Validating sod custom parameter of Hourly Details call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Hourly", "sod", "yes");
+
+	}
+	
+
+	/*
+	 * This method validates lang custom parameter of Marquee call
+	 */
+	@Test(priority = 718, enabled = true)
+	@Description("Validating 'lang' custom parameter of Marquee call ")
+	public void Validate_Marquee_lang_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating lang custom parameter of Marquee call");
+		logStep("Validating lang custom parameter of Marquee call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Marquee", "lang", "en");
+
+	}
+
+	/*
+	 * This method validates lang custom parameter of Feed1 call
+	 */
+	@Test(priority = 720, enabled = true)
+	@Description("Validating 'lang' custom parameter of Feed1 call ")
+	public void Validate_Feed1_lang_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating lang custom parameter of Feed1 call");
+		logStep("Validating lang custom parameter of Feed1 call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Feed1", "lang", "en");
+
+	}
+
+	/*
+	 * This method validates lang custom parameter of Hourly details call
+	 */
+	@Test(priority = 722, enabled = true)
+	@Description("Validating 'lang' custom parameter of Hourly details call ")
+	public void Validate_HourlyDetails_lang_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating lang custom parameter of Hourly details call");
+		logStep("Validating lang custom parameter of Hourly details call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Hourly", "lang", "en");
+
+	}
+	
+	
+	/*
+	 * This method validates tf custom parameter of Homescreen Today call tf
+	 * parameter not exists for NextGenIM and Feed calls, hence limited to
+	 * Homescreen hourly call
+	 */
+	@Test(priority = 724, enabled = true)
+	@Description("Validating 'tf' custom parameter of HomeScreen hourly call ")
+	public void Validate_HomeScreen_hourly_tf_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating tf custom parameter of HomeScreen hourly call");
+		logStep("Validating tf custom parameter of HomeScreen hourly call");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "pullrefresh", "tf", "hs_h");
+
+	}
+
+	/*
+	 * This method validates DayNight custom parameter of Hourly details call
+	 */
+	@Test(priority = 726, enabled = true)
+	@Description("Validating 'tf' custom parameter of Hourly details call ")
+	public void Validate_HourlyDetails_tf_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating tf custom parameter of Hourly details call");
+		logStep("Validating tf custom parameter of Hourly details call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Hourly", "tf", "hourly");
+
+	}
+	/*
+	 * This method validates DayNight custom parameter of Marquee call
+	 */
+	@Test(priority = 728, enabled = true)
+	@Description("Validating 'DayNight' custom parameter of Marquee call ")
+	public void Validate_Marquee_DayNight_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating DayNight custom parameter of Marquee call");
+		logStep("Validating DayNight custom parameter of Marquee call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Marquee", "dynght", "NotNull");
+
+	}
+
+	
+	/*
+	 * This method validates DayNight custom parameter of Feed1 call
+	 */
+	@Test(priority = 730, enabled = true)
+	@Description("Validating 'DayNight' custom parameter of Feed1 call ")
+	public void Validate_Feed1_DayNight_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating DayNight custom parameter of Feed1 call");
+		logStep("Validating DayNight custom parameter of Feed1 call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Feed1", "dynght", "NotNull");
+
+	}
+
+	/*
+	 * This method validates DayNight custom parameter of Hourly details call
+	 */
+	@Test(priority = 732, enabled = true)
+	@Description("Validating 'DayNight' custom parameter of Hourly details call ")
+	public void Validate_HourlyDetails_DayNight_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating DayNight custom parameter of Hourly details call");
+		logStep("Validating DayNight custom parameter of Hourly details call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Hourly", "dynght", "NotNull");
+
+	}
+	
+	
+	
+	/*
+	 * This method validates DayNight custom parameter of Marquee call
+	 */
+	@Test(priority = 734, enabled = true)
+	@Description("Validating 'adid' custom parameter of Marquee call ")
+	public void Validate_Marquee_adid_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating adid custom parameter of Marquee call");
+		logStep("Validating adid custom parameter of Marquee call ");
+
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Marquee", "adid", "NotNull");
+
+	}
+
+	
+	/*
+	 * This method validates DayNight custom parameter of Feed1 call
+	 */
+	@Test(priority = 736, enabled = true)
+	@Description("Validating 'adid' custom parameter of Feed1 call ")
+	public void Validate_Feed1_adid_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating adid custom parameter of Feed1 call");
+		logStep("Validating adid custom parameter of Feed1 call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Feed1", "adid", "NotNull");
+
+	}
+
+	/*
+	 * This method validates DayNight custom parameter of Hourly details call
+	 */
+	@Test(priority = 738, enabled = true)
+	@Description("Validating 'adid' custom parameter of Hourly details call ")
+	public void Validate_HourlyDetails_adid_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating adid custom parameter of Hourly details call");
+		logStep("Validating adid custom parameter of Hourly details call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Hourly", "adid", "NotNull");
+
+	}
+	
+	
+	
+	/*
+	 * This method validates DayNight custom parameter of Marquee call
+	 */
+	@Test(priority = 740, enabled = true)
+	@Description("Validating 'aid' custom parameter of Marquee call ")
+	public void Validate_Marquee_aid_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating aid custom parameter of Marquee call");
+		logStep("Validating aid custom parameter of Marquee call ");
+
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Marquee", "aid", "NotNull");
+
+	}
+
+	
+	/*
+	 * This method validates DayNight custom parameter of Feed1 call
+	 */
+	@Test(priority = 742, enabled = true)
+	@Description("Validating 'aid' custom parameter of Feed1 call ")
+	public void Validate_Feed1_aid_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating adid custom parameter of Feed1 call");
+		logStep("Validating adid custom parameter of Feed1 call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Feed1", "aid", "NotNull");
+
+	}
+
+	/*
+	 * This method validates DayNight custom parameter of Hourly details call
+	 */
+	@Test(priority = 746, enabled = true)
+	@Description("Validating 'adid' custom parameter of Hourly details call ")
+	public void Validate_HourlyDetails_aid_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating adid custom parameter of Hourly details call");
+		logStep("Validating adid custom parameter of Hourly details call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Hourly", "aid", "NotNull");
+
+	}
+
+
+	
+	
+	/*
+	 * This method validates ltv custom parameter of Marquee call
+	 */
+	@Test(priority = 748, enabled = true)
+	@Description("Validating 'ltv' custom parameter of Marquee call ")
+	public void Validate_Marquee_ltv_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating ltv custom parameter of Marquee call");
+		logStep("Validating ltv custom parameter of Marquee call ");
+
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Marquee", "ltv", "NotNull");
+
+	}
+
+	
+	/*
+	 * This method validates DayNight custom parameter of Feed1 call
+	 */
+	@Test(priority = 750, enabled = true)
+	@Description("Validating 'ltv' custom parameter of Feed1 call ")
+	public void Validate_Feed1_ltv_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating ltv custom parameter of Feed1 call");
+		logStep("Validating ltv custom parameter of Feed1 call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Feed1", "ltv", "NotNull");
+
+	}
+
+	/*
+	 * This method validates DayNight custom parameter of Hourly details call
+	 */
+	@Test(priority = 752, enabled = true)
+	@Description("Validating 'ltv' custom parameter of Hourly details call ")
+	public void Validate_HourlyDetails_ltv_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating ltv custom parameter of Hourly details call");
+		logStep("Validating ltv custom parameter of Hourly details call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Hourly", "ltv", "NotNull");
+
+	}
+	
+	
+	
+	/*
+	 * This method validates ord custom parameter of Marquee call
+	 */
+	@Test(priority = 754, enabled = true)
+	@Description("Validating 'ord' custom parameter of Marquee call ")
+	public void Validate_Marquee_ord_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating ord custom parameter of Marquee call");
+		logStep("Validating ord custom parameter of Marquee call ");
+
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Marquee", "ord", "NotNull");
+
+	}
+
+	
+	/*
+	 * This method validates DayNight custom parameter of Feed1 call
+	 */
+	@Test(priority = 756, enabled = true)
+	@Description("Validating 'ord' custom parameter of Feed1 call ")
+	public void Validate_Feed1_ord_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating ord custom parameter of Feed1 call");
+		logStep("Validating ord custom parameter of Feed1 call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Feed1", "ord", "NotNull");
+
+	}
+
+	/*
+	 * This method validates DayNight custom parameter of Hourly details call
+	 */
+	@Test(priority = 758, enabled = true)
+	@Description("Validating 'ord' custom parameter of Hourly details call ")
+	public void Validate_HourlyDetails_ord_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating ord custom parameter of Hourly details call");
+		logStep("Validating ord custom parameter of Hourly details call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Hourly", "ord", "NotNull");
+
+	}
+	
+	/*
+	 * This method validates ord custom parameter of Marquee call
+	 */
+	@Test(priority = 760, enabled = true)
+	@Description("Validating 'ver' custom parameter of Marquee call ")
+	public void Validate_Marquee_ver_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating ver custom parameter of Marquee call");
+		logStep("Validating ver custom parameter of Marquee call ");
+
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Marquee", "ver", "NotNull");
+
+	}
+
+	
+	/*
+	 * This method validates DayNight custom parameter of Feed1 call
+	 */
+	@Test(priority = 762, enabled = true)
+	@Description("Validating 'ver' custom parameter of Feed1 call ")
+	public void Validate_Feed1_ver_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating ver custom parameter of Feed1 call");
+		logStep("Validating ver custom parameter of Feed1 call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Feed1", "ver", "NotNull");
+
+	}
+
+	/*
+	 * This method validates DayNight custom parameter of Hourly details call
+	 */
+	@Test(priority = 764, enabled = true)
+	@Description("Validating 'ver' custom parameter of Hourly details call ")
+	public void Validate_HourlyDetails_ver_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating ver custom parameter of Hourly details call");
+		logStep("Validating ver custom parameter of Hourly details call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Hourly", "ver", "NotNull");
+
+	}
+	
+	
+	/*
+	 * This method validates ord custom parameter of Marquee call
+	 */
+	@Test(priority = 766, enabled = true)
+	@Description("Validating 'slotName' custom parameter of Marquee call ")
+	public void Validate_Marquee_slotName_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating slotName custom parameter of Marquee call");
+		logStep("Validating slotName custom parameter of Marquee call ");
+
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Marquee", "slotName", "weather.next_gen_im");
+
+	}
+
+	
+
+	@Test(priority = 768, enabled = true)
+	@Description("Validating 'slotName' custom parameter of Feed1 call ")
+	public void Validate_Feed1_slotName_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating slotName custom parameter of Feed1 call");
+		logStep("Validating slotName custom parameter of Feed1 call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Feed1", "slotName", "weather.feed2");
+
+	}
+
+	/*
+	 * This method validates DayNight custom parameter of Hourly details call
+	 */
+	@Test(priority = 770, enabled = true)
+	@Description("Validating 'slotName' custom parameter of Hourly details call ")
+	public void Validate_HourlyDetails_slotName_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating slotName custom parameter of slotName details call");
+		logStep("Validating slotName custom parameter of Hourly details call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Hourly", "slotName", "weather.hourly");
+
+	}
+	
+	/*
+	 * This method validates ord custom parameter of Marquee call
+	 */
+	@Test(priority = 768, enabled = true)
+	@Description("Validating 'im' custom parameter of Marquee call ")
+	public void Validate_Marquee_im_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating im custom parameter of Marquee call");
+		logStep("Validating im custom parameter of Marquee call ");
+
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Marquee", "im", "y");
+		CharlesFunctions.archive_folder("Charles");
+
+	}
+	
+	
 						
 
 						@Test(priority = 3, enabled = true)
