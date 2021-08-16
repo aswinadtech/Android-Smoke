@@ -4188,10 +4188,18 @@ public class Utils extends Functions {
 		// "iu=%2F7646%2Fapp_iphone_us%2Fdb_display%2Fhome_screen%2Ftoday";
 		if (sheetName.equalsIgnoreCase("PreRollVideo")) {
 			iuId = videoIUValue;
-		} else {
+		} else if(sheetName.equalsIgnoreCase("pullrefresh")) {
 			//iuId = data[11][2];
 			iuId = "iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly";
 		}
+		else if(sheetName.equalsIgnoreCase("Marquee")){
+			iuId = "iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee";
+		}else if(sheetName.equalsIgnoreCase("Feed1")) {
+			iuId = "iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1";
+		}else if(sheetName.equalsIgnoreCase("Hourly")) {
+			iuId = "iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly";
+		}
+		
 		String tempCustmParam = null;
 		for (String qry : getQueryList) {
 			if (qry.contains(iuId)) {
