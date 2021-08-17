@@ -1308,6 +1308,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		logStep("Validating Google Interactive Media Ads SDK version i.e. 'js' parameter of Preroll video call");
 
 		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "PreRollVideo", "js", properties.getProperty("IMASDKVersion"));
+		CharlesFunctions.archive_folder("Charles");
 
 	}
 	
@@ -2274,7 +2275,8 @@ AppiumFunctions.enter_requiredLocation("30124");
 	public void Validate_HomeScreenHourly_wfxtg_Custom_param() throws Exception {
 		System.out.println("==============================================");
 		System.out.println("****** Validating wfxtg custom parameter of Home screen hourly call");
-		logStep("Validating wfxtg custom parameter of Home screen hourly call");		
+		logStep("Validating wfxtg custom parameter of Home screen hourly call");	
+		CharlesFunctions.archive_folder("Charles");
 		proxy.clearCharlesSession();
 		 Thread.sleep(5000);
 		 AppFunctions.Kill_Launch_App();
@@ -2321,7 +2323,8 @@ AppiumFunctions.enter_requiredLocation("30124");
 	@Description("Validating 'zcs' custom parameter of Home screen hourly call")
 	public void Validate_HomeScreenHourly_zcs_Custom_param() throws Exception {
 		System.out.println("==============================================");
-		System.out.println("****** Validating zcs custom parameter of Home screen hourly calll");
+		System.out.println("****** Validating zcs custom parameter of Home screen hourly call");
+		CharlesFunctions.archive_folder("Charles");
 		logStep("Validating zcs custom parameter of Home screen hourly call");
 		Utils.validate_custom_param_val_of_gampad_with_zip("pullrefresh", "zcs", "30124");
 
