@@ -2280,7 +2280,7 @@ AppiumFunctions.enter_requiredLocation("30124");
 		proxy.clearCharlesSession();
 		 Thread.sleep(5000);
 		 AppFunctions.Kill_Launch_App();
-		 Thread.sleep(20000);
+		 Thread.sleep(100000);
 		this.proxy.getXml();
 		CharlesFunctions.createXMLFileForCharlesSessionFile();
 		Utils.validate_custom_param_val_of_gampad_with_zip("pullrefresh", "wfxtg", "30124");
