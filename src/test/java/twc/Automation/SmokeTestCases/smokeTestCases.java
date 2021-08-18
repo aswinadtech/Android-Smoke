@@ -2280,6 +2280,8 @@ AppiumFunctions.enter_requiredLocation("30124");
 		proxy.clearCharlesSession();
 		 Thread.sleep(5000);
 		 AppFunctions.Kill_Launch_App();
+		 AppFunctions.Pull_To_Refresh("Pulltorefresh");
+             AppFunctions.Pull_To_Refresh("Pulltorefresh");
 		 Thread.sleep(100000);
 		this.proxy.getXml();
 		CharlesFunctions.createXMLFileForCharlesSessionFile();
