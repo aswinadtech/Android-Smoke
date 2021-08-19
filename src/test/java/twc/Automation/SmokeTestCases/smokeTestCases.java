@@ -1323,11 +1323,13 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		System.out.println("==============================================");
 		System.out.println("****** Validating plat custom parameter of Marquee call");
 		logStep("Validating plat custom parameter of Marquee call ");
+		AppiumFunctions.Kill_launch();
 		Thread.sleep(30000);
-		Ad.resetApp();
+ AppFunctions.Pull_To_Refresh("Pulltorefresh");
+             AppFunctions.Pull_To_Refresh("Pulltorefresh");
             Thread.sleep(60000);
             proxy.clearCharlesSession();
-            AppiumFunctions.Kill_launch();
+            
             Thread.sleep(60000);
             AppiumFunctions.SwipeUp_Counter(10);
             Thread.sleep(30000);
