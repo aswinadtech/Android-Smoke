@@ -1323,12 +1323,13 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		System.out.println("==============================================");
 		System.out.println("****** Validating plat custom parameter of Marquee call");
 		logStep("Validating plat custom parameter of Marquee call ");
+		proxy.clearCharlesSession();
 		AppiumFunctions.Kill_launch();
 		Thread.sleep(30000);
  AppFunctions.Pull_To_Refresh("Pulltorefresh");
              AppFunctions.Pull_To_Refresh("Pulltorefresh");
             Thread.sleep(60000);
-            proxy.clearCharlesSession();
+            
             
             Thread.sleep(60000);
             AppiumFunctions.SwipeUp_Counter(10);
@@ -1999,7 +2000,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 							
 
 
-							/*@Test(priority = 29, enabled = true)
+							@Test(priority = 29, enabled = true)
 							@Description("Verifying amazon slot Id for Running Bigbanner ad")
 							public void Smoke_Test_Verify_amazon_SlotId_Running_Bigbanner_ad() throws Exception {
 								System.out.println(
@@ -2007,11 +2008,11 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 								Functions.get_aaxcal_Running_Bigbanner();
 								System.out.println(
 										"================= verifying amazon SlotId for Running BigBanner adcall  End =========================");
-							}*/
+							}
 
 
 
-							@Test(priority = 31, enabled = false)
+							@Test(priority = 31, enabled = true)
 							@Description("Verifying amazon slot Id  for Boat&Beach Bigbanner ad")
 							public void Smoke_Test_Verify_amazon_SlotId_Boat_Beach_Bigbanner_ad() throws Exception {
 								System.out.println(
