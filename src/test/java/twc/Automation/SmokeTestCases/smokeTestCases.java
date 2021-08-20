@@ -389,6 +389,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						Thread.sleep(10000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailiu();
+							Assert.fail("charles data iu value is not matched with exepcted day");
 						System.out.println(
 								"=================  Verifying new daily details day1 ad call tescase  End =========================");
 					}
@@ -405,6 +406,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						this.proxy.getXml();
 						Thread.sleep(15000);
 						Functions.verifyingdailydetailiu();
+							Assert.fail("charles data iu value is not matched with exepcted day");
 					//	Functions.verifyingdailydetailsiu();
 						System.out.println(
 								"================= Verifying new daily details day2 ad call test case End =========================");
@@ -424,6 +426,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailiu();
+							Assert.fail("charles data iu value is not matched with exepcted day");
 						System.out.println(
 								"================= Verifying new daily details day3 ad call test case End =========================");
 					}
@@ -441,6 +444,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailiu();
+							Assert.fail("charles data iu value is not matched with exepcted day");
 						System.out.println(
 								"================= Verifying new daily details day4 ad call tescase End =========================");
 					}
@@ -457,6 +461,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailiu();
+							Assert.fail("charles data iu value is not matched with exepcted day");
 						System.out.println(
 								"================= Verifying new daily details day5 ad call tescase End =========================");
 					}
@@ -473,6 +478,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailiu();
+							Assert.fail("charles data iu value is not matched with exepcted day");
 						System.out.println(
 								"================= Verifying new daily details day6 ad call tescase End =========================");
 					}
@@ -489,6 +495,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailiu();
+							Assert.fail("charles data iu value is not matched with exepcted day");
 						System.out.println(
 								"================= Verifying new daily details day7 ad call tescase End =========================");
 					}
@@ -505,6 +512,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailsiu1();
+							Assert.fail("charles data iu value is not matched with exepcted day");
 						System.out.println(
 								"================= Verifying new daily details day8 ad call tescase End =========================");
 					}
@@ -522,6 +530,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailsiu1();
+							Assert.fail("charles data iu value is not matched with exepcted day");
 						System.out.println(
 								"================= Verifying new daily details day9 ad call tescase End =========================");
 					}
@@ -538,6 +547,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						Thread.sleep(15000);
 						this.proxy.getXml();	
 						Functions.verifyingdailydetailsiu1();
+							Assert.fail("charles data iu value is not matched with exepcted day");
 						
 						System.out.println(
 								"================= Verifying new daily details day10 ad call tescase End =========================");
@@ -555,6 +565,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailsiu1();
+							Assert.fail("charles data iu value is not matched with exepcted day");
 						System.out.println(
 								"================= Verifying new daily details day11 ad call tescase End =========================");
 					}
@@ -571,6 +582,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailsiu1();
+							Assert.fail("charles data iu value is not matched with exepcted day");
 						System.out.println(
 								"================= Verifying new daily details day12 ad call tescase End =========================");
 					}
@@ -587,6 +599,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailsiu1();
+							Assert.fail("charles data iu value is not matched with exepcted day");
 						System.out.println(
 								"================= Verifying new daily details day13 ad call tescase End =========================");
 					}
@@ -604,6 +617,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailsiu1();
+							Assert.fail("charles data iu value is not matched with exepcted day");
 						System.out.println(
 								"================= Verifying new daily details day14 ad call tescase End =========================");
 					}
@@ -619,6 +633,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						Thread.sleep(15000);
 						this.proxy.getXml();
 						Functions.verifyingdailydetailsiu2();
+							Assert.fail("charles data iu value is not matched with exepcted day");
 						System.out.println(
 								"================= Verifying new daily details day15 ad call tescase End =========================");
 					}
