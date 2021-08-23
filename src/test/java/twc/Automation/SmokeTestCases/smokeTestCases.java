@@ -115,6 +115,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	public void Smoke_Test_verifying_feed_1adcall_FTL() throws Exception {
 		System.out.println("================= Verifying feed_1 ad call tescase Started =========================");
 		Functions.verifying_feedcalls(1);
+			//Functions.Verify_feed1_adcall_iu();
 		System.out.println("================= Verifying feed_1 ad call tescase End =========================");
 	}
 
@@ -123,6 +124,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	public void Smoke_Test_verifying_feed_2adcall_FTL() throws Exception {
 		System.out.println("================= Verifying feed_2 ad call tescase Started =========================");
 		//Functions.verifying_feedcalls(2);
+				Functions.Verify_feed2_adcall_iu();
 		logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_2 call was trigred");
 		logStep("Size of the iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_2 is  sz=300x250");
 		System.out.println("================= Verifying feed_2 ad call tescase End =========================");
@@ -134,6 +136,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	public void Smoke_Test_verifying_feed_3adCall_FTL() throws Exception {
 		System.out.println("================= Verifying feed_3 ad call tescase Started =========================");
 		//Functions.verifying_feedcalls(3);
+			Functions.Verify_feed3_adcall_iu();
 		logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_3 call was trigred");
 		logStep("Size of the iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_3 is  300x250");
 		System.out.println("================= Verifying feed_3 ad call tescase End =========================");
@@ -144,6 +147,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	public void Smoke_Test_verifying_feed_4adcall_FTL() throws Exception {
 		System.out.println("================= Verifying feed_4 ad call tescase Started =========================");
 		//Functions.verifying_feedcalls(4);
+			Functions.Verify_feed4_adcall_iu();
 		logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_4 call was trigred");
 	        logStep("Size of the iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_4 is  sz=320x50");
 		System.out.println("================= Verifying feed_4 ad call tescase End =========================");
@@ -155,6 +159,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		System.out.println("================= Verifying feed_5 ad call tescase Started =========================");
 		//Functions.verifying_feedcalls(5);
+			Functions.Verify_feed5_adcall_iu();
 		logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_5 call was trigred");
 		logStep("Size of the iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_5  is  sz=320x50");
 		System.out.println("================= Verifying feed_5 ad call tescase End =========================");
