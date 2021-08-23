@@ -1200,7 +1200,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						
 						@Test(priority = 402, enabled = true)
 						@Description("Verifying iu value Covid details details Page ad call  using ANDFLAG-6704 UserGroup")
-						public void Smoke_Test_CaseVerify_Ccoivid_details_page_adcall_using_ANDFLAG6704UG() throws Exception {
+						public void Smoke_Test_CaseVerify_Covid_details_page_adcall_using_ANDFLAG6704UG() throws Exception {
 							System.out.println(
 									"================= Verifying iu value Covid details details Page ad call  using ANDFLAG-6704 started =========================");
 							Functions.Verify_coivid19_detailpage_adcall_iu();
