@@ -3326,6 +3326,99 @@ public static void validate_Cust_param_video_bn_sev2() throws Exception {
 			
 		}
 }
+	
+	
+	
+	
+	
+	
+	
+	public static void Verify_feed1_adcall_iu() throws Exception{	
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
+	System.out.println("Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1 ad call");
+	logStep("Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1 ad call");
+	if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1")) {
+	System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1 call was trigred");
+	logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1 call was trigred");
+}
+if(!sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1")) {
+System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1 call was not trigred");
+logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1 call was not trigred");
+Assert.fail("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1 call was not trigred");
+}
+}
+
+
+
+
+public static void Verify_feed2_adcall_iu() throws Exception{	
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
+	System.out.println("Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_2 ad call");
+	logStep("Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_2 ad call");
+	if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_2")) {
+	System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_2 call was trigred");
+	logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_2 call was trigred");
+}
+if(!sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_2")) {
+System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_2 call was not trigred");
+logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_2 call was not trigred");
+Assert.fail("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_2 call was not trigred");
+}
+}
+
+
+public static void Verify_feed3_adcall_iu() throws Exception{	
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
+	System.out.println("Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_3 ad call");
+	logStep("Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_3 ad call");
+	if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_3")) {
+	System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_3 call was trigred");
+	logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_3 call was trigred");
+}
+if(!sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_3")) {
+System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_3 call was not trigred");
+logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_3 call was not trigred");
+Assert.fail("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_3 call was not trigred");
+}
+}
+
+
+public static void Verify_feed4_adcall_iu() throws Exception{	
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
+	System.out.println("Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_4 ad call");
+	logStep("Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_4 ad call");
+	if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_4")) {
+	System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_4 call was trigred");
+	logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_4 call was trigred");
+}
+if(!sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_4")) {
+System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_4 call was not trigred");
+logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_4 call was not trigred");
+Assert.fail("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_4 call was not trigred");
+}
+}
+
+
+public static void Verify_feed5_adcall_iu() throws Exception{	
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
+	System.out.println("Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_5 ad call");
+	logStep("Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_5 ad call");
+	if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_5")) {
+	System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_5 call was trigred");
+	logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_5 call was trigred");
+}
+if(!sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_5")) {
+System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_5 call was not trigred");
+logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_5 call was not trigred");
+Assert.fail("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_5 call was not trigred");
+}
+}
+
 public static void validate_pos_Cust_param_WM_Flu() throws Exception {
 	
 	DeviceStatus device_status = new DeviceStatus();
