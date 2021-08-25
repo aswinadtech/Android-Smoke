@@ -102,6 +102,18 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 				"================= verifying iu value for home screen marquee test case End =========================");
 	}
 	
+		@Test(priority = 3, enabled = true)
+	@Description("Verify Alert Center ad on My Alerts Page")
+	public void Verify_AlertCenterAd() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("===========================Aleret Center page Adcal iu====================");
+
+		System.out.println("****** Alert Center ad test case Started");
+		logStep("****** Alert Center ad test case Started");
+	Functions.Verify_AlertCenter_adcall_iu();
+	}
+
+	
 	  @Test(priority = 4, enabled = true)  
 	  @Description("Verifying home screen hourly ad call on FTL") 
 	  public void Smoke_Test_Verifying_homescreenhourly__adCall_FTL() throws  Exception {  
