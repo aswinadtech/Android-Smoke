@@ -543,6 +543,22 @@ public static void validate_pos_Cust_param_Allergy_spotloght() throws Exception 
 }
 	
 	
+	public static void Verify_AlertCenter_adcall_iu() throws Exception{
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
+	System.out.println("Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Falerts%2Fcenter  ad call");
+	logStep("Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Falerts%2Fcenterad call");
+	if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Falerts%2Fcenter")) {
+	System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Falerts%2Fcenter  call was trigred");
+	logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Falerts%2Fcenter call was trigred");
+}
+if(!sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Falerts%2Fcenter")) {
+System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Falerts%2Fcenter call was not trigred");
+logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Falerts%2Fcenter  call was not trigred");
+Assert.fail("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Falerts%2Fcenter  call was not trigred");
+}
+}
+	
 	
 	
 	public static void bb_call_validation(String excel_sheet_name) throws Exception{
