@@ -51,6 +51,7 @@ import twc.Automation.HandleWithAppium.AppiumFunctions;
 import twc.Automation.HandleWithCharles.CharlesFunctions;
 import twc.Automation.HandleWithCharles.CharlesProxy;
 import twc.Automation.ReadDataFromFile.read_excel_data;
+import twc.Automation.ReadDataFromFile.read_xml_data_into_buffer;
 import twc.Automation.utils.StringUtils;
 import twc.Automation.General.DeviceStatus;
 
@@ -84,7 +85,8 @@ public class Utils extends Functions {
 	public static String Exception = null;
 	public static int feedAdCount = 0;
 	//public static String videoIUValue = "iu=%2F7646%2Fapp_android_us%2Fvideo";
-		public static String videoIUValue = "iu=%2F7646%2Fapp_android_us%2Fweather%2Fsevere%2Ftropical";
+public static String videoIUValue = "iu=%2F7646%2Fapp_android_us%2Fweather%2Fsevere%2Ftropical";
+	//public static String videoIUValue =null;
 	public static String iuId = null;
 	public enum CardNames {
 		video, today, news, aq, maps, daily
@@ -171,7 +173,7 @@ public class Utils extends Functions {
 		int Cap = device_status.Device_Status();
 		// outfile = new File(System.getProperty("user.dir") + "/myoutputFile.xml");
 		// Read the content form file
-		File fXmlFile = new File(outfile.getName());
+		File fXmlFile = new File(CharlesFunctions.outfile.getName());
 		// File fXmlFile = outfile;
 
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -199,10 +201,10 @@ public class Utils extends Functions {
 		//	iuId = videoIUValue;
 		} else if (sheetName.equalsIgnoreCase("IDD")) {
 			//String today = dailyDetailsDayOfWeek.concat("1");
-			iuId = data[18][1];
+			iuId = data[11][1];
 			//iuId = iuId.concat("_") + today;
 		} else {
-			iuId = data[18][1];
+			iuId = data[11][1];
 		}
 		boolean iuExists = false;
 
@@ -338,7 +340,7 @@ public class Utils extends Functions {
 		String[][] data = read_excel_data.exceldataread(sheetName);
 
 		// Read the content form file
-		File fXmlFile = new File(outfile.getName());
+		File fXmlFile = new File(CharlesFunctions.outfile.getName());
 
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		dbFactory.setValidating(false);
@@ -360,7 +362,7 @@ public class Utils extends Functions {
 		// String slotId = "153f5936-781f-4586-8fdb-040ce298944a";
 
 		// String slotId = "c4dd8ec4-e40c-4a63-ae81-8f756793ac5e";
-		String slotId = data[21][1];
+		String slotId = data[12][1];
 
 		boolean flag = false;
 		// List<String> istofRequestBodies = new ArrayList<String>();
@@ -549,7 +551,6 @@ public class Utils extends Functions {
 		}
 		return values;
 	}
-
 	private static String getCustomParamBy_iu_value(String qryValue, String cust_param) {
 		List<String> listOfUisQrys = new ArrayList<String>();
 		String cust_params = "";
@@ -685,7 +686,7 @@ public class Utils extends Functions {
 		String[][] data = read_excel_data.exceldataread(sheetName);
 
 		// Read the content form file
-		File fXmlFile = new File(outfile.getName());
+		File fXmlFile = new File(CharlesFunctions.outfile.getName());
 		// File fXmlFile = outfile;
 
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -2919,7 +2920,9 @@ public class Utils extends Functions {
 		// Getting the transaction element by passing xpath expression
 		NodeList nodeList = doc.getElementsByTagName("transaction");
 	//	readExcelValues.excelValues("Cust_Param", "PramNaming");
-		String[][] data = read_excel_data.exceldataread_Custom_Parameters("Cust_Param", "PramNaming");
+		
+		String[][]  data = read_excel_data.exceldataread_Custom_Parameters("Cust_Param", "PramNaming");
+	
 		int custParamCount =read_excel_data.rowCount;
 		// Read JSONs and get b value
 		// List<String> jsonBValuesList = new ArrayList<String>();
@@ -2972,8 +2975,7 @@ public class Utils extends Functions {
 																		// "+content);
 
 																		for (int paramtype = 1; paramtype <= custParamCount; paramtype++) {
-																		
-																			if (cust_param.equals(exceldata[paramtype][0]) && content.contains(exceldata[paramtype][3])) 
+																			if (cust_param.equals(data[paramtype][0]) && content.contains(data[paramtype][3])) 
 																			{
 																				flag = true;
 																				break;
@@ -2989,9 +2991,8 @@ public class Utils extends Functions {
 																		// "+content);
 
 																		for (int paramtype = 1; paramtype <= custParamCount; paramtype++) {
-																			System.out.println(paramtype);
-																			if (cust_param.equals(exceldata[paramtype][0]) && content.contains(exceldata[paramtype][3])) {
-																				System.out.println(exceldata[paramtype][0]);
+																	
+																			if (cust_param.equals(data[paramtype][0]) && content.contains(data[paramtype][3])) {
 																				flag = true;
 																				break;
 																			}
@@ -3028,9 +3029,9 @@ public class Utils extends Functions {
 													String JsonParam = null;
 
 													for (int paramtype = 1; paramtype <= custParamCount; paramtype++) {
-														if (cust_param.equals(exceldata[paramtype][0])) {
-															if (exceldata[paramtype][2].contains(",")) {
-																JsonValues = exceldata[paramtype][2]
+														if (cust_param.equals(data[paramtype][0])) {
+															if (data[paramtype][2].contains(",")) {
+																JsonValues = data[paramtype][2]
 																		.split(",");
 																JsonParam = JsonValues[0].trim();
 
@@ -3038,7 +3039,7 @@ public class Utils extends Functions {
 																 * else if(exceldata[paramtype][2].contains(
 																 * "direct")) { //mainTag = (JSONObject) obj; }
 																 */else {
-																JsonParam = exceldata[paramtype][2].trim();
+																JsonParam = data[paramtype][2].trim();
 																// mainTag = (JSONObject) jsonObject.get(JsonParam);
 															}
 															break;
@@ -3330,9 +3331,8 @@ public class Utils extends Functions {
 	public static String get_Expected_Value_From_APIResponseBody(String Excelname, String sheetName, String cust_param,
 			String apiData) throws Exception {
 
-		// Functions.Read_Turbo_api("Cust_Param", readSheet);
-
-		String[][] data = read_excel_data.exceldataread(sheetName);
+	
+		String[][] data =  read_excel_data.exceldataread_Custom_Parameters(Excelname,sheetName);
 		JSONParser parser = new JSONParser();
 		// System.out.println("adreq1 is : "+adreq1.toString());
 		Object obj = parser.parse(new String(apiData));
@@ -3348,17 +3348,17 @@ public class Utils extends Functions {
 		int custParamCount = read_excel_data.rowCount;
 
 		for (int paramtype = 1; paramtype <= custParamCount; paramtype++) {
-			if (cust_param.equals(exceldata[paramtype][0])) {
+			if (cust_param.equals(data[paramtype][0])) {
 
-				if (exceldata[paramtype][1].toString().equals("hardcode")) {
+				if (data[paramtype][1].toString().equals("hardcode")) {
 					System.out.println("Param type is Hard Code");
 				} else {
-					System.out.println("main tag is : " + exceldata[paramtype][2] + ", param type is : "
-							+ exceldata[paramtype][1]);
-					if (exceldata[paramtype][2].contains("direct")) {
+					System.out.println("main tag is : " + data[paramtype][2] + ", param type is : "
+							+ data[paramtype][1]);
+					if (data[paramtype][2].contains("direct")) {
 						mainTag = (JSONObject) obj;
-					} else if (exceldata[paramtype][2].contains(",")) {
-						JsonValues = exceldata[paramtype][2].split(",");
+					} else if (data[paramtype][2].contains(",")) {
+						JsonValues = data[paramtype][2].split(",");
 						JsonParam = JsonValues[0].trim();
 						mainTag = (JSONObject) jsonObject.get(JsonParam);
 						try {
@@ -3382,12 +3382,12 @@ public class Utils extends Functions {
 						}
 
 					} else {
-						JsonParam = exceldata[paramtype][2].trim();
+						JsonParam = data[paramtype][2].trim();
 						mainTag = (JSONObject) jsonObject.get(JsonParam);
 					}
 
 					if (cust_param.equalsIgnoreCase("fcnd") || cust_param.equalsIgnoreCase("fdynght")) {
-						JSONArray dayPartElementValues = (JSONArray) mainTag.get(exceldata[paramtype][1]);
+						JSONArray dayPartElementValues = (JSONArray) mainTag.get(data[paramtype][1]);
 						if (String.valueOf(dayPartElementValues.get(0)).equalsIgnoreCase("null")) {
 							ApiParamValue = String.valueOf(dayPartElementValues.get(1));
 						} else {
@@ -3397,10 +3397,10 @@ public class Utils extends Functions {
 					} else {
 						try {
 							JSONArray arrayElementValues = (JSONArray) mainTag
-									.get(exceldata[paramtype][1]);
+									.get(data[paramtype][1]);
 							ApiParamValue = String.valueOf(arrayElementValues.get(0));
 						} catch (Exception e) {
-							ApiParamValue = String.valueOf(mainTag.get(exceldata[paramtype][1]));
+							ApiParamValue = String.valueOf(mainTag.get(data[paramtype][1]));
 						}
 					}
 
@@ -3415,18 +3415,20 @@ public class Utils extends Functions {
 					}
 					// ApiParamValue= mainTag.get(exceldata[paramtype][1]).toString();
 
-					if (exceldata[paramtype][1].toString().equalsIgnoreCase("icon")) {
+					if (data[paramtype][1].toString().equalsIgnoreCase("iconCode")) {
 						paramName = "cnd";
 					} else {
-						paramName = exceldata[paramtype][0].toString();
+						paramName = data[paramtype][0].toString();
+						System.out.println(paramName);
 					}
 					// ads.add(ApiParams);
-					if (exceldata[paramtype][4].toString().equalsIgnoreCase("Yes")) {
+					if (data[paramtype][4].toString().equalsIgnoreCase("Yes")) {
 						//readExcelValues.excelValues("Cust_Param_Result", cust_param);
-						 data = read_excel_data.exceldataread_Custom_Parameters("Cust_Param", "PramNaming");
+						 data = read_excel_data.exceldataread_Custom_Parameters("Cust_Param_Result", cust_param);
 
 						for (int CustParamValues = 1; CustParamValues <= read_excel_data.rowCount; CustParamValues++) {
 							if (data[CustParamValues][1].contains("and more")) {
+								System.out.println(data[CustParamValues][1]);
 								String CellParam = data[CustParamValues][1].toString();
 								CellParam = CellParam.replaceAll("and more", "");
 								CellParam = CellParam.replaceAll(" ", "");
@@ -3765,145 +3767,7 @@ public class Utils extends Functions {
 
 	}
 	
-	/**
-	 * This method validates the Custom Parameter of gampad call with the corresponding parameter in respective API Call. This requires only Custom Parameter as input
-	 * @param excelName
-	 * @param sheetName
-	 * @param cust_param
-	 * @throws Exception
-	 */
-	public static void validate_custom_param_val_of_gampad(String sheetName, String cust_param,String expected)
-			throws Exception {
-		/*
-		 * Calendar calendar = Calendar.getInstance(); Date d = new Date();
-		 * SimpleDateFormat simpleDateformat = new SimpleDateFormat("E"); // the day of
-		 * the week abbreviated String today = simpleDateformat.format(d); today =
-		 * today.toLowerCase().concat("1");
-		 */
-		//String today = dailyDetailsDayOfWeek.concat("1");
-
-		boolean adCallFound = false;
-
-		// Read the content form file
-		File fXmlFile = new File(CharlesFunctions.outfile.getName());
-
-		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-		dbFactory.setValidating(false);
-		dbFactory.setNamespaceAware(true);
-		dbFactory.setFeature("http://xml.org/sax/features/namespaces", false);
-		// dbFactory.setNamespaceAware(true);
-		dbFactory.setFeature("http://xml.org/sax/features/validation", false);
-		dbFactory.setFeature("http://apache.org/xml/features/nonvalidating/load-dtd-grammar", false);
-		dbFactory.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
-
-		DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-
-		Document doc = dBuilder.parse(fXmlFile);
-		// Getting the transaction element by passing xpath expression
-		NodeList nodeList = doc.getElementsByTagName("transaction");
-		String xpathExpression = "charles-session/transaction/@query";
-		List<String> getQueryList = evaluateXPath(doc, xpathExpression);
-	 expected = null;
-		if (cust_param.equalsIgnoreCase("dt")) {
-		//	expected = dailyDetailsDateOfDay;
-		} else if (cust_param.equalsIgnoreCase("mnth")) {
-		//	expected = dailyDetailsMonthOfDate;
-		} else {
-			expected = get_param_value_from_APICalls(cust_param);
-		}
-
-		/*
-		 * if(expected.equalsIgnoreCase("null")) { expected = "nl"; }
-		 */
-		// Getting custom_params amzn_b values
-		List<String> customParamsList = new ArrayList<String>();
-
-		// String iuId =
-		// "iu=%2F7646%2Fapp_iphone_us%2Fdb_display%2Fhome_screen%2Ftoday";
-		String iuId = null;
-		String[][] data = read_excel_data.exceldataread(sheetName);
-		if (cust_param.equalsIgnoreCase("fcnd")) {
-			iuId = data[18][1];
-		//	iuId = iuId.concat("_") + today;
-		} else {
-			iuId = data[18][1];
-		}
-
-		String tempCustmParam = null;
-		for (String qry : getQueryList) {
-			if (qry.contains(iuId)) {
-				adCallFound = true;
-				tempCustmParam = getCustomParamBy_iu_value(qry, cust_param);
-				// if (!"".equals(tempCustmParam))
-				// customParamsList.add(getCustomParamsBy_iu_value(qry));
-				break;
-			}
-
-		}
-		if (nextGenIMadDisplayed && sheetName.equalsIgnoreCase("Pulltorefresh")) {
-			System.out.println("Since IM Ad displayed on App Launch, Homescreen Today call validation is skipped");
-			logStep("Since IM Ad displayed on App Launch, Homescreen Today call validation is skipped");
-		} else {
-			if (expected == null) {
-				System.out.println(
-						"Either Parameter value is empty or API Call is not generated, hence Custom Parameter validation skipped");
-				logStep("Either Parameter value is empty or API Call is not generated, hence Custom Parameter validation skipped");
-				Assert.fail(
-						"Either Parameter value is empty or API Call is not generated, hence Custom Parameter validation skipped");
-			} else if (!adCallFound) {
-				System.out.println("Ad Call :" + iuId + " not found in charles session, hence Custom Parameter: "
-						+ cust_param + " validation skipped");
-				logStep("Ad Call :" + iuId + " not found in charles session, hence Custom Parameter: " + cust_param
-						+ " validation skipped");
-				Assert.fail("Ad Call :" + iuId + " not found in charles session, hence Custom Parameter: " + cust_param
-						+ " validation skipped");
-			} else if (adCallFound && !tempCustmParam.isEmpty()) {
-				System.out
-						.println(cust_param + " Param value from gampad call  of : " + iuId + " is " + tempCustmParam);
-				if (expected.equalsIgnoreCase("NotNull")) {
-					if (!tempCustmParam.equalsIgnoreCase("nl")) {
-						System.out.println("Custom Parameter :" + cust_param + " value: " + tempCustmParam
-								+ " is matched with the expected value " + expected);
-						logStep("Custom Parameter :" + cust_param + " value: " + tempCustmParam
-								+ " is matched with the expected value " + expected);
-					} else {
-						System.out.println("Custom Parameter :" + cust_param + " value: " + tempCustmParam
-								+ " is not matched with the expected value " + expected);
-						logStep("Custom Parameter :" + cust_param + " value: " + tempCustmParam
-								+ " is not matched with the expected value " + expected);
-						Assert.fail("Custom Parameter :" + cust_param + " value: " + tempCustmParam
-								+ " is not matched with the expected value " + expected);
-					}
-				} else {
-					if (tempCustmParam.equalsIgnoreCase(expected)) {
-						System.out.println("Custom Parameter :" + cust_param + " value: " + tempCustmParam
-								+ " is matched with the expected value: " + expected);
-						logStep("Custom Parameter :" + cust_param + " value: " + tempCustmParam
-								+ " is matched with the expected value: " + expected);
-					} else {
-						System.out.println("Custom Parameter :" + cust_param + " value: " + tempCustmParam
-								+ " is not matched with the expected value " + expected);
-						logStep("Custom Parameter :" + cust_param + " value: " + tempCustmParam
-								+ " is not matched with the expected value: " + expected);
-						Assert.fail("Custom Parameter :" + cust_param + " value: " + tempCustmParam
-								+ " is not matched with the expected value: " + expected);
-					}
-				}
-
-			} else if (tempCustmParam == null || tempCustmParam.isEmpty()) {
-				System.out.println(
-						"Custom parameter :" + cust_param + " not found/no value in ad call, hence Custom Parameter: "
-								+ cust_param + " validation skipped");
-				logStep("Custom parameter :" + cust_param + " not found/no value in ad call, hence Custom Parameter: "
-						+ cust_param + " validation skipped");
-				Assert.fail(
-						"Custom parameter :" + cust_param + " not found/no value in ad call, hence Custom Parameter: "
-								+ cust_param + " validation skipped");
-			}
-		}
-
-	}
-
+	
 	/**
 	 * This method validates the Custom Parameter of gampad call with the expected value sent as parameter. This requires both Custom Parameter and expected value as input
 	 * @param excelName
@@ -3945,7 +3809,9 @@ public class Utils extends Functions {
 		if (sheetName.equalsIgnoreCase("PreRollVideo")) {
 			iuId = videoIUValue;
 		} else {
-			iuId = data[11][2];
+			iuId = data[11][1];
+			System.out.println(data[11][1]);
+			//iuId = "iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly";
 		}
 		String tempCustmParam = null;
 		for (String qry : getQueryList) {
@@ -4016,6 +3882,173 @@ public class Utils extends Functions {
 		}
 	}
 	
+	
+	/**
+	 * This method validates the Custom Parameter of gampad call with the
+	 * corresponding parameter in respective API Call. This requires only Custom
+	 * Parameter as input
+	 * 
+	 * @param excelName
+	 * @param sheetName
+	 * @param cust_param
+	 * @throws Exception
+	 */
+	public static void validate_custom_param_val_of_gampad(String excelName, String sheetName, String cust_param)
+			throws Exception {
+		/*
+		 * Calendar calendar = Calendar.getInstance(); Date d = new Date();
+		 * SimpleDateFormat simpleDateformat = new SimpleDateFormat("E"); // the day of
+		 * the week abbreviated String today = simpleDateformat.format(d); today =
+		 * today.toLowerCase().concat("1");
+		 */
+		String today = null;
+
+		boolean adCallFound = false;
+
+		// Read the content form file
+		File fXmlFile = new File(CharlesFunctions.outfile.getName());
+
+		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+		dbFactory.setValidating(false);
+		dbFactory.setNamespaceAware(true);
+		dbFactory.setFeature("http://xml.org/sax/features/namespaces", false);
+		// dbFactory.setNamespaceAware(true);
+		dbFactory.setFeature("http://xml.org/sax/features/validation", false);
+		dbFactory.setFeature("http://apache.org/xml/features/nonvalidating/load-dtd-grammar", false);
+		dbFactory.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
+
+		DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+
+		Document doc = dBuilder.parse(fXmlFile);
+		// Getting the transaction element by passing xpath expression
+		NodeList nodeList = doc.getElementsByTagName("transaction");
+		String xpathExpression = "charles-session/transaction/@query";
+		List<String> getQueryList = evaluateXPath(doc, xpathExpression);
+		String expected = null;
+		if (cust_param.equalsIgnoreCase("dt")) {
+			//expected = dailyDetailsDateOfDay;
+		} else if (cust_param.equalsIgnoreCase("mnth")) {
+			//expected = dailyDetailsMonthOfDate;
+		} else {
+			expected = get_param_value_from_APICalls(cust_param);
+		}
+
+		/*
+		 * if(expected.equalsIgnoreCase("null")) { expected = "nl"; }
+		 */
+		// Getting custom_params amzn_b values
+		List<String> customParamsList = new ArrayList<String>();
+
+		// String iuId =
+		// "iu=%2F7646%2Fapp_iphone_us%2Fdb_display%2Fhome_screen%2Ftoday";
+		String iuId = null;
+	//	readExcelValues.excelValues(excelName, sheetName);
+		String[][] data = read_excel_data.exceldataread(sheetName);
+		if (cust_param.equalsIgnoreCase("fcnd")) {
+			try {
+			//	today = dailyDetailsDayOfWeek.concat("1");
+			} catch (Exception e) {
+				System.out.println("An exception while parsing today value");
+				logStep("An exception while parsing today value");
+			}
+
+			iuId = data[11][1];
+			iuId = iuId.concat("_") + today;
+		} else if (sheetName.equalsIgnoreCase("PreRollVideo")) {
+			iuId = videoIUValue;
+		} else {
+			iuId = data[11][1];
+		}
+
+		String tempCustmParam = null;
+		for (String qry : getQueryList) {
+			if (qry.contains(iuId)) {
+				adCallFound = true;
+				tempCustmParam = getCustomParamBy_iu_value(qry, cust_param);
+				// if (!"".equals(tempCustmParam))
+				// customParamsList.add(getCustomParamsBy_iu_value(qry));
+				break;
+			}
+
+		}
+		if (nextGenIMadDisplayed && sheetName.equalsIgnoreCase("Pulltorefresh")) {
+			System.out.println("Since IM Ad displayed on App Launch, Homescreen Today call validation is skipped");
+			logStep("Since IM Ad displayed on App Launch, Homescreen Today call validation is skipped");
+		} else {
+			if (expected == null) {
+				System.out.println(
+						"Either Parameter value is empty or API Call is not generated, hence Custom Parameter validation skipped");
+				logStep("Either Parameter value is empty or API Call is not generated, hence Custom Parameter validation skipped");
+				System.out.println("Custom Parameter :" + cust_param + " validation is failed");
+				logStep("Custom Parameter :" + cust_param + " validation is failed");
+				Assert.fail(
+						"Either Parameter value is empty or API Call is not generated, hence Custom Parameter validation skipped");
+			} else if (!adCallFound) {
+				System.out.println("Ad Call :" + iuId + " not found in charles session, hence Custom Parameter: "
+						+ cust_param + " validation skipped");
+				logStep("Ad Call :" + iuId + " not found in charles session, hence Custom Parameter: " + cust_param
+						+ " validation skipped");
+				System.out.println("Custom Parameter :" + cust_param + " validation is failed");
+				logStep("Custom Parameter :" + cust_param + " validation is failed");
+				Assert.fail("Ad Call :" + iuId + " not found in charles session, hence Custom Parameter: " + cust_param
+						+ " validation skipped");
+			} else if (adCallFound && !tempCustmParam.isEmpty()) {
+				System.out
+						.println(cust_param + " Param value from gampad call  of : " + iuId + " is " + tempCustmParam);
+				if (expected.equalsIgnoreCase("NotNull")) {
+					if (!tempCustmParam.equalsIgnoreCase("nl")) {
+						System.out.println("Custom Parameter :" + cust_param + " value: " + tempCustmParam
+								+ " is matched with the expected value " + expected);
+						logStep("Custom Parameter :" + cust_param + " value: " + tempCustmParam
+								+ " is matched with the expected value " + expected);
+						System.out.println("Custom Parameter :" + cust_param + " validation is successful");
+						logStep("Custom Parameter :" + cust_param + " validation is successful");
+					} else {
+						System.out.println("Custom Parameter :" + cust_param + " value: " + tempCustmParam
+								+ " is not matched with the expected value " + expected);
+						logStep("Custom Parameter :" + cust_param + " value: " + tempCustmParam
+								+ " is not matched with the expected value " + expected);
+						System.out.println("Custom Parameter :" + cust_param + " validation is failed");
+						logStep("Custom Parameter :" + cust_param + " validation is failed");
+						Assert.fail("Custom Parameter :" + cust_param + " value: " + tempCustmParam
+								+ " is not matched with the expected value " + expected);
+					}
+				} else {
+					if (tempCustmParam.equalsIgnoreCase(expected)) {
+						System.out.println("Custom Parameter :" + cust_param + " value: " + tempCustmParam
+								+ " is matched with the expected value: " + expected);
+						logStep("Custom Parameter :" + cust_param + " value: " + tempCustmParam
+								+ " is matched with the expected value: " + expected);
+						System.out.println("Custom Parameter :" + cust_param + " validation is successful");
+						logStep("Custom Parameter :" + cust_param + " validation is successful");
+					} else {
+						System.out.println("Custom Parameter :" + cust_param + " value: " + tempCustmParam
+								+ " is not matched with the expected value " + expected);
+						logStep("Custom Parameter :" + cust_param + " value: " + tempCustmParam
+								+ " is not matched with the expected value: " + expected);
+						System.out.println("Custom Parameter :" + cust_param + " validation is failed");
+						logStep("Custom Parameter :" + cust_param + " validation is failed");
+						Assert.fail("Custom Parameter :" + cust_param + " value: " + tempCustmParam
+								+ " is not matched with the expected value: " + expected);
+					}
+				}
+
+			} else if (tempCustmParam == null || tempCustmParam.isEmpty()) {
+				System.out.println(
+						"Custom parameter :" + cust_param + " not found/no value in ad call, hence Custom Parameter: "
+								+ cust_param + " validation skipped");
+				logStep("Custom parameter :" + cust_param + " not found/no value in ad call, hence Custom Parameter: "
+						+ cust_param + " validation skipped");
+				System.out.println("Custom Parameter :" + cust_param + " validation is failed");
+				logStep("Custom Parameter :" + cust_param + " validation is failed");
+				Assert.fail(
+						"Custom parameter :" + cust_param + " not found/no value in ad call, hence Custom Parameter: "
+								+ cust_param + " validation skipped");
+			}
+		}
+
+	}
+
 	/**
 	 * This method validates the Custom Parameter of gampad call with the corresponding parameter in respective API Call by retrieving the value based on zipcode . This requires Custom Parameter and zipcode as input
 	 * @param excelName
@@ -4077,7 +4110,11 @@ public class Utils extends Functions {
 		if (cust_param.equalsIgnoreCase("fcnd")) {
 			iuId = data[11][1];
 		//	iuId = iuId.concat("_") + today;
-		} else {
+		}
+		else if(sheetName.equalsIgnoreCase("PreRollVideo")){
+			iuId = videoIUValue;
+		}
+		else {
 			iuId = data[11][1];
 		}
 
@@ -4188,8 +4225,12 @@ public class Utils extends Functions {
 		// "iu=%2F7646%2Fapp_iphone_us%2Fdb_display%2Fhome_screen%2Ftoday";
 		if (sheetName.equalsIgnoreCase("PreRollVideo")) {
 			iuId = videoIUValue;
-		} else if(sheetName.equalsIgnoreCase("pullrefresh")) {
-			//iuId = data[11][2];
+		}
+		else {
+			iuId = data[11][1];
+		} 
+		/*else if(sheetName.equalsIgnoreCase("pullrefresh")) {
+			iuId = data[11][1];
 			iuId = "iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly";
 		}
 		else if(sheetName.equalsIgnoreCase("Marquee")){
@@ -4198,7 +4239,7 @@ public class Utils extends Functions {
 			iuId = "iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1";
 		}else if(sheetName.equalsIgnoreCase("Hourly")) {
 			iuId = "iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly";
-		}
+		}*/
 		
 		String tempCustmParam = null;
 		for (String qry : getQueryList) {
@@ -4268,7 +4309,7 @@ public class Utils extends Functions {
 		videoIUValue = null;
 		outfile = new File(System.getProperty("user.dir") + "/myoutputFile.xml");
 		// Read the content form file
-		File fXmlFile = new File(outfile.getName());
+		File fXmlFile = new File(CharlesFunctions.outfile.getName());
 
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		dbFactory.setValidating(false);
@@ -5090,7 +5131,7 @@ public static String return_iu_value_from_query_parameter_of_Feedcall(String que
 		// String[][] data = read_excel_data.exceldataread(sheetName);
 
 		// Read the content form file
-		File fXmlFile = new File(outfile.getName());
+		File fXmlFile = new File(CharlesFunctions.outfile.getName());
 		customParamsList.clear();
 		criteogampadcallcount = 0;
 
@@ -5121,7 +5162,7 @@ public static String return_iu_value_from_query_parameter_of_Feedcall(String que
 			if (qry.contains(feedCall)) {
 				// after it checks for contains, now performing exact validation of IU value,
 				// for ex: hourly contains in hourly1, hourly2, hourly3
-				if (sheetName.equalsIgnoreCase("Hourly")) {
+				if (sheetName.equalsIgnoreCase("Marquee")) {
 					queryIU = return_iu_value_from_query_parameter_of_Feedcall(qry);
 					if (queryIU.equalsIgnoreCase(feedCall)) {
 						criteogampadcallcount++;
@@ -6419,7 +6460,11 @@ public static String return_iu_value_from_query_parameter_of_Feedcall(String que
 		}
 
 	}
+	
 
+		
+
+	
 
 public static void validate_Noncustom_param_val_of_gampad(String sheetName, String cust_param,
 		String expected) throws Exception {
