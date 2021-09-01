@@ -1866,21 +1866,20 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	/*
 	 * This method validates cnd custom parameter of Marquee call
 	 */
-	/*@Test(priority = 770, enabled = true)
+	@Test(priority = 770, enabled = true)
 	@Description("Validating 'cnd' custom parameter of Marquee call ")
 	public void Validate_Marquee_cnd_Custom_param() throws Exception {
 		System.out.println("==============================================");
 		System.out.println("****** Validating cnd custom parameter of Marquee call");
 		logStep("Validating cnd custom parameter of Marquee call ");
-		CharlesFunctions.createXMLFileForCharlesSessionFile(); 
 		Utils.validate_custom_param_val_of_gampad("Smoke", "Marquee", "cnd");
 
-	}*/
+	}
 
 	/*
 	 * This method validates cnd custom parameter of Feed1 call
 	 */
-	/*@Test(priority = 772, enabled = true)
+	@Test(priority = 772, enabled = true)
 	@Description("Validating 'cnd' custom parameter of Feed1 call ")
 	public void Validate_Feed1_cnd_Custom_param() throws Exception {
 		System.out.println("==============================================");
@@ -1888,13 +1887,13 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		logStep("Validating cnd custom parameter of Feed1 call ");
 		Utils.validate_custom_param_val_of_gampad("Smoke", "Feed1", "cnd");
 
-	}*/
+	}
 
 	
 	/*
 	 * This method validates cnd custom parameter of Hourly details call
 	 */
-	/*@Test(priority = 774, enabled = true)
+     @Test(priority = 774, enabled = true)
 	@Description("Validating 'cnd' custom parameter of Hourly details call ")
 	public void Validate_HourlyDetails_cnd_Custom_param() throws Exception {
 		System.out.println("==============================================");
@@ -1902,7 +1901,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		logStep("Validating cnd custom parameter of Hourly details call ");
 		Utils.validate_custom_param_val_of_gampad("Smoke", "Hourly", "cnd");
 
-	}*/
+	}
 
 	
 	
