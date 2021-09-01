@@ -1357,8 +1357,8 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		logStep("Validating plat custom parameter of Marquee call ");
 		proxy.clearCharlesSession();
 		AppiumFunctions.Kill_launch();
-		//Thread.sleep(30000);
-/( AppFunctions.Pull_To_Refresh("Pulltorefresh");
+		Thread.sleep(30000);
+/* AppFunctions.Pull_To_Refresh("Pulltorefresh");
              AppFunctions.Pull_To_Refresh("Pulltorefresh");
             Thread.sleep(60000);*/
             
