@@ -270,7 +270,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 			
 			@Test(priority = 36, enabled = true)
 			@Description("Verifying Cold&Flu content page ad call on FTL")
-			public void Smoke_Test_Verify_health_and_activities_coldFlu_contenPaget_adcall_FTL() throws Exception {
+			public void Smoke_Test_Verify_health_and_activities_coldFlu_contenPage_adcall_FTL() throws Exception {
 				System.out.println(
 						"================= Verify_health_and_activities_coldFlu_contenPage_adcall_iu Started =========================");
 				Utils.verifyPubadCal("Smoke", "Health(coldAndFlu)");
@@ -415,7 +415,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 								"================= verifying amazon SlotId for Boat&Beach BigBanner adcall End =========================");
 					}
 				 
-				 @Test(priority = 62, enabled = true)
+				/* @Test(priority = 62, enabled = true)
 					@Description("Verifying amazon slot Id for Allergy Bigbanner ad")
 					public void Smoke_Test_Verify_amazon_SlotId_Allergy_Bigbanner_ad() throws Exception {
 						System.out.println(
@@ -423,7 +423,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						Utils.verifyAAX_SlotId("Smoke", "allergycontentpage");
 						System.out.println(
 								"================= verifying amazon SlotId for Allergy BigBanner adcall  End =========================");
-					}
+					}*/
 				 
 				 @Test(priority = 64, enabled = true)
 					@Description("Verifying amazon slot Id for Outdoor details page")
