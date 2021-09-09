@@ -1423,18 +1423,10 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	Utils.validate_Noncustom_param_val_of_gampad( "Marquee", "js", properties.getProperty("GMASDKVersion"));
 
 	
-	}
+	}*/
 
 	
-	@Test(priority = 333, enabled = true)
-	@Description("Validating 'sdkVersion' parameter of Criteo SDK config app call ")
-	public void Validate_Criteo_SDK_config_app_Call_sdkVersion_parameter() throws Exception {
-		System.out.println("==============================================");
-		System.out.println("****** Validating 'sdkVersion' parameter of Criteo SDK config app call");
-		logStep("****** Validating 'sdkVersion' parameter of Criteo SDK config app call");
-		Utils.validate_Criteo_SDK_config_app_call_parameter("Criteo", "sdkVersion", "3.10.1");
-
-	}*/
+	
 
 					
 					
@@ -2583,10 +2575,20 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		System.out.println("****** Validating mr custom parameter of Hourly details call");
 		logStep("Validating mr custom parameter of Hourly details call ");
 		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Hourly", "mr", "0");
-		Thread.sleep(90000);
+		
 
 	}
-			
+	@Test(priority = 828, enabled = true)
+	@Description("Validating Google Mobile Ads SDK version of gampad call ")
+	public void Validate_GMA_SDK_version() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating Google Mobile Ads SDK Version i.e. 'js' parameter of gampad call");
+		logStep("Validating Google Mobile Ads SDK Version i.e. 'js' parameter of gampad call");
+
+	Utils.validate_Noncustom_param_val_of_gampad( "Marquee", "js", properties.getProperty("GMASDKVersion"));
+
+	
+	}
 			
 			
 			
