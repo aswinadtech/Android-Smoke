@@ -748,7 +748,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 				
 				/* =======================================daily details ad calls test cases started======================================================================================*/
 				
-				 @Test(priority = 50, enabled = true)
+				 @Test(priority = 250, enabled = true)
 					@Description("Verifying new daily details day1 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day1adcall_FTL() throws Exception {
 						System.out.println(
@@ -765,9 +765,19 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out.println(
 								"=================  Verifying new daily details day1 ad call tescase  End =========================");
 					}
+			
+			@Test(priority = 251, enabled = true)
+					@Description("Verifying amazon Slot Id for daily details day1 ad calll")
+					public void Smoke_Test_amazon_aax_Daily_details_Day1_adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day1 adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(1);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day 1 adcall test case End =========================");
+					}
 
 				   
-					@Test(priority = 52, enabled = true)
+					@Test(priority = 252, enabled = true)
 					@Description("Verifying new daily details day2 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day2adcall_FTL() throws Exception {
 						System.out.println(
@@ -783,9 +793,19 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out.println(
 								"================= Verifying new daily details day2 ad call test case End =========================");
 					}
+			
+			@Test(priority = 253, enabled = true)
+					@Description("Verifying amazon Slot Id for daily details day2 ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day2adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day2  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(1);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day2 adcall test case End =========================");
+					}
 					
 				   
-					@Test(priority = 54, enabled = true)
+					@Test(priority = 254, enabled = true)
 					@Description("Verifying new daily details day3 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day3adcall_FTL() throws Exception {
 						System.out.println(
@@ -802,9 +822,20 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out.println(
 								"================= Verifying new daily details day3 ad call test case End =========================");
 					}
+			
+					@Test(priority = 255, enabled = true)
+					@Description("Verifying amazon Slot Id for daily details day3 ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day3adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day3  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(1);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day3 adcall test case End =========================");
+					}
+
 					
 					
-					@Test(priority = 56, enabled = true)
+					@Test(priority = 256, enabled = true)
 					@Description("Verifying new daily details day4 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day4adcall_FTL() throws Exception {
 						System.out.println(
@@ -820,8 +851,19 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out.println(
 								"================= Verifying new daily details day4 ad call tescase End =========================");
 					}
+			
+			@Test(priority = 257, enabled = true)
+					@Description("Verifying amazon Slot Id for daily details day4 ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day4adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day4  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(1);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day4 adcall test case End =========================");
+					}
 
-					@Test(priority = 58, enabled = true)
+
+					@Test(priority = 258, enabled = true)
 					@Description("Verifying new daily details day5 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day5adcall_FTL() throws Exception {
 						System.out.println(
@@ -837,8 +879,20 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out.println(
 								"================= Verifying new daily details day5 ad call tescase End =========================");
 					}
+			
+			
+					@Test(priority = 259, enabled = true)
+					@Description("Verifying amazon Slot Id for daily details day5 ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day5adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day5  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(1);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day5 adcall test case End =========================");
+					}
+					
 
-					@Test(priority = 60, enabled = true)
+					@Test(priority = 260, enabled = true)
 					@Description("Verifying new daily details day6 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day6adcall_FTL() throws Exception {
 						System.out.println(
@@ -855,7 +909,18 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 								"================= Verifying new daily details day6 ad call tescase End =========================");
 					}
 					
-					@Test(priority = 62, enabled = true)
+			
+			  @Test(priority = 261, enabled = true)
+					@Description("Verifying amazon Slot Id for daily details day6 ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day6adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day6  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(1);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day6 adcall test case End =========================");
+					}
+			
+					@Test(priority = 262, enabled = true)
 					@Description("Verifying new daily details day7 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day7adcall_FTL() throws Exception {
 						System.out.println(
@@ -871,8 +936,18 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out.println(
 								"================= Verifying new daily details day7 ad call tescase End =========================");
 					}
+			              @Test(priority =263 , enabled = true)
+					@Description("Verifying amazon Slot Id for daily details day7 ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day7  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(1);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day7 adcall test case End =========================");
+					}
+
 					
-					@Test(priority = 64, enabled = true)
+					@Test(priority = 264, enabled = true)
 					@Description("Verifying new daily details day8 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day8adcall_FTL() throws Exception {
 						System.out.println(
@@ -888,9 +963,20 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out.println(
 								"================= Verifying new daily details day8 ad call tescase End =========================");
 					}
+			
+			
+					@Test(priority = 265, enabled = true)
+					@Description("Verifying amazon Slot Id for daily details day8 ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day8adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day8  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(2);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day8 adcall test case End =========================");
+					}
 					
 					
-					@Test(priority = 66, enabled = true)
+					@Test(priority = 266, enabled = true)
 					@Description("Verifying new daily details day9 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day9adcall_FTL() throws Exception {
 						System.out.println(
@@ -906,8 +992,18 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out.println(
 								"================= Verifying new daily details day9 ad call tescase End =========================");
 					}
+			 @Test(priority = 267, enabled = true)
+					@Description("Verifying amazon Slot Id for daily details day9 ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day9adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day9  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(2);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day9 adcall test case End =========================");
+					}
+
 					
-					@Test(priority = 68, enabled = true)
+					@Test(priority = 268, enabled = true)
 					@Description("Verifying new daily details day10 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day10adcall_FTL() throws Exception {
 						System.out.println(
@@ -924,8 +1020,20 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out.println(
 								"================= Verifying new daily details day10 ad call tescase End =========================");
 					}
+			
+			             @Test(priority = 269, enabled = true)
+					@Description("Verifying amazon Slot Id for daily details day10  ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day10adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day10  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(2);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day10 adcall test case End =========================");
+					}
+
+
 					
-					@Test(priority = 70, enabled = true)
+					@Test(priority = 270, enabled = true)
 					@Description("Verifying new daily details day11 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day11adcall_FTL() throws Exception {
 						System.out.println(
@@ -941,8 +1049,20 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out.println(
 								"================= Verifying new daily details day11 ad call tescase End =========================");
 					}
+			
+			
+					@Test(priority = 271, enabled = true)
+					@Description("Verifying amazon Slot Id for daily details day11  ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day11adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day11  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(2);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day11 adcall test case End =========================");
+					}
+
 					
-					@Test(priority = 72, enabled = true)
+					@Test(priority = 272, enabled = true)
 					@Description("Verifying new daily details day12 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day12adcall_FTL() throws Exception {
 						System.out.println(
@@ -958,8 +1078,20 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out.println(
 								"================= Verifying new daily details day12 ad call tescase End =========================");
 					}
+			
+			@Test(priority = 273, enabled = true)
+					@Description("Verifying amazon Slot Id for daily details day12  ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day12adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day12  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(2);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day12 adcall test case End =========================");
+					}
+
 					
-					@Test(priority = 74, enabled = true)
+					
+					@Test(priority = 274, enabled = true)
 					@Description("Verifying new daily details day13 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day13adcall_FTL() throws Exception {
 						System.out.println(
@@ -975,9 +1107,20 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out.println(
 								"================= Verifying new daily details day13 ad call tescase End =========================");
 					}
-					
-					@Test(priority = 76, enabled = true)
+			
+					@Test(priority = 275, enabled = true)
+					@Description("Verifying amazon Slot Id for daily details day13  ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day13adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day13  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(2);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day13 adcall test case End =========================");
+					}
 
+
+					
+					@Test(priority = 276, enabled = true)
 					@Description("Verifying new daily details day14 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day14adcall_FTL() throws Exception {
 						System.out.println(
@@ -993,7 +1136,19 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out.println(
 								"================= Verifying new daily details day14 ad call tescase End =========================");
 					}
-					@Test(priority = 78, enabled = true)
+			@Test(priority = 277, enabled = true)
+					@Description("Verifying amazon Slot Id for daily details day14  ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day14adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day14  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(2);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day14 adcall test case End =========================");
+					}
+
+
+					
+					@Test(priority = 278, enabled = true)
 					@Description("Verifying new daily details day15 ad call on FTL")
 					public void Smoke_Test_Verifying_newdailydetails_day15adcall_FTL() throws Exception {
 						System.out.println(
@@ -1009,9 +1164,20 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 						System.out.println(
 								"================= Verifying new daily details day15 ad call tescase End =========================");
 					}
-				   
+			
+			@Test(priority = 279, enabled = true)
+					@Description("Verifying amazon Slot Id for daily details day15  ad call")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day15adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day15  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(3);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day15 adcall test case End =========================");
+					}
 					
-		/*=======================================================daily details ad calls test cases End===============================================================*/
+			
+		
+	
 				
 					/* =======================================api  calls test cases started======================================================================================*/
 					// Verifying Api and feed card and amazon aax prerol calls verification
@@ -1281,196 +1447,6 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	
 	
 
-					 /* =======================================Daily details amazon aax slot id's test case Started======================================================================================*/
-					
-					@Test(priority = 51, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day1 ad calll")
-					public void Smoke_Test_amazon_aax_Daily_details_Day1_adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day1 adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(1);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day 1 adcall test case End =========================");
-					}
-
-
-					@Test(priority = 53, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day2 ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day2adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day2  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(1);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day2 adcall test case End =========================");
-					}
-
-
-					
-					@Test(priority = 55, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day3 ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day3adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day3  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(1);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day3 adcall test case End =========================");
-					}
-
-
-					
-					@Test(priority = 57, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day4 ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day4adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day4  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(1);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day4 adcall test case End =========================");
-					}
-
-					@Test(priority = 59, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day5 ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day5adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day5  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(1);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day5 adcall test case End =========================");
-					}
-					
-					
-
-					
-				   @Test(priority = 61, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day6 ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day6adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day6  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(1);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day6 adcall test case End =========================");
-					}
-
-					
-					
-				  @Test(priority = 63, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day7 ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day7  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(1);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day7 adcall test case End =========================");
-					}
-
-
-					
-					@Test(priority = 65, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day8 ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day8adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day8  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(2);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day8 adcall test case End =========================");
-					}
-
-					
-					
-					
-					
-					 @Test(priority = 67, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day9 ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day9adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day9  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(2);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day9 adcall test case End =========================");
-					}
-
-
-					
-					
-					@Test(priority = 69, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day10  ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day10adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day10  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(2);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day10 adcall test case End =========================");
-					}
-
-
-					
-					
-					@Test(priority = 71, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day11  ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day11adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day11  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(2);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day11 adcall test case End =========================");
-					}
-
-					
-					@Test(priority = 73, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day12  ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day12adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day12  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(2);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day12 adcall test case End =========================");
-					}
-
-					
-					
-					
-					@Test(priority = 75, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day13  ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day13adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day13  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(2);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day13 adcall test case End =========================");
-					}
-
-
-					
-					
-					@Test(priority = 77, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day14  ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day14adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day14  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(2);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day14 adcall test case End =========================");
-					}
-
-
-					
-
-					
-					@Test(priority = 79, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day15  ad call")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day15adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day15  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(3);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day15 adcall test case End =========================");
-					}
-					
-
-	
-	
-					 /* =======================================Daily details amazon aax slot id's test case End=====================================*/
-	
 
 
 					 /* =======================================pull to refresh test case Started======================================================================================*/
@@ -2577,6 +2553,47 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		Utils.validate_custom_param_val_of_gampad("Smoke", "Hourly", "st");
 
 	}
+				@Test(priority = 822, enabled = true)
+	@Description("Validating 'mr' custom parameter of Marquee call ")
+	public void Validate_Marquee_mr_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating mr custom parameter of Marquee call");
+		logStep("Validating mr custom parameter of Marquee call ");
+
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Marquee", "mr", "0");
+
+	}
+
+
+	@Test(priority = 824, enabled = true)
+	@Description("Validating 'mr' custom parameter of Feed1 call ")
+	public void Validate_Feed1_mr_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating mr custom parameter of Feed1 call");
+		logStep("Validating mr custom parameter of Feed1 call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Feed1", "mr", "0");
+
+	}
+
+
+	@Test(priority = 826, enabled = true)
+	@Description("Validating 'mr' custom parameter of Hourly details call ")
+	public void Validate_HourlyDetails_mr_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating mr custom parameter of Hourly details call");
+		logStep("Validating mr custom parameter of Hourly details call ");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Hourly", "mr", "0");
+
+	}
+			
+			
+			
+			
+			
+			
+			
+			
+			
 	
 	
 	
