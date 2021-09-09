@@ -95,7 +95,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	 Thread.sleep(10000);
 		//AppiumFunctions.SwipeUp_Counter_feedcards(35);
 		AppiumFunctions.SwipeUp_Counter_feedcards(10);
-		this.proxy.getXml(
+		this.proxy.getXml();
 		CharlesFunctions.createXMLFileForCharlesSessionFile();
 		CharlesFunctions.archive_folder("Charles");
 		Utils.verifyPubadCal("Smoke", "Marquee");
