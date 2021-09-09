@@ -603,7 +603,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 				
 				/* =======================================hourly details ad calls test cases started======================================================================================*/
 				
-				@Test(priority = 40, enabled = true)
+				@Test(priority = 200, enabled = true)
 				@Description("Verifying  hourly detailpage al call on FTL")
 				public void Smoke_Test_Verify_hourly_detailpage_adcall_FTL() throws Exception {
 					System.out.println("================= Verifying hourly_detailpage_adcall_iu test case  Started =========================");
