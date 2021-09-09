@@ -2583,6 +2583,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		System.out.println("****** Validating mr custom parameter of Hourly details call");
 		logStep("Validating mr custom parameter of Hourly details call ");
 		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Hourly", "mr", "0");
+		Thread.sleep(90000);
 
 	}
 			
