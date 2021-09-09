@@ -743,7 +743,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 				"================= Verify amazon aax Hourly3 details big  ad call test case  Started =========================");
 		Utils.verifyAAX_SlotId("Smoke", "Hourly3");
 		System.out.println("================= Verify amazon aax Hourly3 big ad call test case End =========================");
-	}*/
+	}
 	
 				
 				/* =======================================daily details ad calls test cases started======================================================================================*/
