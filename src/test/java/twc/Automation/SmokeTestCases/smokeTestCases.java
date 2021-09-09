@@ -79,7 +79,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		proxy.startRecording();
 		proxy.clearCharlesSession();
 		AppiumFunctions.LaunchAppWithFullReset();
-		Thread.sleep(60000);
+		Thread.sleep(90000);
 		AppFunctions.gettingApkVersion() ;
 	}
 	
@@ -95,182 +95,153 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	 Thread.sleep(10000);
 		//AppiumFunctions.SwipeUp_Counter_feedcards(35);
 		AppiumFunctions.SwipeUp_Counter_feedcards(10);
-		this.proxy.getXml();
-		//CharlesFunctions.archive_folder("Charles");
-		Functions.finding_Homescreen_marquee_iu_value();
+		this.proxy.getXml(
+		CharlesFunctions.createXMLFileForCharlesSessionFile();
+		CharlesFunctions.archive_folder("Charles");
+		Utils.verifyPubadCal("Smoke", "Marquee");
 		System.out.println(
 				"================= verifying iu value for home screen marquee test case End =========================");
 	}
 	
-		@Test(priority = 3, enabled = true)
-	@Description("Verify Alert Center ad on My Alerts Page")
-	public void Verify_AlertCenterAd() throws Exception {
-		System.out.println("==============================================");
-		System.out.println("===========================Aleret Center page Adcal iu====================");
-
-		System.out.println("****** Alert Center ad test case Started");
-		logStep("****** Alert Center ad test case Started");
-	Functions.Verify_AlertCenter_adcall_iu();
-	}
-
-	
-	  @Test(priority = 4, enabled = true)  
+		@Test(priority = 4, enabled = true)  
 	  @Description("Verifying home screen hourly ad call on FTL") 
 	  public void Smoke_Test_Verifying_homescreenhourly__adCall_FTL() throws  Exception {  
 	  System.out.println("================= Verifying  home screen hourly ad call test case started ========================="); 	  
-	   Functions.finding_Homescreen_iu_value();	 
+		Utils.verifyPubadCal("Smoke", "pullrefresh");
 	   System.out.println("================= Verifying  home screen hourly ad call test case End =========================");
 	    }
 
-	@Test(priority = 6, enabled = true)
-	@Description("Verifying feed_1 ad call on FTL")
-	public void Smoke_Test_verifying_feed_1adcall_FTL() throws Exception {
-		System.out.println("================= Verifying feed_1 ad call tescase Started =========================");
-		Functions.verifying_feedcalls(1);
-			//Functions.Verify_feed1_adcall_iu();
-		System.out.println("================= Verifying feed_1 ad call tescase End =========================");
-	}
-
-	@Test(priority = 8, enabled = true)
-	@Description("Verifying feed_2 ad call on FTL")
-	public void Smoke_Test_verifying_feed_2adcall_FTL() throws Exception {
-		System.out.println("================= Verifying feed_2 ad call tescase Started =========================");
-		//Functions.verifying_feedcalls(2);
-				Functions.Verify_feed2_adcall_iu();
-		logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_2 call was trigred");
-		logStep("Size of the iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_2 is  sz=300x250");
-		System.out.println("================= Verifying feed_2 ad call tescase End =========================");
-	}
+	  
+	  
+	  
+		@Test(priority = 6, enabled = true)
+		@Description("Verify Alert Center ad on My Alerts Page")
+		public void Verify_AlertCenterAd() throws Exception {
+			System.out.println("==============================================");
+			System.out.println("===========================Aleret Center page Adcal iu====================");
+			System.out.println("****** Alert Center ad test case Started");
+			logStep("****** Alert Center ad test case Started");
+			Utils.verifyPubadCal("Smoke", "MyAlerts");
+		}
 
 
-	@Test(priority = 10, enabled = true)
-	@Description("Verifying feed_3 ad cal on FTL")
-	public void Smoke_Test_verifying_feed_3adCall_FTL() throws Exception {
-		System.out.println("================= Verifying feed_3 ad call tescase Started =========================");
-		//Functions.verifying_feedcalls(3);
-			Functions.Verify_feed3_adcall_iu();
-		logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_3 call was trigred");
-		logStep("Size of the iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_3 is  300x250");
-		System.out.println("================= Verifying feed_3 ad call tescase End =========================");
-	}
 
-	@Test(priority = 12, enabled = true)
-	@Description("Verifying feed_4 ad call on FTL")
-	public void Smoke_Test_verifying_feed_4adcall_FTL() throws Exception {
-		System.out.println("================= Verifying feed_4 ad call tescase Started =========================");
-		//Functions.verifying_feedcalls(4);
-			Functions.Verify_feed4_adcall_iu();
-		logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_4 call was trigred");
-	        logStep("Size of the iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_4 is  sz=320x50");
-		System.out.println("================= Verifying feed_4 ad call tescase End =========================");
-	}
+		
 
+		@Test(priority = 8, enabled = true)
+		@Description("Verifying feed_1 ad call on FTL")
+		public void Smoke_Test_verifying_feed_1adcall_FTL() throws Exception {
+			System.out.println("================= Verifying feed_1 ad call tescase Started =========================");
+			Utils.verifyPubadCal("Smoke", "Feed1");
+			System.out.println("================= Verifying feed_1 ad call tescase End =========================");
+		}
+
+		@Test(priority = 10, enabled = true)
+		@Description("Verifying feed_2 ad call on FTL")
+		public void Smoke_Test_verifying_feed_2adcall_FTL() throws Exception {
+			System.out.println("================= Verifying feed_2 ad call tescase Started =========================");
+			Utils.verifyPubadCal("Smoke", "Feed2");
+			System.out.println("================= Verifying feed_2 ad call tescase End =========================");
+		}
+
+
+		@Test(priority = 12, enabled = true)
+		@Description("Verifying feed_3 ad cal on FTL")
+		public void Smoke_Test_verifying_feed_3adCall_FTL() throws Exception {
+			System.out.println("================= Verifying feed_3 ad call tescase Started =========================");
+			System.out.println("================= Verifying feed_2 ad call tescase Started =========================");
+			Utils.verifyPubadCal("Smoke", "Feed3");
+			System.out.println("================= Verifying feed_3 ad call tescase End =========================");
+		}
 
 		@Test(priority = 14, enabled = true)
-	@Description("Verifying feed_5 ad call on FTL")
-	public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
-		System.out.println("================= Verifying feed_5 ad call tescase Started =========================");
-		//Functions.verifying_feedcalls(5);
-			Functions.Verify_feed5_adcall_iu();
-		logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_5 call was trigred");
-		logStep("Size of the iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_5  is  sz=320x50");
-		System.out.println("================= Verifying feed_5 ad call tescase End =========================");
-	}
+		@Description("Verifying feed_4 ad call on FTL")
+		public void Smoke_Test_verifying_feed_4adcall_FTL() throws Exception {
+			System.out.println("================= Verifying feed_4 ad call tescase Started =========================");
+			Utils.verifyPubadCal("Smoke", "Feed4");
+			System.out.println("================= Verifying feed_4 ad call tescase End =========================");
+		}
 
 
-		/* @Test(priority=16,enabled = true) 
-		  @Description("Verifying daily feed card  ad call On FTL") 
-		  public void Smoke_Test_Verify_daily_feedcard_adCall_FTL() throws Exception { 
-			System.out. println("================= Verifyig daily adcall_iu Started =========================" );
-			Functions. Verify_dailycard_iu(); 
-			System.out.println("================= Verify_daily_card_adcall_iu End =========================" );
-			}*/
-		
-		/* =======================================all  feed ad calls test cases End======================================================================================*/	
-		
-		 /* =======================================all details page ad calls test cases started======================================================================================*/
-		 
-		 	@Test(priority = 18, enabled = true)
+			@Test(priority = 16, enabled = true)
+		@Description("Verifying feed_5 ad call on FTL")
+		public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
+			System.out.println("================= Verifying feed_5 ad call tescase Started =========================");
+			Utils.verifyPubadCal("Smoke", "Feed5");
+			System.out.println("================= Verifying feed_5 ad call tescase End =========================");
+		}
+
+			
+			@Test(priority = 18, enabled = true)
 			@Description("Verifying radar&maps details page ad call On FTL")
 			public void Smoke_Test_Case_Verify_Radar_Maps_deatailspage_adCall_FTL() throws Exception {
 				System.out.println(
 						"================= verifying iu value for Radar&Maps deatail card started =========================");
-				Functions.finding_Radar_Map_card_iu_value();
+				Utils.verifyPubadCal("Smoke", "Map");
 				System.out.println(
 						"================= verifying iu value for Radar&Maps deatail card  End =========================");
 			}
-		 
-		 	
-			/*@Test(priority = 20, enabled = true)
-			@Description("Verifying Video ad call on FTL")
-			public void Smoke_Test_Case_Verify_Video_adCall_FTL() throws Exception {
-				System.out.println("================= Verifying Video ad call testcase started =========================");
-				Functions.finding_VideoCard_iu_value();
-				System.out.println("================= Verifying Video ad call testcase End==============================");
-			}*/
-		 
-		 
-			@Test(priority = 22, enabled = true)
+			
+			@Test(priority = 20, enabled = true)
 			@Description("Verifying iu value Today details Page on FTL")
 			public void Smoke_Test_CaseVerify_Today_details_page_iu_FTL() throws Exception {
 				System.out.println(
 						"================= verifying iu value for Today_details_page_iu started =========================");
-				Functions.finding_Today_detail_page_iu_value();
+				Utils.verifyPubadCal("Smoke", "Today");
 				System.out.println(
 						"================= verifying iu value for Today_details_page_iu End =========================");
 			}
-		 
 			
 			
-			@Test(priority = 24, enabled = true)
+			
+			@Test(priority = 22, enabled = true)
 			@Description("Verifying  Air Quality content page ad call on FTL")
 			public void Smoke_Test_Verify_Air_Quality_contentpage_adCall_FTL() throws Exception {
 				System.out.println(
 						"================= Verifying iu value for Air Quality content page testcase  started =========================");
-				Functions.AirQuality_detailed_adcall_iu();
+				Utils.verifyPubadCal("Smoke", "Air Quality(Content)");
 				System.out.println(
 						"================= Verifying iu value for Air Quality content page testcase  End =========================");
 			}
 			
-		    
-			@Test(priority = 26, enabled = true)
+			
+			@Test(priority = 24, enabled = true)
 			@Description("Verifying Running content page ad call  FTL")
 			public void Smoke_Test_Verify_health_and_activities_Running_contenPage_adcall_FTL() throws Exception {
 				System.out.println(
 						"================= Verify_health_and_activities_Running_contenPage_adcall_iu Started =========================");
-				Functions.health_and_activities_Running_spotlight_adcall_iu();
+				Utils.verifyPubadCal("Smoke", "Health(goRun)");
 				System.out.println(
 						"================= Verify_health_and_activities_Running_contenPage_adcall_iu End =========================");
 			}
-			
-			
-	 @Test(priority = 28, enabled = true)
+		 
+			@Test(priority = 26, enabled = true)
 			@Description("Verifying Boat&Beach content page ad call on FTL")
 			public void Smoke_Test_Verify_health_and_activities_Bot_Beach_contenPage_adcall_FTL() throws Exception {
 				System.out.println(
 						"================= Verify_health_and_activities_Bot&beach_contenPage_adcall_iu Started =========================");
-				Functions.health_and_activities_Boat_beach_detailpage_adcall_iu();
+				Utils.verifyPubadCal("Smoke", "Health(boatAndBeach)");
+			
 				System.out.println(
 						"================= Verify_health_and_activities_Bot&beach_contenPage_adcall_iu End =========================");
 			}
 			
-			@Test(priority = 30, enabled = true)
+			@Test(priority = 28, enabled = true)
 			@Description("Verifying  Allergy content page ad call on FTL")
 			public void Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_FTL() throws Exception {
 				System.out.println(
 						"================= Verify_health_and_activities_Allergy_contenPage_adcall_iu Started =========================");
-				Functions.health_and_activities_Allergy_detailpage_adcall_iu();
+				Utils.verifyPubadCal("Smoke", "allergycontentpage");
 				System.out.println(
 						"================= Verify_health_and_activities_Allergy_contenPage_adcall_iu End =========================");
 			}
 			
-		
-			@Test(priority = 31, enabled = true)
+			@Test(priority = 30, enabled = true)
 			@Description("Verifying  Allergy spotlight ad call on FTL")
 			public void Smoke_Test_Verify_health_and_activities_Allergy_spotlight_adcall_FTL() throws Exception {
 				System.out.println(
 						"================= Verify_health_and_activities_Allergy_spotlight_adcall_iu Started =========================");
-				Functions.health_and_activities_Allergy_spotlight_adcall_iu();
+				Utils.verifyPubadCal("Smoke", "Health(allergy_spotlight)");
 				System.out.println(
 						"================= Verify_health_and_activities_Allergy_spotlight_adcall_iu End =========================");
 			}
@@ -281,56 +252,350 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 			public void Smoke_Test_Verify_health_and_activities_Allergy_spotlight_adcall_size() throws Exception {
 				System.out.println(
 						"================= Verify_health_and_activities_Allergy_spotlight_adcall_size Started =========================");
-				Functions.verifyingsize_allergyspotlightadcall();
+				Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Health(allergy_spotlight)", "sz", "180x36");
 				System.out.println(
 						"================= Verify_health_and_activities_Allergy_spotlight_adcall_size End =========================");
 			}
 			
-			
-			
-
-			@Test(priority = 33, enabled = true)
+			@Test(priority = 34, enabled = true)
 			@Description("Verifying pos custum param for Allergy spotlight ad call")
 			public void Smoke_Test_Verify_health_and_activities_Allergy_spotlight_pos_custumparam() throws Exception {
 				System.out.println(
 						"================= Verify_health_and_activities_Allergy_spotlight_adcall_pos custumparam Started =========================");
-				Functions.validate_pos_Cust_param_Allergy_spotloght();
+				Utils.validate_custom_param_val_of_gampad("Smoke", "Health(allergy_spotlight)", "pos", "app_sl");
 				System.out.println(
 						"================= Verify_health_and_activities_Allergy_spotlight_adcall_pos custumparamEnd =========================");
 			}
 			
 			
-			@Test(priority = 32, enabled = true)
+			@Test(priority = 36, enabled = true)
 			@Description("Verifying Cold&Flu content page ad call on FTL")
 			public void Smoke_Test_Verify_health_and_activities_coldFlu_contenPaget_adcall_FTL() throws Exception {
 				System.out.println(
 						"================= Verify_health_and_activities_coldFlu_contenPage_adcall_iu Started =========================");
-				Functions.health_and_activities_Cold_Flu_detailpage_adcall_iu();
+				Utils.verifyPubadCal("Smoke", "Health(coldAndFlu)");
 				System.out.println(
 						"================= Verify_health_and_activities_coldFlu_contenPage_adcall_iu End =========================");
 			}
 			
-				@Test(priority = 34, enabled = true)
-				@Description("Verifying  outdoor conditions  detailed page ad call on FTL")
-				public void Smoke_Test_Verify_outdoor_detailpage_adcall_FTL() throws Exception {
-					System.out
-							.println("================= Verifying outdoor detailpage_adcall iu Started =========================");
-					Functions.Verify_SH_detailpage_adcall_iu();
-					System.out.println("================= Verifying outdoor detailpage adcall iu End =========================");
-				}
-	
-	
-	
-	                         @Test(priority = 35, enabled = true)
+			@Test(priority = 38, enabled = true)
+			@Description("Verifying  outdoor conditions  detailed page ad call on FTL")
+			public void Smoke_Test_Verify_outdoor_detailpage_adcall_FTL() throws Exception {
+				System.out
+						.println("================= Verifying outdoor detailpage_adcall iu Started =========================");
+				Utils.verifyPubadCal("Smoke", "SeasonalHub(Details)");
+				System.out.println("================= Verifying outdoor detailpage adcall iu End =========================");
+			}
+
+			
+			
+			 @Test(priority = 40, enabled = true)
 				@Description("Verifying  MoreNews ad call on FTL")
 				public void Smoke_Test_Verify_MoreNews_adcall_FTL() throws Exception {
 					System.out
 							.println("================= Verifying  MoreNews adcall iu Started =========================");
-					Functions.Verify_MoreNews_adcall_iu();
+					Utils.verifyPubadCal("Smoke", "News");
 				
 					System.out.println("================= Verifying MoreNews adcall iu End =========================");
 				}
-			
+			 
+			 
+			 
+			 @Test(priority = 42, enabled = true)
+				@Description("Verifying amazon Slot Id for Home screen hourly  ad call")
+				public void Smoke_Test_amazon_aaxSlot_HomeScreenHourly_adCall() throws Exception {
+					System.out.println(
+							"================= Verify amazon aax slot  Id for Home screen hourly  adcall  testcase Started =========================");
+					logStep(" Verifying amazon aax slot Id for Home screen Hourly call");
+					Utils.verifyAAX_SlotId("Smoke", "pullrefresh");
+					System.out.println(
+							"================= Verify amazon aax slot Id for feed1 prerol adcall testcase End =========================");
+
+				}
+			 
+			 
+			 
+			 @Test(priority = 44, enabled = true)
+				@Description("Verifying amazon Slot Id for feed1 prerol ad call")
+				public void Smoke_Test_amazon_aaxSlot_feed1_adCall() throws Exception {
+					System.out.println(
+							"================= Verify amazon aax slot  Id for feed1 adcall  testcase Started =========================");
+					logStep(" Verifying amazon aax slot Id for feed1");
+					Utils.verifyAAX_SlotId("Smoke", "Feed1");
+					System.out.println(
+							"================= Verify amazon aax slot Id for feed1  adcall testcase End =========================");
+
+				}
+			 
+			 
+			 @Test(priority = 46, enabled = true)
+				@Description("Verifying amazon  Slot Id for feed2 ad call")
+				public void Smoke_Test_amazon_aaxSlot_feed2_adcall() throws Exception {
+					System.out.println(
+							"================= Verify amazon aax slot  Id for feed2 adcall testcase Started =========================");
+					logStep(" Verifying amazon aax slot Id for feed2");
+					Utils.verifyAAX_SlotId("Smoke", "Feed2");
+					System.out.println(
+							"================= Verify amazon aax slot Id for feed2l adcall testcase End =========================");
+				}
+
+	
+				@Test(priority = 48, enabled = true)
+				@Description("Verifying amazon  Slot Id for feed3 ad call")
+				public void Smoke_Test_amazon_aaxSlot_feed3_adcall() throws Exception {
+					System.out.println(
+							"================= Verify amazon aax slot  Id for feed3 adcall testcase Started =========================");
+					logStep(" Verifying amazon aax slot Id for feed3");
+					Utils.verifyAAX_SlotId("Smoke", "Feed3");
+					System.out.println(
+							"================= Verify amazon aax slot Id for feed3  adcall testcase End =========================");
+				}
+
+				
+				 @Test(priority = 50, enabled = true)
+					@Description("Verifying amazon  Slot Id for feed4 ad call")
+					public void Smoke_Test_amazon_aaxSlot_feed4_adcall() throws Exception {
+						System.out.println(
+								"================= Verify amazon aax slot  Id for feed4 adcall testcase Started =========================");
+						logStep(" Verifying amazon aax slot Id for feed4");
+						Utils.verifyAAX_SlotId("Smoke", "Feed4");
+						System.out.println(
+								"================= Verify amazon aax slot Id for feed4 adcall testcase End =========================");
+					}
+				 
+				 
+				 @Test(priority = 52, enabled = true)
+					@Description("Verifying amazon Slot Id for maps details preroll ad cal")
+					public void Smoke_Test_amazon_aax_mapsdetails_adcall() throws Exception {
+						System.out.println("================= Verify amazon aax maps detais adcall Started =========================");
+						logStep(" Verifying preload amazon aax for  map details");
+						Utils.verifyAAX_SlotId("Smoke", "Map");
+						System.out
+								.println("================= Verify amazon aax maps card preroll adcall End =========================");
+					}
+
+				 
+				 @Test(priority =54, enabled = true)
+					@Description("Verifying amazon aax for today details card")
+					public void Smoke_Test_amazon_aax_today_deatailcard() throws Exception {
+						System.out.println(
+								"================= Verify amazon aax for today detail adcard Started =========================");
+						Utils.verifyAAX_SlotId("Smoke", "Today");
+						System.out.println("================= Verify amazon aax for today detail adcard End=========================");
+					}
+				 
+				 
+				 @Test(priority = 56, enabled = true)
+					@Description("Verifying amazon aax for AQ details page")
+					public void Smoke_Test_amazon_aax_Airquality_deatailcard() throws Exception {
+						System.out.println(
+								"================= Verify amazon aax for Air Quality details page Started =========================");
+						Utils.verifyAAX_SlotId("Smoke", "Air Quality(Content)");
+						System.out.println("================= Verify amazon aax for Air Quality detail Page  End=========================");
+					}
+					
+				 
+				 @Test(priority = 58, enabled = true)
+					@Description("Verifying amazon slot Id for Running Bigbanner ad")
+					public void Smoke_Test_Verify_amazon_SlotId_Running_Bigbanner_ad() throws Exception {
+						System.out.println(
+								"================= verifying amazon SlotId for Running BigBanner adcall started =========================");
+						Utils.verifyAAX_SlotId("Smoke", "Health(goRun)");
+						System.out.println(
+								"================= verifying amazon SlotId for Running BigBanner adcall  End =========================");
+					}
+				 
+				 @Test(priority = 60, enabled = true)
+					@Description("Verifying amazon slot Id  for Boat&Beach Bigbanner ad")
+					public void Smoke_Test_Verify_amazon_SlotId_Boat_Beach_Bigbanner_ad() throws Exception {
+						System.out.println(
+								"================= verifying amazon aax SlotId for Boat&Beach BigBanner adcall started =========================");
+						Utils.verifyAAX_SlotId("Smoke", "Health(boatAndBeach)");
+						System.out.println(
+								"================= verifying amazon SlotId for Boat&Beach BigBanner adcall End =========================");
+					}
+				 
+				 @Test(priority = 62, enabled = true)
+					@Description("Verifying amazon slot Id for Allergy Bigbanner ad")
+					public void Smoke_Test_Verify_amazon_SlotId_Allergy_Bigbanner_ad() throws Exception {
+						System.out.println(
+								"================= verifying amazon SlotId for Allergy BigBanner adcall started =========================");
+						Utils.verifyAAX_SlotId("Smoke", "allergycontentpage");
+						System.out.println(
+								"================= verifying amazon SlotId for Allergy BigBanner adcall  End =========================");
+					}
+				 
+				 @Test(priority = 64, enabled = true)
+					@Description("Verifying amazon slot Id for Outdoor details page")
+					public void Smoke_Test_Verify_amazon_SlotId_outdoor_details() throws Exception {
+						System.out.println(
+								"================= verifying amazon SlotId for oudoor details adcall started =========================");
+						Utils.verifyAAX_SlotId("Smoke", "SeasonalHub(Details)");
+						System.out.println(
+								"================= verifying amazon SlotId for outdoor details adcall  End =========================");
+					}	
+				 
+					@Test(priority = 68, enabled = true)
+					@Description("Verifying sz value for Home screen marquee ad call on FTL")
+					public void Smoke_Test_CaseVerify_sz_Homescreen_marquee_adCall_FTL() throws Exception {
+						System.out.println(
+								"================= verifying sz value for home screen marquee test case started =========================");	
+						
+						Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Marquee", "sz", "360x180");
+
+						System.out.println(
+								"================= verifying sz value for home screen marquee test case End =========================");
+					}
+					
+					
+					 @Test(priority = 70, enabled = true)  
+					  @Description("Verifying sz value for home screen hourly ad call on FTL") 
+					  public void Smoke_Test_Verifying_sz_homescreenhourly_adCall_FTL() throws  Exception {  
+					  System.out.println("================= Verifying  sz value home screen hourly ad call test case started ========================="); 	  
+					  Utils.validate_Noncustom_param_val_of_gampad("Smoke", "pullrefresh", "sz", "320x50%7C320x100");
+					   System.out.println("================= Verifying sz value  home screen hourly ad call test case End =========================");
+					    }
+					 
+					 
+					 @Test(priority = 72, enabled = true)
+						@Description("Verify sz value for  Alert Center ad on My Alerts Page")
+						public void Verify_sz_AlertCenterAd() throws Exception {
+							System.out.println("==============================================");
+							System.out.println("===========================Alert Center sz value ====================");
+							logStep("****** Alert Center sz value test case Started");
+							Utils.validate_Noncustom_param_val_of_gampad("Smoke", "MyAlerts", "sz", "320x50");
+						}
+					 
+					 
+					 
+						@Test(priority = 74, enabled = true)
+						@Description("Verifying sz value for feed_1 ad call on FTL")
+						public void Smoke_Test_verifying_sz_feed_1_adcall_FTL() throws Exception {
+							System.out.println("================= Verifying sz value feed_1 ad call tescase Started =========================");
+							Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Feed1", "sz", "300x250%7C320x400");
+							System.out.println("================= Verifying sz value feed_1 ad call tescase End =========================");
+						}
+
+						
+						@Test(priority = 76, enabled = true)
+						@Description("Verifying feed_2 ad call on FTL")
+						public void Smoke_Test_verifying_sz_feed_2_adcall_FTL() throws Exception {
+							System.out.println("================= Verifying sz value feed_2 ad call tescase Started =========================");
+							Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Feed2", "sz", "300x250");
+							System.out.println("================= Verifying sz value  feed_2 ad call tescase End =========================");
+						}
+					 
+
+						@Test(priority = 78, enabled = true)
+						@Description("Verifying feed_3 ad call on FTL")
+						public void Smoke_Test_verifying_sz_feed_3_adcall_FTL() throws Exception {
+							System.out.println("================= Verifying sz value feed_3 ad call tescase Started =========================");
+							Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Feed3", "sz", "300x250");
+							System.out.println("================= Verifying sz value  feed_3 ad call tescase End =========================");
+						}
+						
+						
+						@Test(priority = 80, enabled = true)
+						@Description("Verifying feed_4 ad call on FTL")
+						public void Smoke_Test_verifying_sz_feed_4_adcall_FTL() throws Exception {
+							System.out.println("================= Verifying sz value feed_4 ad call tescase Started =========================");
+							Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Feed4", "sz", "320x50");
+							System.out.println("================= Verifying sz value  feed_4 ad call tescase End =========================");
+						}
+						@Test(priority = 82, enabled = true)
+						@Description("Verifying feed_5 ad call on FTL")
+						public void Smoke_Test_verifying_sz_feed_5_adcall_FTL() throws Exception {
+							System.out.println("================= Verifying sz value feed_5 ad call tescase Started =========================");
+							Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Feed5", "sz", "320x50");
+							System.out.println("================= Verifying sz value  feed_5 ad call tescase End =========================");
+						}
+					 
+						
+						@Test(priority = 84, enabled = true)
+						@Description("Verifying sz value for radar&maps details page ad call On FTL")
+						public void Smoke_Test_Case_Verify_sz_Radar_Maps_deatailspage_adCall_FTL() throws Exception {
+							System.out.println(
+									"================= verifying sz  value for Radar&Maps deatail card started =========================");
+							Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Map", "sz", "320x50");
+							System.out.println(
+									"================= verifying sz value for Radar&Maps deatail card  End =========================");
+						}
+						
+						@Test(priority = 86, enabled = true)
+						@Description("Verifying sz value  for Today details Page on FTL")
+						public void Smoke_Test_Case_Verify_sz_Today_details_page_iu_FTL() throws Exception {
+							System.out.println(
+									"================= verifying iu value for Today_details_page started =========================");
+							Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Today", "sz", "320x50");
+							System.out.println(
+									"================= verifying sz value for Today_details_page  End =========================");
+						}
+						
+						
+						
+						@Test(priority = 88, enabled = true)
+						@Description("Verifying  sz value for Air Quality content page ad call on FTL")
+						public void Smoke_Test_Verify_sz_AirQuality_contentpage_adCall_FTL() throws Exception {
+							System.out.println(
+									"================= Verifying sz value for Air Quality content page testcase  started =========================");
+							Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Air Quality(Content)", "sz", "320x50");
+							System.out.println(
+									"================= Verifying sz value for Air Quality content page testcase  End =========================");
+						}
+						
+						
+						
+						
+						
+						/*@Test(priority = 90, enabled = true)
+						@Description("Verifying sz value for Running content page ad call  FTL")
+						public void Smoke_Test_Verify_sz_health_and_activities_Running_contenPage_adcall_FTL() throws Exception {
+							System.out.println(
+									"================= Verify sz value for health and activities Running contenPage adcall  Started =========================");
+							Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Health(goRun)", "sz", "300x33");
+							System.out.println(
+									"================= Verify sz value for health and activities Running contenPage adcall  End =========================");
+						}
+					 
+						@Test(priority = 92, enabled = true)
+						@Description("Verifying sz value for Boat&Beach content page ad call on FTL")
+						public void Smoke_Test_Verify_sz_health_and_activities_Bot_Beach_contenPage_adcall_FTL() throws Exception {
+							System.out.println(
+									"================= Verify sz value for health and activities bot&beach contenPage adcall  Started =========================");
+							Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Health(boatAndBeach))", "sz", "300x33");
+						
+							System.out.println(
+									"================= Verify sz value for health and activities bot&beach contenPage adcall  End =========================");
+						}
+						
+						@Test(priority = 94, enabled = true)
+						@Description("Verifying  sz value for Allergy content page ad call on FTL")
+						public void Smoke_Test_Verify_sz_health_and_activities_Allergy_contenPage_adcall_FTL() throws Exception {
+							System.out.println(
+									"================= Verify sz value for health and activities Allergy contenPage adcall  Started =========================");
+							Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Go", "sz", "300x33");
+							System.out.println(
+									"================= Verify sz value for health and activities Allergy contenPage adcall   End =========================");
+						}
+						
+						@Test(priority = 96, enabled = true)
+						@Description("Verifying  sz value for Cold&Flu content page ad call on FTL")
+						public void Smoke_Test_Verify_sz_health_and_activities_coldFlu_contenPaget_adcall_FTL() throws Exception {
+							System.out.println(
+									"================= Verify sz value for health and activities coldFlu contenPage adcall Started =========================");
+							Utils.validate_Noncustom_param_val_of_gampad("Smoke", "allergycontentpage", "sz", "300x33");
+							System.out.println(
+									"================= Verify sz value for health and activities coldFlu contenPage adcall End =========================");
+						}*/
+						
+						@Test(priority = 98, enabled = true)
+						@Description("Verifying  sz value for outdoor conditions  detailed page ad call on FTL")
+						public void Smoke_Test_Verify_sz_outdoor_detailpage_adcall_FTL() throws Exception {
+							System.out
+									.println("================= Verifying sz value for outdoor detailpage ad call Started =========================");
+							Utils.validate_Noncustom_param_val_of_gampad("Smoke", "SeasonalHub(Details)", "sz", "320x50");
+							System.out.println("================= VVerifying sz value for outdoor detailpage ad call End =========================");
+						}
 				
 				
 				/* =======================================all details page ad calls test cases End======================================================================================*/
@@ -354,42 +619,132 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					AppFunctions.Swipe();
 					AppFunctions.Swipe();
 					this.proxy.getXml();
-					Functions.Verify_hourly_detailpage_adcall_iu();
+				CharlesFunctions.createXMLFileForCharlesSessionFile();
+					CharlesFunctions.createXMLFileForCharlesSessionFile();
+		          Utils.verifyPubadCal("Smoke", "Hourly");
 					
 					System.out.println("================= Verifying hourly_detailpage_adcall_iu  test case  End =========================");
 				}
 							
-				@Test(priority = 42, enabled = true)
-				@Description("Verifying  hourly1  detailpage bigad ad call on FTL")
-				public void Smoke_Test_Verify_hourly1_detailpage_bigad_adcall_FTL() throws Exception {
-					System.out.println(
-							"================= Verifying hourly1 big ad detailpage_adcall_iu  test case Started =========================");
-					Functions.Verify_hourly_detailpage_bigad1_adcall_iu();
-					System.out.println(
-							"================= Verifying hourly1 big ad detailpage_adcall_iu test case  End =========================");
-				}
+				@Test(priority = 202, enabled = true)
+	@Description("Verifying  hourly1  detailpage bigad ad call on FTL")
+	public void Smoke_Test_Verify_hourly1_detailpage_bigad_adcall_FTL() throws Exception {
+		System.out.println(
+				"================= Verifying hourly1 big ad detailpage_adcall_iu  test case Started =========================");
+		Utils.verifyPubadCal("Smoke", "Hourly1");
+		System.out.println(
+				"================= Verifying hourly1 big ad detailpage_adcall_iu test case  End =========================");
+	}
 
-				@Test(priority = 44, enabled = true)
-				@Description("Verifying  hourly2  detailpage bigad ad call on FTL")
-				public void Smoke_Test_Verify_hourly2_detailpage_bigad_adcall_FTL() throws Exception {
-					System.out.println(
-							"================= Verifying hourly2 bigad detailpage_adcall_iu test case Started =========================");
-					Functions.Verify_hourly_detailpage_bigad2_adcall_iu();
-					System.out.println(
-							"================= Verifying hourly2 bigad detailpage_adcall_iu test case End =========================");
-				}
+	@Test(priority = 204, enabled = true)
+	@Description("Verifying  hourly2  detailpage bigad ad call on FTL")
+	public void Smoke_Test_Verify_hourly2_detailpage_bigad_adcall_FTL() throws Exception {
+		System.out.println(
+				"================= Verifying hourly2 bigad detailpage_adcall_iu test case Started =========================");
+		Utils.verifyPubadCal("Smoke", "Hourly2");
+		System.out.println(
+				"================= Verifying hourly2 bigad detailpage_adcall_iu test case End =========================");
+	}
+	
+	@Test(priority = 206, enabled = true)
+	@Description("Verifying  hourly3  detailpage bigad ad call on FTL")
+	public void Smoke_Test_Verify_hourly3__bigad_detailpage_adcall_FTL() throws Exception {
+		System.out.println(
+				"================= Verifying hourly3 bigad detailpage_adcall_iu test case  Started =========================");
+	
+		Utils.verifyPubadCal("Smoke", "Hourly3");
+		
+		System.out.println(
+				"================= Verifying hourly3 bigad detailpage_adcall_iu test case  End =========================");
+	}
+	
+	
+	@Test(priority = 208, enabled = true)
+	@Description("Verifying sz value for  hourly detailpage al call on FTL")
+	public void Smoke_Test_Verify_sz_hourly_detailpage_adcall_FTL() throws Exception {
+		System.out.println("================= Verifying sz value for hourly detailpage adcall test case  Started =========================");
+		CharlesFunctions.createXMLFileForCharlesSessionFile();
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Hourly", "sz", "320x50");
+		System.out.println("================= Verifying sz value for hourly detailpage adcall test case End =========================");
+	}
 				
-				@Test(priority = 46, enabled = true)
-				@Description("Verifying  hourly3  detailpage bigad ad call on FTL")
-				public void Smoke_Test_Verify_hourly3__bigad_detailpage_adcall_FTL() throws Exception {
-					System.out.println(
-							"================= Verifying hourly3 bigad detailpage_adcall_iu test case  Started =========================");
-				
-					Functions.Verify_hourly_detailpage_bigad3_adcall_iu();
+	@Test(priority = 210, enabled = true)
+	@Description("Verifying  sz value for hourly1  detailpage bigad ad call on FTL")
+	public void Smoke_Test_Verify_sz_hourly1_detailpage_bigad_adcall_FTL() throws Exception {
+		System.out.println(
+				"================= Verifying sz value for hourly1 big ad detailpage adcall  test case Started =========================");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Hourly1", "sz", "300x250");
+		System.out.println(
+				"================= Verifying sz value for hourly1 big ad detailpage adcall  test case  End =========================");
+	}
+
+	@Test(priority = 212, enabled = true)
+	@Description("Verifying  sz value hourly2  detailpage bigad ad call on FTL")
+	public void Smoke_Test_Verify_sz_hourly2_detailpage_bigad_adcall_FTL() throws Exception {
+		System.out.println(
+				"================= Verifying sz value for hourly2 bigad detailpage_adcall test case Started =========================");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Hourly2", "sz", "300x250");
+		System.out.println(
+				"================= Verifying sz value for hourly2 bigad detailpage_adcall test case End =========================");
+	}
+	
+	@Test(priority = 214, enabled = true)
+	@Description("Verifying  sz value for hourly3  detailpage bigad ad call on FTL")
+	public void Smoke_Test_Verify_sz_hourly3__bigad_detailpage_adcall_FTL() throws Exception {
+		System.out.println(
+				"================= Verifying sz value for hourly3 bigad detailpage_adcall test case  Started =========================");
+	
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Hourly3", "sz", "300x250");
+		
+		System.out.println(
+				"================= Verifying sz value for hourly3 bigad detailpage_adcall test case  End =========================");
+	}
+					 
 					
-					System.out.println(
-							"================= Verifying hourly3 bigad detailpage_adcall_iu test case  End =========================");
-				}
+	
+	@Test(priority = 216, enabled = true)
+	@Description("Verifying amazon Slot Id for hourly details ad call")
+	public void Smoke_Test_amazon_aax_Hourly_details_adcall() throws Exception {
+		System.out.println(
+				"================= Verify amazon aax Hourly details  adcall test case  Started =========================");
+		Utils.verifyAAX_SlotId("Smoke", "Hourly");
+		System.out.println("================= Verify amazon aax Hourly details  test case  End =========================");
+	}
+	
+
+	
+	@Test(priority =218, enabled = true)
+	@Description("Verifying amazon Slot Id for hourly1 big ad detailspage")
+	public void Smoke_Test_amazon_aax_Hourly1_bigaddetails_adcall() throws Exception {
+		System.out.println(
+				"================= Verify amazon aax Hourly1 details big  adcall  test case Started =========================");
+		Utils.verifyAAX_SlotId("Smoke", "Hourly1");
+		System.out.println("================= Verify amazon aax Hourly1 big ad details  test case  End =========================");
+
+	}
+
+	
+	@Test(priority = 220, enabled = true)
+	@Description("Verifying amazon Slot Id for hourly2 big ad detailspage")
+	public void Smoke_Test_amazon_aax_Hourly2_bigaddetails_adcall() throws Exception {
+		System.out.println(
+				"================= Verifying  amazon aax Hourly2 details big  adcall  test case Started =========================");
+		Utils.verifyAAX_SlotId("Smoke", "Hourly2");
+		System.out.println("================= Verifying  amazon aax Hourly2  big ad details  test case  End =========================");
+
+	}
+	
+
+
+	@Test(priority = 222, enabled = true)
+	@Description("Verifying amazon Slot Id for hourly3 big ad detailspagel")
+	public void Smoke_Test_amazon_aax_Hourly3_bigaddetails_adcall() throws Exception {
+		System.out.println(
+				"================= Verify amazon aax Hourly3 details big  ad call test case  Started =========================");
+		Utils.verifyAAX_SlotId("Smoke", "Hourly3");
+		System.out.println("================= Verify amazon aax Hourly3 big ad call test case End =========================");
+	}*/
+	
 				
 				/* =======================================daily details ad calls test cases started======================================================================================*/
 				
@@ -920,54 +1275,8 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	
 	
 	
- /* =======================================Hourly details amazon aax slot id's test case Started======================================================================================*/
-				
-					
-					@Test(priority = 41, enabled = true)
-					@Description("Verifying amazon Slot Id for hourly details ad call")
-					public void Smoke_Test_amazon_aax_Hourly_details_adcall() throws Exception {
-						System.out.println(
-								"================= Verify amazon aax Hourly details  adcall test case  Started =========================");
-						Functions.get_aaxcal_Hourly();
-						System.out.println("================= Verify amazon aax Hourly details  test case  End =========================");
-					}
-					
-
-					
-					@Test(priority =43, enabled = true)
-					@Description("Verifying amazon Slot Id for hourly1 big ad detailspage")
-					public void Smoke_Test_amazon_aax_Hourly1_bigaddetails_adcall() throws Exception {
-						System.out.println(
-								"================= Verify amazon aax Hourly1 details big  adcall  test case Started =========================");
-						Functions.get_aaxcal_Hourly1();
-						System.out.println("================= Verify amazon aax Hourly1 big ad details  test case  End =========================");
-
-					}
-
-					
-					@Test(priority = 45, enabled = true)
-					@Description("Verifying amazon Slot Id for hourly2 big ad detailspage")
-					public void Smoke_Test_amazon_aax_Hourly2_bigaddetails_adcall() throws Exception {
-						System.out.println(
-								"================= Verifying  amazon aax Hourly2 details big  adcall  test case Started =========================");
-						Functions.get_aaxcal_Hourly2();
-						System.out.println("================= Verifying  amazon aax Hourly2  big ad details  test case  End =========================");
-
-					}
-					
 
 
-					@Test(priority = 47, enabled = true)
-					@Description("Verifying amazon Slot Id for hourly3 big ad detailspagel")
-					public void Smoke_Test_amazon_aax_Hourly3_bigaddetails_adcall() throws Exception {
-						System.out.println(
-								"================= Verify amazon aax Hourly3 details big  ad call test case  Started =========================");
-						Functions.get_aaxcal_Hourly3();
-						System.out.println("================= Verify amazon aax Hourly3 big ad call test case End =========================");
-					}
-					
-					
-					 /* =======================================Hourly details amazon aax slot id's test case End======================================================================================*/
 					
 	
 	
@@ -2275,196 +2584,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	
 						
 
-						@Test(priority = 3, enabled = true)
-						@Description("Verifying amazon Slot Id for feed1 prerol ad call")
-						public void Smoke_Test_amazon_aaxSlot_feed1_adCall() throws Exception {
-							System.out.println(
-									"================= Verify amazon aax slot  Id for feed1 prerol adcall  testcase Started =========================");
-							logStep(" Verifying amazon aax slot Id for feed1");
-							Functions.get_aaxcal_feed1();
-							System.out.println(
-									"================= Verify amazon aax slot Id for feed1 prerol adcall testcase End =========================");
-
-						}	
 						
-						
-						
-						
-					 @Test(priority = 5, enabled = true)
-						@Description("Verifying amazon  Slot Id for feed2 ad call")
-						public void Smoke_Test_amazon_aaxSlot_feed2_adcall() throws Exception {
-							System.out.println(
-									"================= Verify amazon aax slot  Id for feed2 adcall testcase Started =========================");
-							logStep(" Verifying amazon aax slot Id for feed2");
-							Functions.get_aaxcal_feed2();
-							System.out.println(
-									"================= Verify amazon aax slot Id for feed2l adcall testcase End =========================");
-						}
-
-						@Test(priority = 7, enabled = true)
-						@Description("Verifying amazon  Slot Id for feed3 ad call")
-						public void Smoke_Test_amazon_aaxSlot_feed3_adcall() throws Exception {
-							System.out.println(
-									"================= Verify amazon aax slot  Id for feed3 adcall testcase Started =========================");
-							logStep(" Verifying amazon aax slot Id for feed3");
-							Functions.get_aaxcal_feed3();
-							System.out.println(
-									"================= Verify amazon aax slot Id for feed3  adcall testcase End =========================");
-						}
-
-
-					    @Test(priority = 9, enabled = true)
-						@Description("Verifying amazon  Slot Id for feed4 ad call")
-						public void Smoke_Test_amazon_aaxSlot_feed4_adcall() throws Exception {
-							System.out.println(
-									"================= Verify amazon aax slot  Id for feed4 adcall testcase Started =========================");
-							logStep(" Verifying amazon aax slot Id for feed4");
-							Functions.get_aaxcal_feed4();
-							System.out.println(
-									"================= Verify amazon aax slot Id for feed4 adcall testcase End =========================");
-						}
-
-
-
-						  
-						/* @Test(priority = 11, enabled = true)
-						@Description("Verifying amazon  Slot Id for feed5 ad call")
-						public void Smoke_Test_amazon_aaxSlot_feed5_adcall() throws Exception {
-							System.out.println(
-									"================= Verify amazon aax slot  Id for feed5 adcall testcase Started =========================");
-							logStep(" Verifying amazon aax slot Id for feed5");
-							Functions.get_aaxcal_feed5();
-							System.out.println(
-									"================= Verify amazon aax slot Id for feed5 adcall testcase End =========================");
-						}*/
-
-						 
-						 /* =======================================All feed cards amazon slot id's test cases End======================================================================================*/
-						 
-
-			
-						 
-						 /* =======================================All detail pages amazon slot id's test cases started======================================================================================*/
-						 
-
-							 @Test(priority = 19, enabled = true)
-							@Description("Verifying amazon Slot Id for maps details preroll ad cal")
-							public void Smoke_Test_amazon_aax_mapsdetails_adcall() throws Exception {
-								System.out.println("================= Verify amazon aax maps detais adcall Started =========================");
-								logStep(" Verifying preload amazon aax for  map details");
-								Functions.get_aaxcal_map_details();
-								System.out
-										.println("================= Verify amazon aax maps card preroll adcall End =========================");
-							}
-
-
-							/*@Test(priority = 21, enabled = true)
-							@Description("Verifying amazon Slot Id  video ad call")
-							public void Smoke_Test_amazon_aax_video_adcall() throws Exception {
-								System.out.println("================= Verify amazon aax video adcall Started =========================");
-								logStep(" Verifying preload amazon aax for  video details");
-								Functions.get_aaxcal_video_details();
-								System.out.println("================= Verify amazon aax video  adcall End =========================");
-							}*/
-						 
-						 
-						 
-							/*@Test(priority = 23, enabled = false)
-							@Description("Verifying amazon axx slot for new article")
-							public void Smoke_Test_Verify_amazon_aax_News_adcall() throws Exception {
-								System.out.println(
-										"================= verifying amazon aax slot for news article started =========================");
-								Functions.get_aaxcal_news();
-								System.out
-										.println("================= verifying amazon aax slot for news article  End =========================");
-							}*/
-
-
-
-							@Test(priority =25, enabled = true)
-							@Description("Verifying amazon aax for today details card")
-							public void Smoke_Test_amazon_aax_today_deatailcard() throws Exception {
-								System.out.println(
-										"================= Verify amazon aax for today detail adcard Started =========================");
-								Functions.get_aaxcal_today_details();
-								System.out.println("================= Verify amazon aax for today detail adcard End=========================");
-							}
-
-							
-							
-							
-							@Test(priority = 27, enabled = true)
-							@Description("Verifying amazon aax for AQ details page")
-							public void Smoke_Test_amazon_aax_Airquality_deatailcard() throws Exception {
-								System.out.println(
-										"================= Verify amazon aax for Air Quality details page Started =========================");
-								Functions.get_aaxcal_aq();
-								System.out.println("================= Verify amazon aax for Air Quality detail Page  End=========================");
-							}
-							
-
-
-							@Test(priority = 29, enabled = true)
-							@Description("Verifying amazon slot Id for Running Bigbanner ad")
-							public void Smoke_Test_Verify_amazon_SlotId_Running_Bigbanner_ad() throws Exception {
-								System.out.println(
-										"================= verifying amazon SlotId for Running BigBanner adcall started =========================");
-								Functions.get_aaxcal_Running_Bigbanner();
-								System.out.println(
-										"================= verifying amazon SlotId for Running BigBanner adcall  End =========================");
-							}
-
-
-
-							@Test(priority = 31, enabled = true)
-							@Description("Verifying amazon slot Id  for Boat&Beach Bigbanner ad")
-							public void Smoke_Test_Verify_amazon_SlotId_Boat_Beach_Bigbanner_ad() throws Exception {
-								System.out.println(
-										"================= verifying amazon aax SlotId for Boat&Beach BigBanner adcall started =========================");
-								Functions.get_aaxcal_Boat_Beach_Bigbanner();
-								System.out.println(
-										"================= verifying amazon SlotId for Boat&Beach BigBanner adcall End =========================");
-							}
-
-
-
-							@Test(priority = 33, enabled = true)
-							@Description("Verifying amazon slot Id for Allergy Bigbanner ad")
-							public void Smoke_Test_Verify_amazon_SlotId_Allergy_Bigbanner_ad() throws Exception {
-								System.out.println(
-										"================= verifying amazon SlotId for Allergy BigBanner adcall started =========================");
-								Functions.get_aaxcal_Allergy_Bigbanner();
-								System.out.println(
-										"================= verifying amazon SlotId for Allergy BigBanner adcall  End =========================");
-							}
-
-
-
-							/*@Test(priority = 35, enabled = true)
-							@Description("Verifying amazon slot Id for Cold&Flu Bigbanner ad")
-							public void Smoke_Test_Verify_amazon_SlotId_coldFlu_Bigbanner_ad() throws Exception {
-								System.out.println(
-										"================= verifying amazon SlotId for cold&Flu BigBanner adcall started =========================");
-								Functions.get_aaxcal_Cold_Flu_Bigbanner();
-								System.out.println(
-										"================= verifying amazon SlotId for cold&Flu BigBanner adcall  End =========================");
-							}*/
-
-
-							
-							
-							/*@Test(priority = 37, enabled = true)
-							@Description("Verifying amazon slot Id for Outdoor details page")
-							public void Smoke_Test_Verify_amazon_SlotId_outdoor_details() throws Exception {
-								System.out.println(
-										"================= verifying amazon SlotId for oudoor details adcall started =========================");
-								Functions.get_aaxcal_SH_details();
-								System.out.println(
-										"================= verifying amazon SlotId for outdoor details adcall  End =========================");
-							}	*/	
-							
-							 /* =======================================All detail pages amazon slot id's test cases End======================================================================================*/
-		
 	
 	
 	/*
