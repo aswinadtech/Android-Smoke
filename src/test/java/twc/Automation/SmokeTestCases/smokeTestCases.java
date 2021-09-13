@@ -745,437 +745,630 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		System.out.println("================= Verify amazon aax Hourly3 big ad call test case End =========================");
 	}
 	
+					 @Test(priority = 250, enabled = true)
+		@Description("Verifying new daily details day1 ad call on FTL")
+		public void Smoke_Test_Verifying_newdailydetails_day1adcall_FTL() throws Exception {
+			System.out.println(
+					"================= Verifying new daily details day1 ad call tescase Started =========================");
+			this.configFile = this.charlesGeneralConfigFile(CONFIG_FILE_PATH);
+			proxy = new CharlesProxy("localhost", 8333, CONFIG_FILE_PATH);
+			proxy.startCharlesProxyWithUI();
+			proxy.disableRewriting();
+		    proxy.stopRecording();
+			proxy.disableMapLocal();
+			proxy.startRecording();
+			proxy.clearCharlesSession();
+			AppiumFunctions.LaunchAppWithFullReset();
+			Functions.clickdailydetails();
+			//Functions.closeInterstailads();
+		//	Functions.clickongotit();
+			Thread.sleep(10000);
+			Functions.verifyingdailydetrailsday1today7();
+			this.proxy.getXml();
+			CharlesFunctions.createXMLFileForCharlesSessionFile();
+			
+			Utils.verifyPubadCal("Smoke", "DailyDetails");
 				
-				/* =======================================daily details ad calls test cases started======================================================================================*/
+			System.out.println(
+					"=================  Verifying new daily details day1 ad call tescase  End =========================");
+		}
+
+@Test(priority = 251, enabled = true)
+		@Description("Verifying amazon Slot Id for daily details day1 ad calll")
+		public void Smoke_Test_amazon_aax_Daily_details_Day1_adcall() throws Exception {
+			System.out
+					.println("================= Verifying amazon slot id for  daily details day1 adcall test case Started =========================");
+			Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+			System.out.println("================= Verifying amazon slot id for  daily details day 1 adcall test case End =========================");
+		}
+
+
+@Test(priority = 252, enabled = true)
+	@Description("Verifying sz value for new daily details day1 ad call on FTL")
+	public void Smoke_Test_sz_Verifying_newdailydetails_day1adcall_FTL() throws Exception {
+		System.out.println(
+				"================= Verifying sz value for new daily details day1 ad call tescase Started =========================");
+	
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
+		System.out.println(
+				"=================  Verifying sz value for new daily details day1 ad call tescase  End =========================");
+	}
+
+
+
+@Test(priority = 253, enabled = true)
+@Description("Verifying new daily details day2 ad call on FTL")
+public void Smoke_Test_Verifying_newdailydetails_day2adcall_FTL() throws Exception {
+	System.out.println(
+			"================= Verifying new daily details day2 ad call test case Started=========================");
+	CharlesFunctions.archive_folder("Charles");
+	proxy.clearCharlesSession();
+	Functions.clickonday2();
+	Thread.sleep(10000);
+	Functions.verifyingdailydetrailsday1today7();
+	this.proxy.getXml();
+CharlesFunctions.createXMLFileForCharlesSessionFile();
+Utils.verifyPubadCal("Smoke", "DailyDetails");
+		
+	System.out.println(
+			"================= Verifying new daily details day2 ad call test case End =========================");
+}
+
+@Test(priority = 254, enabled = true)
+@Description("Verifying amazon Slot Id for daily details day2 ad calll")
+public void Smoke_Test_amazon_aax_Dailydetails_Day2adcall() throws Exception {
+	System.out
+			.println("================= Verifying amazon slot id for  daily details day2  adcall test case Started =========================");
+	Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+	System.out.println("================= Verifying amazon slot id for  daily details day2 adcall test case End =========================");
+}
+
+
+@Test(priority = 255, enabled = true)
+@Description("Verifying sz value for new daily details day2 ad call on FTL")
+public void Smoke_Test_sz_Verifying_newdailydetails_day2adcall_FTL() throws Exception {
+	System.out.println(
+			"================= Verifying sz value for new daily details day2 ad call tescase Started =========================");
+
+	Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
+	System.out.println(
+			"=================  Verifying sz value for new daily details day2 ad call tescase  End =========================");
+}
+
+
+
+@Test(priority = 256, enabled = true)
+@Description("Verifying new daily details day3 ad call on FTL")
+public void Smoke_Test_Verifying_newdailydetails_day3adcall_FTL() throws Exception {
+	System.out.println(
+			"================= Verifying new daily details day3 ad call test case Started =========================");
+	
+	CharlesFunctions.archive_folder("Charles");
+	proxy.clearCharlesSession();
+	//Functions.finding_newDailyBidadcall_day2();
+	Functions.clickonday3();
+	Thread.sleep(10000);
+	Functions.verifyingdailydetrailsday1today7();
+	this.proxy.getXml();
+CharlesFunctions.createXMLFileForCharlesSessionFile();
+Utils.verifyPubadCal("Smoke", "DailyDetails");
+	System.out.println(
+			"================= Verifying new daily details day3 ad call test case End =========================");
+}
+
+@Test(priority = 257, enabled = true)
+@Description("Verifying amazon Slot Id for daily details day3 ad calll")
+public void Smoke_Test_amazon_aax_Dailydetails_Day3adcall() throws Exception {
+	System.out
+			.println("================= Verifying amazon slot id for  daily details day3  adcall test case Started =========================");
+	Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+	System.out.println("================= Verifying amazon slot id for  daily details day3 adcall test case End =========================");
+}
+
+
+@Test(priority = 258, enabled = true)
+@Description("Verifying sz value for new daily details day3 ad call on FTL")
+public void Smoke_Test_sz_Verifying_newdailydetails_day3adcall_FTL() throws Exception {
+	System.out.println(
+			"================= Verifying sz value for new daily details day3 ad call tescase Started =========================");
+
+	Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
+	System.out.println(
+			"=================  Verifying sz value for new daily details day3 ad call tescase  End =========================");
+}
+
+
+@Test(priority = 259, enabled = true)
+@Description("Verifying new daily details day4 ad call on FTL")
+public void Smoke_Test_Verifying_newdailydetails_day4adcall_FTL() throws Exception {
+	System.out.println(
+			"================= Verifying new daily details day4 ad call tescase Started =========================");
+	CharlesFunctions.archive_folder("Charles");
+	proxy.clearCharlesSession();
+//	Functions.finding_newDailyBidadcall_day2();
+	Functions.clickonday4();
+	Thread.sleep(10000);
+	Functions.verifyingdailydetrailsday1today7();
+	this.proxy.getXml();
+CharlesFunctions.createXMLFileForCharlesSessionFile();
+Utils.verifyPubadCal("Smoke", "DailyDetails");
+		
+	System.out.println(
+			"================= Verifying new daily details day4 ad call tescase End =========================");
+}
+
+@Test(priority = 260, enabled = true)
+@Description("Verifying amazon Slot Id for daily details day4 ad calll")
+public void Smoke_Test_amazon_aax_Dailydetails_Day4adcall() throws Exception {
+	System.out
+			.println("================= Verifying amazon slot id for  daily details day4  adcall test case Started =========================");
+	Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+	System.out.println("================= Verifying amazon slot id for  daily details day4 adcall test case End =========================");
+}
+
+
+@Test(priority = 261, enabled = true)
+@Description("Verifying sz value for new daily details day4 ad call on FTL")
+public void Smoke_Test_sz_Verifying_newdailydetails_day4adcall_FTL() throws Exception {
+	System.out.println(
+			"================= Verifying sz value for new daily details day4 ad call tescase Started =========================");
+
+	Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
+	System.out.println(
+			"=================  Verifying sz value for new daily details day4 ad call tescase  End =========================");
+}
+
+
+
+@Test(priority = 262, enabled = true)
+@Description("Verifying new daily details day5 ad call on FTL")
+public void Smoke_Test_Verifying_newdailydetails_day5adcall_FTL() throws Exception {
+	System.out.println(
+			"================= Verifying new daily details day5 ad call tescase Started =========================");
+	CharlesFunctions.archive_folder("Charles");
+	proxy.clearCharlesSession();
+//	Functions.finding_newDailyBidadcall_day2();
+	Functions.clickonday5();
+	Thread.sleep(10000);
+	Functions.verifyingdailydetrailsday1today7();
+	this.proxy.getXml();
+CharlesFunctions.createXMLFileForCharlesSessionFile();
+Utils.verifyPubadCal("Smoke", "DailyDetails");
+		
+	System.out.println(
+			"================= Verifying new daily details day5 ad call tescase End =========================");
+}
+
+
+@Test(priority = 263, enabled = true)
+@Description("Verifying amazon Slot Id for daily details day5 ad calll")
+public void Smoke_Test_amazon_aax_Dailydetails_Day5adcall() throws Exception {
+	System.out
+			.println("================= Verifying amazon slot id for  daily details day5  adcall test case Started =========================");
+	Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+	System.out.println("================= Verifying amazon slot id for  daily details day5 adcall test case End =========================");
+}
+
+
+@Test(priority = 264, enabled = true)
+@Description("Verifying sz value for new daily details day5 ad call on FTL")
+public void Smoke_Test_sz_Verifying_newdailydetails_day5adcall_FTL() throws Exception {
+	System.out.println(
+			"================= Verifying sz value for new daily details day5 ad call tescase Started =========================");
+
+	Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
+	System.out.println(
+			"=================  Verifying sz value for new daily details day5 ad call tescase  End =========================");
+}
+
+
+@Test(priority = 265, enabled = true)
+@Description("Verifying new daily details day6 ad call on FTL")
+public void Smoke_Test_Verifying_newdailydetails_day6adcall_FTL() throws Exception {
+	System.out.println(
+			"================= Verifying new daily details day6 ad call tescase Started =========================");
+	CharlesFunctions.archive_folder("Charles");
+	proxy.clearCharlesSession();
+//	Functions.finding_newDailyBidadcall_day2();
+	Functions.clickonday6();
+	Thread.sleep(10000);
+	Functions.verifyingdailydetrailsday1today7();
+	this.proxy.getXml();
+CharlesFunctions.createXMLFileForCharlesSessionFile();
+Utils.verifyPubadCal("Smoke", "DailyDetails");;
+		
+	System.out.println(
+			"================= Verifying new daily details day6 ad call tescase End =========================");
+}
+
+
+@Test(priority = 266, enabled = true)
+@Description("Verifying amazon Slot Id for daily details day6 ad calll")
+public void Smoke_Test_amazon_aax_Dailydetails_Day6adcall() throws Exception {
+	System.out
+			.println("================= Verifying amazon slot id for  daily details day6  adcall test case Started =========================");
+	Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+	System.out.println("================= Verifying amazon slot id for  daily details day6 adcall test case End =========================");
+}
+
+@Test(priority = 267, enabled = true)
+@Description("Verifying sz value for new daily details day6 ad call on FTL")
+public void Smoke_Test_sz_Verifying_newdailydetails_day6adcall_FTL() throws Exception {
+	System.out.println(
+			"================= Verifying sz value for new daily details day6 ad call tescase Started =========================");
+
+	Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
+	System.out.println(
+			"=================  Verifying sz value for new daily details day6 ad call tescase  End =========================");
+}
+
+
+
+@Test(priority = 268, enabled = true)
+@Description("Verifying new daily details day7 ad call on FTL")
+public void Smoke_Test_Verifying_newdailydetails_day7adcall_FTL() throws Exception {
+	System.out.println(
+			"================= Verifying new daily details day7 ad call tescase Started =========================");
+	CharlesFunctions.archive_folder("Charles");
+	proxy.clearCharlesSession();
+//	Functions.finding_newDailyBidadcall_day2();
+	Functions.clickonday7();
+	Thread.sleep(10000);
+	Functions.verifyingdailydetrailsday1today7();
+	this.proxy.getXml();
+CharlesFunctions.createXMLFileForCharlesSessionFile();
+Utils.verifyPubadCal("Smoke", "DailyDetails");;
+	
+	System.out.println(
+			"================= Verifying new daily details day7 ad call tescase End =========================");
+}
+      @Test(priority =269, enabled = true)
+@Description("Verifying amazon Slot Id for daily details day7 ad calll")
+public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
+	System.out
+			.println("================= Verifying amazon slot id for  daily details day7  adcall test case Started =========================");
+	Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+	System.out.println("================= Verifying amazon slot id for  daily details day7 adcall test case End =========================");
+}
+      
+      @Test(priority = 270, enabled = true)
+      @Description("Verifying sz value for new daily details day7 ad call on FTL")
+      public void Smoke_Test_sz_Verifying_newdailydetails_day7adcall_FTL() throws Exception {
+      	System.out.println(
+      			"================= Verifying sz value for new daily details day7 ad call tescase Started =========================");
+
+      	Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
+      	System.out.println(
+      			"=================  Verifying sz value for new daily details day7 ad call tescase  End =========================");
+      }
+      
+      
+      
+      @Test(priority = 272, enabled = true)
+		@Description("Verifying new daily details day8 ad call on FTL")
+		public void Smoke_Test_Verifying_newdailydetails_day8adcall_FTL() throws Exception {
+			System.out.println(
+					"================= Verifying new daily details day8 ad call tescase Started =========================");
+			CharlesFunctions.archive_folder("Charles");
+			proxy.clearCharlesSession();
+			//Functions.finding_newDailyBidadcall_day2();
+			Functions.clickonday8();
+			Thread.sleep(10000);
+			Functions.verifyingdailydetrailsday8today14();
+			this.proxy.getXml();
+		CharlesFunctions.createXMLFileForCharlesSessionFile();
+		Utils.verifyPubadCal("Smoke", "DailyDetails");;
 				
-				 @Test(priority = 250, enabled = true)
-					@Description("Verifying new daily details day1 ad call on FTL")
-					public void Smoke_Test_Verifying_newdailydetails_day1adcall_FTL() throws Exception {
-						System.out.println(
-								"================= Verifying new daily details day1 ad call tescase Started =========================");
-						CharlesFunctions.archive_folder("Charles");
-						proxy.clearCharlesSession();
-						Functions.clickdailydetails();
-						//Functions.closeInterstailads();
-						Functions.clickongotit();
-						Thread.sleep(10000);
-						this.proxy.getXml();
-						Functions.verifyingdailydetailiu();
-							
-						System.out.println(
-								"=================  Verifying new daily details day1 ad call tescase  End =========================");
-					}
-			
-			@Test(priority = 251, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day1 ad calll")
-					public void Smoke_Test_amazon_aax_Daily_details_Day1_adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day1 adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(1);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day 1 adcall test case End =========================");
-					}
-
-				   
-					@Test(priority = 252, enabled = true)
-					@Description("Verifying new daily details day2 ad call on FTL")
-					public void Smoke_Test_Verifying_newdailydetails_day2adcall_FTL() throws Exception {
-						System.out.println(
-								"================= Verifying new daily details day2 ad call test case Started=========================");
-						CharlesFunctions.archive_folder("Charles");
-						proxy.clearCharlesSession();
-						Functions.clickonday2();
-						this.proxy.getXml();
-						Thread.sleep(15000);
-						Functions.verifyingdailydetailiu();
-							
-					//	Functions.verifyingdailydetailsiu();
-						System.out.println(
-								"================= Verifying new daily details day2 ad call test case End =========================");
-					}
-			
-			@Test(priority = 253, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day2 ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day2adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day2  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(1);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day2 adcall test case End =========================");
-					}
-					
-				   
-					@Test(priority = 254, enabled = true)
-					@Description("Verifying new daily details day3 ad call on FTL")
-					public void Smoke_Test_Verifying_newdailydetails_day3adcall_FTL() throws Exception {
-						System.out.println(
-								"================= Verifying new daily details day3 ad call test case Started =========================");
-						
-						CharlesFunctions.archive_folder("Charles");
-						proxy.clearCharlesSession();
-						//Functions.finding_newDailyBidadcall_day2();
-						Functions.clickonday3();
-						Thread.sleep(15000);
-						this.proxy.getXml();
-						Functions.verifyingdailydetailiu();
-							
-						System.out.println(
-								"================= Verifying new daily details day3 ad call test case End =========================");
-					}
-			
-					@Test(priority = 255, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day3 ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day3adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day3  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(1);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day3 adcall test case End =========================");
-					}
-
-					
-					
-					@Test(priority = 256, enabled = true)
-					@Description("Verifying new daily details day4 ad call on FTL")
-					public void Smoke_Test_Verifying_newdailydetails_day4adcall_FTL() throws Exception {
-						System.out.println(
-								"================= Verifying new daily details day4 ad call tescase Started =========================");
-						CharlesFunctions.archive_folder("Charles");
-						proxy.clearCharlesSession();
-					//	Functions.finding_newDailyBidadcall_day2();
-						Functions.clickonday4();
-						Thread.sleep(15000);
-						this.proxy.getXml();
-						Functions.verifyingdailydetailiu();
-							
-						System.out.println(
-								"================= Verifying new daily details day4 ad call tescase End =========================");
-					}
-			
-			@Test(priority = 257, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day4 ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day4adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day4  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(1);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day4 adcall test case End =========================");
-					}
+			System.out.println(
+					"================= Verifying new daily details day8 ad call tescase End =========================");
+		}
 
 
-					@Test(priority = 258, enabled = true)
-					@Description("Verifying new daily details day5 ad call on FTL")
-					public void Smoke_Test_Verifying_newdailydetails_day5adcall_FTL() throws Exception {
-						System.out.println(
-								"================= Verifying new daily details day5 ad call tescase Started =========================");
-						CharlesFunctions.archive_folder("Charles");
-						proxy.clearCharlesSession();
-					//	Functions.finding_newDailyBidadcall_day2();
-						Functions.clickonday5();
-						Thread.sleep(15000);
-						this.proxy.getXml();
-						Functions.verifyingdailydetailiu();
-							
-						System.out.println(
-								"================= Verifying new daily details day5 ad call tescase End =========================");
-					}
-			
-			
-					@Test(priority = 259, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day5 ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day5adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day5  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(1);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day5 adcall test case End =========================");
-					}
-					
+		@Test(priority = 273, enabled = true)
+		@Description("Verifying amazon Slot Id for daily details day8 ad calll")
+		public void Smoke_Test_amazon_aax_Dailydetails_Day8adcall() throws Exception {
+			System.out
+					.println("================= Verifying amazon slot id for  daily details day8  adcall test case Started =========================");
+			Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+			System.out.println("================= Verifying amazon slot id for  daily details day8 adcall test case End =========================");
+		}
+		
+		 @Test(priority = 274, enabled = true)
+	      @Description("Verifying sz value for new daily details day8 ad call on FTL")
+	      public void Smoke_Test_sz_Verifying_newdailydetails_day8adcall_FTL() throws Exception {
+	      	System.out.println(
+	      			"================= Verifying sz value for new daily details day8 ad call tescase Started =========================");
 
-					@Test(priority = 260, enabled = true)
-					@Description("Verifying new daily details day6 ad call on FTL")
-					public void Smoke_Test_Verifying_newdailydetails_day6adcall_FTL() throws Exception {
-						System.out.println(
-								"================= Verifying new daily details day6 ad call tescase Started =========================");
-						CharlesFunctions.archive_folder("Charles");
-						proxy.clearCharlesSession();
-					//	Functions.finding_newDailyBidadcall_day2();
-						Functions.clickonday6();
-						Thread.sleep(15000);
-						this.proxy.getXml();
-						Functions.verifyingdailydetailiu();
-							
-						System.out.println(
-								"================= Verifying new daily details day6 ad call tescase End =========================");
-					}
+	      	Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
+	      	System.out.println(
+	      			"=================  Verifying sz value for new daily details day8 ad call tescase  End =========================");
+	      }
+	      
+		 
+		 @Test(priority = 275, enabled = true)
+			@Description("Verifying new daily details day9 ad call on FTL")
+			public void Smoke_Test_Verifying_newdailydetails_day9adcall_FTL() throws Exception {
+				System.out.println(
+						"================= Verifying new daily details day9 ad call tescase Started =========================");
+				CharlesFunctions.archive_folder("Charles");
+				proxy.clearCharlesSession();
+				//Functions.finding_newDailyBidadcall_day2();
+				Functions.clickonday9();
+				Thread.sleep(10000);
+				Functions.verifyingdailydetrailsday8today14();
+				this.proxy.getXml();
+			CharlesFunctions.createXMLFileForCharlesSessionFile();
+			Utils.verifyPubadCal("Smoke", "DailyDetails");;
 					
-			
-			  @Test(priority = 261, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day6 ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day6adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day6  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(1);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day6 adcall test case End =========================");
-					}
-			
-					@Test(priority = 262, enabled = true)
-					@Description("Verifying new daily details day7 ad call on FTL")
-					public void Smoke_Test_Verifying_newdailydetails_day7adcall_FTL() throws Exception {
-						System.out.println(
-								"================= Verifying new daily details day7 ad call tescase Started =========================");
-						CharlesFunctions.archive_folder("Charles");
-						proxy.clearCharlesSession();
-					//	Functions.finding_newDailyBidadcall_day2();
-						Functions.clickonday7();
-						Thread.sleep(15000);
-						this.proxy.getXml();
-						Functions.verifyingdailydetailiu();
-						
-						System.out.println(
-								"================= Verifying new daily details day7 ad call tescase End =========================");
-					}
-			              @Test(priority =263 , enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day7 ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day7  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(1);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day7 adcall test case End =========================");
-					}
+				System.out.println(
+						"================= Verifying new daily details day9 ad call tescase End =========================");
+			}
+	 @Test(priority = 276, enabled = true)
+			@Description("Verifying amazon Slot Id for daily details day9 ad calll")
+			public void Smoke_Test_amazon_aax_Dailydetails_Day9adcall() throws Exception {
+				System.out
+						.println("================= Verifying amazon slot id for  daily details day9  adcall test case Started =========================");
+				Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+				System.out.println("================= Verifying amazon slot id for  daily details day9 adcall test case End =========================");
+			}
+	 
+	 @Test(priority = 277, enabled = true)
+     @Description("Verifying sz value for new daily details day9 ad call on FTL")
+     public void Smoke_Test_sz_Verifying_newdailydetails_day9adcall_FTL() throws Exception {
+     	System.out.println(
+     			"================= Verifying sz value for new daily details day9 ad call tescase Started =========================");
 
-					
-					@Test(priority = 264, enabled = true)
-					@Description("Verifying new daily details day8 ad call on FTL")
-					public void Smoke_Test_Verifying_newdailydetails_day8adcall_FTL() throws Exception {
-						System.out.println(
-								"================= Verifying new daily details day8 ad call tescase Started =========================");
-						CharlesFunctions.archive_folder("Charles");
-						proxy.clearCharlesSession();
-						//Functions.finding_newDailyBidadcall_day2();
-						Functions.clickonday8();
-						Thread.sleep(15000);
-						this.proxy.getXml();
-						Functions.verifyingdailydetailsiu1();
-							
-						System.out.println(
-								"================= Verifying new daily details day8 ad call tescase End =========================");
-					}
+     	Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
+     	System.out.println(
+     			"=================  Verifying sz value for new daily details day9 ad call tescase  End =========================");
+     }
+	 
+	 
+	 @Test(priority = 278, enabled = true)
+		@Description("Verifying new daily details day10 ad call on FTL")
+		public void Smoke_Test_Verifying_newdailydetails_day10adcall_FTL() throws Exception {
+			System.out.println(
+					"================= Verifying new daily details day10 ad call tescase Started =========================");
+			CharlesFunctions.archive_folder("Charles");
+			proxy.clearCharlesSession();
+		//	Functions.finding_newDailyBidadcall_day2();
+			Functions.clickonday10();
+			Thread.sleep(10000);
+			Functions.verifyingdailydetrailsday8today14();
+			this.proxy.getXml();
+		CharlesFunctions.createXMLFileForCharlesSessionFile();
+		Utils.verifyPubadCal("Smoke", "DailyDetails");
 			
 			
-					@Test(priority = 265, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day8 ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day8adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day8  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(2);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day8 adcall test case End =========================");
-					}
-					
-					
-					@Test(priority = 266, enabled = true)
-					@Description("Verifying new daily details day9 ad call on FTL")
-					public void Smoke_Test_Verifying_newdailydetails_day9adcall_FTL() throws Exception {
-						System.out.println(
-								"================= Verifying new daily details day9 ad call tescase Started =========================");
-						CharlesFunctions.archive_folder("Charles");
-						proxy.clearCharlesSession();
-						//Functions.finding_newDailyBidadcall_day2();
-						Functions.clickonday9();
-						Thread.sleep(15000);
-						this.proxy.getXml();
-						Functions.verifyingdailydetailsiu1();
-							
-						System.out.println(
-								"================= Verifying new daily details day9 ad call tescase End =========================");
-					}
-			 @Test(priority = 267, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day9 ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day9adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day9  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(2);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day9 adcall test case End =========================");
-					}
+			System.out.println(
+					"================= Verifying new daily details day10 ad call tescase End =========================");
+		}
 
+          @Test(priority = 279, enabled = true)
+		@Description("Verifying amazon Slot Id for daily details day10  ad calll")
+		public void Smoke_Test_amazon_aax_Dailydetails_Day10adcall() throws Exception {
+			System.out
+					.println("================= Verifying amazon slot id for  daily details day10  adcall test case Started =========================");
+			Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+			System.out.println("================= Verifying amazon slot id for  daily details day10 adcall test case End =========================");
+		}
+          
+          @Test(priority = 280, enabled = true)
+          @Description("Verifying sz value for new daily details day10 ad call on FTL")
+          public void Smoke_Test_sz_Verifying_newdailydetails_day10adcall_FTL() throws Exception {
+          	System.out.println(
+          			"================= Verifying sz value for new daily details day10 ad call tescase Started =========================");
+
+          	Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
+          	System.out.println(
+          			"=================  Verifying sz value for new daily details day10 ad call tescase  End =========================");
+          }
+     	 
+
+          
+          
+          @Test(priority = 281, enabled = true)
+			@Description("Verifying new daily details day11 ad call on FTL")
+			public void Smoke_Test_Verifying_newdailydetails_day11adcall_FTL() throws Exception {
+				System.out.println(
+						"================= Verifying new daily details day11 ad call tescase Started =========================");
+				CharlesFunctions.archive_folder("Charles");
+				proxy.clearCharlesSession();
+				//Functions.finding_newDailyBidadcall_day2();
+				Functions.clickonday11();
+				Thread.sleep(10000);
+				Functions.verifyingdailydetrailsday8today14();
+				this.proxy.getXml();
+			CharlesFunctions.createXMLFileForCharlesSessionFile();
+			Utils.verifyPubadCal("Smoke", "DailyDetails");
 					
-					@Test(priority = 268, enabled = true)
-					@Description("Verifying new daily details day10 ad call on FTL")
-					public void Smoke_Test_Verifying_newdailydetails_day10adcall_FTL() throws Exception {
-						System.out.println(
-								"================= Verifying new daily details day10 ad call tescase Started =========================");
-						CharlesFunctions.archive_folder("Charles");
-						proxy.clearCharlesSession();
-					//	Functions.finding_newDailyBidadcall_day2();
-						Functions.clickonday10();
-						Thread.sleep(15000);
-						this.proxy.getXml();	
-						Functions.verifyingdailydetailsiu1();
-						
-						
-						System.out.println(
-								"================= Verifying new daily details day10 ad call tescase End =========================");
-					}
+				System.out.println(
+						"================= Verifying new daily details day11 ad call tescase End =========================");
+			}
+	
+	
+			@Test(priority = 282, enabled = true)
+			@Description("Verifying amazon Slot Id for daily details day11  ad calll")
+			public void Smoke_Test_amazon_aax_Dailydetails_Day11adcall() throws Exception {
+				System.out
+						.println("================= Verifying amazon slot id for  daily details day11  adcall test case Started =========================");
+				Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+				System.out.println("================= Verifying amazon slot id for  daily details day11 adcall test case End =========================");
+			}
 			
-			             @Test(priority = 269, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day10  ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day10adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day10  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(2);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day10 adcall test case End =========================");
-					}
+			@Test(priority = 283, enabled = true)
+	          @Description("Verifying sz value for new daily details day11 ad call on FTL")
+	          public void Smoke_Test_sz_Verifying_newdailydetails_day11adcall_FTL() throws Exception {
+	          	System.out.println(
+	          			"================= Verifying sz value for new daily details day11 ad call tescase Started =========================");
 
-
-					
-					@Test(priority = 270, enabled = true)
-					@Description("Verifying new daily details day11 ad call on FTL")
-					public void Smoke_Test_Verifying_newdailydetails_day11adcall_FTL() throws Exception {
-						System.out.println(
-								"================= Verifying new daily details day11 ad call tescase Started =========================");
-						CharlesFunctions.archive_folder("Charles");
-						proxy.clearCharlesSession();
-						//Functions.finding_newDailyBidadcall_day2();
-						Functions.clickonday11();
-						Thread.sleep(15000);
-						this.proxy.getXml();
-						Functions.verifyingdailydetailsiu1();
-							
-						System.out.println(
-								"================= Verifying new daily details day11 ad call tescase End =========================");
-					}
+	          	Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
+	          	System.out.println(
+	          			"=================  Verifying sz value for new daily details day11 ad call tescase  End =========================");
+	          }
 			
+			@Test(priority = 284, enabled = true)
+			@Description("Verifying new daily details day12 ad call on FTL")
+			public void Smoke_Test_Verifying_newdailydetails_day12adcall_FTL() throws Exception {
+				System.out.println(
+						"================= Verifying new daily details day12 ad call tescase Started =========================");
+				CharlesFunctions.archive_folder("Charles");
+				proxy.clearCharlesSession();
+			//	Functions.finding_newDailyBidadcall_day2();
+				Functions.clickonday12();
+				Thread.sleep(10000);
+				Functions.verifyingdailydetrailsday8today14();
+				this.proxy.getXml();
+			CharlesFunctions.createXMLFileForCharlesSessionFile();
+			Utils.verifyPubadCal("Smoke", "DailyDetails");
+					
+				System.out.println(
+						"================= Verifying new daily details day12 ad call tescase End =========================");
+			}
+	
+	@Test(priority = 285, enabled = true)
+			@Description("Verifying amazon Slot Id for daily details day12  ad calll")
+			public void Smoke_Test_amazon_aax_Dailydetails_Day12adcall() throws Exception {
+				System.out
+						.println("================= Verifying amazon slot id for  daily details day12  adcall test case Started =========================");
+				Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+				System.out.println("================= Verifying amazon slot id for  daily details day12 adcall test case End =========================");
+			}
+	
+	@Test(priority = 286, enabled = true)
+    @Description("Verifying sz value for new daily details day12 ad call on FTL")
+    public void Smoke_Test_sz_Verifying_newdailydetails_day12adcall_FTL() throws Exception {
+    	System.out.println(
+    			"================= Verifying sz value for new daily details day12 ad call tescase Started =========================");
+
+    	Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
+    	System.out.println(
+    			"=================  Verifying sz value for new daily details day12 ad call tescase  End =========================");
+    }
+
+	
+	
+
+	@Test(priority = 288, enabled = true)
+	@Description("Verifying new daily details day13 ad call on FTL")
+	public void Smoke_Test_Verifying_newdailydetails_day13adcall_FTL() throws Exception {
+		System.out.println(
+				"================= Verifying new daily details day13 ad call tescase Started =========================");
+		CharlesFunctions.archive_folder("Charles");
+		proxy.clearCharlesSession();
+	//	Functions.finding_newDailyBidadcall_day2();
+		Functions.clickonday13();
+		Thread.sleep(10000);
+		Functions.verifyingdailydetrailsday8today14();
+		this.proxy.getXml();
+	CharlesFunctions.createXMLFileForCharlesSessionFile();
+	Utils.verifyPubadCal("Smoke", "DailyDetails");
 			
-					@Test(priority = 271, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day11  ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day11adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day11  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(2);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day11 adcall test case End =========================");
-					}
+		System.out.println(
+				"================= Verifying new daily details day13 ad call tescase End =========================");
+	}
 
-					
-					@Test(priority = 272, enabled = true)
-					@Description("Verifying new daily details day12 ad call on FTL")
-					public void Smoke_Test_Verifying_newdailydetails_day12adcall_FTL() throws Exception {
-						System.out.println(
-								"================= Verifying new daily details day12 ad call tescase Started =========================");
-						CharlesFunctions.archive_folder("Charles");
-						proxy.clearCharlesSession();
-					//	Functions.finding_newDailyBidadcall_day2();
-						Functions.clickonday12();
-						Thread.sleep(15000);
-						this.proxy.getXml();
-						Functions.verifyingdailydetailsiu1();
-							
-						System.out.println(
-								"================= Verifying new daily details day12 ad call tescase End =========================");
-					}
+	@Test(priority = 289, enabled = true)
+	@Description("Verifying amazon Slot Id for daily details day13  ad calll")
+	public void Smoke_Test_amazon_aax_Dailydetails_Day13adcall() throws Exception {
+		System.out
+				.println("================= Verifying amazon slot id for  daily details day13  adcall test case Started =========================");
+		Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+		System.out.println("================= Verifying amazon slot id for  daily details day13 adcall test case End =========================");
+	}
+	
+	@Test(priority = 290, enabled = true)
+    @Description("Verifying sz value for new daily details day13 ad call on FTL")
+    public void Smoke_Test_sz_Verifying_newdailydetails_day13adcall_FTL() throws Exception {
+    	System.out.println(
+    			"================= Verifying sz value for new daily details day13 ad call tescase Started =========================");
+
+    	Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
+    	System.out.println(
+    			"=================  Verifying sz value for new daily details day13 ad call tescase  End =========================");
+    }
+	
+	@Test(priority = 291, enabled = true)
+	@Description("Verifying new daily details day14 ad call on FTL")
+	public void Smoke_Test_Verifying_newdailydetails_day14adcall_FTL() throws Exception {
+		System.out.println(
+				"================= Verifying new daily details day14 ad call tescase Started =========================");
+		CharlesFunctions.archive_folder("Charles");
+		proxy.clearCharlesSession();
+	//	Functions.finding_newDailyBidadcall_day2();
+		Functions.clickonday14();
+		Thread.sleep(10000);
+		Functions.verifyingdailydetrailsday8today14();
+		this.proxy.getXml();
+	CharlesFunctions.createXMLFileForCharlesSessionFile();
+	Utils.verifyPubadCal("Smoke", "DailyDetails");
 			
-			@Test(priority = 273, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day12  ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day12adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day12  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(2);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day12 adcall test case End =========================");
-					}
+		System.out.println(
+				"================= Verifying new daily details day14 ad call tescase End =========================");
+	}
+@Test(priority = 292, enabled = true)
+	@Description("Verifying amazon Slot Id for daily details day14  ad calll")
+	public void Smoke_Test_amazon_aax_Dailydetails_Day14adcall() throws Exception {
+		System.out
+				.println("================= Verifying amazon slot id for  daily details day14  adcall test case Started =========================");
+		Utils.verifyAAX_SlotId("Smoke", "DailyDetails");;
+		System.out.println("================= Verifying amazon slot id for  daily details day14 adcall test case End =========================");
+	}
 
-					
-					
-					@Test(priority = 274, enabled = true)
-					@Description("Verifying new daily details day13 ad call on FTL")
-					public void Smoke_Test_Verifying_newdailydetails_day13adcall_FTL() throws Exception {
-						System.out.println(
-								"================= Verifying new daily details day13 ad call tescase Started =========================");
-						CharlesFunctions.archive_folder("Charles");
-						proxy.clearCharlesSession();
-					//	Functions.finding_newDailyBidadcall_day2();
-						Functions.clickonday13();
-						Thread.sleep(15000);
-						this.proxy.getXml();
-						Functions.verifyingdailydetailsiu1();
-							
-						System.out.println(
-								"================= Verifying new daily details day13 ad call tescase End =========================");
-					}
-			
-					@Test(priority = 275, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day13  ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day13adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day13  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(2);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day13 adcall test case End =========================");
-					}
+@Test(priority = 293, enabled = true)
+@Description("Verifying sz value for new daily details day14 ad call on FTL")
+public void Smoke_Test_sz_Verifying_newdailydetails_day14adcall_FTL() throws Exception {
+	System.out.println(
+			"================= Verifying sz value for new daily details day14 ad call tescase Started =========================");
 
-
-					
-					@Test(priority = 276, enabled = true)
-					@Description("Verifying new daily details day14 ad call on FTL")
-					public void Smoke_Test_Verifying_newdailydetails_day14adcall_FTL() throws Exception {
-						System.out.println(
-								"================= Verifying new daily details day14 ad call tescase Started =========================");
-						CharlesFunctions.archive_folder("Charles");
-						proxy.clearCharlesSession();
-					//	Functions.finding_newDailyBidadcall_day2();
-						Functions.clickonday14();
-						Thread.sleep(15000);
-						this.proxy.getXml();
-						Functions.verifyingdailydetailsiu1();
-							
-						System.out.println(
-								"================= Verifying new daily details day14 ad call tescase End =========================");
-					}
-			@Test(priority = 277, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day14  ad calll")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day14adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day14  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(2);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day14 adcall test case End =========================");
-					}
+	Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
+	System.out.println(
+			"=================  Verifying sz value for new daily details day14 ad call tescase  End =========================");
+}
 
 
-					
-					@Test(priority = 278, enabled = true)
-					@Description("Verifying new daily details day15 ad call on FTL")
-					public void Smoke_Test_Verifying_newdailydetails_day15adcall_FTL() throws Exception {
-						System.out.println(
-								"================= Verifying new daily details day15 ad call tescase Started =========================");
-						CharlesFunctions.archive_folder("Charles");
-						proxy.clearCharlesSession();
-					//	Functions.finding_newDailyBidadcall_day2();
-						Functions.clickonday15();
-						Thread.sleep(15000);
-						this.proxy.getXml();
-						Functions.verifyingdailydetailsiu2();
-						
-						System.out.println(
-								"================= Verifying new daily details day15 ad call tescase End =========================");
-					}
+
+@Test(priority = 294, enabled = true)
+@Description("Verifying new daily details day15 ad call on FTL")
+public void Smoke_Test_Verifying_newdailydetails_day15adcall_FTL() throws Exception {
+	System.out.println(
+			"================= Verifying new daily details day15 ad call tescase Started =========================");
+	CharlesFunctions.archive_folder("Charles");
+	proxy.clearCharlesSession();
+//	Functions.finding_newDailyBidadcall_day2();
+	Functions.clickonday15();
+	Thread.sleep(10000);
+	Functions.verifyingdailydetrailsday15();
+	this.proxy.getXml();
+CharlesFunctions.createXMLFileForCharlesSessionFile();
+Utils.verifyPubadCal("Smoke", "DailyDetails");
+	
+	System.out.println(
+			"================= Verifying new daily details day15 ad call tescase End =========================");
+}
+
+@Test(priority = 295, enabled = true)
+@Description("Verifying amazon Slot Id for daily details day15  ad call")
+public void Smoke_Test_amazon_aax_Dailydetails_Day15adcall() throws Exception {
+	System.out
+			.println("================= Verifying amazon slot id for  daily details day15  adcall test case Started =========================");
+	Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+	System.out.println("================= Verifying amazon slot id for  daily details day15 adcall test case End =========================");
+}
+
+@Test(priority = 296, enabled = true)
+@Description("Verifying sz value for new daily details day15 ad call on FTL")
+public void Smoke_Test_sz_Verifying_newdailydetails_day15adcall_FTL() throws Exception {
+	System.out.println(
+			"================= Verifying sz value for new daily details day15 ad call tescase Started =========================");
+
+	Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
+	System.out.println(
+			"=================  Verifying sz value for new daily details day15 ad call tescase  End =========================");
+}
+
 			
-			@Test(priority = 279, enabled = true)
-					@Description("Verifying amazon Slot Id for daily details day15  ad call")
-					public void Smoke_Test_amazon_aax_Dailydetails_Day15adcall() throws Exception {
-						System.out
-								.println("================= Verifying amazon slot id for  daily details day15  adcall test case Started =========================");
-					  Functions.gettingDayofWeekFromUI(3);
-						Functions.get_aaxcal_Daily();
-						System.out.println("================= Verifying amazon slot id for  daily details day15 adcall test case End =========================");
-					}
-					
-			
+	
 		
 	
 				
