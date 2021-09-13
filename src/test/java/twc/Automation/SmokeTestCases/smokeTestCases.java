@@ -750,19 +750,13 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		public void Smoke_Test_Verifying_newdailydetails_day1adcall_FTL() throws Exception {
 			System.out.println(
 					"================= Verifying new daily details day1 ad call tescase Started =========================");
-			this.configFile = this.charlesGeneralConfigFile(CONFIG_FILE_PATH);
-			proxy = new CharlesProxy("localhost", 8333, CONFIG_FILE_PATH);
-			proxy.startCharlesProxyWithUI();
-			proxy.disableRewriting();
-		    proxy.stopRecording();
-			proxy.disableMapLocal();
-			proxy.startRecording();
+			
 			proxy.clearCharlesSession();
-			AppiumFunctions.LaunchAppWithFullReset();
+			
 			Functions.clickdailydetails();
 			//Functions.closeInterstailads();
 		//	Functions.clickongotit();
-			Thread.sleep(10000);
+			Thread.sleep(15000);
 			Functions.verifyingdailydetrailsday1today7();
 			this.proxy.getXml();
 			CharlesFunctions.createXMLFileForCharlesSessionFile();
