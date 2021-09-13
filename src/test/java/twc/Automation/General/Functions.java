@@ -4381,6 +4381,49 @@ public static  void Verify_Privacy_Card_onScreen() throws Exception{
 	
 }
 
+	
+	public static void verifyingdailydetrailsday1today7() throws Exception {
+	String expected_data = null;
+	String today=null;
+	String day1=null;
+	
+	today=Ad.findElementById("com.weather.Weather:id/daily_details_day_title").getText();
+	String days=today.replace(today, today+1);
+	//System.out.println("day from the UI is  " +day);
+	//logStep("day from the UI is  " +day);
+	 currentday1=days.toLowerCase();
+	System.out.println(currentday1);
+	
+}
+
+public static void verifyingdailydetrailsday8today14() throws Exception {
+	String expected_data = null;
+	String today=null;
+	String day1=null;
+	
+	today=Ad.findElementById("com.weather.Weather:id/daily_details_day_title").getText();
+	String days=today.replace(today, today+2);
+	//System.out.println("day from the UI is  " +day);
+	//logStep("day from the UI is  " +day);
+	 currentday1=days.toLowerCase();
+	System.out.println(currentday1);
+	
+}
+
+public static void verifyingdailydetrailsday15() throws Exception {
+	String expected_data = null;
+	String today=null;
+	String day1=null;
+	
+	today=Ad.findElementById("com.weather.Weather:id/daily_details_day_title").getText();
+	String days=today.replace(today, today+3);
+	//System.out.println("day from the UI is  " +day);
+	//logStep("day from the UI is  " +day);
+	 currentday1=days.toLowerCase();
+	System.out.println(currentday1);
+	
+}
+
 public static  void selecting_opt_out_mode() throws Exception{
 		
 		//Clicking privacy arrow button
