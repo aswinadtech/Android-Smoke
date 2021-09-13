@@ -203,7 +203,12 @@ public static String videoIUValue = "iu=%2F7646%2Fapp_android_us%2Fweather%2Fsev
 			//String today = dailyDetailsDayOfWeek.concat("1");
 			iuId = data[11][1];
 			//iuId = iuId.concat("_") + today;
-		} else {
+		} 
+		else if (sheetName.equalsIgnoreCase("DailyDetails")) {
+			//String today = dailyDetailsDayOfWeek.concat("1");
+			iuId = data[11][1]+currentday1;
+			//iuId = iuId.concat("_") + today;
+		}else {
 			iuId = data[11][1];
 		}
 		boolean iuExists = false;
