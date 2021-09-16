@@ -772,7 +772,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		public void Smoke_Test_amazon_aax_Daily_details_Day1_adcall() throws Exception {
 			System.out
 					.println("================= Verifying amazon slot id for  daily details day1 adcall test case Started =========================");
-			Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+			Utils.verifyAAX_SlotId("Smoke", "Daily(10day)");
 			System.out.println("================= Verifying amazon slot id for  daily details day 1 adcall test case End =========================");
 		}
 
@@ -783,7 +783,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		System.out.println(
 				"================= Verifying sz value for new daily details day1 ad call tescase Started =========================");
 	
-		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
+		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Daily(10day)", "sz", "360x210%7C300x250");
 		System.out.println(
 				"=================  Verifying sz value for new daily details day1 ad call tescase  End =========================");
 	}
@@ -813,7 +813,7 @@ Utils.verifyPubadCal("Smoke", "DailyDetails");
 public void Smoke_Test_amazon_aax_Dailydetails_Day2adcall() throws Exception {
 	System.out
 			.println("================= Verifying amazon slot id for  daily details day2  adcall test case Started =========================");
-	Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+	Utils.verifyAAX_SlotId("Smoke", "Daily(10day)");
 	System.out.println("================= Verifying amazon slot id for  daily details day2 adcall test case End =========================");
 }
 
@@ -824,7 +824,7 @@ public void Smoke_Test_sz_Verifying_newdailydetails_day2adcall_FTL() throws Exce
 	System.out.println(
 			"================= Verifying sz value for new daily details day2 ad call tescase Started =========================");
 
-	Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
+	Utils.validate_Noncustom_param_val_of_gampad("Smoke", "Daily(10day)", "sz", "360x210%7C300x250");
 	System.out.println(
 			"=================  Verifying sz value for new daily details day2 ad call tescase  End =========================");
 }
