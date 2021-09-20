@@ -1704,11 +1704,11 @@ public void Smoke_Test_sz_Verifying_newdailydetails_day15adcall_FTL() throws Exc
 		proxy.clearCharlesSession();
 		AppiumFunctions.Kill_launch();
 		Thread.sleep(30000);
-AppiumFunctions.enter_requiredLocation("30124");
+/*AppiumFunctions.enter_requiredLocation("30124");
 		Thread.sleep(5000);
 		proxy.clearCharlesSession();
 		AppiumFunctions.Kill_launch();
-		Thread.sleep(10000);
+		Thread.sleep(10000);*/
 		AppiumFunctions.clickOnVideoElementt();
 		Thread.sleep(80000);
 		this.proxy.getXml();
