@@ -1702,8 +1702,8 @@ public void Smoke_Test_sz_Verifying_newdailydetails_day15adcall_FTL() throws Exc
 		System.out.println("****** Validating cmsid custom parameter of Video call");
 		logStep("Validating cmsid custom parameter of Video call ");
 		proxy.clearCharlesSession();
-		AppiumFunctions.Kill_launch();
-		Thread.sleep(30000);
+	     Ad.resetApp();
+		Thread.sleep(60000);
 /*AppiumFunctions.enter_requiredLocation("30124");
 		Thread.sleep(5000);
 		proxy.clearCharlesSession();
