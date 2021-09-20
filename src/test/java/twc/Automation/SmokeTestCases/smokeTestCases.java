@@ -1702,10 +1702,15 @@ public void Smoke_Test_sz_Verifying_newdailydetails_day15adcall_FTL() throws Exc
 		System.out.println("****** Validating cmsid custom parameter of Video call");
 		logStep("Validating cmsid custom parameter of Video call ");
 		proxy.clearCharlesSession();
-		Ad.resetApp();
-		Thread.sleep(60000);
+		AppiumFunctions.Kill_launch();
+		Thread.sleep(30000);
+AppiumFunctions.enter_requiredLocation("30124");
+		Thread.sleep(5000);
+		proxy.clearCharlesSession();
+		AppiumFunctions.Kill_launch();
+		Thread.sleep(10000);
 		AppiumFunctions.clickOnVideoElementt();
-		Thread.sleep(100000);
+		Thread.sleep(80000);
 		this.proxy.getXml();
 		CharlesFunctions.createXMLFileForCharlesSessionFile();
 		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "PreRollVideo", "cmsid", "NotNull");
