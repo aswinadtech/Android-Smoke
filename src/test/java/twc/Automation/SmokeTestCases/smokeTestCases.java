@@ -2426,7 +2426,7 @@ public void Smoke_Test_sz_Verifying_newdailydetails_day15adcall_FTL() throws Exc
 		System.out.println("==============================================");
 		System.out.println("****** Validating tmpc custom parameter of Marquee call");
 		logStep("Validating tmpc custom parameter of Marquee call ");
-		Utils.validate_custom_param_val_of_gampad("Smoke", "Marquee", "tmpc");
+		//Utils.validate_custom_param_val_of_gampad("Smoke", "Marquee", "tmpc");
 
 	}
 
@@ -2439,7 +2439,7 @@ public void Smoke_Test_sz_Verifying_newdailydetails_day15adcall_FTL() throws Exc
 		System.out.println("==============================================");
 		System.out.println("****** Validating tmpc custom parameter of Feed1 call");
 		logStep("Validating tmpc custom parameter of Feed1 call ");
-		Utils.validate_custom_param_val_of_gampad("Smoke", "Feed1", "tmpc");
+		//Utils.validate_custom_param_val_of_gampad("Smoke", "Feed1", "tmpc");
 
 	}
 
@@ -2452,7 +2452,7 @@ public void Smoke_Test_sz_Verifying_newdailydetails_day15adcall_FTL() throws Exc
 		System.out.println("==============================================");
 		System.out.println("****** Validating tmpc custom parameter of Hourly details call");
 		logStep("Validating tmpc custom parameter of Hourly details call ");
-		Utils.validate_custom_param_val_of_gampad("Smoke", "Hourly", "tmpc");
+		//Utils.validate_custom_param_val_of_gampad("Smoke", "Hourly", "tmpc");
 
 	}
 	
