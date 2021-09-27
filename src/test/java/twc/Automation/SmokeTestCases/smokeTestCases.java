@@ -709,6 +709,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		System.out.println(
 				"================= Verify amazon aax Hourly details  adcall test case  Started =========================");
 		Utils.verifyAAX_SlotId("Smoke", "Hou00rly");
+		Assert.fail("");
 		System.out.println("================= Verify amazon aax Hourly details  test case  End =========================");
 	}
 	
@@ -744,7 +745,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	public void Smoke_Test_amazon_aax_Hourly3_bigaddetails_adcall() throws Exception {
 		System.out.println(
 				"================= Verify amazon aax Hourly3 details big  ad call test case  Started =========================");
-		Utils.verifyAAX_SlotId("Smoke", "Hourly3");
+		Utils.verifyAAX_SlotId("Smoke", "Hokjjkhjkurly3");
 			Assert.fail("");
 		System.out.println("================= Verify amazon aax Hourly3 big ad call test case End =========================");
 	}
