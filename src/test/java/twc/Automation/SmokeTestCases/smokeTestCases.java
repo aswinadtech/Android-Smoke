@@ -631,7 +631,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	public void Smoke_Test_Verify_hourly1_detailpage_bigad_adcall_FTL() throws Exception {
 		System.out.println(
 				"================= Verifying hourly1 big ad detailpage_adcall_iu  test case Started =========================");
-		Utils.verifyPubadCal("Smoke", "Hourly1");
+		Utils.verifyPubadCal("Smoke", "Hoourly1");
 		System.out.println(
 				"================= Verifying hourly1 big ad detailpage_adcall_iu test case  End =========================");
 	}
@@ -641,7 +641,8 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	public void Smoke_Test_Verify_hourly2_detailpage_bigad_adcall_FTL() throws Exception {
 		System.out.println(
 				"================= Verifying hourly2 bigad detailpage_adcall_iu test case Started =========================");
-		Utils.verifyPubadCal("Smoke", "Hourly2");
+		Utils.verifyPubadCal("Smoke", "Hoourly2");
+		
 		System.out.println(
 				"================= Verifying hourly2 bigad detailpage_adcall_iu test case End =========================");
 	}
@@ -652,7 +653,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		System.out.println(
 				"================= Verifying hourly3 bigad detailpage_adcall_iu test case  Started =========================");
 	
-		Utils.verifyPubadCal("Smoke", "Hourly3");
+		Utils.verifyPubadCal("Smoke", "Hoo0urly3");
 		
 		System.out.println(
 				"================= Verifying hourly3 bigad detailpage_adcall_iu test case  End =========================");
@@ -707,7 +708,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	public void Smoke_Test_amazon_aax_Hourly_details_adcall() throws Exception {
 		System.out.println(
 				"================= Verify amazon aax Hourly details  adcall test case  Started =========================");
-		Utils.verifyAAX_SlotId("Smoke", "Hourly");
+		Utils.verifyAAX_SlotId("Smoke", "Hou00rly");
 		System.out.println("================= Verify amazon aax Hourly details  test case  End =========================");
 	}
 	
@@ -718,7 +719,8 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	public void Smoke_Test_amazon_aax_Hourly1_bigaddetails_adcall() throws Exception {
 		System.out.println(
 				"================= Verify amazon aax Hourly1 details big  adcall  test case Started =========================");
-		Utils.verifyAAX_SlotId("Smoke", "Hourly1");
+		Utils.verifyAAX_SlotId("Smoke", "Ho00urly1");
+			Assert.fail("");
 		System.out.println("================= Verify amazon aax Hourly1 big ad details  test case  End =========================");
 
 	}
@@ -729,7 +731,8 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 	public void Smoke_Test_amazon_aax_Hourly2_bigaddetails_adcall() throws Exception {
 		System.out.println(
 				"================= Verifying  amazon aax Hourly2 details big  adcall  test case Started =========================");
-		Utils.verifyAAX_SlotId("Smoke", "Hourly2");
+		Utils.verifyAAX_SlotId("Smoke", "Hou00rly2");
+			Assert.fail("");
 		System.out.println("================= Verifying  amazon aax Hourly2  big ad details  test case  End =========================");
 
 	}
@@ -742,6 +745,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		System.out.println(
 				"================= Verify amazon aax Hourly3 details big  ad call test case  Started =========================");
 		Utils.verifyAAX_SlotId("Smoke", "Hourly3");
+			Assert.fail("");
 		System.out.println("================= Verify amazon aax Hourly3 big ad call test case End =========================");
 	}
 	
@@ -772,7 +776,8 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		public void Smoke_Test_amazon_aax_Daily_details_Day1_adcall() throws Exception {
 			System.out
 					.println("================= Verifying amazon slot id for  daily details day1 adcall test case Started =========================");
-			Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+			Utils.verifyAAX_SlotId("Smoke", "DailyDhhetails");
+				Assert.fail("");
 			System.out.println("================= Verifying amazon slot id for  daily details day 1 adcall test case End =========================");
 		}
 
@@ -813,7 +818,8 @@ Utils.verifyPubadCal("Smoke", "DailyDetails");
 public void Smoke_Test_amazon_aax_Dailydetails_Day2adcall() throws Exception {
 	System.out
 			.println("================= Verifying amazon slot id for  daily details day2  adcall test case Started =========================");
-	Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+	Utils.verifyAAX_SlotId("Smoke", "DailyDethhails");
+		Assert.fail("");
 	System.out.println("================= Verifying amazon slot id for  daily details day2 adcall test case End =========================");
 }
 
@@ -855,7 +861,8 @@ Utils.verifyPubadCal("Smoke", "DailyDetails");
 public void Smoke_Test_amazon_aax_Dailydetails_Day3adcall() throws Exception {
 	System.out
 			.println("================= Verifying amazon slot id for  daily details day3  adcall test case Started =========================");
-	Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+	Utils.verifyAAX_SlotId("Smoke", "DailyDjhghetails");
+		Assert.fail("");
 	System.out.println("================= Verifying amazon slot id for  daily details day3 adcall test case End =========================");
 }
 
@@ -896,7 +903,8 @@ Utils.verifyPubadCal("Smoke", "DailyDetails");
 public void Smoke_Test_amazon_aax_Dailydetails_Day4adcall() throws Exception {
 	System.out
 			.println("================= Verifying amazon slot id for  daily details day4  adcall test case Started =========================");
-	Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+	Utils.verifyAAX_SlotId("Smoke", "DailybhjDetails");
+		Assert.fail("");
 	System.out.println("================= Verifying amazon slot id for  daily details day4 adcall test case End =========================");
 }
 
@@ -940,6 +948,7 @@ public void Smoke_Test_amazon_aax_Dailydetails_Day5adcall() throws Exception {
 	System.out
 			.println("================= Verifying amazon slot id for  daily details day5  adcall test case Started =========================");
 	Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+		Assert.fail("");
 	System.out.println("================= Verifying amazon slot id for  daily details day5 adcall test case End =========================");
 }
 
@@ -982,6 +991,7 @@ public void Smoke_Test_amazon_aax_Dailydetails_Day6adcall() throws Exception {
 	System.out
 			.println("================= Verifying amazon slot id for  daily details day6  adcall test case Started =========================");
 	Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+		Assert.fail("");
 	System.out.println("================= Verifying amazon slot id for  daily details day6 adcall test case End =========================");
 }
 
@@ -1022,6 +1032,7 @@ public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
 	System.out
 			.println("================= Verifying amazon slot id for  daily details day7  adcall test case Started =========================");
 	Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+		Assert.fail("");
 	System.out.println("================= Verifying amazon slot id for  daily details day7 adcall test case End =========================");
 }
       
@@ -1064,6 +1075,7 @@ public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
 			System.out
 					.println("================= Verifying amazon slot id for  daily details day8  adcall test case Started =========================");
 			Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+				Assert.fail("");
 			System.out.println("================= Verifying amazon slot id for  daily details day8 adcall test case End =========================");
 		}
 		
@@ -1103,6 +1115,7 @@ public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
 				System.out
 						.println("================= Verifying amazon slot id for  daily details day9  adcall test case Started =========================");
 				Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+					Assert.fail("");
 				System.out.println("================= Verifying amazon slot id for  daily details day9 adcall test case End =========================");
 			}
 	 
@@ -1144,6 +1157,7 @@ public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
 			System.out
 					.println("================= Verifying amazon slot id for  daily details day10  adcall test case Started =========================");
 			Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+				Assert.fail("");
 			System.out.println("================= Verifying amazon slot id for  daily details day10 adcall test case End =========================");
 		}
           
@@ -1187,6 +1201,7 @@ public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
 				System.out
 						.println("================= Verifying amazon slot id for  daily details day11  adcall test case Started =========================");
 				Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+					Assert.fail("");
 				System.out.println("================= Verifying amazon slot id for  daily details day11 adcall test case End =========================");
 			}
 			
@@ -1226,6 +1241,7 @@ public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
 				System.out
 						.println("================= Verifying amazon slot id for  daily details day12  adcall test case Started =========================");
 				Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+					Assert.fail("");
 				System.out.println("================= Verifying amazon slot id for  daily details day12 adcall test case End =========================");
 			}
 	
@@ -1268,6 +1284,7 @@ public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
 		System.out
 				.println("================= Verifying amazon slot id for  daily details day13  adcall test case Started =========================");
 		Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+			Assert.fail("");
 		System.out.println("================= Verifying amazon slot id for  daily details day13 adcall test case End =========================");
 	}
 	
@@ -1306,6 +1323,7 @@ public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
 		System.out
 				.println("================= Verifying amazon slot id for  daily details day14  adcall test case Started =========================");
 		Utils.verifyAAX_SlotId("Smoke", "DailyDetails");;
+			Assert.fail("");
 		System.out.println("================= Verifying amazon slot id for  daily details day14 adcall test case End =========================");
 	}
 
@@ -1347,6 +1365,7 @@ public void Smoke_Test_amazon_aax_Dailydetails_Day15adcall() throws Exception {
 	System.out
 			.println("================= Verifying amazon slot id for  daily details day15  adcall test case Started =========================");
 	Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+		Assert.fail("");
 	System.out.println("================= Verifying amazon slot id for  daily details day15 adcall test case End =========================");
 }
 
