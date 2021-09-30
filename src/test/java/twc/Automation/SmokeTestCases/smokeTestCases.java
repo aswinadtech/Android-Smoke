@@ -161,7 +161,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		System.out.println("==============================================");
 		System.out.println("****** Validating Amazon SDK version i.e. 'adsdk' parameter of Amazon aax call");
 		logStep("****** Validating Amazon SDK version i.e. 'adsdk' parameter of Amazon aax call");
-		Functions.validate_Amazon_aax_call_parameter("Amazon", "adsdk","aps-android-9.1.0");
+		Utils.validate_Amazon_aax_call_parameter("Amazon", "adsdk","aps-android-9.1.0");
 
 	}
 
