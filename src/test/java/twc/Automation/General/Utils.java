@@ -6616,4 +6616,545 @@ String[][] data = read_excel_data.exceldataread("Criteo");
 	}
 
 }
+	
+	public static void verifyCriteo_inapp_v2_Call_ReponseStatusCode(String excelName, String sheetName, String responseParameter, String responseValue) throws Exception {
+String[][] data = read_excel_data.exceldataread("Criteo");
+	
+	//readExcelValues.excelValues( sheetName);
+	String host = data[2][1];
+	String path = data[4][1];
+
+	boolean flag = verifyAPICalWithHostandPath(host, path);
+	
+	if (flag) {
+		System.out.println(host + path + " call is present in Charles session");
+		logStep(host + path + " call is present in Charles session");
+		System.out.println(host + path + " :API Call Verification is successful");
+		logStep(host + path + " :API Call Verification is successful");
+		boolean resflag = verifyAPICallResponseHeaderParameter(host, path, responseParameter, responseValue);
+		if (resflag) {
+			System.out.println(host + path + " call response contains response code : "+responseValue);
+			logStep(host + path + " call response contains response code : "+responseValue);
+			System.out.println(host + path + " :API Call response code validation is successful");
+			logStep(host + path + " :API Call response code validation is successful");
+		} else {
+			System.out.println(host + path + " call response not contains response code : "+responseValue);
+			logStep(host + path + " call response not contains response code : "+responseValue);
+			System.out.println(host + path + " :API Call response code validation is failed");
+			logStep(host + path + " :API Call response code validation is failed");
+			Assert.fail(host + path + " :API Call response code validation is failed");
+		}
+	} else {
+		System.out.println(host + path + " call is not present in Charles session");
+		logStep(host + path + " call is not present in Charles session");
+		System.out.println(host + path + " :API Call response code validation is failed");
+		logStep(host + path + " :API Call response code validation is failed");
+		Assert.fail(host + path + " call is not present in Charles session, hence response code validation is failed");
+
+	}
+}
+
+public static boolean verifyAPICallResponseHeaderParameter(String host, String path, String responseParameter, String responseValue) throws Exception {
+	// readExcelValues.excelValues(excelName, sheetName);
+	File fXmlFile = new File(CharlesFunctions.outfile.getName());
+
+	DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+	dbFactory.setValidating(false);
+	dbFactory.setNamespaceAware(true);
+	dbFactory.setFeature("http://xml.org/sax/features/namespaces", false);
+	// dbFactory.setNamespaceAware(true);
+	dbFactory.setFeature("http://xml.org/sax/features/validation", false);
+	dbFactory.setFeature("http://apache.org/xml/features/nonvalidating/load-dtd-grammar", false);
+	dbFactory.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
+
+	DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+
+	Document doc = dBuilder.parse(fXmlFile);
+//Getting the transaction element by passing xpath expression
+	NodeList nodeList = doc.getElementsByTagName("transaction");
+	String xpathExpression = "charles-session/transaction/@host";
+	List<String> getQueryList = evaluateXPath(doc, xpathExpression);
+
+//Getting custom_params amzn_b values
+	List<String> customParamsList = new ArrayList<String>();
+
+	// String iuId = null;
+
+	boolean iuExists = false;
+	for (String qry : getQueryList) {
+		if (qry.contains(host)) {
+			iuExists = true;
+			break;
+		}
+	}
+	boolean flag = false;
+	boolean hflag = false;
+	boolean pflag = false;
+	boolean resflag = false;
+	boolean isresponseStatusCheckPass = false;
+
+	if (iuExists) {
+		System.out.println(host + "  call is present");
+		logStep(host + "  call is present");
+		outerloop: for (int p = 0; p < nodeList.getLength(); p++) {
+			// System.out.println("Total transactions: "+nodeList.getLength());
+			if (nodeList.item(p) instanceof Node) {
+				Node node = nodeList.item(p);
+				if (node.hasChildNodes()) {
+					NodeList nl = node.getChildNodes();
+					for (int j = 0; j < nl.getLength(); j++) {
+						// System.out.println("node1 length is: "+nl.getLength());
+						Node innernode = nl.item(j);
+						if (innernode != null) {
+							// System.out.println("Innernode name is: "+innernode.getNodeName());
+							if (innernode.getNodeName().equals("request")) {
+								if (innernode.hasChildNodes()) {
+									NodeList n2 = innernode.getChildNodes();
+									for (int k = 0; k < n2.getLength(); k++) {
+										// System.out.println("node2 length is: "+n2.getLength());
+										Node innernode2 = n2.item(k);
+										if (innernode2 != null) {
+											// System.out.println("Innernode2 name is: "+innernode2.getNodeName());
+											if (innernode2.getNodeType() == Node.ELEMENT_NODE) {
+												Element eElement = (Element) innernode2;
+												// System.out.println("Innernode2 element name is:
+												// "+eElement.getNodeName());
+												if (eElement.getNodeName().equals("headers")) {
+													if (innernode2.hasChildNodes()) {
+														NodeList n3 = innernode2.getChildNodes();
+														for (int q = 0; q < n3.getLength(); q++) {
+															// System.out.println("node3 length is:
+															// "+n3.getLength());
+															Node innernode3 = n3.item(q);
+															if (innernode3 != null) {
+																// System.out.println("Innernode3 name is:
+																// "+innernode3.getNodeName());
+																if (innernode3.getNodeType() == Node.ELEMENT_NODE) {
+																	Element eElement1 = (Element) innernode3;
+																	// System.out.println("Innernode3 element name
+																	// is: "+eElement1.getNodeName());
+																	if (eElement1.getNodeName().equals("header")) {
+																		String content = eElement1.getTextContent();
+																	   // System.out.println("request body "+content);
+
+																		if (content.contains(host)) {
+																			hflag = true;
+																			// System.out.println("request body
+																			// found "
+																			// + content);
+
+																		} else if (content.contains(path)) {
+																			pflag = true;
+																			// System.out.println("request body
+																			// found "
+																			// + content);
+																		}
+																		
+																	}
+
+																	// this condition especially for android since
+																	// its file has path value under first-line
+																	// element
+																	if (eElement1.getNodeName()
+																			.equals("first-line")) {
+																		String content = eElement1.getTextContent();
+																		// System.out.println("request body
+																		// "+content);
+
+																		if (content.contains(path)) {
+																			pflag = true;
+																			// System.out.println("request body
+																			// found "
+																			// + content);
+																		}
+																	}
+																	if (pflag && hflag) {
+																		
+																		flag = true;
+																	} else {
+																		flag = false;
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+
+							
+							if (flag) {
+								// System.out.println("Exiting after found true "); //
+								//System.out.println("checking innernode name is: " + innernode.getNodeName());
+								if (innernode.getNodeName().equals("response")) {
+									 //System.out.println(innernode.getNodeName());
+									if (innernode.hasChildNodes()) {
+										NodeList n2 = innernode.getChildNodes();
+										for (int k = 0; k < n2.getLength(); k++) {
+											Node innernode2 = n2.item(k);
+											if (innernode2 != null) {
+												if (innernode2.getNodeType() == Node.ELEMENT_NODE) {
+													Element eElement = (Element) innernode2;
+													if (eElement.getNodeName().equals("headers")) {
+														String contents = eElement.getTextContent();
+														// System.out.println("response body "+contents);
+														if (innernode2.hasChildNodes()) {
+																NodeList n3 = innernode2.getChildNodes();
+																for (int q = 0; q < n3.getLength(); q++) {
+																	// System.out.println("node3 length is:
+																	// "+n3.getLength());
+																	Node innernode3 = n3.item(q);
+																	if (innernode3 != null) {
+																		// System.out.println("Innernode3 name is:
+																		// "+innernode3.getNodeName());
+																		if (innernode3.getNodeType() == Node.ELEMENT_NODE) {
+																			Element eElement1 = (Element) innernode3;
+																			// System.out.println("Innernode3 element name
+																			// is: "+eElement1.getNodeName());
+																			if (eElement1.getNodeName().equals("header")) {
+																				String content = eElement1.getTextContent();
+																				//System.out.println("response body "+content);
+
+																				if (content.contains(responseParameter) && content.contains(responseValue)) {
+																					isresponseStatusCheckPass = true;
+																					// System.out.println("request body
+																					// found "
+																					// + content);
+																					break outerloop;
+
+																				} 
+																			}
+
+																			// this condition especially for android since
+																			// its file has path value under first-line
+																			// element
+																			if (eElement1.getNodeName()
+																					.equals("first-line")) {
+																				String content = eElement1.getTextContent();
+																				// System.out.println("request body
+																				// "+content); "HTTP/1.1 200 OK"
+
+																				if (content.contains(responseValue)) {
+																					isresponseStatusCheckPass = true;
+																					// System.out.println("request body
+																					// found "
+																					// + content);
+																					break outerloop;
+																				}
+																			}
+																		}
+																	}
+																}
+															}		
+														}
+												}
+											}
+										}
+									}
+								}
+
+							}
+							 
+							/*
+							 * if (hflag && pflag) { resflag = true; break outerloop; }
+							 */
+						}
+					}
+				}
+			}
+			 flag = false;
+			 hflag = false;
+			 pflag = false;
+		}
+
+	} else {
+		System.out.println(host + " ad call is not present");
+		logStep(host + " ad call is not present");
+
+	}
+
+	return isresponseStatusCheckPass;
+
+
+}
+public static void verifyCriteo_config_app_Call_ReponseStatusCode(String excelName, String sheetName, String responseParameter, String responseValue) throws Exception {
+String[][] data = read_excel_data.exceldataread("Criteo");
+	
+	//readExcelValues.excelValues( sheetName);
+	String host = data[2][1];
+	String path = data[4][1];
+	boolean flag = verifyAPICalWithHostandPath(host, path);
+
+	
+	if (flag) {
+		System.out.println(host + path + " call is present in Charles session");
+		logStep(host + path + " call is present in Charles session");
+		System.out.println(host + path + " :API Call Verification is successful");
+		logStep(host + path + " :API Call Verification is successful");
+		boolean resflag = verifyAPICallResponseHeaderParameter(host, path, responseParameter, responseValue);
+		if (resflag) {
+			System.out.println(host + path + " call response contains response code : "+responseValue);
+			logStep(host + path + " call response contains response code : "+responseValue);
+			System.out.println(host + path + " :API Call response code validation is successful");
+			logStep(host + path + " :API Call response code validation is successful");
+		} else {
+			System.out.println(host + path + " call response not contains response code : "+responseValue);
+			logStep(host + path + " call response not contains response code : "+responseValue);
+			System.out.println(host + path + " :API Call response code validation is failed");
+			logStep(host + path + " :API Call response code validation is failed");
+			Assert.fail(host + path + " :API Call response code validation is failed");
+		}
+	} else {
+		System.out.println(host + path + " call is not present in Charles session");
+		logStep(host + path + " call is not present in Charles session");
+		System.out.println(host + path + " :API Call response code validation is failed");
+		logStep(host + path + " :API Call response code validation is failed");
+		Assert.fail(host + path + " call is not present in Charles session, hence response code validation is failed");
+
+	}
+}
+
+public static void validate_Criteo_SDK_config_app_call_response_parameter(String excelName, String sheetName,
+		String cust_param, String expected) throws Exception {
+String[][] data = read_excel_data.exceldataread("Criteo");
+	
+	//readExcelValues.excelValues( sheetName);
+	String host = data[2][1];
+	String path = data[4][1];
+	boolean flag = verifyAPICalWithHostandPath(host, path);
+
+
+	if (flag) {
+		System.out.println(host + path + " call is present in Charles session");
+		logStep(host + path + " call is present in Charles session");
+
+		String actual = get_param_value_from_APIResponse(host, path, cust_param);
+
+		if (actual.equalsIgnoreCase(expected)) {
+			System.out.println("Custom Parameter :" + cust_param + " value: " + actual
+					+ " is matched with the expected value " + expected);
+			logStep("Custom Parameter :" + cust_param + " value: " + actual + " is matched with the expected value "
+					+ expected);
+			System.out.println("Criteo parameter: " + cust_param + " validation is successful");
+			logStep("Criteo parameter: " + cust_param + " validation is successful");
+		} else {
+			System.out.println("Custom Parameter :" + cust_param + " value: " + actual
+					+ " is not matched with the expected value " + expected);
+			logStep("Custom Parameter :" + cust_param + " value: " + actual
+					+ " is not matched with the expected value " + expected);
+			System.out.println("Criteo parameter: " + cust_param + " validation is failed");
+			logStep("Criteo parameter: " + cust_param + " validation is failed");
+			Assert.fail("Custom Parameter :" + cust_param + " value: " + actual
+					+ " is not matched with the expected value " + expected);
+		}
+
+	} else {
+		System.out.println(host + path + " call is not present in Charles session, hence Custom Parameter: "
+				+ cust_param + " validation skipped");
+		logStep(host + path + " call is not present in Charles session, hence Custom Parameter: " + cust_param
+				+ " validation skipped");
+		System.out.println("Criteo parameter: " + cust_param + " validation is failed");
+		logStep("Criteo parameter: " + cust_param + " validation is failed");
+		Assert.fail(host + path + " call is not present in Charles session, hence Custom Parameter: " + cust_param
+				+ " validation skipped");
+
+	}
+
+}
+
+public static String get_param_value_from_APIResponse(String host, String path, String cust_param) throws Exception {
+	// readExcelValues.excelValues(excelName, sheetName);
+	File fXmlFile = new File(CharlesFunctions.outfile.getName());
+
+	DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+	dbFactory.setValidating(false);
+	dbFactory.setNamespaceAware(true);
+	dbFactory.setFeature("http://xml.org/sax/features/namespaces", false);
+	// dbFactory.setNamespaceAware(true);
+	dbFactory.setFeature("http://xml.org/sax/features/validation", false);
+	dbFactory.setFeature("http://apache.org/xml/features/nonvalidating/load-dtd-grammar", false);
+	dbFactory.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
+
+	DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+
+	Document doc = dBuilder.parse(fXmlFile);
+	// Getting the transaction element by passing xpath expression
+	NodeList nodeList = doc.getElementsByTagName("transaction");
+	String xpathExpression = "charles-session/transaction/@host";
+	List<String> getQueryList = evaluateXPath(doc, xpathExpression);
+
+	// Getting custom_params amzn_b values
+	List<String> customParamsList = new ArrayList<String>();
+
+	// String iuId = null;
+
+	boolean iuExists = false;
+	for (String qry : getQueryList) {
+		if (qry.contains(host)) {
+			iuExists = true;
+			break;
+		}
+	}
+	boolean hflag = false;
+	boolean pflag = false;
+	boolean resflag = false;
+	boolean flag = false;
+	String ApiParamValue = null;
+
+	if (iuExists) {
+		System.out.println(host + "  call is present");
+		logStep(host + "  call is present");
+		outerloop: for (int p = 0; p < nodeList.getLength(); p++) {
+			// System.out.println("Total transactions: "+nodeList.getLength());
+			if (nodeList.item(p) instanceof Node) {
+				Node node = nodeList.item(p);
+				if (node.hasChildNodes()) {
+					NodeList nl = node.getChildNodes();
+					for (int j = 0; j < nl.getLength(); j++) {
+						// System.out.println("node1 length is: "+nl.getLength());
+						Node innernode = nl.item(j);
+						if (innernode != null) {
+							// System.out.println("Innernode name is: "+innernode.getNodeName());
+							if (innernode.getNodeName().equals("request")) {
+								if (innernode.hasChildNodes()) {
+									NodeList n2 = innernode.getChildNodes();
+									for (int k = 0; k < n2.getLength(); k++) {
+										// System.out.println("node2 length is: "+n2.getLength());
+										Node innernode2 = n2.item(k);
+										if (innernode2 != null) {
+											// System.out.println("Innernode2 name is: "+innernode2.getNodeName());
+											if (innernode2.getNodeType() == Node.ELEMENT_NODE) {
+												Element eElement = (Element) innernode2;
+												// System.out.println("Innernode2 element name is:
+												// "+eElement.getNodeName());
+												if (eElement.getNodeName().equals("headers")) {
+													if (innernode2.hasChildNodes()) {
+														NodeList n3 = innernode2.getChildNodes();
+														for (int q = 0; q < n3.getLength(); q++) {
+															// System.out.println("node3 length is:
+															// "+n3.getLength());
+															Node innernode3 = n3.item(q);
+															if (innernode3 != null) {
+																// System.out.println("Innernode3 name is:
+																// "+innernode3.getNodeName());
+																if (innernode3.getNodeType() == Node.ELEMENT_NODE) {
+																	Element eElement1 = (Element) innernode3;
+																	// System.out.println("Innernode3 element name
+																	// is: "+eElement1.getNodeName());
+																	if (eElement1.getNodeName().equals("header")) {
+																		String content = eElement1.getTextContent();
+																		// System.out.println("request body
+																		// "+content);
+
+																		if (content.contains(host)) {
+																			hflag = true;
+																			// System.out.println("request body
+																			// found "
+																			// + content);
+
+																		} else if (content.contains(path)) {
+																			pflag = true;
+																			// System.out.println("request body
+																			// found "
+																			// + content);
+																		}
+																	}
+																	// this condition especially for android since
+																	// its file has path value under first-line
+																	// element
+																	if (eElement1.getNodeName()
+																			.equals("first-line")) {
+																		String content = eElement1.getTextContent();
+																		// System.out.println("request body
+																		// "+content);
+
+																		if (content.contains(path)) {
+																			pflag = true;
+																			// System.out.println("request body
+																			// found "
+																			// + content);
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+												if (hflag && pflag) {
+												/*	if (eElement.getNodeName().equals("body")) {
+														String scontent = eElement.getTextContent();
+														if (scontent.contains(cust_param)) {
+															// System.out.println("request body " + scontent);
+															ApiParamValue = get_Param_Value_inJsonBody(scontent,
+																	cust_param);
+															break outerloop;
+
+														}
+
+													}*/
+													flag = true;
+												}
+
+											}
+										}
+									}
+								}
+							}
+							if (flag) {
+								// System.out.println("Exiting after found true "); //
+								//System.out.println("checking innernode name is: " + innernode.getNodeName());
+								if (innernode.getNodeName().equals("response")) {
+									// System.out.println(innernode.getNodeName());
+									if (innernode.hasChildNodes()) {
+										NodeList n2 = innernode.getChildNodes();
+										for (int k = 0; k < n2.getLength(); k++) {
+											Node innernode2 = n2.item(k);
+											if (innernode2 != null) {
+												if (innernode2.getNodeType() == Node.ELEMENT_NODE) {
+													Element eElement = (Element) innernode2;
+													if (eElement.getNodeName().equals("body")) {
+														String content = eElement.getTextContent();
+														// System.out.println("response body "+content);
+														if (content.contains(cust_param)) {
+															ApiParamValue = get_Param_Value_inJsonBody(content,
+																	cust_param);
+															break outerloop;
+
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+
+							}
+							/*
+							 * if (hflag && pflag) { resflag = true; break outerloop; }
+							 */
+						}
+					}
+				}
+			}
+			 flag = false;
+			 hflag = false;
+			 pflag = false;
+		}
+
+	} else {
+		System.out.println(host + " ad call is not present");
+		logStep(host + " ad call is not present");
+
+	}
+
+	// return resflag;
+	// System.out.println("Parameter value obtined from criteo request is :" +
+	// ApiParamValue);
+	return ApiParamValue;
+
+}
+
 }
