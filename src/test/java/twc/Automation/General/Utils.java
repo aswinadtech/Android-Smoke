@@ -6221,47 +6221,7 @@ public static String return_iu_value_from_query_parameter_of_Feedcall(String que
 	
 
 	
-	public static void validate_Amazon_aax_call_parameter(String sheetName,
-		String cust_param, String expected) throws Exception {
-	String[][] data = read_excel_data.exceldataread(sheetName);
-	DeviceStatus device_status = new DeviceStatus();
-	int Cap = device_status.Device_Status();
-	String host = data[2][1];
-	String path =data[3][1];
-
-	boolean flag = verifyAPICalWithHostandPath(host, path);
-	if (flag) {
-		System.out.println(host + path + " call is present in Charles session");
-		logStep(host + path + " call is present in Charles session");
-
-		String actual = get_param_value_from_APIRequest(host, path, cust_param);
-
-		if (actual.equalsIgnoreCase(expected)) {
-			System.out.println("Custom Parameter :" + cust_param + " value: " + actual
-					+ " is matched with the expected value " + expected);
-			logStep("Custom Parameter :" + cust_param + " value: " + actual + " is matched with the expected value "
-					+ expected);
-		} else {
-			System.out.println("Custom Parameter :" + cust_param + " value: " + actual
-					+ " is not matched with the expected value " + expected);
-			logStep("Custom Parameter :" + cust_param + " value: " + actual
-					+ " is not matched with the expected value " + expected);
-			Assert.fail("Custom Parameter :" + cust_param + " value: " + actual
-					+ " is not matched with the expected value " + expected);
-		}
-
-	} else {
-		System.out.println(host + path + " call is not present in Charles session, hence Custom Parameter: "
-				+ cust_param + " validation skipped");
-		logStep(host + path + " call is not present in Charles session, hence Custom Parameter: " + cust_param
-				+ " validation skipped");
-
-		Assert.fail(host + path + " call is not present in Charles session, hence Custom Parameter: " + cust_param
-				+ " validation skipped");
-
-	}
-
-}
+	
 	public static boolean isInterstitialCall_hasResponse(String sheetName) throws Exception {
 		String[][] data = read_excel_data.exceldataread(sheetName);
 		File fXmlFile = new File(outfile.getName());
