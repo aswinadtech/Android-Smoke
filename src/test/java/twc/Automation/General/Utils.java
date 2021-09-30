@@ -4673,7 +4673,7 @@ public static String return_iu_value_from_query_parameter_of_Feedcall(String que
 
 		boolean iuExists = false;
 		for (String qry : getQueryList) {
-			System.out.println(qry);
+			
 			if (qry.contains(host)) {
 				iuExists = true;
 				break;
