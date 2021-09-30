@@ -151,5 +151,18 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		logStep("****** Validating liveBiddingEnabled parameter value in Criteo Initialization API (config app) Call Response");
 	Utils.validate_Criteo_SDK_config_app_call_response_parameter("Smoke", "Criteo", "liveBiddingEnabled","false");
 	}
+	
+		/*
+	 * This method validates Amazon SDK version
+	 */
+	@Test(priority = 655, enabled = true)
+	@Description("Validating 'adsdk' parameter of Amazon aax call ")
+	public void Validate_Amazon_SDK_adsdk_parameter() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating Amazon SDK version i.e. 'adsdk' parameter of Amazon aax call");
+		logStep("****** Validating Amazon SDK version i.e. 'adsdk' parameter of Amazon aax call");
+		Functions.validate_Amazon_aax_call_parameter("Amazon", "adsdk","aps-android-9.1.0");
+
+	}
 
 }
