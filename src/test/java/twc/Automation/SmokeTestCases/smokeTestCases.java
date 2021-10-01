@@ -2797,12 +2797,16 @@ public void Smoke_Test_sz_Verifying_newdailydetails_day15adcall_FTL() throws Exc
 	
 	}
 			
-	@Test	System.out.println("==============================================");
+	@Test(priority = 168, enabled = true)
+	@Description("Validating 'sdkVersion' parameter of Criteo SDK config app call ")
+	public void Validate_Criteo_SDK_config_app_Call_sdkVersion_parameter() throws Exception {
+		System.out.println("==============================================");
 		System.out.println("****** Validating 'sdkVersion' parameter of Criteo SDK config app call");
 		logStep("****** Validating 'sdkVersion' parameter of Criteo SDK config app call");
 	Utils.validate_Criteo_SDK_config_app_call_parameter("Criteo", "sdkVersion", "4.4.0");
 
 	}
+	
 	
 	@Test(priority = 832, enabled = true)
 	@Description("Validating 'cpId' parameter of Criteo SDK config app call")
