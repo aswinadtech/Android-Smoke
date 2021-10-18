@@ -103,14 +103,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 				"================= verifying iu value for home screen marquee test case End =========================");
 	}
 	
-		@Test(priority = 4, enabled = true)  
-	  @Description("Verifying home screen hourly ad call on FTL") 
-	  public void Smoke_Test_Verifying_homescreenhourly__adCall_FTL() throws  Exception {  
-	  System.out.println("================= Verifying  home screen hourly ad call test case started ========================="); 	  
-		Utils.verifyPubadCal("Smoke", "pullrefresh");
-	   System.out.println("================= Verifying  home screen hourly ad call test case End =========================");
-	    }
-
+	
 	  
 	  
 	  
@@ -1623,22 +1616,7 @@ public void Smoke_Test_sz_Verifying_newdailydetails_day15adcall_FTL() throws Exc
 
 
 					 /* =======================================pull to refresh test case Started======================================================================================*/
-					 @Test(priority = 350, enabled = true)		  
-					  @Description("Verifying  home screen hourly  ad call pull to refrersh scenario on killLaunch") 
-					  public  void Smoke_Test_Verifying_homescreenhourly_pulltoreresh_scenario_killLaunch() throws  Exception {	 
-					  logStep("Verifying home screen hourly  ad call pull to refrersh scenario");
-					  System.out.
-					  println("================= Verifying  home screen hourly  ad  call pull to refrersh scenario started =========================" ); 
-					 AppFunctions.Kill_Launch_App();
-						CharlesFunctions.archive_folder("Charles");
-						  proxy.clearCharlesSession();
-					  AppFunctions.Pull_To_Refresh("Pulltorefresh");
-					  AppFunctions.Pull_To_Refresh("Pulltorefresh");
-						 Thread.sleep(20000);
-						this.proxy.getXml();
-					  Functions.finding_Homescreen_iu_value();	 
-					  System.out. println("=================  Verifying  home screen hourly  ad  call pull to refrersh scenario  End =========================" ); 
-					  }
+					
 					  
 					  @Test(priority = 352, enabled = true)
 					  
@@ -1647,7 +1625,14 @@ public void Smoke_Test_sz_Verifying_newdailydetails_day15adcall_FTL() throws Exc
 					  Exception {
 					  logStep("Verifying  home screen marquee call pull to refrersh scenario");
 					  System.out. println("================= Verifying  home screen marquee call pull to refrersh scenario started =========================");
-					  Functions.finding_Homescreen_marquee_iu_value(); 
+					  AppFunctions.Kill_Launch_App();
+						CharlesFunctions.archive_folder("Charles");
+						  proxy.clearCharlesSession();
+					  AppFunctions.Pull_To_Refresh("Pulltorefresh");
+					  AppFunctions.Pull_To_Refresh("Pulltorefresh");
+						 Thread.sleep(20000);
+						this.proxy.getXml();
+						  Functions.finding_Homescreen_marquee_iu_value(); 
 						  CharlesFunctions.archive_folder("Charles");
 					  System.out.println("================= Verifying  home screen marquee call pull to refrersh scenario  End =========================" );  
 					  }
@@ -2027,20 +2012,7 @@ public void Smoke_Test_sz_Verifying_newdailydetails_day15adcall_FTL() throws Exc
 	}
 	
 	
-	/*
-	 * This method validates tf custom parameter of Homescreen Today call tf
-	 * parameter not exists for NextGenIM and Feed calls, hence limited to
-	 * Homescreen hourly call
-	 */
-	@Test(priority = 724, enabled = true)
-	@Description("Validating 'tf' custom parameter of HomeScreen hourly call ")
-	public void Validate_HomeScreen_hourly_tf_Custom_param() throws Exception {
-		System.out.println("==============================================");
-		System.out.println("****** Validating tf custom parameter of HomeScreen hourly call");
-		logStep("Validating tf custom parameter of HomeScreen hourly call");
-		Utils.validate_Noncustom_param_val_of_gampad("Smoke", "pullrefresh", "tf", "hs_h");
-
-	}
+	
 
 	/*
 	 * This method validates DayNight custom parameter of Hourly details call
@@ -3087,70 +3059,6 @@ AppiumFunctions.enter_requiredLocation("30124");
 
 	}
 	
-	/*
-	 * This method validates wfxtg custom parameter of Map details call
-	 */
-	@Test(priority = 3018, enabled = true)
-	@Description("Validating 'wfxtg' custom parameter of Home screen hourly call")
-	public void Validate_HomeScreenHourly_wfxtg_Custom_param() throws Exception {
-		System.out.println("==============================================");
-		System.out.println("****** Validating wfxtg custom parameter of Home screen hourly call");
-		logStep("Validating wfxtg custom parameter of Home screen hourly call");	
-		CharlesFunctions.archive_folder("Charles");
-		proxy.clearCharlesSession();
-		 Thread.sleep(5000);
-		 AppFunctions.Kill_Launch_App();
-		 AppFunctions.Pull_To_Refresh("Pulltorefresh");
-             AppFunctions.Pull_To_Refresh("Pulltorefresh");
-		 Thread.sleep(100000);
-		this.proxy.getXml();
-		CharlesFunctions.createXMLFileForCharlesSessionFile();
-		Utils.validate_custom_param_val_of_gampad_with_zip("pullrefresh", "wfxtg", "30124");
-
-	}
-	
-	/*
-	 * This method validates nzcs custom parameter of Map details call
-	 */
-	@Test(priority = 3020, enabled = true)
-	@Description("Validating 'nzcs' custom parameter of Home screen hourly call")
-	public void Valida0te_HomeScreenHourly_nzcs_Custom_param() throws Exception {
-		System.out.println("==============================================");
-		System.out.println("****** Validating nzcs custom parameter ofHome screen hourly call");
-		logStep("Validating nzcs custom parameter of Home screen hourly call");
-		Utils.validate_custom_param_val_of_gampad_with_zip( "pullrefresh", "nzcs", "30124");
-			
-
-	}
-	
-	
-	/*
-	 * This method validates hzcs custom parameter of Map details call
-	 */
-	@Test(priority = 3021, enabled = true)
-	@Description("Validating 'hzcs' custom parameter of Home screen hourly call")
-	public void Validate_HomeScreenHourly_hzcs_Custom_param() throws Exception {
-		System.out.println("==============================================");
-		System.out.println("****** Validating hzcs custom parameter ofHome screen hourly calll");
-		logStep("Validating hzcs custom parameter of Home screen hourly call");
-		Utils.validate_custom_param_val_of_gampad_with_zip("pullrefresh", "hzcs", "30124");
-
-	}
-	
-	
-	/*
-	 * This method validates zcs custom parameter of Map details call
-	 */
-	@Test(priority = 3022, enabled = true)
-	@Description("Validating 'zcs' custom parameter of Home screen hourly call")
-	public void Validate_HomeScreenHourly_zcs_Custom_param() throws Exception {
-		System.out.println("==============================================");
-		System.out.println("****** Validating zcs custom parameter of Home screen hourly call");
-		CharlesFunctions.archive_folder("Charles");
-		logStep("Validating zcs custom parameter of Home screen hourly call");
-		Utils.validate_custom_param_val_of_gampad_with_zip("pullrefresh", "zcs", "30124");
-
-	}
 	
 	
 	
