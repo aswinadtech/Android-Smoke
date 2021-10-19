@@ -294,7 +294,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 			 
 			 
 			 
-			 @Test(priority = 42, enabled = true)
+			/* @Test(priority = 42, enabled = true)
 				@Description("Verifying amazon Slot Id for Home screen hourly  ad call")
 				public void Smoke_Test_amazon_aaxSlot_HomeScreenHourly_adCall() throws Exception {
 					System.out.println(
@@ -304,7 +304,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					System.out.println(
 							"================= Verify amazon aax slot Id for feed1 prerol adcall testcase End =========================");
 
-				}
+				}*/
 			 
 			 
 			 
@@ -441,13 +441,13 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					}
 					
 					
-					 @Test(priority = 70, enabled = true)  
+					 /*@Test(priority = 70, enabled = true)  
 					  @Description("Verifying sz value for home screen hourly ad call on FTL") 
 					  public void Smoke_Test_Verifying_sz_homescreenhourly_adCall_FTL() throws  Exception {  
 					  System.out.println("================= Verifying  sz value home screen hourly ad call test case started ========================="); 	  
 					  Utils.validate_Noncustom_param_val_of_gampad("Smoke", "pullrefresh", "sz", "320x50%7C320x100");
 					   System.out.println("================= Verifying sz value  home screen hourly ad call test case End =========================");
-					    }
+					    }*/
 					 
 					 
 					 @Test(priority = 72, enabled = true)
