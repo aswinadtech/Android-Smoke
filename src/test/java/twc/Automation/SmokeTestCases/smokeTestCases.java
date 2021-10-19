@@ -282,7 +282,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 
 			
 			
-			 @Test(priority = 40, enabled = true)
+			 /*@Test(priority = 40, enabled = true)
 				@Description("Verifying  MoreNews ad call on FTL")
 				public void Smoke_Test_Verify_MoreNews_adcall_FTL() throws Exception {
 					System.out
@@ -290,7 +290,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 					Utils.verifyPubadCal("Smoke", "News");
 				
 					System.out.println("================= Verifying MoreNews adcall iu End =========================");
-				}
+				}*/
 			 
 			 
 			 
