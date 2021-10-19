@@ -1501,13 +1501,13 @@ public void Smoke_Test_sz_Verifying_newdailydetails_day15adcall_FTL() throws Exc
 					}
 
 					
-					 @Test(priority=320,enabled = true)  
+					/* @Test(priority=320,enabled = true)  
 					  @Description("Verifying amazon slot id for home screen hourly preroll ad call on killaunch") 
 					  public void Smoke_Test_verify_amazon_Slotid_homescreenhourly_preroll_adcall_killLaunch() throws Exception { 
 					  System.out.println("================= Verifying amazon slotid home screenhourly adcall teetcase Started ========================="); 
 					  Functions.get_aaxcal_homescreen_hourly(); 
 					  System.out.println("================= Verifying amazon slotid home screenhourly adcall teetcase Started End ========================="); 
-					  }
+					  }*/
 					 
 					 
 						@Test(priority = 322, enabled = true)
