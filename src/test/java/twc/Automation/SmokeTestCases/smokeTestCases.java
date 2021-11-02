@@ -2867,7 +2867,8 @@ public void Smoke_Test_sz_Verifying_newdailydetails_day15adcall_FTL() throws Exc
             Thread.sleep(30000);
 		proxy.clearCharlesSession();
 AppiumFunctions.Kill_launch();
-AppiumFunctions.enter_requiredLocation("30124");
+		  Thread.sleep(100000);
+//AppiumFunctions.enter_requiredLocation("30124");
 		Thread.sleep(5000);
 		proxy.clearCharlesSession();
 		AppiumFunctions.Kill_launch();
