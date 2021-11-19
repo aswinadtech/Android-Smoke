@@ -2754,7 +2754,7 @@ public void Smoke_Test_sz_Verifying_newdailydetails_day15adcall_FTL() throws Exc
 		System.out.println("==============================================");
 		System.out.println("****** Validating 'sdkVersion' parameter of Criteo SDK config app call");
 		logStep("****** Validating 'sdkVersion' parameter of Criteo SDK config app call");
-	Utils.validate_Criteo_SDK_config_app_call_parameter("Criteo", "sdkVersion", "4.4.0");
+	Utils.validate_Criteo_SDK_config_app_call_parameter("Criteo", "sdkVersion", "4.6.0");
 
 	}
 	
