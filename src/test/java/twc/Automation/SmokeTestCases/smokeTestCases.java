@@ -1557,7 +1557,7 @@ public void Smoke_Test_sz_Verifying_newdailydetails_day15adcall_FTL() throws Exc
 					}
 	
 	
-	@Test(priority = 327, enabled = true)
+	/*@Test(priority = 327, enabled = true)
 					@Description("Verifying amazon Slot Id for hourly interstitial ad call")
 					public void Smoke_Test_amazon_aax_Hourly_interstitial_adcall() throws Exception {
 						System.out.println(
@@ -1596,7 +1596,7 @@ public void Smoke_Test_sz_Verifying_newdailydetails_day15adcall_FTL() throws Exc
 								"================= Verify amazon aax Videos interstitial  adcall test case  Started =========================");
 						Functions. get_aaxcal_Videos_Interstitial();
 						System.out.println("================= Verify amazon aax Videos interstitial  test case  End =========================");
-					}
+					}*/
 					
 	
 	
