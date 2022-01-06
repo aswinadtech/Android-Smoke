@@ -2937,7 +2937,45 @@ AppiumFunctions.Kill_launch();
 
 	}
 
-	
+	/*
+	 * This method validates cxtg custom parameter of Hourly details call
+	 */
+	@Test(priority = 3006, enabled = true)
+	@Description("Validating 'cxtg' custom parameter of Hourly details call ")
+	public void Validate_HourlyDetails_cxtg_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating cxtg custom parameter of Hourly details call");
+		logStep("Validating cxtg custom parameter of Hourly details call ");
+		//CharlesFunctions.createXMLFileForCharlesSessionFile();
+		Utils.validate_custom_param_val_of_gampad_with_zip("Hourly", "cxtg", "30124");
+
+	}
+
+	/*
+	 * This method validates cxtg custom parameter of Daily details call
+	 */
+	@Test(priority = 3008, enabled = true)
+	@Description("Validating 'cxtg' custom parameter of Daily details call ")
+	public void Validate_DailyDetails_cxtg_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating cxtg custom parameter of Daily details call");
+		logStep("Validating cxtg custom parameter of Daily details call ");
+		Utils.validate_custom_param_val_of_gampad_with_zip("Daily(10day)", "cxtg", "30124");
+
+	}
+
+	/*
+	 * This method validates wfxtg custom parameter of Map details call
+	 */
+	@Test(priority = 3010, enabled = true)
+	@Description("Validating 'cxtg' custom parameter of Map details call ")
+	public void Validate_MapDetails_cxtg_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating cxtg custom parameter of Map details call");
+		logStep("Validating cxtg custom parameter of Map details call ");
+		Utils.validate_custom_param_val_of_gampad_with_zip("Map", "cxtg", "30124");
+
+	}
 
 	
 
@@ -2945,7 +2983,7 @@ AppiumFunctions.Kill_launch();
 	/*
 	 * This method validates zcs custom parameter of Hourly details call
 	 */
-	@Test(priority = 3008, enabled = true)
+	@Test(priority = 3012, enabled = true)
 	@Description("Validating 'zcs' custom parameter of Hourly details call ")
 	public void Validate_HourlyDetails_zcs_Custom_param() throws Exception {
 		System.out.println("==============================================");
@@ -2958,7 +2996,7 @@ AppiumFunctions.Kill_launch();
 	/*
 	 * This method validates zcs custom parameter of Daily details call
 	 */
-	@Test(priority = 3009, enabled = true)
+	@Test(priority = 3014, enabled = true)
 	@Description("Validating 'zcs' custom parameter of Daily details call ")
 	public void Validate_DailyDetails_zcs_Custom_param() throws Exception {
 		System.out.println("==============================================");
@@ -2971,7 +3009,7 @@ AppiumFunctions.Kill_launch();
 	/*
 	 * This method validates zcs custom parameter of Map details call
 	 */
-	@Test(priority = 3010, enabled = true)
+	@Test(priority = 3016, enabled = true)
 	@Description("Validating 'zcs' custom parameter of Map details call ")
 	public void Validate_MapDetails_zcs_Custom_param() throws Exception {
 		System.out.println("==============================================");
@@ -2984,7 +3022,7 @@ AppiumFunctions.Kill_launch();
 	/*
 	 * This method validates hzcs custom parameter of Hourly details call
 	 */
-	@Test(priority = 3011, enabled = true)
+	@Test(priority = 3018, enabled = true)
 	@Description("Validating 'hzcs' custom parameter of Hourly details call ")
 	public void Validate_HourlyDetails_hzcs_Custom_param() throws Exception {
 		System.out.println("==============================================");
@@ -2997,7 +3035,7 @@ AppiumFunctions.Kill_launch();
 	/*
 	 * This method validates hzcs custom parameter of Daily details call
 	 */
-	@Test(priority = 3012, enabled = true)
+	@Test(priority = 3020, enabled = true)
 	@Description("Validating 'hzcs' custom parameter of Daily details call ")
 	public void Validate_DailyDetails_hzcs_Custom_param() throws Exception {
 		System.out.println("==============================================");
@@ -3010,7 +3048,7 @@ AppiumFunctions.Kill_launch();
 	/*
 	 * This method validates hzcs custom parameter of Map details call
 	 */
-	@Test(priority = 3013, enabled = true)
+	@Test(priority = 3022, enabled = true)
 	@Description("Validating 'hzcs' custom parameter of Map details call ")
 	public void Validate_MapDetails_hzcs_Custom_param() throws Exception {
 		System.out.println("==============================================");
@@ -3023,7 +3061,7 @@ AppiumFunctions.Kill_launch();
 	/*
 	 * This method validates nzcs custom parameter of Hourly details call
 	 */
-	@Test(priority = 3014, enabled = true)
+	@Test(priority = 3024, enabled = true)
 	@Description("Validating 'nzcs' custom parameter of Hourly details call ")
 	public void Validate_HourlyDetails_nzcs_Custom_param() throws Exception {
 		System.out.println("==============================================");
@@ -3036,7 +3074,7 @@ AppiumFunctions.Kill_launch();
 	/*
 	 * This method validates nzcs custom parameter of Daily details call
 	 */
-	@Test(priority = 3015, enabled = true)
+	@Test(priority = 3026, enabled = true)
 	@Description("Validating 'nzcs' custom parameter of Daily details call ")
 	public void Validate_DailyDetails_nzcs_Custom_param() throws Exception {
 		System.out.println("==============================================");
@@ -3049,7 +3087,7 @@ AppiumFunctions.Kill_launch();
 	/*
 	 * This method validates nzcs custom parameter of Map details call
 	 */
-	@Test(priority = 3016, enabled = true)
+	@Test(priority = 3028, enabled = true)
 	@Description("Validating 'nzcs' custom parameter of Map details call ")
 	public void Valida0te_MapDetails_nzcs_Custom_param() throws Exception {
 		System.out.println("==============================================");
