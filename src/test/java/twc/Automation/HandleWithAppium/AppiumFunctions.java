@@ -437,7 +437,7 @@ public class AppiumFunctions extends Drivers{
      					capabilities.setCapability(capabilitydata[13][0],capabilitydata[13][Cap]);
      					//capabilities.setCapability(capabilitydata[14][0],capabilitydata[14][Cap]);
      					
-     					Thread.sleep(5000);
+     					Thread.sleep(10000);
      				
      					Ad = new AndroidDriver(new URL(capabilitydata[15][Cap]), capabilities);
      					Thread.sleep(15000);
@@ -445,9 +445,15 @@ public class AppiumFunctions extends Drivers{
      					/* ---End Android Device Capabilities --- */
      	    			Ad.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
      	    			//####added ths to handle allow button			
+     	    			attachScreen();
      	    			clickONNext();
+     	    			attachScreen();
      	    		    ClickonIUnderstand();
+     	    		   attachScreen();
      	        		clickOnAllow();		
+     	        		attachScreen();
+     	        		Clickonclosebutton();
+     	        		attachScreen();
      	    			Thread.sleep(10000);
      	    			System.out.println("Capabilities have been launched  with fullreset ");
      				}
@@ -461,6 +467,19 @@ public class AppiumFunctions extends Drivers{
      		}
      	
      	
+     	public static void handleunwantedpopups() throws Exception
+     	{
+     		attachScreen();
+ 			clickONNext();
+ 			attachScreen();
+ 		    ClickonIUnderstand();
+ 		   attachScreen();
+     		clickOnAllow();		
+     		attachScreen();
+     		Clickonclosebutton();
+     		attachScreen();
+ 			Thread.sleep(30000);
+     	}
      	
      	
      	
@@ -638,6 +657,33 @@ public static void click_SH_element() throws Exception
 		}
 	}
 }
+
+public static void click_MoreNews_element() throws Exception
+{
+	try {
+		new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/video_player_thumbnail_extra")));
+		Ad.findElementById("com.weather.Weather:id/video_player_thumbnail_extra").click();
+		Thread.sleep(10000);
+		System.out.println("More News element clicked");
+		logStep("More News element clicked");
+	}
+	catch(Exception e) {
+		try {
+			Swipe_feed();
+		new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/video_player_thumbnail_extra")));
+	 Ad.findElementById("com.weather.Weather:id/video_player_thumbnail_extra").click();
+	 Thread.sleep(10000);
+		System.out.println("More News element clicked");
+		logStep("More News element clicked");
+		}
+		catch(Exception e1) {
+			
+		}
+		
+}
+}
+
+
 public static void click_cold_Flu_element() throws Exception
 {
 	try {
@@ -803,6 +849,20 @@ public static void click_hurricane_element() throws Exception
 		
 	}
 }
+
+public static void clickonAlertsCenter() throws Exception
+{
+	
+System.out.println("clicking on alerts center icon");
+logStep("clicking on alerts center icon");
+	try {
+	Ad.findElementByAccessibilityId("Go to Alerts and Notifications").click();
+	Thread.sleep(3000);		
+	}
+	catch(Exception e) {
+		
+	}
+}
 public static void SwipeUp_Counter(int Counter) throws Exception{
 
 	int swipeup = Counter;
@@ -827,34 +887,25 @@ int videoCount=0;
 int  outdoorcount=0;
 int AirQualityCount=0;
 
-
-
-
-
 String[][] data = read_excel_data.exceldataread("General");
-//System.out.println("Copy right text is: " + data[1][1]);
-
-
 String copyRight = null;
 
 int swipeup = Counter;
 //System.out.println("swipeup");
 System.out.println("Scroll the app till"+ data[1][1] +" is displaying on the screen");
+Thread.sleep(5000);
+clickonAlertsCenter();
+attachScreen();
+AppiumFunctions.clickOnBackArrowElement();
+
 for(int i=1;i<=swipeup ;i++){
 	Swipe_feed();
-	Thread.sleep(5000);
+	Thread.sleep(1000);
 
-	if(i>10) {
-		//local
-		if(Functions.verifyElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView"))){
-	//	server
-		//if(Functions.verifyElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView"))){
+	if(i>15) {
+		if(Functions.verifyElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView"))){	
 		if(Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView").isDisplayed()){
-//	if(text==true) {
-			//local
 			 copyRight = Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView").getAttribute("text");
-		//server
-		//	copyRight = Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView").getAttribute("text");
 			if(copyRight.equalsIgnoreCase( data[1][1])) {
 					System.out.println(copyRight +" text is displaying on the screen");
 					i=150;
@@ -902,50 +953,17 @@ if(ModuleName.toString().contains("Maps") ||ModuleName.toString().contains("Thun
 if(radarCount==0)
 {
 AppiumFunctions.clickOnRadarMaps();
+attachScreen();
 AppiumFunctions.clickOnBackArrowElement();
 //Functions.closeInterstailads();
 radarCount=1;
 }
 }
-if(ModuleName.toString().contains("Health & Activities")) {
 
-
-if(AllergyCount==0) {
-	 AppiumFunctions.click_Allergy_element(); 
-	  AppiumFunctions.clickOnBackArrowElement();
-	   Thread.sleep(10000);
-	  Thread.sleep(5000);
-	  AllergyCount=1;
-}
-
-
-/*	if(RunningCount==0) {
-	 AppiumFunctions.click_Running_element();
-	 AppiumFunctions.clickOnBackArrowElement();
-	   Thread.sleep(10000);
-	 RunningCount=1;
-	}*/
-
-
-
-/*	if(CofFluCount==0) {
- AppiumFunctions.click_cold_Flu_element();
-  AppiumFunctions.clickOnBackArrowElement();
-   Thread.sleep(10000);
-  Thread.sleep(5000);
-  CofFluCount=1;
-}
-if(BoatBeachCount==0) {
-	 AppiumFunctions.click_Boat_Beach_element();
-	  AppiumFunctions.clickOnBackArrowElement();
-	   Thread.sleep(10000);
-	  BoatBeachCount=1;
-	}*/
-
-}
 if(ModuleName.toString().contains("Today's Details") ) {
 if(TodayDeatilsCount==0) {
 AppiumFunctions.click_Todaydetails_element();
+attachScreen();
  AppiumFunctions.clickOnBackArrowElement_today();
  Thread.sleep(10000);
  TodayDeatilsCount=1;
@@ -955,6 +973,7 @@ AppiumFunctions.click_Todaydetails_element();
 if(ModuleName.toString().contains("Air Quality")) {
 if(AirQualityCount==0) {
 AppiumFunctions.click_Airpollution_element();
+attachScreen();
 AppiumFunctions.clickOnBackArrowElement();
 Thread.sleep(10000);
 AirQualityCount=1;
@@ -964,11 +983,23 @@ AirQualityCount=1;
 if(ModuleName.toString().contains("Outdoor Conditions")) {
 if( outdoorcount==0)
 click_SH_element() ;
+attachScreen();
 AppiumFunctions.clickOnBackArrowElement();
 Thread.sleep(10000);
 outdoorcount=1;
 
 }
+
+if(ModuleName.toString().contains("More News")) {
+if( MorNewsCount==0)
+click_MoreNews_element();
+attachScreen();
+AppiumFunctions.clickOnBackArrowElement();
+Thread.sleep(10000);
+MorNewsCount=1;
+
+}
+
 	
 	}
 }
@@ -998,7 +1029,7 @@ public static void Swipe(){
 
 public static void Swipe_feed(){
 	Dimension dimensions = Ad.manage().window().getSize();//throwing exception
-	Double startY1 = dimensions.getHeight() * 0.3;  
+	Double startY1 = dimensions.getHeight() * 0.4;  
 	startY = startY1.intValue();
 	Double endY1 = (double) (dimensions.getHeight()/20);  //  dimensions.getHeight()  0.2;  == 512.0
 	endY = endY1.intValue();
@@ -1043,7 +1074,7 @@ public static void clickONNext() throws Exception{
 	try {
 		new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/ok_button")));
 		Ad.findElementById("com.weather.Weather:id/ok_button").click();
-	//Thread.sleep(10000);
+	Thread.sleep(5000);
 	}
 	catch(Exception e) {
 		
@@ -1051,9 +1082,9 @@ public static void clickONNext() throws Exception{
 }
 public static void clickOnAllow() throws Exception{
 try {
-	new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.android.packageinstaller:id/permission_allow_button")));
-	Ad.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
-	//Thread.sleep(10000);
+	new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.android.permissioncontroller:id/permission_allow_foreground_only_button")));
+	Ad.findElementById("com.android.permissioncontroller:id/permission_allow_foreground_only_button").click();
+	Thread.sleep(5000);
 }
 catch(Exception e) {
 	
@@ -1072,7 +1103,19 @@ public static void ClickonIUnderstand() throws Exception{
 try {
 	new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/next_button_text")));
 	Ad.findElementById("com.weather.Weather:id/next_button_text").click();
+	Thread.sleep(5000);
+}
+catch(Exception e)
+{
+	
+}
+}
 
+public static void Clickonclosebutton() throws Exception{
+try {
+	new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("android:id/button2")));
+	Ad.findElementById("android:id/button2").click();
+	Thread.sleep(5000);
 }
 catch(Exception e)
 {
@@ -1243,6 +1286,20 @@ public static void clickOnVideoElementt() throws Exception{
 		catch(Exception e1) {
 
 		}
+		
+	}
+}
+
+public static void clickOnVideoElementdynamic() throws Exception{
+	System.out.println("clicking video element");
+	logStep("clicking video element");
+	try {
+		
+		List<WebElement> allnav_tabs=Ad.findElementsById("com.weather.Weather:id/smallLabel");
+		allnav_tabs.get(3).click();
+	Thread.sleep(10000);
+	}
+	catch(Exception e) {
 		
 	}
 }
@@ -2281,6 +2338,7 @@ if(ModuleName.toString().contains("PlanaHead")) {
 Ad.findElementByAccessibilityId("Search").click();
 new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.visibilityOfElementLocated(By.id("com.weather.Weather:id/search_text")));	
 Ad.findElementById("com.weather.Weather:id/search_text").sendKeys(location);
+Thread.sleep(10000);
 new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/title")));	
 List<WebElement> allLocations=Ad.findElementsById("com.weather.Weather:id/title");
 Thread.sleep(6000);
@@ -2302,6 +2360,16 @@ for(int i=0;i<=allLocations.size();i++) {
 		}
 	}
 	
+	if(location.contains("10010")) {
+		//System.out.println(loc.getText());
+		if(allLocations.get(i).getText().contains("New York City")) {
+			Thread.sleep(6000);
+			allLocations.get(i).click();
+		Thread.sleep(6000);
+		attachScreen();
+		break;
+		}
+	}
 
 	if(location.contains("07095")) {
 		//System.out.println(loc.getText());
