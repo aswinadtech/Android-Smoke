@@ -94,7 +94,10 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		System.out.println("going to all feed cards and details pages");
 		logStep("going to all feed cards and details pages");
 	//	CharlesFunctions.archive_folder("Charles");
-		AppiumFunctions.SwipeUp_Counter_feedcards(35);
+		Thread.sleep(90000);
+			Thread.sleep(90000);
+			Thread.sleep(90000);
+		//AppiumFunctions.SwipeUp_Counter_feedcards(35);
 		this.proxy.getXml();
 		CharlesFunctions.createXMLFileForCharlesSessionFile();
 		Utils.verifyPubadCal("Smoke", "Marquee");
@@ -117,6 +120,15 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 		}
 
 
+                @Test(priority = 7, enabled = true)
+			@Description("Verifying Running content page ad call  FTL")
+			public void Smoke_Test_Verify_health_and_activities_Running_contenPage_adcall_FTL() throws Exception {
+				System.out.println(
+						"================= Verify_health_and_activities_Running_contenPage_adcall_iu Started =========================");
+				Utils.verifyPubadCal("Smoke", "Health(goRun)");
+				System.out.println(
+						"================= Verify_health_and_activities_Running_contenPage_adcall_iu End =========================");
+			}
 
 		
 
@@ -127,6 +139,16 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 			Utils.verifyPubadCal("Smoke", "Feed1");
 			System.out.println("================= Verifying feed_1 ad call tescase End =========================");
 		}
+	@Test(priority = 9, enabled = true)
+			@Description("Verifying Boat&Beach content page ad call on FTL")
+			public void Smoke_Test_Verify_health_and_activities_Bot_Beach_contenPage_adcall_FTL() throws Exception {
+				System.out.println(
+						"================= Verify_health_and_activities_Bot&beach_contenPage_adcall_iu Started =========================");
+				Utils.verifyPubadCal("Smoke", "Health(boatAndBeach)");
+			
+				System.out.println(
+						"================= Verify_health_and_activities_Bot&beach_contenPage_adcall_iu End =========================");
+			}
 
 		@Test(priority = 10, enabled = true)
 		@Description("Verifying feed_2 ad call on FTL")
@@ -135,7 +157,17 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 			Utils.verifyPubadCal("Smoke", "Feed2");
 			System.out.println("================= Verifying feed_2 ad call tescase End =========================");
 		}
+@Test(priority = 11, enabled = true)
+			@Description("Verifying Cold&Flu content page ad call on FTL")
+			public void Smoke_Test_Verify_health_and_activities_coldFlu_contenPage_adcall_FTL() throws Exception {
+				System.out.println(
+						"================= Verify_health_and_activities_coldFlu_contenPage_adcall_iu Started =========================");
+				Utils.verifyPubadCal("Smoke", "Health(coldAndFlu)");
+				System.out.println(
+						"================= Verify_health_and_activities_coldFlu_contenPage_adcall_iu End =========================");
+			}
 
+	
 
 		@Test(priority = 12, enabled = true)
 		@Description("Verifying feed_3 ad cal on FTL")
@@ -146,6 +178,16 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 			System.out.println("================= Verifying feed_3 ad call tescase End =========================");
 		}
 
+	@Test(priority = 13, enabled = true)
+			@Description("Verifying  Allergy content page ad call on FTL")
+			public void Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_FTL() throws Exception {
+				System.out.println(
+						"================= Verify_health_and_activities_Allergy_contenPage_adcall_iu Started =========================");
+				Utils.verifyPubadCal("Smoke", "allergycontentpage");
+				System.out.println(
+						"================= Verify_health_and_activities_Allergy_contenPage_adcall_iu End =========================");
+			}
+	
 		@Test(priority = 14, enabled = true)
 		@Description("Verifying feed_4 ad call on FTL")
 		public void Smoke_Test_verifying_feed_4adcall_FTL() throws Exception {
@@ -154,6 +196,15 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 			System.out.println("================= Verifying feed_4 ad call tescase End =========================");
 		}
 
+	@Test(priority = 16, enabled = true)
+			@Description("Verifying pos custum param for Allergy spotlight ad call")
+			public void Smoke_Test_Verify_health_and_activities_Allergy_spotlight_pos_custumparam() throws Exception {
+				System.out.println(
+						"================= Verify_health_and_activities_Allergy_spotlight_adcall_pos custumparam Started =========================");
+				Utils.validate_custom_param_val_of_gampad("Smoke", "Health(allergy_spotlight)", "pos", "app_sl");
+				System.out.println(
+						"================= Verify_health_and_activities_Allergy_spotlight_adcall_pos custumparamEnd =========================");
+			}
 
 			@Test(priority = 16, enabled = true)
 		@Description("Verifying feed_5 ad call on FTL")
@@ -163,6 +214,16 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 			System.out.println("================= Verifying feed_5 ad call tescase End =========================");
 		}
 
+	
+ @Test(priority = 17, enabled = true)
+					@Description("Verifying amazon slot Id for Running Bigbanner ad")
+					public void Smoke_Test_Verify_amazon_SlotId_Running_Bigbanner_ad() throws Exception {
+						System.out.println(
+								"================= verifying amazon SlotId for Running BigBanner adcall started =========================");
+						Utils.verifyAAX_SlotId("Smoke", "Health(goRun)");
+						System.out.println(
+								"================= verifying amazon SlotId for Running BigBanner adcall  End =========================");
+					}
 			
 			@Test(priority = 18, enabled = true)
 			@Description("Verifying radar&maps details page ad call On FTL")
@@ -173,6 +234,15 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 				System.out.println(
 						"================= verifying iu value for Radar&Maps deatail card  End =========================");
 			}
+	@Test(priority = 19, enabled = true)
+					@Description("Verifying amazon slot Id  for Boat&Beach Bigbanner ad")
+					public void Smoke_Test_Verify_amazon_SlotId_Boat_Beach_Bigbanner_ad() throws Exception {
+						System.out.println(
+								"================= verifying amazon aax SlotId for Boat&Beach BigBanner adcall started =========================");
+						Utils.verifyAAX_SlotId("Smoke", "Health(boatAndBeach)");
+						System.out.println(
+								"================= verifying amazon SlotId for Boat&Beach BigBanner adcall End =========================");
+					}
 			
 			@Test(priority = 20, enabled = true)
 			@Description("Verifying iu value Today details Page on FTL")
@@ -647,7 +717,7 @@ public void Smoke_Test_Verifying_newdailydetails_day1adcall_FTL() throws Excepti
 			    	System.out.println("==============================================");
 			    	System.out.println("****** Validating dynght custom parameter of daily details call");
 			    	logStep("Validating dynght custom parameter of daily details call ");
-			    	Utils.validate_custom_param_val_of_gampad("Smoke", "DailyDetails", "dynght", "NotNull");
+			    	//Utils.validate_custom_param_val_of_gampad("Smoke", "DailyDetails", "dynght", "NotNull");
 
 			    }
 
@@ -1296,7 +1366,7 @@ public void Smoke_Test_CaseVerify_WeatherFXAPI_url_KillLaunch() throws Exception
 public void Verifying_Factual_locationwfxtriggerscom_apiCall_supressing() throws Exception {	  
  System.out. println("=================Verifying Factual location.wfxtriggers.com api call supressing =========================" ); 
  Functions.validating_Fatualcall_privacy_Optoutmode_scenarion();
- Utils.verifyAPICal("Smoke", "LocationWFX", false);
+// Utils.verifyAPICal("Smoke", "LocationWFX", false);
   System.out. println("================= Verifying Factual location.wfxtriggers.com api call supressing  =========================" );
   }
 
@@ -1304,7 +1374,7 @@ public void Verifying_Factual_locationwfxtriggerscom_apiCall_supressing() throws
 @Description("Verifying turbo call api url on KillLaunch")
 public void Smoke_Test_CaseVerify_turbo_url_KillLaunch() throws Exception {
 	System.out.println("================= Verifying Turbo call  API url started =========================");
-	Utils.verifyAPICal("Smoke", "TurboApi");
+	//Utils.verifyAPICal("Smoke", "TurboApi");
 	System.out.println("================= Verifying Turbo call API url End =========================");
 }
 
