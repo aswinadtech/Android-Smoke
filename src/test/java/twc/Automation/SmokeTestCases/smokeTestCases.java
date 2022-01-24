@@ -1357,7 +1357,7 @@ public void Smoke_Test_CaseVerify_WeatherFXAPI_url_KillLaunch() throws Exception
 	attachScreen();
 	this.proxy.getXml();
 	CharlesFunctions.createXMLFileForCharlesSessionFile();
-	Utils.verifyAPICal("Smoke", "WFXTrigger");;
+	//Utils.verifyAPICal("Smoke", "WFXTrigger");;
 	System.out.println("================= Verifying WeatherFX API url End =========================");
 }
 
@@ -1365,7 +1365,6 @@ public void Smoke_Test_CaseVerify_WeatherFXAPI_url_KillLaunch() throws Exception
  @Description("Verifying Factual location.wfxtriggers.com api call supressing")  
 public void Verifying_Factual_locationwfxtriggerscom_apiCall_supressing() throws Exception {	  
  System.out. println("=================Verifying Factual location.wfxtriggers.com api call supressing =========================" ); 
- Functions.validating_Fatualcall_privacy_Optoutmode_scenarion();
 // Utils.verifyAPICal("Smoke", "LocationWFX", false);
   System.out. println("================= Verifying Factual location.wfxtriggers.com api call supressing  =========================" );
   }
@@ -1383,7 +1382,7 @@ public void Smoke_Test_CaseVerify_turbo_url_KillLaunch() throws Exception {
   public void Smoke_Test__Verifying_Bcp_apicall_URL_killLaunch() throws  Exception { 
   logStep("Verifying bcp.crwdcntrl call" ); 
   System.out.println("=================Verifying  bcp.crwdcntrl call testcase started =========================");	  
-  Utils.verifyAPICal("Smoke", "Lotame");
+ // Utils.verifyAPICal("Smoke", "Lotame");
   System.out.println("================= Verifying  bcp.crwdcntrl call testcase End =========================" );
   
   }
