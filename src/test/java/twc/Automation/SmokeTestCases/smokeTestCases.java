@@ -516,6 +516,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 							AppFunctions.Swipe();
 							Thread.sleep(10000);
 							Thread.sleep(10000);
+							Thread.sleep(90000);
 							this.proxy.getXml();
 						CharlesFunctions.createXMLFileForCharlesSessionFile();
 				          Utils.verifyPubadCal("Smoke", "Hourly");
