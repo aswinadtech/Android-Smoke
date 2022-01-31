@@ -431,7 +431,7 @@ public class AppiumFunctions extends Drivers{
      					capabilities.setCapability("noReset","true");
      		capabilities.setCapability("appActivity","com.weather.Weather.app.SplashScreenActivity");
      			//	capabilities.setCapability("appActivity","com.weather.android.daybreak.MainActivity");
-     			//	capabilities.setCapability("automationName","UiAutomator2");
+     			capabilities.setCapability("automationName","UiAutomator2");
      			//	capabilities.setCapability("enabled","chromedriver_autodownload");
      				//	System.out.println("app : "+capabilitydata[10][Cap]);
      					capabilities.setCapability(capabilitydata[13][0],capabilitydata[13][Cap]);
