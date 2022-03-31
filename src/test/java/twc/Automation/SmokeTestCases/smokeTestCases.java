@@ -1631,6 +1631,7 @@ public void Validate_Marquee_plat_Custom_param() throws Exception {
 	proxy.clearCharlesSession();
 	AppiumFunctions.Kill_launch();
 	Thread.sleep(30000);
+	Thread.sleep(100000);
         AppiumFunctions.SwipeUp_Counter(5);
  	   AppFunctions.click_hourly_element();
         Thread.sleep(30000);
