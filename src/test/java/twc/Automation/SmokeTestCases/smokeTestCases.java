@@ -1355,6 +1355,7 @@ public void Smoke_Test_CaseVerify_WeatherFXAPI_url_KillLaunch() throws Exception
 	attachScreen();
    AppiumFunctions.ClickonIUnderstand();
 	Thread.sleep(25000);
+	Thread.sleep(125000);
 	attachScreen();
 	this.proxy.getXml();
 	CharlesFunctions.createXMLFileForCharlesSessionFile();
