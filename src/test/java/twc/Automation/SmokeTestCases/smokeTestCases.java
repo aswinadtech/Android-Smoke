@@ -718,7 +718,7 @@ public void Smoke_Test_Verifying_newdailydetails_day1adcall_FTL() throws Excepti
 			    	System.out.println("==============================================");
 			    	System.out.println("****** Validating dynght custom parameter of daily details call");
 			    	logStep("Validating dynght custom parameter of daily details call ");
-			    	//Utils.validate_custom_param_val_of_gampad("Smoke", "DailyDetails", "dynght", "NotNull");
+			    	Utils.validate_custom_param_val_of_gampad("Smoke", "DailyDetails", "dynght", "NotNull");
 
 			    }
 
@@ -750,7 +750,7 @@ System.out.println(
 public void Smoke_Test_Verifying_newdailydetails_day2adcall_FTL() throws Exception {
 System.out.println(
 	"================= Verifying new daily details day2 ad call test case Started=========================");
-/*CharlesFunctions.archive_folder("Charles");
+CharlesFunctions.archive_folder("Charles");
 proxy.clearCharlesSession();
 Functions.clickonday2();
 attachScreen();
@@ -758,7 +758,7 @@ Thread.sleep(10000);
 Functions.verifyingdailydetrailsday1today7();
 this.proxy.getXml();
 CharlesFunctions.createXMLFileForCharlesSessionFile();
-Utils.verifyPubadCal("Smoke", "DailyDetails");*/
+Utils.verifyPubadCal("Smoke", "DailyDetails");
 
 System.out.println(
 	"================= Verifying new daily details day2 ad call test case End =========================");
@@ -769,7 +769,7 @@ System.out.println(
 public void Smoke_Test_amazon_aax_Dailydetails_Day2adcall() throws Exception {
 System.out
 	.println("================= Verifying amazon slot id for  daily details day2  adcall test case Started =========================");
-//Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
 
 System.out.println("================= Verifying amazon slot id for  daily details day2 adcall test case End =========================");
 }
@@ -781,7 +781,7 @@ public void Smoke_Test_sz_Verifying_newdailydetails_day2adcall_FTL() throws Exce
 System.out.println(
 	"================= Verifying sz value for new daily details day2 ad call tescase Started =========================");
 
-//Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
+Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
 System.out.println(
 	"=================  Verifying sz value for new daily details day2 ad call tescase  End =========================");
 }
@@ -794,7 +794,7 @@ public void Smoke_Test_Verifying_newdailydetails_day3adcall_FTL() throws Excepti
 System.out.println(
 	"================= Verifying new daily details day3 ad call test case Started =========================");
 
-/*CharlesFunctions.archive_folder("Charles");
+CharlesFunctions.archive_folder("Charles");
 proxy.clearCharlesSession();
 //Functions.finding_newDailyBidadcall_day2();
 Functions.clickonday3();
@@ -803,7 +803,7 @@ Thread.sleep(10000);
 Functions.verifyingdailydetrailsday1today7();
 this.proxy.getXml();
 CharlesFunctions.createXMLFileForCharlesSessionFile();
-Utils.verifyPubadCal("Smoke", "DailyDetails");*/
+Utils.verifyPubadCal("Smoke", "DailyDetails");
 System.out.println(
 	"================= Verifying new daily details day3 ad call test case End =========================");
 }
@@ -813,7 +813,7 @@ System.out.println(
 public void Smoke_Test_amazon_aax_Dailydetails_Day3adcall() throws Exception {
 System.out
 	.println("================= Verifying amazon slot id for  daily details day3  adcall test case Started =========================");
-//Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
 
 System.out.println("================= Verifying amazon slot id for  daily details day3 adcall test case End =========================");
 }
@@ -825,7 +825,7 @@ public void Smoke_Test_sz_Verifying_newdailydetails_day3adcall_FTL() throws Exce
 System.out.println(
 	"================= Verifying sz value for new daily details day3 ad call tescase Started =========================");
 
-//Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
+Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
 System.out.println(
 	"=================  Verifying sz value for new daily details day3 ad call tescase  End =========================");
 }
@@ -836,7 +836,7 @@ System.out.println(
 public void Smoke_Test_Verifying_newdailydetails_day4adcall_FTL() throws Exception {
 System.out.println(
 	"================= Verifying new daily details day4 ad call tescase Started =========================");
-/*CharlesFunctions.archive_folder("Charles");
+CharlesFunctions.archive_folder("Charles");
 proxy.clearCharlesSession();
 //Functions.finding_newDailyBidadcall_day2();
 Functions.clickonday4();
@@ -845,7 +845,7 @@ attachScreen();
 Functions.verifyingdailydetrailsday1today7();
 this.proxy.getXml();
 CharlesFunctions.createXMLFileForCharlesSessionFile();
-Utils.verifyPubadCal("Smoke", "DailyDetails");*/
+Utils.verifyPubadCal("Smoke", "DailyDetails");
 
 System.out.println(
 	"================= Verifying new daily details day4 ad call tescase End =========================");
@@ -856,7 +856,7 @@ System.out.println(
 public void Smoke_Test_amazon_aax_Dailydetails_Day4adcall() throws Exception {
 System.out
 	.println("================= Verifying amazon slot id for  daily details day4  adcall test case Started =========================");
-//Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
 System.out.println("================= Verifying amazon slot id for  daily details day4 adcall test case End =========================");
 }
 
@@ -867,7 +867,7 @@ public void Smoke_Test_sz_Verifying_newdailydetails_day4adcall_FTL() throws Exce
 System.out.println(
 	"================= Verifying sz value for new daily details day4 ad call tescase Started =========================");
 
-//Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
+Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
 System.out.println(
 	"=================  Verifying sz value for new daily details day4 ad call tescase  End =========================");
 }
@@ -879,7 +879,7 @@ System.out.println(
 public void Smoke_Test_Verifying_newdailydetails_day5adcall_FTL() throws Exception {
 System.out.println(
 	"================= Verifying new daily details day5 ad call tescase Started =========================");
-/*CharlesFunctions.archive_folder("Charles");
+CharlesFunctions.archive_folder("Charles");
 proxy.clearCharlesSession();
 //Functions.finding_newDailyBidadcall_day2();
 Functions.clickonday5();
@@ -888,7 +888,7 @@ attachScreen();
 Functions.verifyingdailydetrailsday1today7();
 this.proxy.getXml();
 CharlesFunctions.createXMLFileForCharlesSessionFile();
-Utils.verifyPubadCal("Smoke", "DailyDetails");*/
+Utils.verifyPubadCal("Smoke", "DailyDetails");
 
 System.out.println(
 	"================= Verifying new daily details day5 ad call tescase End =========================");
@@ -900,7 +900,7 @@ System.out.println(
 public void Smoke_Test_amazon_aax_Dailydetails_Day5adcall() throws Exception {
 System.out
 	.println("================= Verifying amazon slot id for  daily details day5  adcall test case Started =========================");
-//Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
 
 System.out.println("================= Verifying amazon slot id for  daily details day5 adcall test case End =========================");
 }
@@ -912,7 +912,7 @@ public void Smoke_Test_sz_Verifying_newdailydetails_day5adcall_FTL() throws Exce
 System.out.println(
 	"================= Verifying sz value for new daily details day5 ad call tescase Started =========================");
 
-//Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
+Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
 System.out.println(
 	"=================  Verifying sz value for new daily details day5 ad call tescase  End =========================");
 }
@@ -922,7 +922,7 @@ System.out.println(
 public void Smoke_Test_Verifying_newdailydetails_day6adcall_FTL() throws Exception {
 	System.out.println(
 			"================= Verifying new daily details day6 ad call tescase Started =========================");
-	/*CharlesFunctions.archive_folder("Charles");
+	CharlesFunctions.archive_folder("Charles");
 	proxy.clearCharlesSession();
 //	Functions.finding_newDailyBidadcall_day2();
 	Functions.clickonday6();
@@ -931,7 +931,7 @@ public void Smoke_Test_Verifying_newdailydetails_day6adcall_FTL() throws Excepti
 	Functions.verifyingdailydetrailsday1today7();
 	this.proxy.getXml();
 CharlesFunctions.createXMLFileForCharlesSessionFile();
-Utils.verifyPubadCal("Smoke", "DailyDetails");*/
+Utils.verifyPubadCal("Smoke", "DailyDetails");
 		
 	System.out.println(
 			"================= Verifying new daily details day6 ad call tescase End =========================");
@@ -943,7 +943,7 @@ Utils.verifyPubadCal("Smoke", "DailyDetails");*/
 public void Smoke_Test_amazon_aax_Dailydetails_Day6adcall() throws Exception {
 	System.out
 			.println("================= Verifying amazon slot id for  daily details day6  adcall test case Started =========================");
-	//Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+	Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
 		
 	System.out.println("================= Verifying amazon slot id for  daily details day6 adcall test case End =========================");
 }
@@ -954,7 +954,7 @@ public void Smoke_Test_sz_Verifying_newdailydetails_day6adcall_FTL() throws Exce
 	System.out.println(
 			"================= Verifying sz value for new daily details day6 ad call tescase Started =========================");
 
-	//Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
+	Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
 	System.out.println(
 			"=================  Verifying sz value for new daily details day6 ad call tescase  End =========================");
 }
@@ -966,7 +966,7 @@ public void Smoke_Test_sz_Verifying_newdailydetails_day6adcall_FTL() throws Exce
 public void Smoke_Test_Verifying_newdailydetails_day7adcall_FTL() throws Exception {
 	System.out.println(
 			"================= Verifying new daily details day7 ad call tescase Started =========================");
-	/*CharlesFunctions.archive_folder("Charles");
+	CharlesFunctions.archive_folder("Charles");
 	proxy.clearCharlesSession();
 //	Functions.finding_newDailyBidadcall_day2();
 	Functions.clickonday7();
@@ -975,7 +975,7 @@ public void Smoke_Test_Verifying_newdailydetails_day7adcall_FTL() throws Excepti
 	Functions.verifyingdailydetrailsday1today7();
 	this.proxy.getXml();
 CharlesFunctions.createXMLFileForCharlesSessionFile();
-Utils.verifyPubadCal("Smoke", "DailyDetails");*/
+Utils.verifyPubadCal("Smoke", "DailyDetails");
 	
 	System.out.println(
 			"================= Verifying new daily details day7 ad call tescase End =========================");
@@ -985,7 +985,7 @@ Utils.verifyPubadCal("Smoke", "DailyDetails");*/
 public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
 	System.out
 			.println("================= Verifying amazon slot id for  daily details day7  adcall test case Started =========================");
-	//Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
+	Utils.verifyAAX_SlotId("Smoke", "DailyDetails");
 		
 	System.out.println("================= Verifying amazon slot id for  daily details day7 adcall test case End =========================");
 }
@@ -996,7 +996,7 @@ public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
       	System.out.println(
       			"================= Verifying sz value for new daily details day7 ad call tescase Started =========================");
 
-      //	Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
+      	Utils.validate_Noncustom_param_val_of_gampad("Smoke", "DailyDetails", "sz", "360x210%7C300x250");
       	System.out.println(
       			"=================  Verifying sz value for new daily details day7 ad call tescase  End =========================");
       }
@@ -1359,7 +1359,7 @@ public void Smoke_Test_CaseVerify_WeatherFXAPI_url_KillLaunch() throws Exception
 	attachScreen();
 	this.proxy.getXml();
 	CharlesFunctions.createXMLFileForCharlesSessionFile();
-	//Utils.verifyAPICal("Smoke", "WFXTrigger");;
+	Utils.verifyAPICal("Smoke", "WFXTrigger");;
 	System.out.println("================= Verifying WeatherFX API url End =========================");
 }
 
@@ -1367,7 +1367,7 @@ public void Smoke_Test_CaseVerify_WeatherFXAPI_url_KillLaunch() throws Exception
  @Description("Verifying Factual location.wfxtriggers.com api call supressing")  
 public void Verifying_Factual_locationwfxtriggerscom_apiCall_supressing() throws Exception {	  
  System.out. println("=================Verifying Factual location.wfxtriggers.com api call supressing =========================" ); 
-// Utils.verifyAPICal("Smoke", "LocationWFX", false);
+ Utils.verifyAPICal("Smoke", "LocationWFX", false);
   System.out. println("================= Verifying Factual location.wfxtriggers.com api call supressing  =========================" );
   }
 
@@ -1375,7 +1375,7 @@ public void Verifying_Factual_locationwfxtriggerscom_apiCall_supressing() throws
 @Description("Verifying turbo call api url on KillLaunch")
 public void Smoke_Test_CaseVerify_turbo_url_KillLaunch() throws Exception {
 	System.out.println("================= Verifying Turbo call  API url started =========================");
-	//Utils.verifyAPICal("Smoke", "TurboApi");
+	Utils.verifyAPICal("Smoke", "TurboApi");
 	System.out.println("================= Verifying Turbo call API url End =========================");
 }
 
@@ -1384,7 +1384,7 @@ public void Smoke_Test_CaseVerify_turbo_url_KillLaunch() throws Exception {
   public void Smoke_Test__Verifying_Bcp_apicall_URL_killLaunch() throws  Exception { 
   logStep("Verifying bcp.crwdcntrl call" ); 
   System.out.println("=================Verifying  bcp.crwdcntrl call testcase started =========================");	  
- // Utils.verifyAPICal("Smoke", "Lotame");
+  Utils.verifyAPICal("Smoke", "Lotame");
   System.out.println("================= Verifying  bcp.crwdcntrl call testcase End =========================" );
   
   }
